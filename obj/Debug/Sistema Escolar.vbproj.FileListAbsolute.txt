@@ -1,0 +1,16 @@
+D:\FATEC\2º Semestre\Matérias\Sistemas de Informação\Visual Studio\Sistema Escolar\bin\Debug\Sistema Escolar.exe.config
+D:\FATEC\2º Semestre\Matérias\Sistemas de Informação\Visual Studio\Sistema Escolar\bin\Debug\Sistema Escolar.exe
+D:\FATEC\2º Semestre\Matérias\Sistemas de Informação\Visual Studio\Sistema Escolar\bin\Debug\Sistema Escolar.pdb
+D:\FATEC\2º Semestre\Matérias\Sistemas de Informação\Visual Studio\Sistema Escolar\bin\Debug\Sistema Escolar.xml
+D:\FATEC\2º Semestre\Matérias\Sistemas de Informação\Visual Studio\Sistema Escolar\obj\Debug\Sistema Escolar.vbproj.AssemblyReference.cache
+D:\FATEC\2º Semestre\Matérias\Sistemas de Informação\Visual Studio\Sistema Escolar\obj\Debug\Sistema_Escolar.Resources.resources
+D:\FATEC\2º Semestre\Matérias\Sistemas de Informação\Visual Studio\Sistema Escolar\obj\Debug\Sistema Escolar.vbproj.GenerateResource.cache
+D:\FATEC\2º Semestre\Matérias\Sistemas de Informação\Visual Studio\Sistema Escolar\obj\Debug\Sistema Escolar.vbproj.CoreCompileInputs.cache
+D:\FATEC\2º Semestre\Matérias\Sistemas de Informação\Visual Studio\Sistema Escolar\obj\Debug\Sistema Escolar.exe
+D:\FATEC\2º Semestre\Matérias\Sistemas de Informação\Visual Studio\Sistema Escolar\obj\Debug\Sistema Escolar.xml
+D:\FATEC\2º Semestre\Matérias\Sistemas de Informação\Visual Studio\Sistema Escolar\obj\Debug\Sistema Escolar.pdb
+D:\FATEC\2º Semestre\Matérias\Sistemas de Informação\Visual Studio\Sistema Escolar\obj\Debug\Sistema_Escolar.Frm_loginAluno.resources
+D:\FATEC\2º Semestre\Matérias\Sistemas de Informação\Visual Studio\Sistema Escolar\obj\Debug\Sistema_Escolar.Frm_loginProfessor.resources
+D:\FATEC\2º Semestre\Matérias\Sistemas de Informação\Visual Studio\Sistema Escolar\obj\Debug\Sistema_Escolar.Frm_inicio.resources
+D:\FATEC\2º Semestre\Matérias\Sistemas de Informação\Visual Studio\Sistema Escolar\obj\Debug\Sistema_Escolar.Frm_loginADM.resources
+D:\FATEC\2º Semestre\Matérias\Sistemas de Informação\Visual Studio\Sistema Escolar\obj\Debug\Sistema_Escolar.Frm_cadastroAluno.resources
