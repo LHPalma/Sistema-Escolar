@@ -28,12 +28,14 @@ Partial Class Frm_loginProfessor
         Me.Txt_senha = New System.Windows.Forms.TextBox()
         Me.Cb_mostrarSenha = New System.Windows.Forms.CheckBox()
         Me.Btn_logar = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Lb_email
         '
         Me.Lb_email.AutoSize = True
-        Me.Lb_email.Location = New System.Drawing.Point(80, 103)
+        Me.Lb_email.Location = New System.Drawing.Point(39, 50)
         Me.Lb_email.Name = "Lb_email"
         Me.Lb_email.Size = New System.Drawing.Size(57, 20)
         Me.Lb_email.TabIndex = 0
@@ -42,7 +44,7 @@ Partial Class Frm_loginProfessor
         'Lb_senha
         '
         Me.Lb_senha.AutoSize = True
-        Me.Lb_senha.Location = New System.Drawing.Point(77, 148)
+        Me.Lb_senha.Location = New System.Drawing.Point(36, 125)
         Me.Lb_senha.Name = "Lb_senha"
         Me.Lb_senha.Size = New System.Drawing.Size(60, 20)
         Me.Lb_senha.TabIndex = 0
@@ -50,23 +52,23 @@ Partial Class Frm_loginProfessor
         '
         'Txt_email
         '
-        Me.Txt_email.Location = New System.Drawing.Point(143, 100)
+        Me.Txt_email.Location = New System.Drawing.Point(38, 74)
         Me.Txt_email.Name = "Txt_email"
-        Me.Txt_email.Size = New System.Drawing.Size(133, 26)
+        Me.Txt_email.Size = New System.Drawing.Size(298, 26)
         Me.Txt_email.TabIndex = 0
         '
         'Txt_senha
         '
-        Me.Txt_senha.Location = New System.Drawing.Point(143, 145)
+        Me.Txt_senha.Location = New System.Drawing.Point(38, 148)
         Me.Txt_senha.Name = "Txt_senha"
-        Me.Txt_senha.Size = New System.Drawing.Size(133, 26)
+        Me.Txt_senha.Size = New System.Drawing.Size(298, 26)
         Me.Txt_senha.TabIndex = 1
         Me.Txt_senha.UseSystemPasswordChar = True
         '
         'Cb_mostrarSenha
         '
         Me.Cb_mostrarSenha.AutoSize = True
-        Me.Cb_mostrarSenha.Location = New System.Drawing.Point(88, 195)
+        Me.Cb_mostrarSenha.Location = New System.Drawing.Point(107, 185)
         Me.Cb_mostrarSenha.Name = "Cb_mostrarSenha"
         Me.Cb_mostrarSenha.Size = New System.Drawing.Size(140, 24)
         Me.Cb_mostrarSenha.TabIndex = 2
@@ -75,28 +77,39 @@ Partial Class Frm_loginProfessor
         '
         'Btn_logar
         '
-        Me.Btn_logar.Location = New System.Drawing.Point(305, 319)
+        Me.Btn_logar.Location = New System.Drawing.Point(38, 222)
         Me.Btn_logar.Name = "Btn_logar"
-        Me.Btn_logar.Size = New System.Drawing.Size(197, 58)
+        Me.Btn_logar.Size = New System.Drawing.Size(298, 59)
         Me.Btn_logar.TabIndex = 3
         Me.Btn_logar.Text = "Logar"
         Me.Btn_logar.UseVisualStyleBackColor = True
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.Btn_logar)
+        Me.GroupBox1.Controls.Add(Me.Cb_mostrarSenha)
+        Me.GroupBox1.Controls.Add(Me.Txt_email)
+        Me.GroupBox1.Controls.Add(Me.Txt_senha)
+        Me.GroupBox1.Controls.Add(Me.Lb_email)
+        Me.GroupBox1.Controls.Add(Me.Lb_senha)
+        Me.GroupBox1.Location = New System.Drawing.Point(201, 4)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(377, 356)
+        Me.GroupBox1.TabIndex = 4
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "GroupBox1"
         '
         'Frm_loginProfessor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Btn_logar)
-        Me.Controls.Add(Me.Cb_mostrarSenha)
-        Me.Controls.Add(Me.Txt_senha)
-        Me.Controls.Add(Me.Txt_email)
-        Me.Controls.Add(Me.Lb_senha)
-        Me.Controls.Add(Me.Lb_email)
+        Me.ClientSize = New System.Drawing.Size(753, 298)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Frm_loginProfessor"
         Me.Text = "Form2"
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -106,4 +119,5 @@ Partial Class Frm_loginProfessor
     Friend WithEvents Txt_senha As TextBox
     Friend WithEvents Cb_mostrarSenha As CheckBox
     Friend WithEvents Btn_logar As Button
+    Friend WithEvents GroupBox1 As GroupBox
 End Class

@@ -14,3 +14,57 @@ D:\FATEC\2º Semestre\Matérias\Sistemas de Informação\Visual Studio\Sistema E
 D:\FATEC\2º Semestre\Matérias\Sistemas de Informação\Visual Studio\Sistema Escolar\obj\Debug\Sistema_Escolar.Frm_inicio.resources
 D:\FATEC\2º Semestre\Matérias\Sistemas de Informação\Visual Studio\Sistema Escolar\obj\Debug\Sistema_Escolar.Frm_loginADM.resources
 D:\FATEC\2º Semestre\Matérias\Sistemas de Informação\Visual Studio\Sistema Escolar\obj\Debug\Sistema_Escolar.Frm_cadastroAluno.resources
+C:\Users\Aluno\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\Sistema Escolar.exe.config
+C:\Users\Aluno\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\Sistema Escolar.exe
+C:\Users\Aluno\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\Sistema Escolar.pdb
+C:\Users\Aluno\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\Sistema Escolar.xml
+C:\Users\Aluno\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\EntityFramework.dll
+C:\Users\Aluno\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Aluno\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\System.Data.SQLite.dll
+C:\Users\Aluno\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Aluno\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Aluno\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\EntityFramework.xml
+C:\Users\Aluno\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Aluno\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\System.Data.SQLite.xml
+C:\Users\Aluno\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema Escolar.vbproj.AssemblyReference.cache
+C:\Users\Aluno\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.CadastroContas.resources
+C:\Users\Aluno\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.CadastroProfessor.resources
+C:\Users\Aluno\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_cadastroAluno.resources
+C:\Users\Aluno\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_inicio.resources
+C:\Users\Aluno\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_loginADM.resources
+C:\Users\Aluno\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_loginAluno.resources
+C:\Users\Aluno\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_loginProfessor.resources
+C:\Users\Aluno\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Resources.resources
+C:\Users\Aluno\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema Escolar.vbproj.GenerateResource.cache
+C:\Users\Aluno\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema Escolar.vbproj.CoreCompileInputs.cache
+C:\Users\Aluno\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema .FE6418D7.Up2Date
+C:\Users\Aluno\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema Escolar.exe
+C:\Users\Aluno\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema Escolar.xml
+C:\Users\Aluno\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema Escolar.pdb
+D:\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\Sistema Escolar.exe.config
+D:\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\Sistema Escolar.exe
+D:\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\Sistema Escolar.pdb
+D:\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\Sistema Escolar.xml
+D:\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\EntityFramework.dll
+D:\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\EntityFramework.SqlServer.dll
+D:\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\System.Data.SQLite.dll
+D:\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\EntityFramework.xml
+D:\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\EntityFramework.SqlServer.xml
+D:\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\System.Data.SQLite.xml
+D:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema Escolar.vbproj.AssemblyReference.cache
+D:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.CadastroContas.resources
+D:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.CadastroProfessor.resources
+D:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_cadastroAluno.resources
+D:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_inicio.resources
+D:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_loginADM.resources
+D:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_loginAluno.resources
+D:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_loginProfessor.resources
+D:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Resources.resources
+D:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema Escolar.vbproj.GenerateResource.cache
+D:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema Escolar.vbproj.CoreCompileInputs.cache
+D:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema .FE6418D7.Up2Date
+D:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema Escolar.exe
+D:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema Escolar.xml
+D:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema Escolar.pdb

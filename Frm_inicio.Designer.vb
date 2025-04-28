@@ -32,48 +32,53 @@ Partial Class Frm_inicio
         '
         Me.Lb_bemvindo.AutoSize = True
         Me.Lb_bemvindo.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lb_bemvindo.Location = New System.Drawing.Point(271, 9)
+        Me.Lb_bemvindo.Location = New System.Drawing.Point(173, 9)
+        Me.Lb_bemvindo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lb_bemvindo.Name = "Lb_bemvindo"
-        Me.Lb_bemvindo.Size = New System.Drawing.Size(273, 58)
+        Me.Lb_bemvindo.Size = New System.Drawing.Size(186, 39)
         Me.Lb_bemvindo.TabIndex = 0
         Me.Lb_bemvindo.Text = "Bem-Vindo"
         '
         'Btn_professor
         '
-        Me.Btn_professor.Location = New System.Drawing.Point(298, 82)
+        Me.Btn_professor.Location = New System.Drawing.Point(199, 53)
+        Me.Btn_professor.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Btn_professor.Name = "Btn_professor"
-        Me.Btn_professor.Size = New System.Drawing.Size(187, 85)
+        Me.Btn_professor.Size = New System.Drawing.Size(125, 55)
         Me.Btn_professor.TabIndex = 1
         Me.Btn_professor.Text = "PROFESSOR"
         Me.Btn_professor.UseVisualStyleBackColor = True
         '
         'Btn_aluno
         '
-        Me.Btn_aluno.Location = New System.Drawing.Point(298, 191)
+        Me.Btn_aluno.Location = New System.Drawing.Point(199, 124)
+        Me.Btn_aluno.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Btn_aluno.Name = "Btn_aluno"
-        Me.Btn_aluno.Size = New System.Drawing.Size(187, 85)
+        Me.Btn_aluno.Size = New System.Drawing.Size(125, 55)
         Me.Btn_aluno.TabIndex = 1
         Me.Btn_aluno.Text = "ALUNO"
         Me.Btn_aluno.UseVisualStyleBackColor = True
         '
         'Btn_adm
         '
-        Me.Btn_adm.Location = New System.Drawing.Point(298, 299)
+        Me.Btn_adm.Location = New System.Drawing.Point(199, 194)
+        Me.Btn_adm.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Btn_adm.Name = "Btn_adm"
-        Me.Btn_adm.Size = New System.Drawing.Size(187, 85)
+        Me.Btn_adm.Size = New System.Drawing.Size(125, 55)
         Me.Btn_adm.TabIndex = 1
         Me.Btn_adm.Text = "ADMINISTRADOR"
         Me.Btn_adm.UseVisualStyleBackColor = True
         '
         'Frm_inicio
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(533, 292)
         Me.Controls.Add(Me.Btn_aluno)
         Me.Controls.Add(Me.Btn_adm)
         Me.Controls.Add(Me.Btn_professor)
         Me.Controls.Add(Me.Lb_bemvindo)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Frm_inicio"
         Me.Text = "Frm_inicio"
         Me.ResumeLayout(False)

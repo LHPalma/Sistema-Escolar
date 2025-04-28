@@ -28,14 +28,17 @@ Partial Class Frm_loginAluno
         Me.Cb_mostrarSenha = New System.Windows.Forms.CheckBox()
         Me.Txt_ra = New System.Windows.Forms.TextBox()
         Me.Txt_senha = New System.Windows.Forms.TextBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Btn_logar
         '
         Me.Btn_logar.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Btn_logar.Location = New System.Drawing.Point(128, 249)
+        Me.Btn_logar.Location = New System.Drawing.Point(34, 222)
         Me.Btn_logar.Name = "Btn_logar"
-        Me.Btn_logar.Size = New System.Drawing.Size(91, 35)
+        Me.Btn_logar.Size = New System.Drawing.Size(298, 59)
         Me.Btn_logar.TabIndex = 0
         Me.Btn_logar.Text = "Logar"
         Me.Btn_logar.UseVisualStyleBackColor = False
@@ -43,25 +46,25 @@ Partial Class Frm_loginAluno
         'Lb_ra
         '
         Me.Lb_ra.AutoSize = True
-        Me.Lb_ra.Location = New System.Drawing.Point(124, 57)
+        Me.Lb_ra.Location = New System.Drawing.Point(44, 36)
         Me.Lb_ra.Name = "Lb_ra"
-        Me.Lb_ra.Size = New System.Drawing.Size(50, 20)
+        Me.Lb_ra.Size = New System.Drawing.Size(36, 20)
         Me.Lb_ra.TabIndex = 1
-        Me.Lb_ra.Text = "Lb_ra"
+        Me.Lb_ra.Text = "RA:"
         '
         'Lb_senha
         '
         Me.Lb_senha.AutoSize = True
-        Me.Lb_senha.Location = New System.Drawing.Point(114, 130)
+        Me.Lb_senha.Location = New System.Drawing.Point(44, 109)
         Me.Lb_senha.Name = "Lb_senha"
-        Me.Lb_senha.Size = New System.Drawing.Size(80, 20)
+        Me.Lb_senha.Size = New System.Drawing.Size(60, 20)
         Me.Lb_senha.TabIndex = 1
-        Me.Lb_senha.Text = "Lb_senha"
+        Me.Lb_senha.Text = "Senha:"
         '
         'Cb_mostrarSenha
         '
         Me.Cb_mostrarSenha.AutoSize = True
-        Me.Cb_mostrarSenha.Location = New System.Drawing.Point(118, 185)
+        Me.Cb_mostrarSenha.Location = New System.Drawing.Point(107, 183)
         Me.Cb_mostrarSenha.Name = "Cb_mostrarSenha"
         Me.Cb_mostrarSenha.Size = New System.Drawing.Size(140, 24)
         Me.Cb_mostrarSenha.TabIndex = 2
@@ -70,34 +73,45 @@ Partial Class Frm_loginAluno
         '
         'Txt_ra
         '
-        Me.Txt_ra.Location = New System.Drawing.Point(118, 80)
+        Me.Txt_ra.Location = New System.Drawing.Point(48, 59)
         Me.Txt_ra.Name = "Txt_ra"
-        Me.Txt_ra.Size = New System.Drawing.Size(100, 26)
+        Me.Txt_ra.Size = New System.Drawing.Size(253, 26)
         Me.Txt_ra.TabIndex = 3
         '
         'Txt_senha
         '
-        Me.Txt_senha.Location = New System.Drawing.Point(118, 153)
+        Me.Txt_senha.Location = New System.Drawing.Point(48, 132)
         Me.Txt_senha.Name = "Txt_senha"
-        Me.Txt_senha.Size = New System.Drawing.Size(100, 26)
+        Me.Txt_senha.Size = New System.Drawing.Size(253, 26)
         Me.Txt_senha.TabIndex = 3
         Me.Txt_senha.UseSystemPasswordChar = True
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.Txt_ra)
+        Me.GroupBox1.Controls.Add(Me.Txt_senha)
+        Me.GroupBox1.Controls.Add(Me.Btn_logar)
+        Me.GroupBox1.Controls.Add(Me.Lb_ra)
+        Me.GroupBox1.Controls.Add(Me.Cb_mostrarSenha)
+        Me.GroupBox1.Controls.Add(Me.Lb_senha)
+        Me.GroupBox1.Location = New System.Drawing.Point(205, 5)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(377, 356)
+        Me.GroupBox1.TabIndex = 4
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "GroupBox1"
         '
         'Frm_loginAluno
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Txt_senha)
-        Me.Controls.Add(Me.Txt_ra)
-        Me.Controls.Add(Me.Cb_mostrarSenha)
-        Me.Controls.Add(Me.Lb_senha)
-        Me.Controls.Add(Me.Lb_ra)
-        Me.Controls.Add(Me.Btn_logar)
+        Me.ClientSize = New System.Drawing.Size(753, 298)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Frm_loginAluno"
         Me.Text = "Form1"
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -107,4 +121,6 @@ Partial Class Frm_loginAluno
     Friend WithEvents Cb_mostrarSenha As CheckBox
     Friend WithEvents Txt_ra As TextBox
     Friend WithEvents Txt_senha As TextBox
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
 End Class
