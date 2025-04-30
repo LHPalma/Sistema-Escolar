@@ -42,78 +42,88 @@ Partial Class CadastroProfessor
         Me.GroupBox1.Controls.Add(Me.Lb_email)
         Me.GroupBox1.Controls.Add(Me.Txt_nome)
         Me.GroupBox1.Controls.Add(Me.Lb_nome)
-        Me.GroupBox1.Location = New System.Drawing.Point(186, 11)
+        Me.GroupBox1.Location = New System.Drawing.Point(124, 7)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(411, 400)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(274, 260)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Dados Professor"
+        Me.GroupBox1.Text = "Insira os Dados de Professor"
         '
         'btn_cadastrar
         '
-        Me.btn_cadastrar.Location = New System.Drawing.Point(79, 298)
+        Me.btn_cadastrar.Location = New System.Drawing.Point(53, 194)
+        Me.btn_cadastrar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btn_cadastrar.Name = "btn_cadastrar"
-        Me.btn_cadastrar.Size = New System.Drawing.Size(278, 59)
+        Me.btn_cadastrar.Size = New System.Drawing.Size(185, 38)
         Me.btn_cadastrar.TabIndex = 15
         Me.btn_cadastrar.Text = "CADASTRAR"
         Me.btn_cadastrar.UseVisualStyleBackColor = True
         '
         'Txt_senha
         '
-        Me.Txt_senha.Location = New System.Drawing.Point(88, 238)
+        Me.Txt_senha.Location = New System.Drawing.Point(59, 155)
+        Me.Txt_senha.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Txt_senha.Name = "Txt_senha"
-        Me.Txt_senha.Size = New System.Drawing.Size(139, 26)
+        Me.Txt_senha.Size = New System.Drawing.Size(94, 20)
         Me.Txt_senha.TabIndex = 12
         '
         'Lb_senha
         '
         Me.Lb_senha.AutoSize = True
-        Me.Lb_senha.Location = New System.Drawing.Point(84, 215)
+        Me.Lb_senha.Location = New System.Drawing.Point(56, 140)
+        Me.Lb_senha.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lb_senha.Name = "Lb_senha"
-        Me.Lb_senha.Size = New System.Drawing.Size(56, 20)
+        Me.Lb_senha.Size = New System.Drawing.Size(38, 13)
         Me.Lb_senha.TabIndex = 9
         Me.Lb_senha.Text = "Senha"
         '
         'Txt_email
         '
-        Me.Txt_email.Location = New System.Drawing.Point(88, 163)
+        Me.Txt_email.Location = New System.Drawing.Point(59, 106)
+        Me.Txt_email.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Txt_email.Name = "Txt_email"
-        Me.Txt_email.Size = New System.Drawing.Size(236, 26)
+        Me.Txt_email.Size = New System.Drawing.Size(159, 20)
         Me.Txt_email.TabIndex = 13
         '
         'Lb_email
         '
         Me.Lb_email.AutoSize = True
-        Me.Lb_email.Location = New System.Drawing.Point(87, 140)
+        Me.Lb_email.Location = New System.Drawing.Point(58, 91)
+        Me.Lb_email.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lb_email.Name = "Lb_email"
-        Me.Lb_email.Size = New System.Drawing.Size(48, 20)
+        Me.Lb_email.Size = New System.Drawing.Size(32, 13)
         Me.Lb_email.TabIndex = 10
         Me.Lb_email.Text = "Email"
         '
         'Txt_nome
         '
-        Me.Txt_nome.Location = New System.Drawing.Point(88, 92)
+        Me.Txt_nome.Location = New System.Drawing.Point(59, 60)
+        Me.Txt_nome.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Txt_nome.Name = "Txt_nome"
-        Me.Txt_nome.Size = New System.Drawing.Size(236, 26)
+        Me.Txt_nome.Size = New System.Drawing.Size(159, 20)
         Me.Txt_nome.TabIndex = 14
         '
         'Lb_nome
         '
         Me.Lb_nome.AutoSize = True
-        Me.Lb_nome.Location = New System.Drawing.Point(86, 69)
+        Me.Lb_nome.Location = New System.Drawing.Point(57, 45)
+        Me.Lb_nome.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lb_nome.Name = "Lb_nome"
-        Me.Lb_nome.Size = New System.Drawing.Size(51, 20)
+        Me.Lb_nome.Size = New System.Drawing.Size(35, 13)
         Me.Lb_nome.TabIndex = 11
         Me.Lb_nome.Text = "Nome"
         '
         'CadastroProfessor
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 410)
+        Me.ClientSize = New System.Drawing.Size(533, 266)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "CadastroProfessor"
-        Me.Text = "CadastroProfessor"
+        Me.Text = "Cadastro de Professor"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)

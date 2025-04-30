@@ -42,7 +42,7 @@ Partial Class Frm_inicio
         'Btn_professor
         '
         Me.Btn_professor.Location = New System.Drawing.Point(199, 53)
-        Me.Btn_professor.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Btn_professor.Margin = New System.Windows.Forms.Padding(2)
         Me.Btn_professor.Name = "Btn_professor"
         Me.Btn_professor.Size = New System.Drawing.Size(125, 55)
         Me.Btn_professor.TabIndex = 1
@@ -52,7 +52,7 @@ Partial Class Frm_inicio
         'Btn_aluno
         '
         Me.Btn_aluno.Location = New System.Drawing.Point(199, 124)
-        Me.Btn_aluno.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Btn_aluno.Margin = New System.Windows.Forms.Padding(2)
         Me.Btn_aluno.Name = "Btn_aluno"
         Me.Btn_aluno.Size = New System.Drawing.Size(125, 55)
         Me.Btn_aluno.TabIndex = 1
@@ -62,7 +62,7 @@ Partial Class Frm_inicio
         'Btn_adm
         '
         Me.Btn_adm.Location = New System.Drawing.Point(199, 194)
-        Me.Btn_adm.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Btn_adm.Margin = New System.Windows.Forms.Padding(2)
         Me.Btn_adm.Name = "Btn_adm"
         Me.Btn_adm.Size = New System.Drawing.Size(125, 55)
         Me.Btn_adm.TabIndex = 1
@@ -78,9 +78,9 @@ Partial Class Frm_inicio
         Me.Controls.Add(Me.Btn_adm)
         Me.Controls.Add(Me.Btn_professor)
         Me.Controls.Add(Me.Lb_bemvindo)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Frm_inicio"
-        Me.Text = "Frm_inicio"
+        Me.Text = "Menu Principal"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

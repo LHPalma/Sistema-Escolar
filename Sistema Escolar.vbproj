@@ -111,6 +111,12 @@
     <Compile Include="Frm_cadastroAluno.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Frm_gerenContas.Designer.vb">
+      <DependentUpon>Frm_gerenContas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_gerenContas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Frm_inicio.Designer.vb">
       <DependentUpon>Frm_inicio.vb</DependentUpon>
     </Compile>
@@ -170,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_cadastroAluno.resx">
       <DependentUpon>Frm_cadastroAluno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_gerenContas.resx">
+      <DependentUpon>Frm_gerenContas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_inicio.resx">
       <DependentUpon>Frm_inicio.vb</DependentUpon>

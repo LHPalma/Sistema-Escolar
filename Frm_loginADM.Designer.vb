@@ -34,25 +34,28 @@ Partial Class Frm_loginADM
         '
         'Txt_senha
         '
-        Me.Txt_senha.Location = New System.Drawing.Point(44, 131)
+        Me.Txt_senha.Location = New System.Drawing.Point(29, 85)
+        Me.Txt_senha.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Txt_senha.Name = "Txt_senha"
-        Me.Txt_senha.Size = New System.Drawing.Size(284, 26)
+        Me.Txt_senha.Size = New System.Drawing.Size(191, 20)
         Me.Txt_senha.TabIndex = 8
         Me.Txt_senha.UseSystemPasswordChar = True
         '
         'Txt_email
         '
-        Me.Txt_email.Location = New System.Drawing.Point(44, 63)
+        Me.Txt_email.Location = New System.Drawing.Point(29, 41)
+        Me.Txt_email.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Txt_email.Name = "Txt_email"
-        Me.Txt_email.Size = New System.Drawing.Size(284, 26)
+        Me.Txt_email.Size = New System.Drawing.Size(191, 20)
         Me.Txt_email.TabIndex = 9
         '
         'Cb_mostrarSenha
         '
         Me.Cb_mostrarSenha.AutoSize = True
-        Me.Cb_mostrarSenha.Location = New System.Drawing.Point(121, 185)
+        Me.Cb_mostrarSenha.Location = New System.Drawing.Point(81, 120)
+        Me.Cb_mostrarSenha.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Cb_mostrarSenha.Name = "Cb_mostrarSenha"
-        Me.Cb_mostrarSenha.Size = New System.Drawing.Size(140, 24)
+        Me.Cb_mostrarSenha.Size = New System.Drawing.Size(95, 17)
         Me.Cb_mostrarSenha.TabIndex = 7
         Me.Cb_mostrarSenha.Text = "Mostrar Senha"
         Me.Cb_mostrarSenha.UseVisualStyleBackColor = True
@@ -60,27 +63,30 @@ Partial Class Frm_loginADM
         'Lb_senha
         '
         Me.Lb_senha.AutoSize = True
-        Me.Lb_senha.Location = New System.Drawing.Point(40, 108)
+        Me.Lb_senha.Location = New System.Drawing.Point(27, 70)
+        Me.Lb_senha.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lb_senha.Name = "Lb_senha"
-        Me.Lb_senha.Size = New System.Drawing.Size(56, 20)
+        Me.Lb_senha.Size = New System.Drawing.Size(38, 13)
         Me.Lb_senha.TabIndex = 5
         Me.Lb_senha.Text = "Senha"
         '
         'Lb_email
         '
         Me.Lb_email.AutoSize = True
-        Me.Lb_email.Location = New System.Drawing.Point(40, 40)
+        Me.Lb_email.Location = New System.Drawing.Point(27, 26)
+        Me.Lb_email.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lb_email.Name = "Lb_email"
-        Me.Lb_email.Size = New System.Drawing.Size(53, 20)
+        Me.Lb_email.Size = New System.Drawing.Size(35, 13)
         Me.Lb_email.TabIndex = 7
         Me.Lb_email.Text = "E-mail"
         '
         'Btn_logar
         '
         Me.Btn_logar.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Btn_logar.Location = New System.Drawing.Point(44, 215)
+        Me.Btn_logar.Location = New System.Drawing.Point(29, 140)
+        Me.Btn_logar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Btn_logar.Name = "Btn_logar"
-        Me.Btn_logar.Size = New System.Drawing.Size(298, 59)
+        Me.Btn_logar.Size = New System.Drawing.Size(199, 38)
         Me.Btn_logar.TabIndex = 4
         Me.Btn_logar.Text = "Logar"
         Me.Btn_logar.UseVisualStyleBackColor = False
@@ -93,21 +99,24 @@ Partial Class Frm_loginADM
         Me.loginADM.Controls.Add(Me.Lb_email)
         Me.loginADM.Controls.Add(Me.Cb_mostrarSenha)
         Me.loginADM.Controls.Add(Me.Lb_senha)
-        Me.loginADM.Location = New System.Drawing.Point(197, 12)
+        Me.loginADM.Location = New System.Drawing.Point(131, 8)
+        Me.loginADM.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.loginADM.Name = "loginADM"
-        Me.loginADM.Size = New System.Drawing.Size(377, 356)
+        Me.loginADM.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.loginADM.Size = New System.Drawing.Size(251, 231)
         Me.loginADM.TabIndex = 10
         Me.loginADM.TabStop = False
-        Me.loginADM.Text = "Login Administrador"
+        Me.loginADM.Text = "Insira os dados da conta"
         '
         'Frm_loginADM
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(753, 298)
+        Me.ClientSize = New System.Drawing.Size(502, 194)
         Me.Controls.Add(Me.loginADM)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Frm_loginADM"
-        Me.Text = "Login Administrador"
+        Me.Text = "Login de Administrador"
         Me.loginADM.ResumeLayout(False)
         Me.loginADM.PerformLayout()
         Me.ResumeLayout(False)
