@@ -1,11 +1,11 @@
-﻿Imports System.Security.Cryptography
+﻿Imports System.Data.SQLite
+Imports System.Security.Cryptography
 Imports System.Text
 
 Module Modulo
     Const nomeBanco As String = "db_escola.db"
     Public caminhoBanco As String = Application.StartupPath & "\" & nomeBanco
-    Public connString As String = "DataSource=" & caminhoBanco & ";version=3;"
-
+    Public connectionString As String = "DataSource=" & caminhoBanco & ";version=3;"
 
 
     'Dim conexao As New SQLiteConnection()
@@ -38,5 +38,37 @@ Module Modulo
     End Function
 
 
+    Public Function VerificarUsuario(tabela As String, coluna As String, valorProcurado As String, senha As String) As Boolean
+        Using conexao As New SQLiteConnection(connectionString)
+            conexao.Open()
+            Dim cmd As New SQLiteCommand($"SELECT senha_hash, senha_salt FROM {tabela} WHERE {coluna} = @valorProcurado", conexao)
+            cmd.Parameters.AddWithValue("@valorProcurado", valorProcurado)
+
+            Using leitor As SQLiteDataReader = cmd.ExecuteReader()
+                If leitor.Read() Then
+                    Dim hashSalvo As Byte() = CType(leitor("senha_hash"), Byte())
+                    Dim saltSalvo As Byte() = CType(leitor("senha_salt"), Byte())
+
+                    Dim hashTentativa As Byte() = GerarHashSenha(senha, saltSalvo)
+
+                    Return CompararHashes(hashSalvo, hashTentativa)
+                Else
+                    Return False
+                End If
+            End Using
+        End Using
+    End Function
+
+    Private Function CompararHashes(hash1 As Byte(), hash2 As Byte()) As Boolean
+        If hash1.Length <> hash2.Length Then
+            Return False
+        End If
+
+        For i As Integer = 0 To hash1.Length - 1
+            If hash1(i) <> hash2(i) Then Return False
+        Next
+
+        Return True
+    End Function
 
 End Module

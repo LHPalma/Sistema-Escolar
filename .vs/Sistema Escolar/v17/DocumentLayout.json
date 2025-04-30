@@ -1,18 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Sistema-Escolar-main\\Sistema-Escolar-main\\",
+  "WorkspaceRootPath": "C:\\Users\\Aluno\\Documents\\Downloads\\Sistema-Escolar-main\\Sistema-Escolar-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|E:\\Sistema-Escolar-main\\Sistema-Escolar-main\\modulo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:modulo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|E:\\Sistema-Escolar-main\\Sistema-Escolar-main\\cadastroprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\aluno\\documents\\downloads\\sistema-escolar-main\\sistema-escolar-main\\cadastroprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:cadastroprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|e:\\sistema-escolar-main\\sistema-escolar-main\\frm_loginprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\aluno\\documents\\downloads\\sistema-escolar-main\\sistema-escolar-main\\frm_loginaluno.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:frm_loginaluno.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|C:\\Users\\Aluno\\Documents\\Downloads\\Sistema-Escolar-main\\Sistema-Escolar-main\\frm_loginprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:frm_loginprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|C:\\Users\\Aluno\\Documents\\Downloads\\Sistema-Escolar-main\\Sistema-Escolar-main\\modulo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:modulo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Sistema Escolar||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
@@ -29,12 +33,12 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Sistema Escolar",
-              "DocumentMoniker": "E:\\Sistema-Escolar-main\\Sistema-Escolar-main\\Sistema Escolar.vbproj",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\Downloads\\Sistema-Escolar-main\\Sistema-Escolar-main\\Sistema Escolar.vbproj",
               "RelativeDocumentMoniker": "Sistema Escolar.vbproj",
-              "ToolTip": "E:\\Sistema-Escolar-main\\Sistema-Escolar-main\\Sistema Escolar.vbproj",
-              "RelativeToolTip": "Sistema Escolar.vbproj",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\Downloads\\Sistema-Escolar-main\\Sistema-Escolar-main\\Sistema Escolar.vbproj*",
+              "RelativeToolTip": "Sistema Escolar.vbproj*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-04-28T11:31:17.24Z",
               "IsPinned": true
@@ -42,40 +46,52 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Frm_loginAluno.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\Downloads\\Sistema-Escolar-main\\Sistema-Escolar-main\\Frm_loginAluno.vb",
+              "RelativeDocumentMoniker": "Frm_loginAluno.vb",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\Downloads\\Sistema-Escolar-main\\Sistema-Escolar-main\\Frm_loginAluno.vb [Design]",
+              "RelativeToolTip": "Frm_loginAluno.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-04-30T11:34:12.309Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "CadastroProfessor.vb",
-              "DocumentMoniker": "E:\\Sistema-Escolar-main\\Sistema-Escolar-main\\CadastroProfessor.vb",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\Downloads\\Sistema-Escolar-main\\Sistema-Escolar-main\\CadastroProfessor.vb",
               "RelativeDocumentMoniker": "CadastroProfessor.vb",
-              "ToolTip": "E:\\Sistema-Escolar-main\\Sistema-Escolar-main\\CadastroProfessor.vb",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\Downloads\\Sistema-Escolar-main\\Sistema-Escolar-main\\CadastroProfessor.vb",
               "RelativeToolTip": "CadastroProfessor.vb",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwAMAAABhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-04-28T14:42:47.618Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Modulo.vb",
-              "DocumentMoniker": "E:\\Sistema-Escolar-main\\Sistema-Escolar-main\\Modulo.vb",
-              "RelativeDocumentMoniker": "Modulo.vb",
-              "ToolTip": "E:\\Sistema-Escolar-main\\Sistema-Escolar-main\\Modulo.vb",
-              "RelativeToolTip": "Modulo.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Frm_loginProfessor.vb",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\Downloads\\Sistema-Escolar-main\\Sistema-Escolar-main\\Frm_loginProfessor.vb",
+              "RelativeDocumentMoniker": "Frm_loginProfessor.vb",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\Downloads\\Sistema-Escolar-main\\Sistema-Escolar-main\\Frm_loginProfessor.vb",
+              "RelativeToolTip": "Frm_loginProfessor.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-04-28T11:25:31.568Z",
+              "WhenOpened": "2025-04-28T12:40:03.042Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Frm_loginProfessor.vb",
-              "DocumentMoniker": "E:\\Sistema-Escolar-main\\Sistema-Escolar-main\\Frm_loginProfessor.vb",
-              "RelativeDocumentMoniker": "Frm_loginProfessor.vb",
-              "ToolTip": "E:\\Sistema-Escolar-main\\Sistema-Escolar-main\\Frm_loginProfessor.vb",
-              "RelativeToolTip": "Frm_loginProfessor.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABEAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Modulo.vb",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\Downloads\\Sistema-Escolar-main\\Sistema-Escolar-main\\Modulo.vb",
+              "RelativeDocumentMoniker": "Modulo.vb",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\Downloads\\Sistema-Escolar-main\\Sistema-Escolar-main\\Modulo.vb",
+              "RelativeToolTip": "Modulo.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-04-28T12:40:03.042Z",
+              "WhenOpened": "2025-04-28T11:25:31.568Z",
               "EditorCaption": ""
             }
           ]
