@@ -7,7 +7,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{755CE600-AE2B-4438-B87F-C9992EBEAA2B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Sistema_Escolar.My.MyApplication</StartupObject>
+    <StartupObject>Sistema_Escolar.CadastroProfessor</StartupObject>
     <RootNamespace>Sistema_Escolar</RootNamespace>
     <AssemblyName>Sistema Escolar</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -132,11 +132,6 @@
     </Compile>
     <Compile Include="Modulo.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
-    <Compile Include="My Project\Application.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Application.myapp</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -177,7 +172,6 @@
   <ItemGroup>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
-      <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
