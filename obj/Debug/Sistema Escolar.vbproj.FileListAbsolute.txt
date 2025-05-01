@@ -120,3 +120,30 @@ C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema .FE6418D7
 C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema Escolar.exe
 C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema Escolar.xml
 C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema Escolar.pdb
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\bin\Debug\Sistema Escolar.exe.config
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\bin\Debug\Sistema Escolar.exe
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\bin\Debug\Sistema Escolar.pdb
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\bin\Debug\Sistema Escolar.xml
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\bin\Debug\EntityFramework.dll
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\bin\Debug\System.Data.SQLite.dll
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\bin\Debug\EntityFramework.xml
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\bin\Debug\System.Data.SQLite.xml
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema Escolar.vbproj.AssemblyReference.cache
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.CadastroProfessor.resources
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_cadastroADM.resources
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_cadastroAluno.resources
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_inicio.resources
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_loginADM.resources
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_loginAluno.resources
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_loginProfessor.resources
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.Resources.resources
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema Escolar.vbproj.GenerateResource.cache
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema Escolar.vbproj.CoreCompileInputs.cache
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema .FE6418D7.Up2Date
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema Escolar.exe
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema Escolar.xml
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema Escolar.pdb

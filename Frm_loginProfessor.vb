@@ -9,7 +9,10 @@ Public Class Frm_loginProfessor
             Exit Sub
         End If
 
-
+        If (Txt_senha.Text <> Txt_confirmar_senha.Text) Then
+            MsgBox("As senhas devem ser iguais", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "ERRO")
+            Exit Sub
+        End If
 
         Dim conexao As New SQLiteConnection(connectionString)
 
@@ -34,6 +37,7 @@ Public Class Frm_loginProfessor
 
     Private Sub Cb_mostrarSenha_CheckedChanged(sender As Object, e As EventArgs) Handles Cb_mostrarSenha.CheckedChanged
         Txt_senha.UseSystemPasswordChar = Not Txt_senha.UseSystemPasswordChar
+        Txt_confirmar_senha.UseSystemPasswordChar = Not Txt_senha.UseSystemPasswordChar
     End Sub
 
     Private Sub Frm_loginProfessor_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
@@ -44,5 +48,4 @@ Public Class Frm_loginProfessor
     Private Sub Frm_loginProfessor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
-
 End Class
