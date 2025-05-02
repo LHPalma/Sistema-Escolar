@@ -71,4 +71,11 @@ Module Modulo
         Return True
     End Function
 
+    Public Function GetUltimoIdGerado(conexao As SQLiteConnection, transacao As SQLiteTransaction)
+        Dim sqlGetId As String = "SELECT last_insert_rowid()"
+        Using cmdGetId As New SQLiteCommand(sqlGetId, conexao, transacao)
+            Return Convert.ToInt32(cmdGetId.ExecuteScalar())
+        End Using
+    End Function
+
 End Module

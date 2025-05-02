@@ -23,14 +23,18 @@ Partial Class CadastroProfessor
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Txt_complemento = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Txt_num = New System.Windows.Forms.TextBox()
+        Me.Txt_numero = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Txt_uf = New System.Windows.Forms.TextBox()
         Me.Txt_rua = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.btn_cadastrar = New System.Windows.Forms.Button()
-        Me.btn_limpar = New System.Windows.Forms.Button()
+        Me.Btn_cadastrar = New System.Windows.Forms.Button()
+        Me.Btn_limpar = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Txt_senha = New System.Windows.Forms.TextBox()
         Me.Txt_telefone = New System.Windows.Forms.TextBox()
@@ -39,10 +43,6 @@ Partial Class CadastroProfessor
         Me.Lb_email = New System.Windows.Forms.Label()
         Me.Txt_nome = New System.Windows.Forms.TextBox()
         Me.Lb_nome = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Txt_comp = New System.Windows.Forms.TextBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -50,16 +50,16 @@ Partial Class CadastroProfessor
         '
         Me.GroupBox1.Controls.Add(Me.CheckBox1)
         Me.GroupBox1.Controls.Add(Me.Label8)
-        Me.GroupBox1.Controls.Add(Me.Txt_comp)
+        Me.GroupBox1.Controls.Add(Me.Txt_complemento)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.Txt_num)
+        Me.GroupBox1.Controls.Add(Me.Txt_numero)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Txt_uf)
         Me.GroupBox1.Controls.Add(Me.Txt_rua)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.btn_cadastrar)
-        Me.GroupBox1.Controls.Add(Me.btn_limpar)
+        Me.GroupBox1.Controls.Add(Me.Btn_cadastrar)
+        Me.GroupBox1.Controls.Add(Me.Btn_limpar)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Txt_senha)
         Me.GroupBox1.Controls.Add(Me.Txt_telefone)
@@ -77,6 +77,44 @@ Partial Class CadastroProfessor
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Dados Professor"
         '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(158, 201)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(95, 17)
+        Me.CheckBox1.TabIndex = 33
+        Me.CheckBox1.Text = "Mostrar Senha"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(382, 175)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(71, 13)
+        Me.Label8.TabIndex = 32
+        Me.Label8.Text = "Complemento"
+        '
+        'Txt_complemento
+        '
+        Me.Txt_complemento.Location = New System.Drawing.Point(459, 172)
+        Me.Txt_complemento.Margin = New System.Windows.Forms.Padding(2)
+        Me.Txt_complemento.Name = "Txt_complemento"
+        Me.Txt_complemento.Size = New System.Drawing.Size(52, 20)
+        Me.Txt_complemento.TabIndex = 31
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(514, 175)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(21, 13)
+        Me.Label7.TabIndex = 30
+        Me.Label7.Text = "UF"
+        '
         'Label6
         '
         Me.Label6.AutoSize = True
@@ -87,13 +125,13 @@ Partial Class CadastroProfessor
         Me.Label6.TabIndex = 29
         Me.Label6.Text = "Número"
         '
-        'Txt_num
+        'Txt_numero
         '
-        Me.Txt_num.Location = New System.Drawing.Point(350, 173)
-        Me.Txt_num.Margin = New System.Windows.Forms.Padding(2)
-        Me.Txt_num.Name = "Txt_num"
-        Me.Txt_num.Size = New System.Drawing.Size(29, 20)
-        Me.Txt_num.TabIndex = 28
+        Me.Txt_numero.Location = New System.Drawing.Point(350, 173)
+        Me.Txt_numero.Margin = New System.Windows.Forms.Padding(2)
+        Me.Txt_numero.Name = "Txt_numero"
+        Me.Txt_numero.Size = New System.Drawing.Size(29, 20)
+        Me.Txt_numero.TabIndex = 28
         '
         'Label4
         '
@@ -131,24 +169,24 @@ Partial Class CadastroProfessor
         Me.Label3.TabIndex = 21
         Me.Label3.Text = "Dados de Endereço"
         '
-        'btn_cadastrar
+        'Btn_cadastrar
         '
-        Me.btn_cadastrar.Location = New System.Drawing.Point(162, 322)
-        Me.btn_cadastrar.Margin = New System.Windows.Forms.Padding(2)
-        Me.btn_cadastrar.Name = "btn_cadastrar"
-        Me.btn_cadastrar.Size = New System.Drawing.Size(276, 38)
-        Me.btn_cadastrar.TabIndex = 15
-        Me.btn_cadastrar.Text = "CADASTRAR"
-        Me.btn_cadastrar.UseVisualStyleBackColor = True
+        Me.Btn_cadastrar.Location = New System.Drawing.Point(162, 322)
+        Me.Btn_cadastrar.Margin = New System.Windows.Forms.Padding(2)
+        Me.Btn_cadastrar.Name = "Btn_cadastrar"
+        Me.Btn_cadastrar.Size = New System.Drawing.Size(276, 38)
+        Me.Btn_cadastrar.TabIndex = 15
+        Me.Btn_cadastrar.Text = "CADASTRAR"
+        Me.Btn_cadastrar.UseVisualStyleBackColor = True
         '
-        'btn_limpar
+        'Btn_limpar
         '
-        Me.btn_limpar.Location = New System.Drawing.Point(57, 285)
-        Me.btn_limpar.Name = "btn_limpar"
-        Me.btn_limpar.Size = New System.Drawing.Size(92, 23)
-        Me.btn_limpar.TabIndex = 16
-        Me.btn_limpar.Text = "Limpar Campos"
-        Me.btn_limpar.UseVisualStyleBackColor = True
+        Me.Btn_limpar.Location = New System.Drawing.Point(57, 285)
+        Me.Btn_limpar.Name = "Btn_limpar"
+        Me.Btn_limpar.Size = New System.Drawing.Size(92, 23)
+        Me.Btn_limpar.TabIndex = 16
+        Me.Btn_limpar.Text = "Limpar Campos"
+        Me.Btn_limpar.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -223,44 +261,6 @@ Partial Class CadastroProfessor
         Me.Lb_nome.TabIndex = 11
         Me.Lb_nome.Text = "Nome"
         '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(514, 175)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(21, 13)
-        Me.Label7.TabIndex = 30
-        Me.Label7.Text = "UF"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(382, 175)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(71, 13)
-        Me.Label8.TabIndex = 32
-        Me.Label8.Text = "Complemento"
-        '
-        'Txt_comp
-        '
-        Me.Txt_comp.Location = New System.Drawing.Point(459, 172)
-        Me.Txt_comp.Margin = New System.Windows.Forms.Padding(2)
-        Me.Txt_comp.Name = "Txt_comp"
-        Me.Txt_comp.Size = New System.Drawing.Size(52, 20)
-        Me.Txt_comp.TabIndex = 31
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(158, 201)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(95, 17)
-        Me.CheckBox1.TabIndex = 33
-        Me.CheckBox1.Text = "Mostrar Senha"
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
         'CadastroProfessor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -277,24 +277,24 @@ Partial Class CadastroProfessor
     End Sub
 
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents btn_cadastrar As Button
+    Friend WithEvents Btn_cadastrar As Button
     Friend WithEvents Txt_senha As TextBox
     Friend WithEvents Lb_senha As Label
     Friend WithEvents Txt_email As TextBox
     Friend WithEvents Lb_email As Label
     Friend WithEvents Txt_nome As TextBox
     Friend WithEvents Lb_nome As Label
-    Friend WithEvents btn_limpar As Button
+    Friend WithEvents Btn_limpar As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Txt_telefone As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents Txt_num As TextBox
+    Friend WithEvents Txt_numero As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Txt_uf As TextBox
     Friend WithEvents Txt_rua As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents Txt_comp As TextBox
+    Friend WithEvents Txt_complemento As TextBox
     Friend WithEvents CheckBox1 As CheckBox
 End Class

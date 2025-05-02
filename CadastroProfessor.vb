@@ -1,27 +1,16 @@
-﻿Imports System.Data.SQLite
-'TODO:
-'   Verificar se os campos estão preenchidos (Feito)
-'       se não, exibir mensagem de erro (não esquecer o exit sub) 
-'   
-'   Criar o chkbox de esconde/mostrar senha (Feito no login Professor)
-'   Criar o botão de limpar (opcional) (Feito)
-'   Criar a confirmação da senha (Feito em Login Professor)
-'   crias os campos de endereço (vide o banco de dados) (Feito)
-'   crias os campos de telefone (vide o banco de dados) (Feito)
-'   criar a lógica de cadastrar novo professor (Feito)
-'       se sim, continua no form
-'       se não, fecha o form e volta para inicial do adm
-'(Apagar depois de ler)
-
-'TODO:
+﻿'TODO:
 'Fazer verificação de campo UF (permitir máximo de 2Chars) e (Deixar Uppercase)
+'   ******** faz um dropbox seu safado **********
+
 'Fazer mascára para campo Telefone
-'Permitir somente números no campo "numero" de endereço
-'cadastrar id do professor também, e colocar no banco 
+'Permitir somente números no campo "numero" de endereço (não precisa, pois existem casas com numeros e letras, ex: 45A)
+'cadastrar id do professor também, e colocar no banco ( Modulo.GetUltimoIdGerado(...) )
+
+Imports System.Data.SQLite
 
 Public Class CadastroProfessor
-    Private Sub btn_cadastrar_Click(sender As Object, e As EventArgs) Handles btn_cadastrar.Click
-        If (Txt_email.Text = "" Or Txt_nome.Text = "" Or Txt_senha.Text = "" Or Txt_rua.Text = "" Or Txt_num.Text = "" Or Txt_uf.Text = "" Or Txt_telefone.Text = "") Then
+    Private Sub Btn_cadastrar_Click(sender As Object, e As EventArgs) Handles Btn_cadastrar.Click
+        If (Txt_email.Text = "" Or Txt_nome.Text = "" Or Txt_senha.Text = "" Or Txt_rua.Text = "" Or Txt_numero.Text = "" Or Txt_uf.Text = "" Or Txt_telefone.Text = "") Then
             MsgBox("Para cadastrar, preencha todos os campos!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "Atenção")
             Exit Sub
         End If
@@ -52,20 +41,23 @@ Public Class CadastroProfessor
 
                     ' Inserir professor
                     Dim sql1 As String = "INSERT INTO tb_professores (nome, email, senha_hash, senha_salt) VALUES (@nome, @email, @hash, @salt)"
+                    Dim id_professor As Integer
                     Using cmd1 As New SQLiteCommand(sql1, conexao, transacao)
                         cmd1.Parameters.AddWithValue("@nome", Txt_nome.Text)
                         cmd1.Parameters.AddWithValue("@email", Txt_email.Text)
                         cmd1.Parameters.Add("@hash", DbType.Binary).Value = hash
                         cmd1.Parameters.Add("@salt", DbType.Binary).Value = salt
                         cmd1.ExecuteNonQuery()
+
+                        id_professor = GetUltimoIdGerado(conexao, transacao)
                     End Using
 
                     ' Inserir endereço
                     Dim sql2 As String = "INSERT INTO tb_enderecos_professores (rua, numero, complemento, uf) VALUES (@rua, @numero, @complemento, @uf)"
                     Using cmd2 As New SQLiteCommand(sql2, conexao, transacao)
                         cmd2.Parameters.AddWithValue("@rua", Txt_rua.Text)
-                        cmd2.Parameters.AddWithValue("@numero", Txt_num.Text)
-                        cmd2.Parameters.AddWithValue("@complemento", Txt_comp.Text)
+                        cmd2.Parameters.AddWithValue("@numero", Txt_numero.Text)
+                        cmd2.Parameters.AddWithValue("@complemento", Txt_complemento.Text)
                         cmd2.Parameters.AddWithValue("@uf", Txt_uf.Text)
                         cmd2.ExecuteNonQuery()
                     End Using
@@ -85,14 +77,7 @@ Public Class CadastroProfessor
                 Dim resp As MsgBoxResult = MsgBox($"Professor {Txt_nome.Text} cadastrado com sucesso! Deseja cadastrar outro Professor?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Cadastrado com sucesso")
                 If resp = MsgBoxResult.Yes Then
                     ' Limpar campos
-                    Txt_nome.Text = ""
-                    Txt_email.Text = ""
-                    Txt_senha.Text = ""
-                    Txt_rua.Text = ""
-                    Txt_num.Text = ""
-                    Txt_comp.Text = ""
-                    Txt_uf.Text = ""
-                    Txt_telefone.Text = ""
+                    Btn_limpar_Click(sender, e))
                     Txt_nome.Focus()
                 Else
                     Dim inicio As New Frm_inicio
@@ -103,15 +88,16 @@ Public Class CadastroProfessor
             Catch ex As Exception
                 MsgBox("Erro: " & ex.Message, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Erro ao cadastrar professor")
             End Try
-        End Using
+        End Using ' Fim SQLiteConnection(connectionString)
     End Sub
 
-    Private Sub btn_limpar_Click(sender As Object, e As EventArgs) Handles btn_limpar.Click
+    Private Sub Btn_limpar_Click(sender As Object, e As EventArgs) Handles Btn_limpar.Click
         Txt_email.Text = ""
         Txt_nome.Text = ""
         Txt_senha.Text = ""
-        Txt_comp.Text = ""
-        Txt_num.Text = ""
+        Txt_rua.Text = ""
+        Txt_complemento.Text = ""
+        Txt_numero.Text = ""
         Txt_uf.Text = ""
         Txt_telefone.Text = ""
     End Sub

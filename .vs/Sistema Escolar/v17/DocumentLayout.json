@@ -1,12 +1,24 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\kakap\\OneDrive\\\u00C1rea de Trabalho\\Area de Trabalho\\Sistema-Escolar\\",
+  "WorkspaceRootPath": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\",
   "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\luizp\\documents\\trabalhando\\sistema-escolar\\cadastroprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:cadastroprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\luizp\\documents\\trabalhando\\sistema-escolar\\cadastroprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:cadastroprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Sistema Escolar||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\kakap\\onedrive\\\u00E1rea de trabalho\\area de trabalho\\sistema-escolar\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|8998e48e-b89a-4034-b66e-353d8c1fdc2e"
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\luizp\\documents\\trabalhando\\sistema-escolar\\modulo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:modulo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\luizp\\documents\\trabalhando\\sistema-escolar\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|8998e48e-b89a-4034-b66e-353d8c1fdc2e"
     }
   ],
   "DocumentGroupContainers": [
@@ -16,20 +28,66 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Sistema Escolar",
-              "DocumentMoniker": "C:\\Users\\kakap\\OneDrive\\\u00C1rea de Trabalho\\Area de Trabalho\\Sistema-Escolar\\Sistema Escolar.vbproj",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Sistema Escolar.vbproj",
               "RelativeDocumentMoniker": "Sistema Escolar.vbproj",
-              "ToolTip": "C:\\Users\\kakap\\OneDrive\\\u00C1rea de Trabalho\\Area de Trabalho\\Sistema-Escolar\\Sistema Escolar.vbproj",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Sistema Escolar.vbproj",
               "RelativeToolTip": "Sistema Escolar.vbproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-04-28T11:31:17.24Z",
               "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Modulo.vb",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Modulo.vb",
+              "RelativeDocumentMoniker": "Modulo.vb",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Modulo.vb",
+              "RelativeToolTip": "Modulo.vb",
+              "ViewState": "AgIAADsAAAAAAAAAAAAIwEkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-05-02T14:58:06.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CadastroProfessor.vb",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\CadastroProfessor.vb",
+              "RelativeDocumentMoniker": "CadastroProfessor.vb",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\CadastroProfessor.vb",
+              "RelativeToolTip": "CadastroProfessor.vb",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAgwFYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-05-02T14:52:43.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CadastroProfessor.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\CadastroProfessor.vb",
+              "RelativeDocumentMoniker": "CadastroProfessor.vb",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\CadastroProfessor.vb [Design]",
+              "RelativeToolTip": "CadastroProfessor.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-05-02T14:51:11.481Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             }
           ]
         }
