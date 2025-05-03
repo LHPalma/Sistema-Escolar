@@ -41,7 +41,7 @@ Public Class Frm_cadastroAluno
                 Using transacao = conexao.BeginTransaction()
 
                     'Inserindo Alunonha_hash, senha_salt) VALUES (@ra, @nome, @
-                    Dim sqlInsert As String = "INSERT INTO tb_alunos (ra, nome, email, senha_hash, senha_salt) VALUES (@ra, @nome, @email, @hash, @salt)"
+                    Dim sqlInsert As String = "INSERT INTO tb_alunos (ra, nome, email, senha_hash, senha_salt, senha_sem_hash, data_cadastro) VALUES (@ra, @nome, @email, @hash, @salt, @senha_sem_hash, @data_cadastro)"
                     Dim id_aluno As Integer
                     Using cmdInsert As New SQLiteCommand(sqlInsert, conexao, transacao)
                         cmdInsert.Parameters.AddWithValue("@ra", aluno.RA)
@@ -49,11 +49,13 @@ Public Class Frm_cadastroAluno
                         cmdInsert.Parameters.AddWithValue("@email", aluno.Email)
                         cmdInsert.Parameters.Add("@hash", DbType.Binary).Value = hash
                         cmdInsert.Parameters.Add("@salt", DbType.Binary).Value = salt
+                        cmdInsert.Parameters.AddWithValue("@senha_sem_hash", aluno.Senha)
+                        Dim agora As String = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
+                        cmdInsert.Parameters.AddWithValue("@data_cadastro", agora)
+
                         cmdInsert.ExecuteNonQuery()
 
                         id_aluno = GetUltimoIdGerado(conexao, transacao)
-
-
                     End Using
 
                     'Validando transação
