@@ -36,8 +36,6 @@ Partial Class Frm_gerenContas
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txt_email = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.cmb_tipo = New System.Windows.Forms.ComboBox()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.txt_ra = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txt_disc = New System.Windows.Forms.TextBox()
@@ -162,25 +160,6 @@ Partial Class Frm_gerenContas
         Me.Label1.TabIndex = 20
         Me.Label1.Text = "E-mail"
         '
-        'cmb_tipo
-        '
-        Me.cmb_tipo.FormattingEnabled = True
-        Me.cmb_tipo.Location = New System.Drawing.Point(440, 110)
-        Me.cmb_tipo.Name = "cmb_tipo"
-        Me.cmb_tipo.Size = New System.Drawing.Size(137, 21)
-        Me.cmb_tipo.TabIndex = 21
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(437, 94)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(87, 13)
-        Me.Label2.TabIndex = 22
-        Me.Label2.Text = "Tipo de Conta"
-        '
         'txt_ra
         '
         Me.txt_ra.Location = New System.Drawing.Point(238, 167)
@@ -249,8 +228,6 @@ Partial Class Frm_gerenContas
         Me.Controls.Add(Me.txt_disc)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.txt_ra)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.cmb_tipo)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txt_email)
         Me.Controls.Add(Me.img_editar)
@@ -283,8 +260,6 @@ Partial Class Frm_gerenContas
     Friend WithEvents Label3 As Label
     Friend WithEvents txt_email As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents cmb_tipo As ComboBox
-    Friend WithEvents Label2 As Label
     Friend WithEvents txt_ra As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents txt_disc As TextBox

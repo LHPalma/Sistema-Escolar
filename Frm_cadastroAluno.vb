@@ -7,4 +7,16 @@
         End Try
 
     End Sub
+
+    Private Sub Txt_turma_TextChanged(sender As Object, e As EventArgs) Handles Txt_turma.TextChanged
+
+    End Sub
+
+    Private Sub Lb_email_Click(sender As Object, e As EventArgs) Handles Lb_email.Click
+
+    End Sub
+
+    Private Sub Lb_turma_Click(sender As Object, e As EventArgs) Handles Lb_turma.Click
+
+    End Sub
 End Class

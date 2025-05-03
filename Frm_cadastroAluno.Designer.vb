@@ -42,7 +42,7 @@ Partial Class Frm_cadastroAluno
         'Lb_ra
         '
         Me.Lb_ra.AutoSize = True
-        Me.Lb_ra.Location = New System.Drawing.Point(43, 24)
+        Me.Lb_ra.Location = New System.Drawing.Point(45, 27)
         Me.Lb_ra.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lb_ra.Name = "Lb_ra"
         Me.Lb_ra.Size = New System.Drawing.Size(22, 13)
@@ -51,8 +51,8 @@ Partial Class Frm_cadastroAluno
         '
         'Txt_ra
         '
-        Me.Txt_ra.Location = New System.Drawing.Point(47, 43)
-        Me.Txt_ra.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Txt_ra.Location = New System.Drawing.Point(49, 42)
+        Me.Txt_ra.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_ra.Name = "Txt_ra"
         Me.Txt_ra.Size = New System.Drawing.Size(94, 20)
         Me.Txt_ra.TabIndex = 1
@@ -60,7 +60,7 @@ Partial Class Frm_cadastroAluno
         'Lb_nome
         '
         Me.Lb_nome.AutoSize = True
-        Me.Lb_nome.Location = New System.Drawing.Point(44, 64)
+        Me.Lb_nome.Location = New System.Drawing.Point(46, 71)
         Me.Lb_nome.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lb_nome.Name = "Lb_nome"
         Me.Lb_nome.Size = New System.Drawing.Size(35, 13)
@@ -69,8 +69,8 @@ Partial Class Frm_cadastroAluno
         '
         'Txt_nome
         '
-        Me.Txt_nome.Location = New System.Drawing.Point(47, 79)
-        Me.Txt_nome.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Txt_nome.Location = New System.Drawing.Point(48, 86)
+        Me.Txt_nome.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_nome.Name = "Txt_nome"
         Me.Txt_nome.Size = New System.Drawing.Size(183, 20)
         Me.Txt_nome.TabIndex = 1
@@ -78,7 +78,7 @@ Partial Class Frm_cadastroAluno
         'Lb_cpf
         '
         Me.Lb_cpf.AutoSize = True
-        Me.Lb_cpf.Location = New System.Drawing.Point(46, 151)
+        Me.Lb_cpf.Location = New System.Drawing.Point(49, 157)
         Me.Lb_cpf.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lb_cpf.Name = "Lb_cpf"
         Me.Lb_cpf.Size = New System.Drawing.Size(27, 13)
@@ -87,8 +87,8 @@ Partial Class Frm_cadastroAluno
         '
         'Txt_cpf
         '
-        Me.Txt_cpf.Location = New System.Drawing.Point(47, 166)
-        Me.Txt_cpf.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Txt_cpf.Location = New System.Drawing.Point(49, 172)
+        Me.Txt_cpf.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_cpf.Name = "Txt_cpf"
         Me.Txt_cpf.Size = New System.Drawing.Size(94, 20)
         Me.Txt_cpf.TabIndex = 1
@@ -96,7 +96,7 @@ Partial Class Frm_cadastroAluno
         'Lb_email
         '
         Me.Lb_email.AutoSize = True
-        Me.Lb_email.Location = New System.Drawing.Point(46, 194)
+        Me.Lb_email.Location = New System.Drawing.Point(46, 204)
         Me.Lb_email.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lb_email.Name = "Lb_email"
         Me.Lb_email.Size = New System.Drawing.Size(32, 13)
@@ -105,8 +105,8 @@ Partial Class Frm_cadastroAluno
         '
         'Txt_email
         '
-        Me.Txt_email.Location = New System.Drawing.Point(47, 209)
-        Me.Txt_email.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Txt_email.Location = New System.Drawing.Point(48, 219)
+        Me.Txt_email.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_email.Name = "Txt_email"
         Me.Txt_email.Size = New System.Drawing.Size(183, 20)
         Me.Txt_email.TabIndex = 1
@@ -114,7 +114,7 @@ Partial Class Frm_cadastroAluno
         'Lb_senha
         '
         Me.Lb_senha.AutoSize = True
-        Me.Lb_senha.Location = New System.Drawing.Point(44, 246)
+        Me.Lb_senha.Location = New System.Drawing.Point(46, 246)
         Me.Lb_senha.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lb_senha.Name = "Lb_senha"
         Me.Lb_senha.Size = New System.Drawing.Size(38, 13)
@@ -123,8 +123,8 @@ Partial Class Frm_cadastroAluno
         '
         'Txt_senha
         '
-        Me.Txt_senha.Location = New System.Drawing.Point(45, 123)
-        Me.Txt_senha.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Txt_senha.Location = New System.Drawing.Point(48, 128)
+        Me.Txt_senha.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_senha.Name = "Txt_senha"
         Me.Txt_senha.Size = New System.Drawing.Size(94, 20)
         Me.Txt_senha.TabIndex = 1
@@ -132,7 +132,7 @@ Partial Class Frm_cadastroAluno
         'Lb_turma
         '
         Me.Lb_turma.AutoSize = True
-        Me.Lb_turma.Location = New System.Drawing.Point(45, 109)
+        Me.Lb_turma.Location = New System.Drawing.Point(45, 113)
         Me.Lb_turma.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lb_turma.Name = "Lb_turma"
         Me.Lb_turma.Size = New System.Drawing.Size(37, 13)
@@ -141,8 +141,8 @@ Partial Class Frm_cadastroAluno
         '
         'Txt_turma
         '
-        Me.Txt_turma.Location = New System.Drawing.Point(45, 261)
-        Me.Txt_turma.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Txt_turma.Location = New System.Drawing.Point(49, 261)
+        Me.Txt_turma.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_turma.Name = "Txt_turma"
         Me.Txt_turma.Size = New System.Drawing.Size(94, 20)
         Me.Txt_turma.TabIndex = 1
@@ -150,7 +150,7 @@ Partial Class Frm_cadastroAluno
         'Btn_cadastrar
         '
         Me.Btn_cadastrar.Location = New System.Drawing.Point(40, 302)
-        Me.Btn_cadastrar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Btn_cadastrar.Margin = New System.Windows.Forms.Padding(2)
         Me.Btn_cadastrar.Name = "Btn_cadastrar"
         Me.Btn_cadastrar.Size = New System.Drawing.Size(219, 43)
         Me.Btn_cadastrar.TabIndex = 2
@@ -173,9 +173,9 @@ Partial Class Frm_cadastroAluno
         Me.GroupBox1.Controls.Add(Me.Lb_email)
         Me.GroupBox1.Controls.Add(Me.Txt_cpf)
         Me.GroupBox1.Location = New System.Drawing.Point(111, 8)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Size = New System.Drawing.Size(291, 363)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
@@ -187,7 +187,7 @@ Partial Class Frm_cadastroAluno
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(533, 360)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Frm_cadastroAluno"
         Me.Text = "Cadastro de Alunos"
         Me.GroupBox1.ResumeLayout(False)
