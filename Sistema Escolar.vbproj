@@ -102,6 +102,7 @@
     <Compile Include="CadastroProfessor.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Endereco.vb" />
     <Compile Include="Frm_cadastroADM.Designer.vb">
       <DependentUpon>Frm_cadastroADM.vb</DependentUpon>
     </Compile>

@@ -1,13 +1,4 @@
-﻿'TODO:
-'Fazer verificação de campo UF (permitir máximo de 2Chars) e (Deixar Uppercase)
-'   ******** faz um dropbox seu safado ********** (FEITO)
-
-'Fazer mascára para campo Telefone (FEITO)
-'Permitir somente números no campo "numero" de endereço (não precisa, pois existem casas com numeros e letras, ex: 45A)
-'cadastrar id do professor também, e colocar no banco ( Modulo.GetUltimoIdGerado(...) )
-
-Imports System.ComponentModel
-Imports System.Data.SQLite
+﻿Imports System.Data.SQLite
 Imports System.Net.Http
 Imports Newtonsoft.Json
 
@@ -23,8 +14,7 @@ Public Class CadastroProfessor
             Try
                 conexao.Open()
 
-
-                Dim sqlVerificar As String = "SELECT COUNT(*) FROM tb_professores WHERE email = @email"
+                Dim sqlVerificar As String = "SELECT COUNT(*) FROM tb_professores WHERE email = @email;"
                 Using cmdVerificar As New SQLiteCommand(sqlVerificar, conexao)
                     cmdVerificar.Parameters.AddWithValue("@email", Txt_email.Text)
                     Dim count As Integer = Convert.ToInt32(cmdVerificar.ExecuteScalar())
@@ -43,39 +33,54 @@ Public Class CadastroProfessor
                 Using transacao = conexao.BeginTransaction()
 
                     ' Inserir professor
-                    Dim sql1 As String = "INSERT INTO tb_professores (nome, email, senha_hash, senha_salt) VALUES (@nome, @email, @hash, @salt)"
+                    Dim sqlInsertProfessor As String = "INSERT INTO tb_professores
+                                                            (nome, email, senha_hash, senha_salt, senha_sem_hash, data_cadastro)
+                                                        VALUES
+                                                            @nome, @email, @hash, @salt, @senha_sem_hash, @data_cadastro);"
+
                     Dim id_professor As Integer
-                    Using cmd1 As New SQLiteCommand(sql1, conexao, transacao)
-                        cmd1.Parameters.AddWithValue("@nome", Txt_nome.Text)
-                        cmd1.Parameters.AddWithValue("@email", Txt_email.Text)
-                        cmd1.Parameters.Add("@hash", DbType.Binary).Value = hash
-                        cmd1.Parameters.Add("@salt", DbType.Binary).Value = salt
-                        cmd1.ExecuteNonQuery()
+                    Using cmdInsertProfessor As New SQLiteCommand(sqlInsertProfessor, conexao, transacao)
+                        cmdInsertProfessor.Parameters.AddWithValue("@nome", Txt_nome.Text)
+                        cmdInsertProfessor.Parameters.AddWithValue("@email", Txt_email.Text)
+                        cmdInsertProfessor.Parameters.Add("@hash", DbType.Binary).Value = hash
+                        cmdInsertProfessor.Parameters.Add("@salt", DbType.Binary).Value = salt
+                        cmdInsertProfessor.Parameters.AddWithValue("@senha_sem_hash", Txt_senha.Text)
+                        Dim agora As String = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
+                        cmdInsertProfessor.Parameters.AddWithValue("@data_cadastro", agora)
+                        cmdInsertProfessor.ExecuteNonQuery()
 
                         id_professor = GetUltimoIdGerado(conexao, transacao)
                     End Using
 
                     ' Inserir endereço
-                    Dim sql2 As String = "INSERT INTO tb_enderecos_professores (fk_id_professor, rua, numero, complemento, uf, cep, cidade, bairro) VALUES (@fk_id_professor, @rua, @numero, @complemento, @uf, @cep, @cidade, @bairro)"
-                    Using cmd2 As New SQLiteCommand(sql2, conexao, transacao)
-                        cmd2.Parameters.AddWithValue("@fk_id_professor", id_professor)
-                        cmd2.Parameters.AddWithValue("@rua", Txt_rua.Text)
-                        cmd2.Parameters.AddWithValue("@numero", Txt_numero.Text)
-                        cmd2.Parameters.AddWithValue("@complemento", Txt_complemento.Text)
-                        cmd2.Parameters.AddWithValue("@uf", Cmb_uf.Text)
-                        cmd2.Parameters.AddWithValue("@cep", Txt_cep.Text)
-                        cmd2.Parameters.AddWithValue("@cidade", Txt_cidade.Text)
-                        cmd2.Parameters.AddWithValue("@bairro", Txt_bairro.Text)
-                        cmd2.ExecuteNonQuery()
+                    Dim sqlInsertEndereco As String = "INSERT INTO tb_enderecos_professores
+                                            (fk_id_professor, cep, rua, numero, complemento, cidade, uf)
+                                          VALUES
+                                            (@fk_id_professor, @cep, @rua, @numero, @complemento, @cidade, @uf);"
+
+
+                    Using cmdInsertEndereco As New SQLiteCommand(sqlInsertEndereco, conexao, transacao)
+                        cmdInsertEndereco.Parameters.AddWithValue("@fk_id_professor", id_professor)
+                        Dim cepSemMascara As String = Txt_cep.Text.Replace("-", "")
+                        cmdInsertEndereco.Parameters.AddWithValue("@cep", cepSemMascara)
+                        cmdInsertEndereco.Parameters.AddWithValue("@rua", Txt_rua.Text)
+                        cmdInsertEndereco.Parameters.AddWithValue("@numero", Txt_numero.Text)
+                        cmdInsertEndereco.Parameters.AddWithValue("@complemento", Txt_complemento.Text)
+                        cmdInsertEndereco.Parameters.AddWithValue("@cidade", Txt_cidade.Text)
+                        cmdInsertEndereco.Parameters.AddWithValue("@uf", Cmb_uf.Text)
+                        cmdInsertEndereco.ExecuteNonQuery()
                     End Using
 
                     ' Inserir telefone
-                    Dim sql3 As String = "INSERT INTO tb_telefones_professores (fk_id_professor, numero, tipo) VALUES (@fk_id_professor, @numero, @tipo)"
-                    Using cmd3 As New SQLiteCommand(sql3, conexao, transacao)
-                        cmd3.Parameters.AddWithValue("@fk_id_professor", id_professor)
-                        cmd3.Parameters.AddWithValue("@numero", Txt_telefone.Text)
-                        cmd3.Parameters.AddWithValue("@tipo", Cb_tipo_teleone.Text)
-                        cmd3.ExecuteNonQuery()
+                    Dim sqlInsertTelefone As String = "INSERT INTO tb_telefones_professores
+                                            (fk_id_professor, numero)
+                                          VALUES
+                                            (@fk_id_professor, @numero);"
+
+                    Using cmdInsertTelefone As New SQLiteCommand(sqlInsertTelefone, conexao, transacao)
+                        cmdInsertTelefone.Parameters.AddWithValue("@fk_id_professor", id_professor)
+                        cmdInsertTelefone.Parameters.AddWithValue("@numero", Txt_telefone.Text)
+                        cmdInsertTelefone.ExecuteNonQuery()
                     End Using
 
                     ' Commit da transação (Valida tudo no banco de dados)
@@ -109,74 +114,41 @@ Public Class CadastroProfessor
         Txt_numero.Text = ""
         Cmb_uf.Text = ""
         Txt_telefone.Text = ""
-        Cb_tipo_teleone.Text = ""
     End Sub
-
-
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs)
         Txt_senha.UseSystemPasswordChar = Not Txt_senha.UseSystemPasswordChar
     End Sub
 
-    'Não sei se foi para lembrar de fazer algo, caso não, apagar esses eventos
-    Private Sub Txt_senha_TextChanged(sender As Object, e As EventArgs) Handles Txt_senha.TextChanged
-
-    End Sub
-
-    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
-
-    End Sub
-
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
-
-    End Sub
-
-    Private Sub Txt_cep_TextChanged(sender As Object, e As EventArgs) Handles Txt_cep.TextChanged
-
-    End Sub
-
     Private Async Sub Txt_cep_Leave(sender As Object, e As EventArgs) Handles Txt_cep.Leave
 
+        If Txt_cep.Text.Length <> 9 Then
+            Exit Sub
+        End If
         Dim url = $"https://viacep.com.br/ws/{Txt_cep.Text}/json/"
         Using client As New HttpClient()
 
             Dim response As HttpResponseMessage = Await client.GetAsync(url)
             response.EnsureSuccessStatusCode()
 
-
             Dim jsonString As String = Await response.Content.ReadAsStringAsync()
             Dim endereco As Endereco = JsonConvert.DeserializeObject(Of Endereco)(jsonString)
 
-            If endereco.erro Then
-                MsgBox("CEP não encontrado!", MsgBoxStyle.Exclamation)
+            If endereco.Erro Then
+                MsgBox("CEP não encontrado!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "Atenção")
                 Exit Sub
             End If
 
             ' preencha os campos de endereço
-            Txt_rua.Text = endereco.logradouro
-            Txt_bairro.Text = endereco.bairro
-            Txt_cidade.Text = endereco.localidade
-            Cmb_uf.Text = endereco.uf
-
-
+            Txt_rua.Text = endereco.Logradouro
+            Txt_bairro.Text = endereco.Bairro
+            Txt_cidade.Text = endereco.Localidade
+            Cmb_uf.Text = endereco.Uf
 
         End Using
-
-
     End Sub
 
-    Private Sub Btn_cadastrarAluno_Click(sender As Object, e As EventArgs) Handles Btn_cadastrarAluno.Click
-        Dim inicio As New Frm_cadastroAluno()
-        inicio.Show()
-        Me.Hide()
+    Private Sub Lb_cidade_Click(sender As Object, e As EventArgs) Handles Lb_cidade.Click
+        Txt_cidade.Focus()
     End Sub
-End Class
-
-'TODO: Transformar em uma classe independente
-Public Class Endereco
-    Public Property logradouro As String
-    Public Property bairro As String
-    Public Property localidade As String
-    Public Property uf As String
-    Public Property erro As Boolean
 End Class
