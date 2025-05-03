@@ -7,6 +7,8 @@
 'cadastrar id do professor também, e colocar no banco ( Modulo.GetUltimoIdGerado(...) )
 
 Imports System.Data.SQLite
+Imports System.Net.Http
+Imports Newtonsoft.Json
 
 Public Class CadastroProfessor
     Private Sub Btn_cadastrar_Click(sender As Object, e As EventArgs) Handles Btn_cadastrar.Click
@@ -77,7 +79,7 @@ Public Class CadastroProfessor
                 Dim resp As MsgBoxResult = MsgBox($"Professor {Txt_nome.Text} cadastrado com sucesso! Deseja cadastrar outro Professor?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Cadastrado com sucesso")
                 If resp = MsgBoxResult.Yes Then
                     ' Limpar campos
-                    Btn_limpar_Click(sender, e))
+                    Btn_limpar_Click(sender, e)
                     Txt_nome.Focus()
                 Else
                     Dim inicio As New Frm_inicio
@@ -91,7 +93,7 @@ Public Class CadastroProfessor
         End Using ' Fim SQLiteConnection(connectionString)
     End Sub
 
-    Private Sub Btn_limpar_Click(sender As Object, e As EventArgs) 
+    Private Sub Btn_limpar_Click(sender As Object, e As EventArgs)
         Txt_email.Text = ""
         Txt_nome.Text = ""
         Txt_senha.Text = ""
@@ -102,7 +104,7 @@ Public Class CadastroProfessor
         Txt_telefone.Text = ""
     End Sub
 
-    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) 
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs)
         Txt_senha.UseSystemPasswordChar = Not Txt_senha.UseSystemPasswordChar
     End Sub
 
@@ -117,4 +119,42 @@ Public Class CadastroProfessor
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
 
     End Sub
+
+    Private Sub Txt_cep_TextChanged(sender As Object, e As EventArgs) Handles Txt_cep.TextChanged
+
+    End Sub
+
+    Private Async Sub Txt_cep_Leave(sender As Object, e As EventArgs) Handles Txt_cep.Leave
+
+        Dim url = $"https://viacep.com.br/ws/{Txt_cep.Text}/json/"
+        Using client As New HttpClient()
+
+            Dim response As HttpResponseMessage = Await client.GetAsync(url)
+            response.EnsureSuccessStatusCode()
+
+
+            Dim jsonString As String = Await response.Content.ReadAsStringAsync()
+            Dim endereco As Endereco = JsonConvert.DeserializeObject(Of Endereco)(jsonString)
+
+            ' preencha os campos de endereço
+            Txt_rua.Text = endereco.logradouro
+            Txt_bairro.Text = endereco.bairro
+            ' Txt_cidade.Text = endereco.localidade
+            Txt_uf.Text = endereco.uf
+
+
+
+        End Using
+
+
+    End Sub
+End Class
+
+'TODO: Transformar em uma classe independente
+Public Class Endereco
+    Public Property logradouro As String
+    Public Property bairro As String
+    Public Property localidade As String
+    Public Property uf As String
+    Public Property erro As Boolean
 End Class
