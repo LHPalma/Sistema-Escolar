@@ -30,11 +30,35 @@ Partial Class CadastroProfessor
         Me.Lb_email = New System.Windows.Forms.Label()
         Me.Txt_nome = New System.Windows.Forms.TextBox()
         Me.Lb_nome = New System.Windows.Forms.Label()
+        Me.Txt_rua = New System.Windows.Forms.TextBox()
+        Me.Txt_numero = New System.Windows.Forms.TextBox()
+        Me.Txt_uf = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Txt_bairro = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Txt_telefone = New System.Windows.Forms.MaskedTextBox()
+        Me.Txt_complemento = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.Txt_complemento)
+        Me.GroupBox1.Controls.Add(Me.Txt_telefone)
+        Me.GroupBox1.Controls.Add(Me.Label5)
+        Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Controls.Add(Me.Txt_bairro)
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Controls.Add(Me.Txt_uf)
+        Me.GroupBox1.Controls.Add(Me.Txt_numero)
+        Me.GroupBox1.Controls.Add(Me.Txt_rua)
         Me.GroupBox1.Controls.Add(Me.Btn_cadastrar)
         Me.GroupBox1.Controls.Add(Me.Txt_senha)
         Me.GroupBox1.Controls.Add(Me.Lb_senha)
@@ -46,14 +70,14 @@ Partial Class CadastroProfessor
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox1.Size = New System.Drawing.Size(274, 260)
+        Me.GroupBox1.Size = New System.Drawing.Size(274, 396)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Insira os Dados de Professor"
         '
         'Btn_cadastrar
         '
-        Me.Btn_cadastrar.Location = New System.Drawing.Point(53, 194)
+        Me.Btn_cadastrar.Location = New System.Drawing.Point(47, 343)
         Me.Btn_cadastrar.Margin = New System.Windows.Forms.Padding(2)
         Me.Btn_cadastrar.Name = "Btn_cadastrar"
         Me.Btn_cadastrar.Size = New System.Drawing.Size(185, 38)
@@ -63,17 +87,17 @@ Partial Class CadastroProfessor
         '
         'Txt_senha
         '
-        Me.Txt_senha.Location = New System.Drawing.Point(59, 155)
+        Me.Txt_senha.Location = New System.Drawing.Point(59, 306)
         Me.Txt_senha.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_senha.Name = "Txt_senha"
-        Me.Txt_senha.Size = New System.Drawing.Size(94, 20)
+        Me.Txt_senha.Size = New System.Drawing.Size(114, 20)
         Me.Txt_senha.TabIndex = 12
         Me.Txt_senha.UseSystemPasswordChar = True
         '
         'Lb_senha
         '
         Me.Lb_senha.AutoSize = True
-        Me.Lb_senha.Location = New System.Drawing.Point(56, 140)
+        Me.Lb_senha.Location = New System.Drawing.Point(58, 291)
         Me.Lb_senha.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lb_senha.Name = "Lb_senha"
         Me.Lb_senha.Size = New System.Drawing.Size(38, 13)
@@ -82,7 +106,7 @@ Partial Class CadastroProfessor
         '
         'Txt_email
         '
-        Me.Txt_email.Location = New System.Drawing.Point(59, 106)
+        Me.Txt_email.Location = New System.Drawing.Point(59, 89)
         Me.Txt_email.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_email.Name = "Txt_email"
         Me.Txt_email.Size = New System.Drawing.Size(159, 20)
@@ -91,7 +115,7 @@ Partial Class CadastroProfessor
         'Lb_email
         '
         Me.Lb_email.AutoSize = True
-        Me.Lb_email.Location = New System.Drawing.Point(58, 91)
+        Me.Lb_email.Location = New System.Drawing.Point(58, 74)
         Me.Lb_email.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lb_email.Name = "Lb_email"
         Me.Lb_email.Size = New System.Drawing.Size(32, 13)
@@ -100,7 +124,7 @@ Partial Class CadastroProfessor
         '
         'Txt_nome
         '
-        Me.Txt_nome.Location = New System.Drawing.Point(59, 60)
+        Me.Txt_nome.Location = New System.Drawing.Point(59, 43)
         Me.Txt_nome.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_nome.Name = "Txt_nome"
         Me.Txt_nome.Size = New System.Drawing.Size(159, 20)
@@ -109,18 +133,126 @@ Partial Class CadastroProfessor
         'Lb_nome
         '
         Me.Lb_nome.AutoSize = True
-        Me.Lb_nome.Location = New System.Drawing.Point(57, 45)
+        Me.Lb_nome.Location = New System.Drawing.Point(57, 28)
         Me.Lb_nome.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lb_nome.Name = "Lb_nome"
         Me.Lb_nome.Size = New System.Drawing.Size(35, 13)
         Me.Lb_nome.TabIndex = 11
         Me.Lb_nome.Text = "Nome"
         '
+        'Txt_rua
+        '
+        Me.Txt_rua.Location = New System.Drawing.Point(59, 133)
+        Me.Txt_rua.Margin = New System.Windows.Forms.Padding(2)
+        Me.Txt_rua.Name = "Txt_rua"
+        Me.Txt_rua.Size = New System.Drawing.Size(114, 20)
+        Me.Txt_rua.TabIndex = 16
+        '
+        'Txt_numero
+        '
+        Me.Txt_numero.Location = New System.Drawing.Point(177, 133)
+        Me.Txt_numero.Margin = New System.Windows.Forms.Padding(2)
+        Me.Txt_numero.Name = "Txt_numero"
+        Me.Txt_numero.Size = New System.Drawing.Size(41, 20)
+        Me.Txt_numero.TabIndex = 17
+        '
+        'Txt_uf
+        '
+        Me.Txt_uf.Location = New System.Drawing.Point(177, 174)
+        Me.Txt_uf.Margin = New System.Windows.Forms.Padding(2)
+        Me.Txt_uf.Name = "Txt_uf"
+        Me.Txt_uf.Size = New System.Drawing.Size(41, 20)
+        Me.Txt_uf.TabIndex = 18
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(57, 118)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(27, 13)
+        Me.Label1.TabIndex = 19
+        Me.Label1.Text = "Rua"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(174, 118)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(44, 13)
+        Me.Label2.TabIndex = 20
+        Me.Label2.Text = "Número"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(174, 159)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(21, 13)
+        Me.Label3.TabIndex = 21
+        Me.Label3.Text = "UF"
+        '
+        'Txt_bairro
+        '
+        Me.Txt_bairro.Location = New System.Drawing.Point(59, 217)
+        Me.Txt_bairro.Margin = New System.Windows.Forms.Padding(2)
+        Me.Txt_bairro.Name = "Txt_bairro"
+        Me.Txt_bairro.Size = New System.Drawing.Size(114, 20)
+        Me.Txt_bairro.TabIndex = 22
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(56, 202)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(34, 13)
+        Me.Label4.TabIndex = 23
+        Me.Label4.Text = "Bairro"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(57, 247)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(49, 13)
+        Me.Label5.TabIndex = 25
+        Me.Label5.Text = "Telefone"
+        '
+        'Txt_telefone
+        '
+        Me.Txt_telefone.Location = New System.Drawing.Point(59, 263)
+        Me.Txt_telefone.Mask = "(99) 00000-0000"
+        Me.Txt_telefone.Name = "Txt_telefone"
+        Me.Txt_telefone.Size = New System.Drawing.Size(114, 20)
+        Me.Txt_telefone.TabIndex = 26
+        '
+        'Txt_complemento
+        '
+        Me.Txt_complemento.Location = New System.Drawing.Point(59, 174)
+        Me.Txt_complemento.Margin = New System.Windows.Forms.Padding(2)
+        Me.Txt_complemento.Name = "Txt_complemento"
+        Me.Txt_complemento.Size = New System.Drawing.Size(114, 20)
+        Me.Txt_complemento.TabIndex = 27
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(58, 159)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(71, 13)
+        Me.Label6.TabIndex = 28
+        Me.Label6.Text = "Complemento"
+        '
         'CadastroProfessor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(533, 266)
+        Me.ClientSize = New System.Drawing.Size(533, 414)
         Me.Controls.Add(Me.GroupBox1)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "CadastroProfessor"
@@ -139,4 +271,16 @@ Partial Class CadastroProfessor
     Friend WithEvents Lb_email As Label
     Friend WithEvents Txt_nome As TextBox
     Friend WithEvents Lb_nome As Label
+    Friend WithEvents Txt_uf As TextBox
+    Friend WithEvents Txt_numero As TextBox
+    Friend WithEvents Txt_rua As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Txt_bairro As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Txt_telefone As MaskedTextBox
+    Friend WithEvents Txt_complemento As TextBox
+    Friend WithEvents Label6 As Label
 End Class
