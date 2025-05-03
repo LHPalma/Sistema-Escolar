@@ -3,7 +3,7 @@ Imports System.Security.Cryptography
 Imports System.Text
 
 Module Modulo
-    Const nomeBanco As String = "db_escola.db"
+    Const nomeBanco As String = "\database\db_escola.db"
     Public caminhoBanco As String = Application.StartupPath & "\" & nomeBanco
     Public connectionString As String = "DataSource=" & caminhoBanco & ";version=3;"
 
