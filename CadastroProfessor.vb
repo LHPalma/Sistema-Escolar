@@ -6,6 +6,7 @@
 'Permitir somente números no campo "numero" de endereço (não precisa, pois existem casas com numeros e letras, ex: 45A)
 'cadastrar id do professor também, e colocar no banco ( Modulo.GetUltimoIdGerado(...) )
 
+Imports System.ComponentModel
 Imports System.Data.SQLite
 Imports System.Net.Http
 Imports Newtonsoft.Json
@@ -111,10 +112,13 @@ Public Class CadastroProfessor
         Cb_tipo_teleone.Text = ""
     End Sub
 
+
+
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs)
         Txt_senha.UseSystemPasswordChar = Not Txt_senha.UseSystemPasswordChar
     End Sub
 
+    'Não sei se foi para lembrar de fazer algo, caso não, apagar esses eventos
     Private Sub Txt_senha_TextChanged(sender As Object, e As EventArgs) Handles Txt_senha.TextChanged
 
     End Sub
@@ -159,6 +163,12 @@ Public Class CadastroProfessor
         End Using
 
 
+    End Sub
+
+    Private Sub Btn_cadastrarAluno_Click(sender As Object, e As EventArgs) Handles Btn_cadastrarAluno.Click
+        Dim inicio As New Frm_cadastroAluno()
+        inicio.Show()
+        Me.Hide()
     End Sub
 End Class
 
