@@ -7,7 +7,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{755CE600-AE2B-4438-B87F-C9992EBEAA2B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Sistema_Escolar.Frm_loginADM</StartupObject>
+    <StartupObject>Sistema_Escolar.CadastroProfessor</StartupObject>
     <RootNamespace>Sistema_Escolar</RootNamespace>
     <AssemblyName>Sistema Escolar</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -102,6 +102,7 @@
     <Compile Include="CadastroProfessor.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Endereco.vb" />
     <Compile Include="Frm_cadastroADM.Designer.vb">
       <DependentUpon>Frm_cadastroADM.vb</DependentUpon>
     </Compile>

@@ -23,8 +23,10 @@ Partial Class CadastroProfessor
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Lb_cidade = New System.Windows.Forms.Label()
+        Me.Txt_cidade = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Txt_cep = New System.Windows.Forms.TextBox()
+        Me.Cmb_uf = New System.Windows.Forms.ComboBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Txt_complemento = New System.Windows.Forms.TextBox()
         Me.Txt_telefone = New System.Windows.Forms.MaskedTextBox()
@@ -43,15 +45,17 @@ Partial Class CadastroProfessor
         Me.Lb_email = New System.Windows.Forms.Label()
         Me.Txt_nome = New System.Windows.Forms.TextBox()
         Me.Lb_nome = New System.Windows.Forms.Label()
-        Me.Cmb_uf = New System.Windows.Forms.ComboBox()
+        Me.Txt_cep = New System.Windows.Forms.MaskedTextBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Cmb_uf)
-        Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.Txt_cep)
+        Me.GroupBox1.Controls.Add(Me.Lb_cidade)
+        Me.GroupBox1.Controls.Add(Me.Txt_cidade)
+        Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Controls.Add(Me.Cmb_uf)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.Txt_complemento)
         Me.GroupBox1.Controls.Add(Me.Txt_telefone)
@@ -74,33 +78,52 @@ Partial Class CadastroProfessor
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox1.Size = New System.Drawing.Size(274, 438)
+        Me.GroupBox1.Size = New System.Drawing.Size(274, 470)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Insira os Dados de Professor"
         '
+        'Lb_cidade
+        '
+        Me.Lb_cidade.AutoSize = True
+        Me.Lb_cidade.Location = New System.Drawing.Point(58, 294)
+        Me.Lb_cidade.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Lb_cidade.Name = "Lb_cidade"
+        Me.Lb_cidade.Size = New System.Drawing.Size(40, 13)
+        Me.Lb_cidade.TabIndex = 35
+        Me.Lb_cidade.Text = "Cidade"
+        '
+        'Txt_cidade
+        '
+        Me.Txt_cidade.Location = New System.Drawing.Point(59, 312)
+        Me.Txt_cidade.Margin = New System.Windows.Forms.Padding(2)
+        Me.Txt_cidade.Name = "Txt_cidade"
+        Me.Txt_cidade.Size = New System.Drawing.Size(116, 20)
+        Me.Txt_cidade.TabIndex = 34
+        '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(58, 250)
+        Me.Label7.Location = New System.Drawing.Point(58, 120)
         Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(28, 13)
-        Me.Label7.TabIndex = 30
+        Me.Label7.TabIndex = 33
         Me.Label7.Text = "CEP"
         '
-        'Txt_cep
+        'Cmb_uf
         '
-        Me.Txt_cep.Location = New System.Drawing.Point(59, 265)
-        Me.Txt_cep.Margin = New System.Windows.Forms.Padding(2)
-        Me.Txt_cep.Name = "Txt_cep"
-        Me.Txt_cep.Size = New System.Drawing.Size(116, 20)
-        Me.Txt_cep.TabIndex = 29
+        Me.Cmb_uf.FormattingEnabled = True
+        Me.Cmb_uf.Items.AddRange(New Object() {"AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO"})
+        Me.Cmb_uf.Location = New System.Drawing.Point(186, 228)
+        Me.Cmb_uf.Name = "Cmb_uf"
+        Me.Cmb_uf.Size = New System.Drawing.Size(48, 21)
+        Me.Cmb_uf.TabIndex = 31
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(58, 159)
+        Me.Label6.Location = New System.Drawing.Point(58, 212)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(71, 13)
@@ -109,7 +132,7 @@ Partial Class CadastroProfessor
         '
         'Txt_complemento
         '
-        Me.Txt_complemento.Location = New System.Drawing.Point(59, 174)
+        Me.Txt_complemento.Location = New System.Drawing.Point(59, 227)
         Me.Txt_complemento.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_complemento.Name = "Txt_complemento"
         Me.Txt_complemento.Size = New System.Drawing.Size(116, 20)
@@ -117,7 +140,7 @@ Partial Class CadastroProfessor
         '
         'Txt_telefone
         '
-        Me.Txt_telefone.Location = New System.Drawing.Point(59, 312)
+        Me.Txt_telefone.Location = New System.Drawing.Point(59, 350)
         Me.Txt_telefone.Mask = "(99) 00000-0000"
         Me.Txt_telefone.Name = "Txt_telefone"
         Me.Txt_telefone.Size = New System.Drawing.Size(116, 20)
@@ -126,7 +149,7 @@ Partial Class CadastroProfessor
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(57, 296)
+        Me.Label5.Location = New System.Drawing.Point(57, 334)
         Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(49, 13)
@@ -136,7 +159,7 @@ Partial Class CadastroProfessor
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(56, 202)
+        Me.Label4.Location = New System.Drawing.Point(56, 255)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(34, 13)
@@ -145,7 +168,7 @@ Partial Class CadastroProfessor
         '
         'Txt_bairro
         '
-        Me.Txt_bairro.Location = New System.Drawing.Point(59, 217)
+        Me.Txt_bairro.Location = New System.Drawing.Point(59, 270)
         Me.Txt_bairro.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_bairro.Name = "Txt_bairro"
         Me.Txt_bairro.Size = New System.Drawing.Size(116, 20)
@@ -154,7 +177,7 @@ Partial Class CadastroProfessor
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(183, 159)
+        Me.Label3.Location = New System.Drawing.Point(183, 212)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(21, 13)
@@ -164,7 +187,7 @@ Partial Class CadastroProfessor
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(183, 118)
+        Me.Label2.Location = New System.Drawing.Point(183, 171)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(44, 13)
@@ -174,7 +197,7 @@ Partial Class CadastroProfessor
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(57, 118)
+        Me.Label1.Location = New System.Drawing.Point(57, 171)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(27, 13)
@@ -183,15 +206,16 @@ Partial Class CadastroProfessor
         '
         'Txt_numero
         '
-        Me.Txt_numero.Location = New System.Drawing.Point(186, 133)
+        Me.Txt_numero.Location = New System.Drawing.Point(186, 186)
         Me.Txt_numero.Margin = New System.Windows.Forms.Padding(2)
+        Me.Txt_numero.MaxLength = 5
         Me.Txt_numero.Name = "Txt_numero"
         Me.Txt_numero.Size = New System.Drawing.Size(48, 20)
         Me.Txt_numero.TabIndex = 17
         '
         'Txt_rua
         '
-        Me.Txt_rua.Location = New System.Drawing.Point(59, 133)
+        Me.Txt_rua.Location = New System.Drawing.Point(59, 186)
         Me.Txt_rua.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_rua.Name = "Txt_rua"
         Me.Txt_rua.Size = New System.Drawing.Size(116, 20)
@@ -199,7 +223,7 @@ Partial Class CadastroProfessor
         '
         'Btn_cadastrar
         '
-        Me.Btn_cadastrar.Location = New System.Drawing.Point(49, 392)
+        Me.Btn_cadastrar.Location = New System.Drawing.Point(49, 430)
         Me.Btn_cadastrar.Margin = New System.Windows.Forms.Padding(2)
         Me.Btn_cadastrar.Name = "Btn_cadastrar"
         Me.Btn_cadastrar.Size = New System.Drawing.Size(185, 38)
@@ -209,7 +233,7 @@ Partial Class CadastroProfessor
         '
         'Txt_senha
         '
-        Me.Txt_senha.Location = New System.Drawing.Point(59, 355)
+        Me.Txt_senha.Location = New System.Drawing.Point(59, 393)
         Me.Txt_senha.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_senha.Name = "Txt_senha"
         Me.Txt_senha.Size = New System.Drawing.Size(116, 20)
@@ -219,7 +243,7 @@ Partial Class CadastroProfessor
         'Lb_senha
         '
         Me.Lb_senha.AutoSize = True
-        Me.Lb_senha.Location = New System.Drawing.Point(58, 340)
+        Me.Lb_senha.Location = New System.Drawing.Point(58, 378)
         Me.Lb_senha.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lb_senha.Name = "Lb_senha"
         Me.Lb_senha.Size = New System.Drawing.Size(38, 13)
@@ -262,14 +286,13 @@ Partial Class CadastroProfessor
         Me.Lb_nome.TabIndex = 11
         Me.Lb_nome.Text = "Nome"
         '
-        'Cmb_uf
+        'Txt_cep
         '
-        Me.Cmb_uf.FormattingEnabled = True
-        Me.Cmb_uf.Items.AddRange(New Object() {"AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO"})
-        Me.Cmb_uf.Location = New System.Drawing.Point(186, 175)
-        Me.Cmb_uf.Name = "Cmb_uf"
-        Me.Cmb_uf.Size = New System.Drawing.Size(48, 21)
-        Me.Cmb_uf.TabIndex = 31
+        Me.Txt_cep.Location = New System.Drawing.Point(59, 136)
+        Me.Txt_cep.Mask = "00000-999"
+        Me.Txt_cep.Name = "Txt_cep"
+        Me.Txt_cep.Size = New System.Drawing.Size(100, 20)
+        Me.Txt_cep.TabIndex = 36
         '
         'CadastroProfessor
         '
@@ -305,7 +328,9 @@ Partial Class CadastroProfessor
     Friend WithEvents Txt_telefone As MaskedTextBox
     Friend WithEvents Txt_complemento As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Txt_cep As TextBox
     Friend WithEvents Cmb_uf As ComboBox
+    Friend WithEvents Lb_cidade As Label
+    Friend WithEvents Txt_cidade As TextBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Txt_cep As MaskedTextBox
 End Class

@@ -20,6 +20,10 @@ Public Class Frm_loginADM
                 Dim usuarioValido As Boolean = VerificarUsuario("tb_administradores", "email", Txt_email.Text, Txt_senha.Text)
                 If usuarioValido Then
                     MsgBox("Login realizado com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Sucesso")
+                    Dim painelAdm As New Frm_menuADM()
+                    painelAdm.Show()
+                    Me.Hide()
+
                 Else
                     MsgBox("Email ou senha incorretos.", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "Falha no login")
                     Exit Sub
