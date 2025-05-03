@@ -3,14 +3,12 @@
 'Já foi feito através da classe: Validações de RA (se é numero) e E-mail (se tem @)
 'Definir turmas, como vão ser registradas no banco de dados, se vai ser pela cb ou se pode digitar o que quiser
 
-
-Imports System.Data.SqlClient
 Imports System.Data.SQLite
 
 Public Class Frm_cadastroAluno
     Private Sub Btn_cadastrar_Click(sender As Object, e As EventArgs) Handles Btn_cadastrar.Click
 
-        If (Txt_email.Text = "" Or Txt_nome.Text = "" Or Txt_senha.Text = "" Or Txt_ra.Text = "" Or Txt_turma.Text = "" Or Txt_cpf.Text = "") Then
+        If (Txt_email.Text = "" Or Txt_nome.Text = "" Or Txt_senha.Text = "" Or Txt_ra.Text = "" Or Cmb_Turma.Text = "" Or Txt_cpf.Text = "") Then
             MsgBox("Para cadastrar, preencha todos os campos!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "Atenção")
             Exit Sub
         End If
@@ -20,7 +18,7 @@ Public Class Frm_cadastroAluno
                 conexao.Open()
 
                 'Cria o objeto e já faz as validações
-                Dim aluno As New Aluno(Txt_nome.Text, Txt_ra.Text, Txt_cpf.Text, Txt_email.Text, Txt_turma.Text, Txt_senha.Text)
+                Dim aluno As New Aluno(Txt_nome.Text, Txt_ra.Text, Txt_cpf.Text, Txt_email.Text, Cmb_Turma.Text, Txt_senha.Text)
 
                 Dim sqlVerificar As String = "SELECT COUNT(*) FROM tb_alunos WHERE ra = @ra"
                 Using cmdVerificar As New SQLiteCommand(sqlVerificar, conexao)
@@ -90,6 +88,26 @@ Public Class Frm_cadastroAluno
         Txt_senha.Text = ""
         Txt_ra.Text = ""
         Txt_cpf.Text = ""
-        Txt_turma.Text = ""
+        Cmb_Turma.Text = ""
+    End Sub
+
+    Private Sub Frm_cadastroAluno_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Using conexao As New SQLiteConnection(connectionString)
+            Dim sqlSelectTurma As String = "SELECT nome FROM tb_turmas;"
+            Dim cmdSelectTurmas As New SQLiteCommand(sqlSelectTurma, conexao)
+
+            Try
+                conexao.Open()
+                Dim reader As SQLiteDataReader = cmdSelectTurmas.ExecuteReader()
+                While reader.Read()
+                    Cmb_Turma.Items.Add(reader("nome").ToString())
+                End While
+            Catch ex As Exception
+                MsgBox(ex.ToString())
+            Finally
+                conexao.Close()
+            End Try
+
+        End Using
     End Sub
 End Class

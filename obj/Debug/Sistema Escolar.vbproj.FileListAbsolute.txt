@@ -107,7 +107,6 @@ C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\bin\Debug\EntityFramework.x
 C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\bin\Debug\System.Data.SQLite.xml
 C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema Escolar.vbproj.AssemblyReference.cache
-C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema_Escolar.CadastroProfessor.resources
 C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_cadastroAluno.resources
 C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_inicio.resources
 C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_loginADM.resources
@@ -190,3 +189,6 @@ C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\bin\D
 C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_gerenContas.resources
 C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_menuADM.resources
 C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_menuCadastro.resources
+C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\bin\Debug\x86\sqlite3.dll
+C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\bin\Debug\x64\sqlite3.dll
+C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_CadastroProfessor.resources

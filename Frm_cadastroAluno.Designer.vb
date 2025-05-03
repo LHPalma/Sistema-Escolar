@@ -31,11 +31,11 @@ Partial Class Frm_cadastroAluno
         Me.Lb_email = New System.Windows.Forms.Label()
         Me.Txt_email = New System.Windows.Forms.TextBox()
         Me.Lb_senha = New System.Windows.Forms.Label()
-        Me.Txt_turma = New System.Windows.Forms.TextBox()
         Me.Lb_turma = New System.Windows.Forms.Label()
         Me.Txt_senha = New System.Windows.Forms.TextBox()
         Me.Btn_cadastrar = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Cmb_Turma = New System.Windows.Forms.ComboBox()
         Me.Btn_limpar_campos = New System.Windows.Forms.Button()
         Me.Cb_mostrar_senha = New System.Windows.Forms.CheckBox()
         Me.GroupBox1.SuspendLayout()
@@ -124,14 +124,6 @@ Partial Class Frm_cadastroAluno
         Me.Lb_senha.TabIndex = 0
         Me.Lb_senha.Text = "Senha"
         '
-        'Txt_turma
-        '
-        Me.Txt_turma.Location = New System.Drawing.Point(48, 128)
-        Me.Txt_turma.Margin = New System.Windows.Forms.Padding(2)
-        Me.Txt_turma.Name = "Txt_turma"
-        Me.Txt_turma.Size = New System.Drawing.Size(94, 20)
-        Me.Txt_turma.TabIndex = 1
-        '
         'Lb_turma
         '
         Me.Lb_turma.AutoSize = True
@@ -163,6 +155,7 @@ Partial Class Frm_cadastroAluno
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Cmb_Turma)
         Me.GroupBox1.Controls.Add(Me.Btn_limpar_campos)
         Me.GroupBox1.Controls.Add(Me.Cb_mostrar_senha)
         Me.GroupBox1.Controls.Add(Me.Btn_cadastrar)
@@ -170,7 +163,6 @@ Partial Class Frm_cadastroAluno
         Me.GroupBox1.Controls.Add(Me.Txt_ra)
         Me.GroupBox1.Controls.Add(Me.Lb_turma)
         Me.GroupBox1.Controls.Add(Me.Lb_ra)
-        Me.GroupBox1.Controls.Add(Me.Txt_turma)
         Me.GroupBox1.Controls.Add(Me.Lb_nome)
         Me.GroupBox1.Controls.Add(Me.Lb_senha)
         Me.GroupBox1.Controls.Add(Me.Txt_nome)
@@ -186,6 +178,14 @@ Partial Class Frm_cadastroAluno
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Insira os Dados de Aluno"
+        '
+        'Cmb_Turma
+        '
+        Me.Cmb_Turma.FormattingEnabled = True
+        Me.Cmb_Turma.Location = New System.Drawing.Point(49, 130)
+        Me.Cmb_Turma.Name = "Cmb_Turma"
+        Me.Cmb_Turma.Size = New System.Drawing.Size(121, 21)
+        Me.Cmb_Turma.TabIndex = 5
         '
         'Btn_limpar_campos
         '
@@ -230,11 +230,11 @@ Partial Class Frm_cadastroAluno
     Friend WithEvents Lb_email As Label
     Friend WithEvents Txt_email As TextBox
     Friend WithEvents Lb_senha As Label
-    Friend WithEvents Txt_turma As TextBox
     Friend WithEvents Lb_turma As Label
     Friend WithEvents Txt_senha As TextBox
     Friend WithEvents Btn_cadastrar As Button
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Cb_mostrar_senha As CheckBox
     Friend WithEvents Btn_limpar_campos As Button
+    Friend WithEvents Cmb_Turma As ComboBox
 End Class
