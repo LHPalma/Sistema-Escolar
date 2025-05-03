@@ -23,7 +23,7 @@ Partial Class Frm_cadastroADM
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.btn_cadastrar = New System.Windows.Forms.Button()
+        Me.Btn_cadastrar = New System.Windows.Forms.Button()
         Me.Txt_senha = New System.Windows.Forms.TextBox()
         Me.Lb_senha = New System.Windows.Forms.Label()
         Me.Txt_email = New System.Windows.Forms.TextBox()
@@ -35,7 +35,7 @@ Partial Class Frm_cadastroADM
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.btn_cadastrar)
+        Me.GroupBox1.Controls.Add(Me.Btn_cadastrar)
         Me.GroupBox1.Controls.Add(Me.Txt_senha)
         Me.GroupBox1.Controls.Add(Me.Lb_senha)
         Me.GroupBox1.Controls.Add(Me.Txt_email)
@@ -51,15 +51,15 @@ Partial Class Frm_cadastroADM
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Insira os Dados de Administrador"
         '
-        'btn_cadastrar
+        'Btn_cadastrar
         '
-        Me.btn_cadastrar.Location = New System.Drawing.Point(53, 194)
-        Me.btn_cadastrar.Margin = New System.Windows.Forms.Padding(2)
-        Me.btn_cadastrar.Name = "btn_cadastrar"
-        Me.btn_cadastrar.Size = New System.Drawing.Size(185, 38)
-        Me.btn_cadastrar.TabIndex = 15
-        Me.btn_cadastrar.Text = "CADASTRAR"
-        Me.btn_cadastrar.UseVisualStyleBackColor = True
+        Me.Btn_cadastrar.Location = New System.Drawing.Point(53, 194)
+        Me.Btn_cadastrar.Margin = New System.Windows.Forms.Padding(2)
+        Me.Btn_cadastrar.Name = "Btn_cadastrar"
+        Me.Btn_cadastrar.Size = New System.Drawing.Size(185, 38)
+        Me.Btn_cadastrar.TabIndex = 15
+        Me.Btn_cadastrar.Text = "CADASTRAR"
+        Me.Btn_cadastrar.UseVisualStyleBackColor = True
         '
         'Txt_senha
         '
@@ -130,7 +130,7 @@ Partial Class Frm_cadastroADM
     End Sub
 
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents btn_cadastrar As Button
+    Friend WithEvents Btn_cadastrar As Button
     Friend WithEvents Txt_senha As TextBox
     Friend WithEvents Lb_senha As Label
     Friend WithEvents Txt_email As TextBox

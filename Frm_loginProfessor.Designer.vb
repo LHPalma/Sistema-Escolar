@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Frm_loginProfessor
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Frm_loginProfessor
     'OBSERVAÇÃO: o procedimento a seguir é exigido pelo Windows Form Designer
     'Pode ser modificado usando o Windows Form Designer.  
     'Não o modifique usando o editor de códigos.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Lb_email = New System.Windows.Forms.Label()
         Me.Lb_senha = New System.Windows.Forms.Label()
@@ -29,8 +29,6 @@ Partial Class Frm_loginProfessor
         Me.Cb_mostrarSenha = New System.Windows.Forms.CheckBox()
         Me.Btn_logar = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Txt_confirmar_senha = New System.Windows.Forms.TextBox()
-        Me.lb1 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -57,11 +55,7 @@ Partial Class Frm_loginProfessor
         'Txt_email
         '
         Me.Txt_email.Location = New System.Drawing.Point(25, 48)
-<<<<<<< HEAD
-        Me.Txt_email.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-=======
         Me.Txt_email.Margin = New System.Windows.Forms.Padding(2)
->>>>>>> ee49c2ed942f75e26002fda969a0951326f8dd30
         Me.Txt_email.Name = "Txt_email"
         Me.Txt_email.Size = New System.Drawing.Size(200, 20)
         Me.Txt_email.TabIndex = 0
@@ -69,11 +63,7 @@ Partial Class Frm_loginProfessor
         'Txt_senha
         '
         Me.Txt_senha.Location = New System.Drawing.Point(25, 96)
-<<<<<<< HEAD
-        Me.Txt_senha.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-=======
         Me.Txt_senha.Margin = New System.Windows.Forms.Padding(2)
->>>>>>> ee49c2ed942f75e26002fda969a0951326f8dd30
         Me.Txt_senha.Name = "Txt_senha"
         Me.Txt_senha.Size = New System.Drawing.Size(200, 20)
         Me.Txt_senha.TabIndex = 1
@@ -82,13 +72,8 @@ Partial Class Frm_loginProfessor
         'Cb_mostrarSenha
         '
         Me.Cb_mostrarSenha.AutoSize = True
-<<<<<<< HEAD
-        Me.Cb_mostrarSenha.Location = New System.Drawing.Point(71, 120)
-        Me.Cb_mostrarSenha.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-=======
-        Me.Cb_mostrarSenha.Location = New System.Drawing.Point(28, 178)
+        Me.Cb_mostrarSenha.Location = New System.Drawing.Point(27, 150)
         Me.Cb_mostrarSenha.Margin = New System.Windows.Forms.Padding(2)
->>>>>>> ee49c2ed942f75e26002fda969a0951326f8dd30
         Me.Cb_mostrarSenha.Name = "Cb_mostrarSenha"
         Me.Cb_mostrarSenha.Size = New System.Drawing.Size(95, 17)
         Me.Cb_mostrarSenha.TabIndex = 2
@@ -97,13 +82,8 @@ Partial Class Frm_loginProfessor
         '
         'Btn_logar
         '
-<<<<<<< HEAD
-        Me.Btn_logar.Location = New System.Drawing.Point(25, 144)
-        Me.Btn_logar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-=======
-        Me.Btn_logar.Location = New System.Drawing.Point(25, 217)
+        Me.Btn_logar.Location = New System.Drawing.Point(25, 189)
         Me.Btn_logar.Margin = New System.Windows.Forms.Padding(2)
->>>>>>> ee49c2ed942f75e26002fda969a0951326f8dd30
         Me.Btn_logar.Name = "Btn_logar"
         Me.Btn_logar.Size = New System.Drawing.Size(199, 38)
         Me.Btn_logar.TabIndex = 3
@@ -112,8 +92,6 @@ Partial Class Frm_loginProfessor
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Txt_confirmar_senha)
-        Me.GroupBox1.Controls.Add(Me.lb1)
         Me.GroupBox1.Controls.Add(Me.Btn_logar)
         Me.GroupBox1.Controls.Add(Me.Cb_mostrarSenha)
         Me.GroupBox1.Controls.Add(Me.Txt_email)
@@ -121,53 +99,21 @@ Partial Class Frm_loginProfessor
         Me.GroupBox1.Controls.Add(Me.Lb_email)
         Me.GroupBox1.Controls.Add(Me.Lb_senha)
         Me.GroupBox1.Location = New System.Drawing.Point(134, 3)
-<<<<<<< HEAD
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.GroupBox1.Size = New System.Drawing.Size(251, 231)
-=======
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox1.Size = New System.Drawing.Size(251, 289)
->>>>>>> ee49c2ed942f75e26002fda969a0951326f8dd30
+        Me.GroupBox1.Size = New System.Drawing.Size(251, 231)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Insira os dados da conta"
-        '
-        'Txt_confirmar_senha
-        '
-        Me.Txt_confirmar_senha.Location = New System.Drawing.Point(26, 143)
-        Me.Txt_confirmar_senha.Margin = New System.Windows.Forms.Padding(2)
-        Me.Txt_confirmar_senha.Name = "Txt_confirmar_senha"
-        Me.Txt_confirmar_senha.Size = New System.Drawing.Size(200, 20)
-        Me.Txt_confirmar_senha.TabIndex = 5
-        Me.Txt_confirmar_senha.UseSystemPasswordChar = True
-        '
-        'lb1
-        '
-        Me.lb1.AutoSize = True
-        Me.lb1.Location = New System.Drawing.Point(25, 128)
-        Me.lb1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lb1.Name = "lb1"
-        Me.lb1.Size = New System.Drawing.Size(92, 13)
-        Me.lb1.TabIndex = 4
-        Me.lb1.Text = "Confirme a senha:"
         '
         'Frm_loginProfessor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-<<<<<<< HEAD
-        Me.ClientSize = New System.Drawing.Size(502, 194)
-        Me.Controls.Add(Me.GroupBox1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-=======
-        Me.ClientSize = New System.Drawing.Size(502, 281)
+        Me.ClientSize = New System.Drawing.Size(502, 268)
         Me.Controls.Add(Me.GroupBox1)
         Me.Margin = New System.Windows.Forms.Padding(2)
->>>>>>> ee49c2ed942f75e26002fda969a0951326f8dd30
         Me.Name = "Frm_loginProfessor"
         Me.Text = "Login de Professor"
         Me.GroupBox1.ResumeLayout(False)
@@ -183,6 +129,4 @@ Partial Class Frm_loginProfessor
     Friend WithEvents Cb_mostrarSenha As CheckBox
     Friend WithEvents Btn_logar As Button
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Txt_confirmar_senha As TextBox
-    Friend WithEvents lb1 As Label
 End Class

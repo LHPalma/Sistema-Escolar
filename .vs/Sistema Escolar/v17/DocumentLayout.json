@@ -1,63 +1,67 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\",
+  "WorkspaceRootPath": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|d:\\documentos pessoais\\fatec\\ads\\2\u00BA semestre\\sistemas de informa\u00E7\u00E3o\\sistema escolar\\sistema-escolar\\frm_gerencontas.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:frm_gerencontas.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\luizp\\documents\\trabalhando\\sistema-escolar\\frm_cadastroadm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:frm_cadastroadm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\frm_gerencontas.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:frm_gerencontas.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\cadastroprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:cadastroprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Sistema Escolar||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\frm_menuadm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:frm_menuadm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\frm_loginprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:frm_loginprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\frm_loginaluno.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:frm_loginaluno.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\frm_loginadm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:frm_loginadm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\frm_cadastroaluno.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:frm_cadastroaluno.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\frm_cadastroadm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\frm_cadastroadm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:frm_cadastroadm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\cadastroprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\cadastroprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:cadastroprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\luizp\\documents\\trabalhando\\sistema-escolar\\frm_inicio.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:frm_inicio.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\luizp\\documents\\trabalhando\\sistema-escolar\\frm_gerencontas.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:frm_gerencontas.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\frm_gerencontas.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:frm_gerencontas.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\frm_cadastroaluno.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:frm_cadastroaluno.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\luizp\\documents\\trabalhando\\sistema-escolar\\frm_menucadastro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:frm_menucadastro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\frm_menuadm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:frm_menuadm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\frm_loginaluno.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:frm_loginaluno.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\frm_loginadm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:frm_loginadm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\luizp\\AppData\\Local\\Temp\\.vsdbgsrc\\5a0bd854679298584d3e9a066f24ef437afe962b8f1fe4f91279bf42032cadbb\\WindowsFormsApplicationBase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\cadastroprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:cadastroprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\frm_loginprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:frm_loginprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\modulo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\modulo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:modulo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|d:\\documentos pessoais\\fatec\\ads\\2\u00BA semestre\\sistemas de informa\u00E7\u00E3o\\sistema escolar\\sistema-escolar\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|8998e48e-b89a-4034-b66e-353d8c1fdc2e"
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\luizp\\documents\\trabalhando\\sistema-escolar\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|8998e48e-b89a-4034-b66e-353d8c1fdc2e"
     }
   ],
   "DocumentGroupContainers": [
@@ -67,15 +71,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Sistema Escolar",
-              "DocumentMoniker": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Sistema Escolar.vbproj",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Sistema Escolar.vbproj",
               "RelativeDocumentMoniker": "Sistema Escolar.vbproj",
-              "ToolTip": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Sistema Escolar.vbproj",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Sistema Escolar.vbproj",
               "RelativeToolTip": "Sistema Escolar.vbproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-04-28T11:31:17.24Z",
@@ -83,147 +87,176 @@
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Frm_gerenContas.vb [Design]",
-              "DocumentMoniker": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Frm_gerenContas.vb",
-              "RelativeDocumentMoniker": "Frm_gerenContas.vb",
-              "ToolTip": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Frm_gerenContas.vb [Design]",
-              "RelativeToolTip": "Frm_gerenContas.vb [Design]",
+              "Title": "Frm_cadastroADM.vb",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Frm_cadastroADM.vb",
+              "RelativeDocumentMoniker": "Frm_cadastroADM.vb",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Frm_cadastroADM.vb",
+              "RelativeToolTip": "Frm_cadastroADM.vb",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwCsAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-05-03T00:22:53.861Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Frm_loginAluno.vb [Design]",
-              "DocumentMoniker": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Frm_loginAluno.vb",
-              "RelativeDocumentMoniker": "Frm_loginAluno.vb",
-              "ToolTip": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Frm_loginAluno.vb [Design]",
-              "RelativeToolTip": "Frm_loginAluno.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-04-30T11:34:12.309Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Frm_loginProfessor.vb [Design]",
-              "DocumentMoniker": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Frm_loginProfessor.vb",
-              "RelativeDocumentMoniker": "Frm_loginProfessor.vb",
-              "ToolTip": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Frm_loginProfessor.vb [Design]",
-              "RelativeToolTip": "Frm_loginProfessor.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-04-30T21:19:45.837Z"
+              "WhenOpened": "2025-05-03T01:02:18.048Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Frm_menuADM.vb [Design]",
-              "DocumentMoniker": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Frm_menuADM.vb",
-              "RelativeDocumentMoniker": "Frm_menuADM.vb",
-              "ToolTip": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Frm_menuADM.vb [Design]",
-              "RelativeToolTip": "Frm_menuADM.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-04-30T21:19:11.38Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Frm_cadastroAluno.vb [Design]",
-              "DocumentMoniker": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Frm_cadastroAluno.vb",
-              "RelativeDocumentMoniker": "Frm_cadastroAluno.vb",
-              "ToolTip": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Frm_cadastroAluno.vb [Design]",
-              "RelativeToolTip": "Frm_cadastroAluno.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-04-30T14:50:40.181Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Frm_cadastroADM.vb [Design]",
-              "DocumentMoniker": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Frm_cadastroADM.vb",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Frm_cadastroADM.vb",
               "RelativeDocumentMoniker": "Frm_cadastroADM.vb",
-              "ToolTip": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Frm_cadastroADM.vb [Design]",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Frm_cadastroADM.vb [Design]",
               "RelativeToolTip": "Frm_cadastroADM.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-04-30T21:14:59.222Z"
+              "WhenOpened": "2025-04-30T21:14:59.222Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CadastroProfessor.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\CadastroProfessor.vb",
+              "RelativeDocumentMoniker": "CadastroProfessor.vb",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\CadastroProfessor.vb [Design]",
+              "RelativeToolTip": "CadastroProfessor.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-04-30T14:51:46.858Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Frm_gerenContas.vb",
-              "DocumentMoniker": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Frm_gerenContas.vb",
+              "Title": "CadastroProfessor.vb",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\CadastroProfessor.vb",
+              "RelativeDocumentMoniker": "CadastroProfessor.vb",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\CadastroProfessor.vb",
+              "RelativeToolTip": "CadastroProfessor.vb",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAIwE8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-04-28T14:42:47.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Frm_inicio.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Frm_inicio.vb",
+              "RelativeDocumentMoniker": "Frm_inicio.vb",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Frm_inicio.vb [Design]",
+              "RelativeToolTip": "Frm_inicio.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-05-03T00:51:51.968Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Frm_gerenContas.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Frm_gerenContas.vb",
               "RelativeDocumentMoniker": "Frm_gerenContas.vb",
-              "ToolTip": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Frm_gerenContas.vb",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Frm_gerenContas.vb [Design]",
+              "RelativeToolTip": "Frm_gerenContas.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-05-03T00:51:01.397Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Frm_cadastroAluno.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Frm_cadastroAluno.vb",
+              "RelativeDocumentMoniker": "Frm_cadastroAluno.vb",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Frm_cadastroAluno.vb [Design]",
+              "RelativeToolTip": "Frm_cadastroAluno.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-04-30T14:50:40.181Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Frm_gerenContas.vb",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Frm_gerenContas.vb",
+              "RelativeDocumentMoniker": "Frm_gerenContas.vb",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Frm_gerenContas.vb",
               "RelativeToolTip": "Frm_gerenContas.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAA6wAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-04-30T21:32:37.5Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
+              "Title": "Frm_menuCadastro.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Frm_menuCadastro.vb",
+              "RelativeDocumentMoniker": "Frm_menuCadastro.vb",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Frm_menuCadastro.vb [Design]",
+              "RelativeToolTip": "Frm_menuCadastro.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-05-03T00:49:51.689Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Frm_menuADM.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Frm_menuADM.vb",
+              "RelativeDocumentMoniker": "Frm_menuADM.vb",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Frm_menuADM.vb [Design]",
+              "RelativeToolTip": "Frm_menuADM.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-04-30T21:19:11.38Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Frm_loginAluno.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Frm_loginAluno.vb",
+              "RelativeDocumentMoniker": "Frm_loginAluno.vb",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Frm_loginAluno.vb [Design]",
+              "RelativeToolTip": "Frm_loginAluno.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-04-30T11:34:12.309Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Frm_loginADM.vb [Design]",
-              "DocumentMoniker": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Frm_loginADM.vb",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Frm_loginADM.vb",
               "RelativeDocumentMoniker": "Frm_loginADM.vb",
               "ToolTip": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Frm_loginADM.vb [Design]",
-              "RelativeToolTip": "Frm_loginADM.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-04-30T21:19:51.724Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CadastroProfessor.vb [Design]",
-              "DocumentMoniker": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\CadastroProfessor.vb",
-              "RelativeDocumentMoniker": "CadastroProfessor.vb",
-              "ToolTip": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\CadastroProfessor.vb [Design]",
-              "RelativeToolTip": "CadastroProfessor.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-04-30T14:51:46.858Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "WindowsFormsApplicationBase.cs",
               "DocumentMoniker": "C:\\Users\\luizp\\AppData\\Local\\Temp\\.vsdbgsrc\\5a0bd854679298584d3e9a066f24ef437afe962b8f1fe4f91279bf42032cadbb\\WindowsFormsApplicationBase.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\5a0bd854679298584d3e9a066f24ef437afe962b8f1fe4f91279bf42032cadbb\\WindowsFormsApplicationBase.cs",
               "ToolTip": "C:\\Users\\luizp\\AppData\\Local\\Temp\\.vsdbgsrc\\5a0bd854679298584d3e9a066f24ef437afe962b8f1fe4f91279bf42032cadbb\\WindowsFormsApplicationBase.cs",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\5a0bd854679298584d3e9a066f24ef437afe962b8f1fe4f91279bf42032cadbb\\WindowsFormsApplicationBase.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-30T14:48:55.158Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Frm_loginProfessor.vb",
-              "DocumentMoniker": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Frm_loginProfessor.vb",
-              "RelativeDocumentMoniker": "Frm_loginProfessor.vb",
-              "ToolTip": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Frm_loginProfessor.vb",
-              "RelativeToolTip": "Frm_loginProfessor.vb",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAowB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-04-28T12:40:03.042Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CadastroProfessor.vb",
-              "DocumentMoniker": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\CadastroProfessor.vb",
-              "RelativeDocumentMoniker": "CadastroProfessor.vb",
-              "ToolTip": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\CadastroProfessor.vb",
-              "RelativeToolTip": "CadastroProfessor.vb",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-04-28T14:42:47.618Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Modulo.vb",
-              "DocumentMoniker": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Modulo.vb",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Modulo.vb",
               "RelativeDocumentMoniker": "Modulo.vb",
-              "ToolTip": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Modulo.vb",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Modulo.vb",
               "RelativeToolTip": "Modulo.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
