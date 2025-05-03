@@ -23,6 +23,7 @@ Partial Class CadastroProfessor
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Cmb_uf = New System.Windows.Forms.ComboBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Txt_cep = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -43,12 +44,19 @@ Partial Class CadastroProfessor
         Me.Lb_email = New System.Windows.Forms.Label()
         Me.Txt_nome = New System.Windows.Forms.TextBox()
         Me.Lb_nome = New System.Windows.Forms.Label()
-        Me.Cmb_uf = New System.Windows.Forms.ComboBox()
+        Me.Cb_tipo_teleone = New System.Windows.Forms.ComboBox()
+        Me.Txt_cidade = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label9)
+        Me.GroupBox1.Controls.Add(Me.Label8)
+        Me.GroupBox1.Controls.Add(Me.Txt_cidade)
+        Me.GroupBox1.Controls.Add(Me.Cb_tipo_teleone)
         Me.GroupBox1.Controls.Add(Me.Cmb_uf)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.Txt_cep)
@@ -79,6 +87,15 @@ Partial Class CadastroProfessor
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Insira os Dados de Professor"
         '
+        'Cmb_uf
+        '
+        Me.Cmb_uf.FormattingEnabled = True
+        Me.Cmb_uf.Items.AddRange(New Object() {"AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO"})
+        Me.Cmb_uf.Location = New System.Drawing.Point(186, 175)
+        Me.Cmb_uf.Name = "Cmb_uf"
+        Me.Cmb_uf.Size = New System.Drawing.Size(48, 21)
+        Me.Cmb_uf.TabIndex = 31
+        '
         'Label7
         '
         Me.Label7.AutoSize = True
@@ -93,6 +110,7 @@ Partial Class CadastroProfessor
         '
         Me.Txt_cep.Location = New System.Drawing.Point(59, 265)
         Me.Txt_cep.Margin = New System.Windows.Forms.Padding(2)
+        Me.Txt_cep.MaxLength = 8
         Me.Txt_cep.Name = "Txt_cep"
         Me.Txt_cep.Size = New System.Drawing.Size(116, 20)
         Me.Txt_cep.TabIndex = 29
@@ -262,14 +280,42 @@ Partial Class CadastroProfessor
         Me.Lb_nome.TabIndex = 11
         Me.Lb_nome.Text = "Nome"
         '
-        'Cmb_uf
+        'Cb_tipo_teleone
         '
-        Me.Cmb_uf.FormattingEnabled = True
-        Me.Cmb_uf.Items.AddRange(New Object() {"AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO"})
-        Me.Cmb_uf.Location = New System.Drawing.Point(186, 175)
-        Me.Cmb_uf.Name = "Cmb_uf"
-        Me.Cmb_uf.Size = New System.Drawing.Size(48, 21)
-        Me.Cmb_uf.TabIndex = 31
+        Me.Cb_tipo_teleone.FormattingEnabled = True
+        Me.Cb_tipo_teleone.Items.AddRange(New Object() {"cel", "res", "com"})
+        Me.Cb_tipo_teleone.Location = New System.Drawing.Point(184, 312)
+        Me.Cb_tipo_teleone.Name = "Cb_tipo_teleone"
+        Me.Cb_tipo_teleone.Size = New System.Drawing.Size(48, 21)
+        Me.Cb_tipo_teleone.TabIndex = 32
+        '
+        'Txt_cidade
+        '
+        Me.Txt_cidade.Location = New System.Drawing.Point(186, 240)
+        Me.Txt_cidade.Margin = New System.Windows.Forms.Padding(2)
+        Me.Txt_cidade.Name = "Txt_cidade"
+        Me.Txt_cidade.Size = New System.Drawing.Size(75, 20)
+        Me.Txt_cidade.TabIndex = 33
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(185, 222)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(40, 13)
+        Me.Label8.TabIndex = 34
+        Me.Label8.Text = "Cidade"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(180, 296)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(88, 13)
+        Me.Label9.TabIndex = 35
+        Me.Label9.Text = "Tipo de Telefone"
         '
         'CadastroProfessor
         '
@@ -308,4 +354,8 @@ Partial Class CadastroProfessor
     Friend WithEvents Label7 As Label
     Friend WithEvents Txt_cep As TextBox
     Friend WithEvents Cmb_uf As ComboBox
+    Friend WithEvents Cb_tipo_teleone As ComboBox
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Txt_cidade As TextBox
 End Class

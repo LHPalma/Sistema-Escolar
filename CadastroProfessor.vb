@@ -55,19 +55,25 @@ Public Class CadastroProfessor
                     End Using
 
                     ' Inserir endereço
-                    Dim sql2 As String = "INSERT INTO tb_enderecos_professores (rua, numero, complemento, uf) VALUES (@rua, @numero, @complemento, @uf)"
+                    Dim sql2 As String = "INSERT INTO tb_enderecos_professores (fk_id_professor, rua, numero, complemento, uf, cep, cidade, bairro) VALUES (@fk_id_professor, @rua, @numero, @complemento, @uf, @cep, @cidade, @bairro)"
                     Using cmd2 As New SQLiteCommand(sql2, conexao, transacao)
+                        cmd2.Parameters.AddWithValue("@fk_id_professor", id_professor)
                         cmd2.Parameters.AddWithValue("@rua", Txt_rua.Text)
                         cmd2.Parameters.AddWithValue("@numero", Txt_numero.Text)
                         cmd2.Parameters.AddWithValue("@complemento", Txt_complemento.Text)
                         cmd2.Parameters.AddWithValue("@uf", Cmb_uf.Text)
+                        cmd2.Parameters.AddWithValue("@cep", Txt_cep.Text)
+                        cmd2.Parameters.AddWithValue("@cidade", Txt_cidade.Text)
+                        cmd2.Parameters.AddWithValue("@bairro", Txt_bairro.Text)
                         cmd2.ExecuteNonQuery()
                     End Using
 
                     ' Inserir telefone
-                    Dim sql3 As String = "INSERT INTO tb_telefone_professores (numero) VALUES (@numero)"
+                    Dim sql3 As String = "INSERT INTO tb_telefones_professores (fk_id_professor, numero, tipo) VALUES (@fk_id_professor, @numero, @tipo)"
                     Using cmd3 As New SQLiteCommand(sql3, conexao, transacao)
+                        cmd3.Parameters.AddWithValue("@fk_id_professor", id_professor)
                         cmd3.Parameters.AddWithValue("@numero", Txt_telefone.Text)
+                        cmd3.Parameters.AddWithValue("@tipo", Cb_tipo_teleone.Text)
                         cmd3.ExecuteNonQuery()
                     End Using
 
@@ -102,6 +108,7 @@ Public Class CadastroProfessor
         Txt_numero.Text = ""
         Cmb_uf.Text = ""
         Txt_telefone.Text = ""
+        Cb_tipo_teleone.Text = ""
     End Sub
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs)
@@ -136,10 +143,15 @@ Public Class CadastroProfessor
             Dim jsonString As String = Await response.Content.ReadAsStringAsync()
             Dim endereco As Endereco = JsonConvert.DeserializeObject(Of Endereco)(jsonString)
 
+            If endereco.erro Then
+                MsgBox("CEP não encontrado!", MsgBoxStyle.Exclamation)
+                Exit Sub
+            End If
+
             ' preencha os campos de endereço
             Txt_rua.Text = endereco.logradouro
             Txt_bairro.Text = endereco.bairro
-            ' Txt_cidade.Text = endereco.localidade
+            Txt_cidade.Text = endereco.localidade
             Cmb_uf.Text = endereco.uf
 
 
