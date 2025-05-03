@@ -72,7 +72,7 @@ Partial Class Frm_loginProfessor
         'Cb_mostrarSenha
         '
         Me.Cb_mostrarSenha.AutoSize = True
-        Me.Cb_mostrarSenha.Location = New System.Drawing.Point(27, 150)
+        Me.Cb_mostrarSenha.Location = New System.Drawing.Point(71, 120)
         Me.Cb_mostrarSenha.Margin = New System.Windows.Forms.Padding(2)
         Me.Cb_mostrarSenha.Name = "Cb_mostrarSenha"
         Me.Cb_mostrarSenha.Size = New System.Drawing.Size(95, 17)
@@ -82,7 +82,7 @@ Partial Class Frm_loginProfessor
         '
         'Btn_logar
         '
-        Me.Btn_logar.Location = New System.Drawing.Point(25, 189)
+        Me.Btn_logar.Location = New System.Drawing.Point(25, 144)
         Me.Btn_logar.Margin = New System.Windows.Forms.Padding(2)
         Me.Btn_logar.Name = "Btn_logar"
         Me.Btn_logar.Size = New System.Drawing.Size(199, 38)
@@ -102,7 +102,7 @@ Partial Class Frm_loginProfessor
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox1.Size = New System.Drawing.Size(251, 231)
+        Me.GroupBox1.Size = New System.Drawing.Size(251, 190)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Insira os dados da conta"
@@ -111,7 +111,7 @@ Partial Class Frm_loginProfessor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(502, 268)
+        Me.ClientSize = New System.Drawing.Size(502, 194)
         Me.Controls.Add(Me.GroupBox1)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Frm_loginProfessor"

@@ -77,7 +77,7 @@ Public Class CadastroProfessor
                 Dim resp As MsgBoxResult = MsgBox($"Professor {Txt_nome.Text} cadastrado com sucesso! Deseja cadastrar outro Professor?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Cadastrado com sucesso")
                 If resp = MsgBoxResult.Yes Then
                     ' Limpar campos
-                    Btn_limpar_Click(sender, e)
+                    Btn_limpar_Click(sender, e))
                     Txt_nome.Focus()
                 Else
                     Dim inicio As New Frm_inicio

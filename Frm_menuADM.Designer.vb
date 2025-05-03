@@ -23,8 +23,8 @@ Partial Class Frm_menuADM
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Lb_bemvindo = New System.Windows.Forms.Label()
-        Me.Btn_gerenciar = New System.Windows.Forms.Button()
-        Me.Btn_cadastro = New System.Windows.Forms.Button()
+        Me.btn_gerenciar = New System.Windows.Forms.Button()
+        Me.btn_cadastro = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
@@ -39,25 +39,25 @@ Partial Class Frm_menuADM
         Me.Lb_bemvindo.TabIndex = 2
         Me.Lb_bemvindo.Text = "Área Administrativa"
         '
-        'Btn_gerenciar
+        'btn_gerenciar
         '
-        Me.Btn_gerenciar.Location = New System.Drawing.Point(166, 171)
-        Me.Btn_gerenciar.Margin = New System.Windows.Forms.Padding(2)
-        Me.Btn_gerenciar.Name = "Btn_gerenciar"
-        Me.Btn_gerenciar.Size = New System.Drawing.Size(175, 55)
-        Me.Btn_gerenciar.TabIndex = 3
-        Me.Btn_gerenciar.Text = "GERENCIAMENTO DE CONTAS"
-        Me.Btn_gerenciar.UseVisualStyleBackColor = True
+        Me.btn_gerenciar.Location = New System.Drawing.Point(166, 171)
+        Me.btn_gerenciar.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_gerenciar.Name = "btn_gerenciar"
+        Me.btn_gerenciar.Size = New System.Drawing.Size(175, 55)
+        Me.btn_gerenciar.TabIndex = 3
+        Me.btn_gerenciar.Text = "GERENCIAMENTO DE CONTAS"
+        Me.btn_gerenciar.UseVisualStyleBackColor = True
         '
-        'Btn_cadastro
+        'btn_cadastro
         '
-        Me.Btn_cadastro.Location = New System.Drawing.Point(166, 87)
-        Me.Btn_cadastro.Margin = New System.Windows.Forms.Padding(2)
-        Me.Btn_cadastro.Name = "Btn_cadastro"
-        Me.Btn_cadastro.Size = New System.Drawing.Size(175, 55)
-        Me.Btn_cadastro.TabIndex = 4
-        Me.Btn_cadastro.Text = "CADASTRO DE CONTAS"
-        Me.Btn_cadastro.UseVisualStyleBackColor = True
+        Me.btn_cadastro.Location = New System.Drawing.Point(166, 87)
+        Me.btn_cadastro.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_cadastro.Name = "btn_cadastro"
+        Me.btn_cadastro.Size = New System.Drawing.Size(175, 55)
+        Me.btn_cadastro.TabIndex = 4
+        Me.btn_cadastro.Text = "CADASTRO DE CONTAS"
+        Me.btn_cadastro.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -75,8 +75,8 @@ Partial Class Frm_menuADM
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(533, 292)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Btn_cadastro)
-        Me.Controls.Add(Me.Btn_gerenciar)
+        Me.Controls.Add(Me.btn_cadastro)
+        Me.Controls.Add(Me.btn_gerenciar)
         Me.Controls.Add(Me.Lb_bemvindo)
         Me.Name = "Frm_menuADM"
         Me.Text = "Menu de Administrador"
@@ -86,7 +86,7 @@ Partial Class Frm_menuADM
     End Sub
 
     Friend WithEvents Lb_bemvindo As Label
-    Friend WithEvents Btn_gerenciar As Button
-    Friend WithEvents Btn_cadastro As Button
+    Friend WithEvents btn_gerenciar As Button
+    Friend WithEvents btn_cadastro As Button
     Friend WithEvents Label1 As Label
 End Class

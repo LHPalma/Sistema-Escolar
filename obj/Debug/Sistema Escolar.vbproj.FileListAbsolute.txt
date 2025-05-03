@@ -147,7 +147,3 @@ C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\D
 C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema Escolar.exe
 C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema Escolar.xml
 C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema Escolar.pdb
-C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_cadastroADM.resources
-C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_gerenContas.resources
-C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_menuADM.resources
-C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_menuCadastro.resources
