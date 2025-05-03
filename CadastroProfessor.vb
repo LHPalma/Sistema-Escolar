@@ -91,7 +91,7 @@ Public Class CadastroProfessor
         End Using ' Fim SQLiteConnection(connectionString)
     End Sub
 
-    Private Sub Btn_limpar_Click(sender As Object, e As EventArgs) Handles Btn_limpar.Click
+    Private Sub Btn_limpar_Click(sender As Object, e As EventArgs) 
         Txt_email.Text = ""
         Txt_nome.Text = ""
         Txt_senha.Text = ""
@@ -102,7 +102,7 @@ Public Class CadastroProfessor
         Txt_telefone.Text = ""
     End Sub
 
-    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) 
         Txt_senha.UseSystemPasswordChar = Not Txt_senha.UseSystemPasswordChar
     End Sub
 End Class
