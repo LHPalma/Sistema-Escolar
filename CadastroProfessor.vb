@@ -1,8 +1,8 @@
 ﻿'TODO:
 'Fazer verificação de campo UF (permitir máximo de 2Chars) e (Deixar Uppercase)
-'   ******** faz um dropbox seu safado **********
+'   ******** faz um dropbox seu safado ********** (FEITO)
 
-'Fazer mascára para campo Telefone
+'Fazer mascára para campo Telefone (FEITO)
 'Permitir somente números no campo "numero" de endereço (não precisa, pois existem casas com numeros e letras, ex: 45A)
 'cadastrar id do professor também, e colocar no banco ( Modulo.GetUltimoIdGerado(...) )
 
@@ -12,7 +12,7 @@ Imports Newtonsoft.Json
 
 Public Class CadastroProfessor
     Private Sub Btn_cadastrar_Click(sender As Object, e As EventArgs) Handles Btn_cadastrar.Click
-        If (Txt_email.Text = "" Or Txt_nome.Text = "" Or Txt_senha.Text = "" Or Txt_rua.Text = "" Or Txt_numero.Text = "" Or Txt_uf.Text = "" Or Txt_telefone.Text = "") Then
+        If (Txt_email.Text = "" Or Txt_nome.Text = "" Or Txt_senha.Text = "" Or Txt_rua.Text = "" Or Txt_numero.Text = "" Or Cmb_uf.Text = "" Or Txt_telefone.Text = "") Then
             MsgBox("Para cadastrar, preencha todos os campos!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "Atenção")
             Exit Sub
         End If
@@ -60,7 +60,7 @@ Public Class CadastroProfessor
                         cmd2.Parameters.AddWithValue("@rua", Txt_rua.Text)
                         cmd2.Parameters.AddWithValue("@numero", Txt_numero.Text)
                         cmd2.Parameters.AddWithValue("@complemento", Txt_complemento.Text)
-                        cmd2.Parameters.AddWithValue("@uf", Txt_uf.Text)
+                        cmd2.Parameters.AddWithValue("@uf", Cmb_uf.Text)
                         cmd2.ExecuteNonQuery()
                     End Using
 
@@ -100,7 +100,7 @@ Public Class CadastroProfessor
         Txt_rua.Text = ""
         Txt_complemento.Text = ""
         Txt_numero.Text = ""
-        Txt_uf.Text = ""
+        Cmb_uf.Text = ""
         Txt_telefone.Text = ""
     End Sub
 
@@ -140,7 +140,7 @@ Public Class CadastroProfessor
             Txt_rua.Text = endereco.logradouro
             Txt_bairro.Text = endereco.bairro
             ' Txt_cidade.Text = endereco.localidade
-            Txt_uf.Text = endereco.uf
+            Cmb_uf.Text = endereco.uf
 
 
 
