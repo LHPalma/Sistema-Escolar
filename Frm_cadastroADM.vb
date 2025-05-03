@@ -22,14 +22,20 @@ Public Class Frm_cadastroADM
                 End If
             End Using
 
+            Dim salt As Byte() = GerarSalt(10)
+            Dim senha_hash As Byte() = GerarHashSenha(Txt_senha.Text, salt)
+
+
             Using transacao = conexao.BeginTransaction()
 
                 Dim sqlInsert As String = "INSERT INTO tb_administradores (nome, email, senha_hash, senha_salt, senha_sem_hash) VALUES (@nome, @email, @senha_hash, @senha_salt, @senha_sem_hash)"
                 Using cmdInsert As New SQLiteCommand(sqlInsert, conexao)
+
+
                     cmdInsert.Parameters.AddWithValue("@nome", Txt_nome.Text)
                     cmdInsert.Parameters.AddWithValue("@email", Txt_email.Text)
-                    cmdInsert.Parameters.AddWithValue("@senha_hash", GerarHashSenha(Txt_senha.Text, GerarSalt(10)))
-                    cmdInsert.Parameters.AddWithValue("@senha_salt", GerarSalt(10))
+                    cmdInsert.Parameters.Add("@senha_hash", DbType.Binary).Value = senha_hash
+                    cmdInsert.Parameters.Add("@senha_salt", DbType.Binary).Value = salt
                     cmdInsert.Parameters.AddWithValue("@senha_sem_hash", Txt_senha.Text)
                     cmdInsert.ExecuteNonQuery()
                 End Using
