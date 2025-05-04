@@ -2,6 +2,7 @@
 'Limitar tamanho de caracteres do campo RA para {tamanho de um RA}
 'Já foi feito através da classe: Validações de RA (se é numero) e E-mail (se tem @)
 'Definir turmas, como vão ser registradas no banco de dados, se vai ser pela cb ou se pode digitar o que quiser
+'Acrescentar no código os campos novos que foram adicionados de endereço e telefone
 
 Imports System.Data.SQLite
 
@@ -109,5 +110,13 @@ Public Class Frm_cadastroAluno
             End Try
 
         End Using
+    End Sub
+
+    Private Sub Txt_senha_TextChanged(sender As Object, e As EventArgs) Handles Txt_senha.TextChanged
+
+    End Sub
+
+    Private Sub Txt_bairro_TextChanged(sender As Object, e As EventArgs) Handles Txt_bairro.TextChanged
+
     End Sub
 End Class
