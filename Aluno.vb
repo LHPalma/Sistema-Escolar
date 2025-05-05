@@ -2,14 +2,14 @@
 
     'Encapsulamento dos campos
     Private _nome As String
-    Private _ra As Integer
+    Private _ra As String
     Private _cpf As String
     Private _email As String
     Private _senha As String
     Private _turma As String
 
     'Construtor principal da classe
-    Public Sub New(nome As String, ra As Integer, cpf As String, email As String, senha As String, turma As String)
+    Public Sub New(nome As String, ra As String, cpf As String, email As String, senha As String, turma As String)
         Me.Nome = nome
         Me.RA = ra
         Me.CPF = cpf
@@ -45,13 +45,13 @@
         End Set
     End Property
 
-    Public Property RA As Integer
+    Public Property RA As String
         Get
             Return _ra
         End Get
-        Set(value As Integer)
-            If value <= 0 Then
-                Throw New Exception("O RA deve ser um número positivo.")
+        Set(value As String)
+            If value.Length <= 11 Then
+                Throw New Exception("O RA deve conter 11 digítos.")
             End If
             _ra = value
         End Set
@@ -74,9 +74,9 @@
             Return _email
         End Get
         Set(value As String)
-            If Not value.Contains("@") Then
-                Throw New Exception("Email inválido.")
-            End If
+            'If Not value.Contains("@") Then
+            '    Throw New Exception("Email inválido.")
+            'End If
             _email = value.Trim()
         End Set
     End Property

@@ -22,9 +22,7 @@ Partial Class Frm_CadastroProfessor
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_CadastroProfessor))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Txt_cep = New System.Windows.Forms.MaskedTextBox()
         Me.Lb_cidade = New System.Windows.Forms.Label()
         Me.Txt_cidade = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -47,13 +45,8 @@ Partial Class Frm_CadastroProfessor
         Me.Lb_email = New System.Windows.Forms.Label()
         Me.Txt_nome = New System.Windows.Forms.TextBox()
         Me.Lb_nome = New System.Windows.Forms.Label()
-        Me.Btn_voltar = New System.Windows.Forms.Button()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.img_foto = New System.Windows.Forms.PictureBox()
-        Me.Btn_limpar_campos = New System.Windows.Forms.Button()
+        Me.Txt_cep = New System.Windows.Forms.MaskedTextBox()
         Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        CType(Me.img_foto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -85,18 +78,10 @@ Partial Class Frm_CadastroProfessor
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox1.Size = New System.Drawing.Size(274, 477)
+        Me.GroupBox1.Size = New System.Drawing.Size(274, 470)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Insira os Dados de Professor"
-        '
-        'Txt_cep
-        '
-        Me.Txt_cep.Location = New System.Drawing.Point(59, 136)
-        Me.Txt_cep.Mask = "00000-999"
-        Me.Txt_cep.Name = "Txt_cep"
-        Me.Txt_cep.Size = New System.Drawing.Size(100, 20)
-        Me.Txt_cep.TabIndex = 36
         '
         'Lb_cidade
         '
@@ -301,64 +286,25 @@ Partial Class Frm_CadastroProfessor
         Me.Lb_nome.TabIndex = 11
         Me.Lb_nome.Text = "Nome"
         '
-        'Btn_voltar
+        'Txt_cep
         '
-        Me.Btn_voltar.Image = CType(resources.GetObject("Btn_voltar.Image"), System.Drawing.Image)
-        Me.Btn_voltar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Btn_voltar.Location = New System.Drawing.Point(558, 443)
-        Me.Btn_voltar.Name = "Btn_voltar"
-        Me.Btn_voltar.Size = New System.Drawing.Size(91, 27)
-        Me.Btn_voltar.TabIndex = 22
-        Me.Btn_voltar.Text = "Voltar"
-        Me.Btn_voltar.UseVisualStyleBackColor = True
+        Me.Txt_cep.Location = New System.Drawing.Point(59, 136)
+        Me.Txt_cep.Mask = "00000-999"
+        Me.Txt_cep.Name = "Txt_cep"
+        Me.Txt_cep.Size = New System.Drawing.Size(100, 20)
+        Me.Txt_cep.TabIndex = 36
         '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.img_foto)
-        Me.GroupBox2.Location = New System.Drawing.Point(448, 12)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(186, 205)
-        Me.GroupBox2.TabIndex = 21
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Insira a foto de Professor"
-        '
-        'img_foto
-        '
-        Me.img_foto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.img_foto.Image = CType(resources.GetObject("img_foto.Image"), System.Drawing.Image)
-        Me.img_foto.Location = New System.Drawing.Point(38, 44)
-        Me.img_foto.Margin = New System.Windows.Forms.Padding(2)
-        Me.img_foto.Name = "img_foto"
-        Me.img_foto.Size = New System.Drawing.Size(112, 119)
-        Me.img_foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.img_foto.TabIndex = 17
-        Me.img_foto.TabStop = False
-        '
-        'Btn_limpar_campos
-        '
-        Me.Btn_limpar_campos.Location = New System.Drawing.Point(431, 443)
-        Me.Btn_limpar_campos.Name = "Btn_limpar_campos"
-        Me.Btn_limpar_campos.Size = New System.Drawing.Size(91, 27)
-        Me.Btn_limpar_campos.TabIndex = 20
-        Me.Btn_limpar_campos.Text = "Limpar Campos"
-        Me.Btn_limpar_campos.UseVisualStyleBackColor = True
-        '
-        'Frm_CadastroProfessor
+        'CadastroProfessor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(682, 495)
-        Me.Controls.Add(Me.Btn_voltar)
-        Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.Btn_limpar_campos)
+        Me.ClientSize = New System.Drawing.Size(533, 495)
         Me.Controls.Add(Me.GroupBox1)
         Me.Margin = New System.Windows.Forms.Padding(2)
-        Me.Name = "Frm_CadastroProfessor"
+        Me.Name = "CadastroProfessor"
         Me.Text = "Cadastro de Professor"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        CType(Me.img_foto, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -387,8 +333,4 @@ Partial Class Frm_CadastroProfessor
     Friend WithEvents Txt_cidade As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Txt_cep As MaskedTextBox
-    Friend WithEvents Btn_voltar As Button
-    Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents img_foto As PictureBox
-    Friend WithEvents Btn_limpar_campos As Button
 End Class

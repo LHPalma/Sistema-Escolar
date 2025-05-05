@@ -36,7 +36,7 @@ Public Class Frm_CadastroProfessor
                     Dim sqlInsertProfessor As String = "INSERT INTO tb_professores
                                                             (nome, email, senha_hash, senha_salt, senha_sem_hash, data_cadastro)
                                                         VALUES
-                                                            @nome, @email, @hash, @salt, @senha_sem_hash, @data_cadastro);"
+                                                            (@nome, @email, @hash, @salt, @senha_sem_hash, @data_cadastro);"
 
                     Dim id_professor As Integer
                     Using cmdInsertProfessor As New SQLiteCommand(sqlInsertProfessor, conexao, transacao)
@@ -86,6 +86,8 @@ Public Class Frm_CadastroProfessor
                     ' Commit da transação (Valida tudo no banco de dados)
                     transacao.Commit()
                 End Using
+
+                EnviarEmail(Txt_email.Text, Txt_nome.Text)
 
                 ' Confirmação e próxima ação
                 Dim resp As MsgBoxResult = MsgBox($"Professor {Txt_nome.Text} cadastrado com sucesso! Deseja cadastrar outro Professor?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Cadastrado com sucesso")
@@ -150,9 +152,5 @@ Public Class Frm_CadastroProfessor
 
     Private Sub Lb_cidade_Click(sender As Object, e As EventArgs) Handles Lb_cidade.Click
         Txt_cidade.Focus()
-    End Sub
-
-    Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
-
     End Sub
 End Class
