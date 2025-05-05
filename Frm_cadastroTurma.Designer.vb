@@ -22,14 +22,17 @@ Partial Class Frm_cadastroTurma
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_cadastroTurma))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.btn_cadastrar = New System.Windows.Forms.Button()
         Me.Lb_senha = New System.Windows.Forms.Label()
         Me.Txt_descricao = New System.Windows.Forms.TextBox()
         Me.Lb_email = New System.Windows.Forms.Label()
         Me.Txt_nome = New System.Windows.Forms.TextBox()
         Me.Lb_nome = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.Btn_voltar = New System.Windows.Forms.Button()
+        Me.Btn_limpar_campos = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -50,6 +53,15 @@ Partial Class Frm_cadastroTurma
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Insira os Dados de Turma"
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.DateTimePicker1.Location = New System.Drawing.Point(63, 160)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(159, 20)
+        Me.DateTimePicker1.TabIndex = 16
+        Me.DateTimePicker1.Value = New Date(2025, 5, 1, 0, 0, 0, 0)
         '
         'btn_cadastrar
         '
@@ -108,20 +120,33 @@ Partial Class Frm_cadastroTurma
         Me.Lb_nome.TabIndex = 11
         Me.Lb_nome.Text = "Nome"
         '
-        'DateTimePicker1
+        'Btn_voltar
         '
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker1.Location = New System.Drawing.Point(63, 160)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(159, 20)
-        Me.DateTimePicker1.TabIndex = 16
-        Me.DateTimePicker1.Value = New Date(2025, 5, 1, 0, 0, 0, 0)
+        Me.Btn_voltar.Image = CType(resources.GetObject("Btn_voltar.Image"), System.Drawing.Image)
+        Me.Btn_voltar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Btn_voltar.Location = New System.Drawing.Point(289, 283)
+        Me.Btn_voltar.Name = "Btn_voltar"
+        Me.Btn_voltar.Size = New System.Drawing.Size(91, 27)
+        Me.Btn_voltar.TabIndex = 26
+        Me.Btn_voltar.Text = "Voltar"
+        Me.Btn_voltar.UseVisualStyleBackColor = True
+        '
+        'Btn_limpar_campos
+        '
+        Me.Btn_limpar_campos.Location = New System.Drawing.Point(162, 283)
+        Me.Btn_limpar_campos.Name = "Btn_limpar_campos"
+        Me.Btn_limpar_campos.Size = New System.Drawing.Size(91, 27)
+        Me.Btn_limpar_campos.TabIndex = 25
+        Me.Btn_limpar_campos.Text = "Limpar Campos"
+        Me.Btn_limpar_campos.UseVisualStyleBackColor = True
         '
         'Frm_cadastroTurma
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(533, 266)
+        Me.ClientSize = New System.Drawing.Size(533, 329)
+        Me.Controls.Add(Me.Btn_voltar)
+        Me.Controls.Add(Me.Btn_limpar_campos)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Frm_cadastroTurma"
         Me.Text = "Cadastro de Turma"
@@ -139,4 +164,6 @@ Partial Class Frm_cadastroTurma
     Friend WithEvents Txt_nome As TextBox
     Friend WithEvents Lb_nome As Label
     Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents Btn_voltar As Button
+    Friend WithEvents Btn_limpar_campos As Button
 End Class

@@ -40,8 +40,30 @@ Partial Class Frm_gerenContas
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txt_disc = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.txt_turma = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.ToolStripLabel3 = New System.Windows.Forms.ToolStripLabel()
+        Me.ToolStripComboBox1 = New System.Windows.Forms.ToolStripComboBox()
+        Me.Txt_cpf = New System.Windows.Forms.MaskedTextBox()
+        Me.Lb_cpf = New System.Windows.Forms.Label()
+        Me.Cmb_Turma = New System.Windows.Forms.ComboBox()
+        Me.Txt_cep = New System.Windows.Forms.MaskedTextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Txt_numero = New System.Windows.Forms.TextBox()
+        Me.Txt_rua = New System.Windows.Forms.TextBox()
+        Me.Lb_cidade = New System.Windows.Forms.Label()
+        Me.Txt_cidade = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Txt_complemento = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Txt_bairro = New System.Windows.Forms.TextBox()
+        Me.Cmb_uf = New System.Windows.Forms.ComboBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Txt_telefone = New System.Windows.Forms.MaskedTextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Btn_voltar = New System.Windows.Forms.Button()
+        Me.Btn_limpar_campos = New System.Windows.Forms.Button()
         CType(Me.dgv_dados, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.img_foto, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -50,14 +72,14 @@ Partial Class Frm_gerenContas
         'dgv_dados
         '
         Me.dgv_dados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv_dados.Location = New System.Drawing.Point(21, 242)
+        Me.dgv_dados.Location = New System.Drawing.Point(31, 329)
         Me.dgv_dados.Name = "dgv_dados"
-        Me.dgv_dados.Size = New System.Drawing.Size(748, 174)
+        Me.dgv_dados.Size = New System.Drawing.Size(738, 174)
         Me.dgv_dados.TabIndex = 0
         '
         'img_editar
         '
-        Me.img_editar.Location = New System.Drawing.Point(555, 50)
+        Me.img_editar.Location = New System.Drawing.Point(575, 50)
         Me.img_editar.Margin = New System.Windows.Forms.Padding(2)
         Me.img_editar.Name = "img_editar"
         Me.img_editar.Size = New System.Drawing.Size(50, 25)
@@ -69,7 +91,7 @@ Partial Class Frm_gerenContas
         'ToolStrip1
         '
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btn_gravar, Me.ToolStripLabel1, Me.txt_buscar, Me.ToolStripLabel2, Me.cmb_campo})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btn_gravar, Me.ToolStripLabel1, Me.txt_buscar, Me.ToolStripLabel2, Me.cmb_campo, Me.ToolStripLabel3, Me.ToolStripComboBox1})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(800, 31)
@@ -198,14 +220,6 @@ Partial Class Frm_gerenContas
         Me.Label5.TabIndex = 26
         Me.Label5.Text = "Disciplina"
         '
-        'txt_turma
-        '
-        Me.txt_turma.Location = New System.Drawing.Point(440, 167)
-        Me.txt_turma.Margin = New System.Windows.Forms.Padding(2)
-        Me.txt_turma.Name = "txt_turma"
-        Me.txt_turma.Size = New System.Drawing.Size(137, 20)
-        Me.txt_turma.TabIndex = 27
-        '
         'Label6
         '
         Me.Label6.AutoSize = True
@@ -217,13 +231,247 @@ Partial Class Frm_gerenContas
         Me.Label6.TabIndex = 28
         Me.Label6.Text = "Turma"
         '
+        'ToolStripLabel3
+        '
+        Me.ToolStripLabel3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripLabel3.Name = "ToolStripLabel3"
+        Me.ToolStripLabel3.Size = New System.Drawing.Size(146, 28)
+        Me.ToolStripLabel3.Text = "Selecione o tipo de perfil"
+        '
+        'ToolStripComboBox1
+        '
+        Me.ToolStripComboBox1.Items.AddRange(New Object() {"Aluno", "Professor", "Administrador"})
+        Me.ToolStripComboBox1.Name = "ToolStripComboBox1"
+        Me.ToolStripComboBox1.Size = New System.Drawing.Size(121, 31)
+        '
+        'Txt_cpf
+        '
+        Me.Txt_cpf.Location = New System.Drawing.Point(440, 109)
+        Me.Txt_cpf.Mask = "000.000.000-00"
+        Me.Txt_cpf.Name = "Txt_cpf"
+        Me.Txt_cpf.Size = New System.Drawing.Size(91, 20)
+        Me.Txt_cpf.TabIndex = 53
+        '
+        'Lb_cpf
+        '
+        Me.Lb_cpf.AutoSize = True
+        Me.Lb_cpf.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lb_cpf.Location = New System.Drawing.Point(437, 94)
+        Me.Lb_cpf.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Lb_cpf.Name = "Lb_cpf"
+        Me.Lb_cpf.Size = New System.Drawing.Size(30, 13)
+        Me.Lb_cpf.TabIndex = 52
+        Me.Lb_cpf.Text = "CPF"
+        '
+        'Cmb_Turma
+        '
+        Me.Cmb_Turma.FormattingEnabled = True
+        Me.Cmb_Turma.Location = New System.Drawing.Point(440, 168)
+        Me.Cmb_Turma.Name = "Cmb_Turma"
+        Me.Cmb_Turma.Size = New System.Drawing.Size(127, 21)
+        Me.Cmb_Turma.TabIndex = 54
+        '
+        'Txt_cep
+        '
+        Me.Txt_cep.Location = New System.Drawing.Point(38, 225)
+        Me.Txt_cep.Mask = "00000-999"
+        Me.Txt_cep.Name = "Txt_cep"
+        Me.Txt_cep.Size = New System.Drawing.Size(137, 20)
+        Me.Txt_cep.TabIndex = 56
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(37, 209)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(31, 13)
+        Me.Label7.TabIndex = 55
+        Me.Label7.Text = "CEP"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(435, 210)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(50, 13)
+        Me.Label2.TabIndex = 60
+        Me.Label2.Text = "Número"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(237, 210)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(30, 13)
+        Me.Label8.TabIndex = 59
+        Me.Label8.Text = "Rua"
+        '
+        'Txt_numero
+        '
+        Me.Txt_numero.Location = New System.Drawing.Point(438, 225)
+        Me.Txt_numero.Margin = New System.Windows.Forms.Padding(2)
+        Me.Txt_numero.MaxLength = 5
+        Me.Txt_numero.Name = "Txt_numero"
+        Me.Txt_numero.Size = New System.Drawing.Size(48, 20)
+        Me.Txt_numero.TabIndex = 58
+        '
+        'Txt_rua
+        '
+        Me.Txt_rua.Location = New System.Drawing.Point(238, 225)
+        Me.Txt_rua.Margin = New System.Windows.Forms.Padding(2)
+        Me.Txt_rua.Name = "Txt_rua"
+        Me.Txt_rua.Size = New System.Drawing.Size(137, 20)
+        Me.Txt_rua.TabIndex = 57
+        '
+        'Lb_cidade
+        '
+        Me.Lb_cidade.AutoSize = True
+        Me.Lb_cidade.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lb_cidade.Location = New System.Drawing.Point(437, 271)
+        Me.Lb_cidade.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Lb_cidade.Name = "Lb_cidade"
+        Me.Lb_cidade.Size = New System.Drawing.Size(46, 13)
+        Me.Lb_cidade.TabIndex = 66
+        Me.Lb_cidade.Text = "Cidade"
+        '
+        'Txt_cidade
+        '
+        Me.Txt_cidade.Location = New System.Drawing.Point(438, 286)
+        Me.Txt_cidade.Margin = New System.Windows.Forms.Padding(2)
+        Me.Txt_cidade.Name = "Txt_cidade"
+        Me.Txt_cidade.Size = New System.Drawing.Size(129, 20)
+        Me.Txt_cidade.TabIndex = 65
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(37, 271)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(82, 13)
+        Me.Label9.TabIndex = 64
+        Me.Label9.Text = "Complemento"
+        '
+        'Txt_complemento
+        '
+        Me.Txt_complemento.Location = New System.Drawing.Point(38, 286)
+        Me.Txt_complemento.Margin = New System.Windows.Forms.Padding(2)
+        Me.Txt_complemento.Name = "Txt_complemento"
+        Me.Txt_complemento.Size = New System.Drawing.Size(137, 20)
+        Me.Txt_complemento.TabIndex = 63
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(237, 271)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(40, 13)
+        Me.Label10.TabIndex = 62
+        Me.Label10.Text = "Bairro"
+        '
+        'Txt_bairro
+        '
+        Me.Txt_bairro.Location = New System.Drawing.Point(238, 286)
+        Me.Txt_bairro.Margin = New System.Windows.Forms.Padding(2)
+        Me.Txt_bairro.Name = "Txt_bairro"
+        Me.Txt_bairro.Size = New System.Drawing.Size(137, 20)
+        Me.Txt_bairro.TabIndex = 61
+        '
+        'Cmb_uf
+        '
+        Me.Cmb_uf.FormattingEnabled = True
+        Me.Cmb_uf.Items.AddRange(New Object() {"AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO"})
+        Me.Cmb_uf.Location = New System.Drawing.Point(519, 225)
+        Me.Cmb_uf.Name = "Cmb_uf"
+        Me.Cmb_uf.Size = New System.Drawing.Size(48, 21)
+        Me.Cmb_uf.TabIndex = 68
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(516, 209)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(23, 13)
+        Me.Label11.TabIndex = 67
+        Me.Label11.Text = "UF"
+        '
+        'Txt_telefone
+        '
+        Me.Txt_telefone.Location = New System.Drawing.Point(630, 286)
+        Me.Txt_telefone.Mask = "(99) 00000-0000"
+        Me.Txt_telefone.Name = "Txt_telefone"
+        Me.Txt_telefone.Size = New System.Drawing.Size(128, 20)
+        Me.Txt_telefone.TabIndex = 70
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(628, 270)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(57, 13)
+        Me.Label12.TabIndex = 69
+        Me.Label12.Text = "Telefone"
+        '
+        'Btn_voltar
+        '
+        Me.Btn_voltar.Image = CType(resources.GetObject("Btn_voltar.Image"), System.Drawing.Image)
+        Me.Btn_voltar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Btn_voltar.Location = New System.Drawing.Point(669, 168)
+        Me.Btn_voltar.Name = "Btn_voltar"
+        Me.Btn_voltar.Size = New System.Drawing.Size(91, 27)
+        Me.Btn_voltar.TabIndex = 72
+        Me.Btn_voltar.Text = "Voltar"
+        Me.Btn_voltar.UseVisualStyleBackColor = True
+        '
+        'Btn_limpar_campos
+        '
+        Me.Btn_limpar_campos.Location = New System.Drawing.Point(669, 210)
+        Me.Btn_limpar_campos.Name = "Btn_limpar_campos"
+        Me.Btn_limpar_campos.Size = New System.Drawing.Size(91, 27)
+        Me.Btn_limpar_campos.TabIndex = 71
+        Me.Btn_limpar_campos.Text = "Limpar Campos"
+        Me.Btn_limpar_campos.UseVisualStyleBackColor = True
+        '
         'Frm_gerenContas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(800, 532)
+        Me.Controls.Add(Me.Btn_voltar)
+        Me.Controls.Add(Me.Btn_limpar_campos)
+        Me.Controls.Add(Me.Txt_telefone)
+        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.Cmb_uf)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.Lb_cidade)
+        Me.Controls.Add(Me.Txt_cidade)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Txt_complemento)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Txt_bairro)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Txt_numero)
+        Me.Controls.Add(Me.Txt_rua)
+        Me.Controls.Add(Me.Txt_cep)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Cmb_Turma)
+        Me.Controls.Add(Me.Txt_cpf)
+        Me.Controls.Add(Me.Lb_cpf)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.txt_turma)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.txt_disc)
         Me.Controls.Add(Me.Label4)
@@ -264,6 +512,28 @@ Partial Class Frm_gerenContas
     Friend WithEvents Label4 As Label
     Friend WithEvents txt_disc As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents txt_turma As TextBox
     Friend WithEvents Label6 As Label
+    Friend WithEvents ToolStripLabel3 As ToolStripLabel
+    Friend WithEvents ToolStripComboBox1 As ToolStripComboBox
+    Friend WithEvents Txt_cpf As MaskedTextBox
+    Friend WithEvents Lb_cpf As Label
+    Friend WithEvents Cmb_Turma As ComboBox
+    Friend WithEvents Txt_cep As MaskedTextBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Txt_numero As TextBox
+    Friend WithEvents Txt_rua As TextBox
+    Friend WithEvents Lb_cidade As Label
+    Friend WithEvents Txt_cidade As TextBox
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Txt_complemento As TextBox
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Txt_bairro As TextBox
+    Friend WithEvents Cmb_uf As ComboBox
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Txt_telefone As MaskedTextBox
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Btn_voltar As Button
+    Friend WithEvents Btn_limpar_campos As Button
 End Class

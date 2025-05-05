@@ -151,4 +151,8 @@ Public Class Frm_CadastroProfessor
     Private Sub Lb_cidade_Click(sender As Object, e As EventArgs) Handles Lb_cidade.Click
         Txt_cidade.Focus()
     End Sub
+
+    Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
+
+    End Sub
 End Class

@@ -22,11 +22,14 @@ Partial Class Frm_menuCadastro
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_menuCadastro))
         Me.btn_professor = New System.Windows.Forms.Button()
         Me.btn_aluno = New System.Windows.Forms.Button()
         Me.btn_adm = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Lb_bemvindo = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Btn_voltar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btn_professor
@@ -63,7 +66,7 @@ Partial Class Frm_menuCadastro
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 263)
+        Me.Label1.Location = New System.Drawing.Point(12, 339)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(137, 20)
         Me.Label1.TabIndex = 8
@@ -80,11 +83,34 @@ Partial Class Frm_menuCadastro
         Me.Lb_bemvindo.TabIndex = 9
         Me.Lb_bemvindo.Text = "Área Administrativa"
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(167, 254)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(175, 55)
+        Me.Button1.TabIndex = 10
+        Me.Button1.Text = "NOVA TURMA"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Btn_voltar
+        '
+        Me.Btn_voltar.Image = CType(resources.GetObject("Btn_voltar.Image"), System.Drawing.Image)
+        Me.Btn_voltar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Btn_voltar.Location = New System.Drawing.Point(430, 329)
+        Me.Btn_voltar.Name = "Btn_voltar"
+        Me.Btn_voltar.Size = New System.Drawing.Size(91, 27)
+        Me.Btn_voltar.TabIndex = 27
+        Me.Btn_voltar.Text = "Voltar"
+        Me.Btn_voltar.UseVisualStyleBackColor = True
+        '
         'Frm_menuCadastro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(533, 292)
+        Me.ClientSize = New System.Drawing.Size(533, 368)
+        Me.Controls.Add(Me.Btn_voltar)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Lb_bemvindo)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btn_adm)
@@ -102,4 +128,6 @@ Partial Class Frm_menuCadastro
     Friend WithEvents btn_adm As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Lb_bemvindo As Label
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Btn_voltar As Button
 End Class

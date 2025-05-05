@@ -22,6 +22,7 @@ Partial Class Frm_cadastroAluno
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_cadastroAluno))
         Me.Lb_ra = New System.Windows.Forms.Label()
         Me.Txt_ra = New System.Windows.Forms.TextBox()
         Me.Lb_nome = New System.Windows.Forms.Label()
@@ -34,11 +35,7 @@ Partial Class Frm_cadastroAluno
         Me.Txt_senha = New System.Windows.Forms.TextBox()
         Me.Btn_cadastrar = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Cmb_Turma = New System.Windows.Forms.ComboBox()
-        Me.Btn_limpar_campos = New System.Windows.Forms.Button()
-        Me.Cb_mostrar_senha = New System.Windows.Forms.CheckBox()
-        Me.Cmb_uf = New System.Windows.Forms.ComboBox()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Txt_cpf = New System.Windows.Forms.MaskedTextBox()
         Me.Txt_cep = New System.Windows.Forms.MaskedTextBox()
         Me.Lb_cidade = New System.Windows.Forms.Label()
         Me.Txt_cidade = New System.Windows.Forms.TextBox()
@@ -53,8 +50,17 @@ Partial Class Frm_cadastroAluno
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Txt_numero = New System.Windows.Forms.TextBox()
         Me.Txt_rua = New System.Windows.Forms.TextBox()
-        Me.Txt_cpf = New System.Windows.Forms.MaskedTextBox()
+        Me.Cmb_uf = New System.Windows.Forms.ComboBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Cmb_Turma = New System.Windows.Forms.ComboBox()
+        Me.Cb_mostrar_senha = New System.Windows.Forms.CheckBox()
+        Me.Btn_limpar_campos = New System.Windows.Forms.Button()
+        Me.img_foto = New System.Windows.Forms.PictureBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Btn_voltar = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.img_foto, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Lb_ra
@@ -201,51 +207,13 @@ Partial Class Frm_cadastroAluno
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Insira os Dados de Aluno"
         '
-        'Cmb_Turma
+        'Txt_cpf
         '
-        Me.Cmb_Turma.FormattingEnabled = True
-        Me.Cmb_Turma.Location = New System.Drawing.Point(49, 178)
-        Me.Cmb_Turma.Name = "Cmb_Turma"
-        Me.Cmb_Turma.Size = New System.Drawing.Size(127, 21)
-        Me.Cmb_Turma.TabIndex = 5
-        '
-        'Btn_limpar_campos
-        '
-        Me.Btn_limpar_campos.Location = New System.Drawing.Point(417, 549)
-        Me.Btn_limpar_campos.Name = "Btn_limpar_campos"
-        Me.Btn_limpar_campos.Size = New System.Drawing.Size(91, 27)
-        Me.Btn_limpar_campos.TabIndex = 4
-        Me.Btn_limpar_campos.Text = "Limpar Campos"
-        Me.Btn_limpar_campos.UseVisualStyleBackColor = True
-        '
-        'Cb_mostrar_senha
-        '
-        Me.Cb_mostrar_senha.AutoSize = True
-        Me.Cb_mostrar_senha.Location = New System.Drawing.Point(172, 495)
-        Me.Cb_mostrar_senha.Name = "Cb_mostrar_senha"
-        Me.Cb_mostrar_senha.Size = New System.Drawing.Size(95, 17)
-        Me.Cb_mostrar_senha.TabIndex = 3
-        Me.Cb_mostrar_senha.Text = "Mostrar Senha"
-        Me.Cb_mostrar_senha.UseVisualStyleBackColor = True
-        '
-        'Cmb_uf
-        '
-        Me.Cmb_uf.FormattingEnabled = True
-        Me.Cmb_uf.Items.AddRange(New Object() {"AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO"})
-        Me.Cmb_uf.Location = New System.Drawing.Point(195, 311)
-        Me.Cmb_uf.Name = "Cmb_uf"
-        Me.Cmb_uf.Size = New System.Drawing.Size(48, 21)
-        Me.Cmb_uf.TabIndex = 33
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(192, 295)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(21, 13)
-        Me.Label3.TabIndex = 32
-        Me.Label3.Text = "UF"
+        Me.Txt_cpf.Location = New System.Drawing.Point(152, 42)
+        Me.Txt_cpf.Mask = "000.000.000-00"
+        Me.Txt_cpf.Name = "Txt_cpf"
+        Me.Txt_cpf.Size = New System.Drawing.Size(91, 20)
+        Me.Txt_cpf.TabIndex = 51
         '
         'Txt_cep
         '
@@ -374,19 +342,92 @@ Partial Class Frm_cadastroAluno
         Me.Txt_rua.Size = New System.Drawing.Size(128, 20)
         Me.Txt_rua.TabIndex = 37
         '
-        'Txt_cpf
+        'Cmb_uf
         '
-        Me.Txt_cpf.Location = New System.Drawing.Point(152, 42)
-        Me.Txt_cpf.Mask = "000.000.000-00"
-        Me.Txt_cpf.Name = "Txt_cpf"
-        Me.Txt_cpf.Size = New System.Drawing.Size(91, 20)
-        Me.Txt_cpf.TabIndex = 51
+        Me.Cmb_uf.FormattingEnabled = True
+        Me.Cmb_uf.Items.AddRange(New Object() {"AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO"})
+        Me.Cmb_uf.Location = New System.Drawing.Point(195, 311)
+        Me.Cmb_uf.Name = "Cmb_uf"
+        Me.Cmb_uf.Size = New System.Drawing.Size(48, 21)
+        Me.Cmb_uf.TabIndex = 33
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(192, 295)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(21, 13)
+        Me.Label3.TabIndex = 32
+        Me.Label3.Text = "UF"
+        '
+        'Cmb_Turma
+        '
+        Me.Cmb_Turma.FormattingEnabled = True
+        Me.Cmb_Turma.Location = New System.Drawing.Point(49, 178)
+        Me.Cmb_Turma.Name = "Cmb_Turma"
+        Me.Cmb_Turma.Size = New System.Drawing.Size(127, 21)
+        Me.Cmb_Turma.TabIndex = 5
+        '
+        'Cb_mostrar_senha
+        '
+        Me.Cb_mostrar_senha.AutoSize = True
+        Me.Cb_mostrar_senha.Location = New System.Drawing.Point(172, 495)
+        Me.Cb_mostrar_senha.Name = "Cb_mostrar_senha"
+        Me.Cb_mostrar_senha.Size = New System.Drawing.Size(95, 17)
+        Me.Cb_mostrar_senha.TabIndex = 3
+        Me.Cb_mostrar_senha.Text = "Mostrar Senha"
+        Me.Cb_mostrar_senha.UseVisualStyleBackColor = True
+        '
+        'Btn_limpar_campos
+        '
+        Me.Btn_limpar_campos.Location = New System.Drawing.Point(417, 549)
+        Me.Btn_limpar_campos.Name = "Btn_limpar_campos"
+        Me.Btn_limpar_campos.Size = New System.Drawing.Size(91, 27)
+        Me.Btn_limpar_campos.TabIndex = 4
+        Me.Btn_limpar_campos.Text = "Limpar Campos"
+        Me.Btn_limpar_campos.UseVisualStyleBackColor = True
+        '
+        'img_foto
+        '
+        Me.img_foto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.img_foto.Image = CType(resources.GetObject("img_foto.Image"), System.Drawing.Image)
+        Me.img_foto.Location = New System.Drawing.Point(38, 44)
+        Me.img_foto.Margin = New System.Windows.Forms.Padding(2)
+        Me.img_foto.Name = "img_foto"
+        Me.img_foto.Size = New System.Drawing.Size(112, 119)
+        Me.img_foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.img_foto.TabIndex = 17
+        Me.img_foto.TabStop = False
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.img_foto)
+        Me.GroupBox2.Location = New System.Drawing.Point(448, 12)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(186, 205)
+        Me.GroupBox2.TabIndex = 18
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Insira a foto de Aluno"
+        '
+        'Btn_voltar
+        '
+        Me.Btn_voltar.Image = CType(resources.GetObject("Btn_voltar.Image"), System.Drawing.Image)
+        Me.Btn_voltar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Btn_voltar.Location = New System.Drawing.Point(543, 549)
+        Me.Btn_voltar.Name = "Btn_voltar"
+        Me.Btn_voltar.Size = New System.Drawing.Size(91, 27)
+        Me.Btn_voltar.TabIndex = 19
+        Me.Btn_voltar.Text = "Voltar"
+        Me.Btn_voltar.UseVisualStyleBackColor = True
         '
         'Frm_cadastroAluno
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(533, 611)
+        Me.ClientSize = New System.Drawing.Size(682, 611)
+        Me.Controls.Add(Me.Btn_voltar)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Btn_limpar_campos)
         Me.Margin = New System.Windows.Forms.Padding(2)
@@ -394,6 +435,8 @@ Partial Class Frm_cadastroAluno
         Me.Text = "Cadastro de Alunos"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.img_foto, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -430,4 +473,7 @@ Partial Class Frm_cadastroAluno
     Friend WithEvents Txt_numero As TextBox
     Friend WithEvents Txt_rua As TextBox
     Friend WithEvents Txt_cpf As MaskedTextBox
+    Friend WithEvents img_foto As PictureBox
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents Btn_voltar As Button
 End Class

@@ -22,10 +22,12 @@ Partial Class Frm_menuADM
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_menuADM))
         Me.Lb_bemvindo = New System.Windows.Forms.Label()
         Me.btn_gerenciar = New System.Windows.Forms.Button()
         Me.btn_cadastro = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Btn_voltar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Lb_bemvindo
@@ -69,11 +71,23 @@ Partial Class Frm_menuADM
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Acesso Restrito"
         '
+        'Btn_voltar
+        '
+        Me.Btn_voltar.Image = CType(resources.GetObject("Btn_voltar.Image"), System.Drawing.Image)
+        Me.Btn_voltar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Btn_voltar.Location = New System.Drawing.Point(430, 253)
+        Me.Btn_voltar.Name = "Btn_voltar"
+        Me.Btn_voltar.Size = New System.Drawing.Size(91, 27)
+        Me.Btn_voltar.TabIndex = 27
+        Me.Btn_voltar.Text = "Voltar"
+        Me.Btn_voltar.UseVisualStyleBackColor = True
+        '
         'Frm_menuADM
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(533, 292)
+        Me.Controls.Add(Me.Btn_voltar)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btn_cadastro)
         Me.Controls.Add(Me.btn_gerenciar)
@@ -89,4 +103,5 @@ Partial Class Frm_menuADM
     Friend WithEvents btn_gerenciar As Button
     Friend WithEvents btn_cadastro As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents Btn_voltar As Button
 End Class
