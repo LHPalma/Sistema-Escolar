@@ -22,6 +22,7 @@ Partial Class Frm_cadastroADM
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_cadastroADM))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.btn_cadastrar = New System.Windows.Forms.Button()
         Me.Txt_senha = New System.Windows.Forms.TextBox()
@@ -30,6 +31,8 @@ Partial Class Frm_cadastroADM
         Me.Lb_email = New System.Windows.Forms.Label()
         Me.Txt_nome = New System.Windows.Forms.TextBox()
         Me.Lb_nome = New System.Windows.Forms.Label()
+        Me.Btn_voltar = New System.Windows.Forms.Button()
+        Me.Btn_limpar_campos = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -115,11 +118,33 @@ Partial Class Frm_cadastroADM
         Me.Lb_nome.TabIndex = 11
         Me.Lb_nome.Text = "Nome"
         '
+        'Btn_voltar
+        '
+        Me.Btn_voltar.Image = CType(resources.GetObject("Btn_voltar.Image"), System.Drawing.Image)
+        Me.Btn_voltar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Btn_voltar.Location = New System.Drawing.Point(282, 282)
+        Me.Btn_voltar.Name = "Btn_voltar"
+        Me.Btn_voltar.Size = New System.Drawing.Size(91, 27)
+        Me.Btn_voltar.TabIndex = 26
+        Me.Btn_voltar.Text = "Voltar"
+        Me.Btn_voltar.UseVisualStyleBackColor = True
+        '
+        'Btn_limpar_campos
+        '
+        Me.Btn_limpar_campos.Location = New System.Drawing.Point(155, 282)
+        Me.Btn_limpar_campos.Name = "Btn_limpar_campos"
+        Me.Btn_limpar_campos.Size = New System.Drawing.Size(91, 27)
+        Me.Btn_limpar_campos.TabIndex = 25
+        Me.Btn_limpar_campos.Text = "Limpar Campos"
+        Me.Btn_limpar_campos.UseVisualStyleBackColor = True
+        '
         'Frm_cadastroADM
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(533, 266)
+        Me.ClientSize = New System.Drawing.Size(533, 329)
+        Me.Controls.Add(Me.Btn_voltar)
+        Me.Controls.Add(Me.Btn_limpar_campos)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Frm_cadastroADM"
         Me.Text = "Cadastro de Administrador"
@@ -137,4 +162,6 @@ Partial Class Frm_cadastroADM
     Friend WithEvents Lb_email As Label
     Friend WithEvents Txt_nome As TextBox
     Friend WithEvents Lb_nome As Label
+    Friend WithEvents Btn_voltar As Button
+    Friend WithEvents Btn_limpar_campos As Button
 End Class

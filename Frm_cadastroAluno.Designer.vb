@@ -22,6 +22,7 @@ Partial Class Frm_cadastroAluno
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_cadastroAluno))
         Me.Lb_ra = New System.Windows.Forms.Label()
         Me.Txt_ra = New System.Windows.Forms.TextBox()
         Me.Lb_nome = New System.Windows.Forms.Label()
@@ -54,7 +55,12 @@ Partial Class Frm_cadastroAluno
         Me.Cmb_Turma = New System.Windows.Forms.ComboBox()
         Me.Cb_mostrar_senha = New System.Windows.Forms.CheckBox()
         Me.Btn_limpar_campos = New System.Windows.Forms.Button()
+        Me.Btn_voltar = New System.Windows.Forms.Button()
+        Me.img_foto = New System.Windows.Forms.PictureBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.img_foto, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Lb_ra
@@ -382,11 +388,46 @@ Partial Class Frm_cadastroAluno
         Me.Btn_limpar_campos.Text = "Limpar Campos"
         Me.Btn_limpar_campos.UseVisualStyleBackColor = True
         '
+        'Btn_voltar
+        '
+        Me.Btn_voltar.Image = CType(resources.GetObject("Btn_voltar.Image"), System.Drawing.Image)
+        Me.Btn_voltar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Btn_voltar.Location = New System.Drawing.Point(546, 549)
+        Me.Btn_voltar.Name = "Btn_voltar"
+        Me.Btn_voltar.Size = New System.Drawing.Size(91, 27)
+        Me.Btn_voltar.TabIndex = 21
+        Me.Btn_voltar.Text = "Voltar"
+        Me.Btn_voltar.UseVisualStyleBackColor = True
+        '
+        'img_foto
+        '
+        Me.img_foto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.img_foto.Image = CType(resources.GetObject("img_foto.Image"), System.Drawing.Image)
+        Me.img_foto.Location = New System.Drawing.Point(38, 44)
+        Me.img_foto.Margin = New System.Windows.Forms.Padding(2)
+        Me.img_foto.Name = "img_foto"
+        Me.img_foto.Size = New System.Drawing.Size(112, 119)
+        Me.img_foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.img_foto.TabIndex = 17
+        Me.img_foto.TabStop = False
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.img_foto)
+        Me.GroupBox2.Location = New System.Drawing.Point(451, 12)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(186, 205)
+        Me.GroupBox2.TabIndex = 20
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Insira a foto de Aluno"
+        '
         'Frm_cadastroAluno
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(533, 611)
+        Me.ClientSize = New System.Drawing.Size(682, 611)
+        Me.Controls.Add(Me.Btn_voltar)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Btn_limpar_campos)
         Me.Margin = New System.Windows.Forms.Padding(2)
@@ -394,6 +435,8 @@ Partial Class Frm_cadastroAluno
         Me.Text = "Cadastro de Alunos"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.img_foto, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -430,4 +473,7 @@ Partial Class Frm_cadastroAluno
     Friend WithEvents Txt_numero As TextBox
     Friend WithEvents Txt_rua As TextBox
     Friend WithEvents Txt_cpf As MaskedTextBox
+    Friend WithEvents Btn_voltar As Button
+    Friend WithEvents img_foto As PictureBox
+    Friend WithEvents GroupBox2 As GroupBox
 End Class

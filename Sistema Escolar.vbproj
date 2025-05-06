@@ -151,6 +151,18 @@
     <Compile Include="Frm_gerenContas.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Frm_gerenContasADM.Designer.vb">
+      <DependentUpon>Frm_gerenContasADM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_gerenContasADM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_gerenContasProfessores.Designer.vb">
+      <DependentUpon>Frm_gerenContasProfessores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_gerenContasProfessores.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Frm_inicio.Designer.vb">
       <DependentUpon>Frm_inicio.vb</DependentUpon>
     </Compile>
@@ -188,6 +200,12 @@
     <Compile Include="Frm_menuCadastro.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Frm_menuGerenciamento.Designer.vb">
+      <DependentUpon>Frm_menuGerenciamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_menuGerenciamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Modulo.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Resources.Designer.vb">
@@ -217,6 +235,12 @@
     <EmbeddedResource Include="Frm_gerenContas.resx">
       <DependentUpon>Frm_gerenContas.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_gerenContasADM.resx">
+      <DependentUpon>Frm_gerenContasADM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_gerenContasProfessores.resx">
+      <DependentUpon>Frm_gerenContasProfessores.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_inicio.resx">
       <DependentUpon>Frm_inicio.vb</DependentUpon>
     </EmbeddedResource>
@@ -234,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_menuCadastro.resx">
       <DependentUpon>Frm_menuCadastro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_menuGerenciamento.resx">
+      <DependentUpon>Frm_menuGerenciamento.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
