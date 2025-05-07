@@ -222,7 +222,17 @@ Public Class Frm_GerenciamentoAlunos
 
                         If existeEndereco > 0 Then
                             ' Atualiza o endereço
-                            Dim sqlUpdateEndereco As String = "UPDATE tb_enderecos_alunos SET rua=@rua, numero=@numero, bairro=@bairro, cidade=@cidade, uf=@uf, complemento=@complemento, cep=@cep WHERE fk_id_aluno=@id_aluno"
+                            Dim sqlUpdateEndereco As String = "UPDATE tb_enderecos_alunos
+                                                               SET
+                                                                   rua         = @rua,
+                                                                   numero      = @numero,
+                                                                   bairro      = @bairro,
+                                                                   cidade      = @cidade,
+                                                                   uf          = @uf,
+                                                                   complemento = @complemento,
+                                                                   cep         = @cep
+                                                               WHERE fk_id_aluno = @id_aluno;"
+
                             Using cmdUpdate As New SQLiteCommand(sqlUpdateEndereco, conexao)
                                 cmdUpdate.Parameters.AddWithValue("@rua", Txt_rua.Text)
                                 cmdUpdate.Parameters.AddWithValue("@numero", Txt_numero.Text)
@@ -236,7 +246,11 @@ Public Class Frm_GerenciamentoAlunos
                             End Using
                         Else
                             ' Insere novo endereço
-                            Dim sqlInsertEndereco As String = "INSERT INTO tb_enderecos_alunos (fk_id_aluno, rua, numero, bairro, cidade, uf, complemento, cep) VALUES (@id_aluno, @rua, @numero, @bairro, @cidade, @uf, @complemento, @cep)"
+                            Dim sqlInsertEndereco As String = "INSERT INTO tb_enderecos_alunos
+                                                                   (fk_id_aluno, rua, numero, bairro, cidade, uf, complemento, cep)
+                                                               VALUES
+                                                                   (@id_aluno, @rua, @numero, @bairro, @cidade, @uf, @complemento, @cep);"
+
                             Using cmdInsert As New SQLiteCommand(sqlInsertEndereco, conexao)
                                 cmdInsert.Parameters.AddWithValue("@id_aluno", idAluno)
                                 cmdInsert.Parameters.AddWithValue("@rua", Txt_rua.Text)
@@ -253,14 +267,21 @@ Public Class Frm_GerenciamentoAlunos
 
                     ' TELEFONE
                     ' Verifica se já existe telefone para o aluno
-                    Dim sqlCheckTelefone As String = "SELECT COUNT(*) FROM tb_telefones_alunos WHERE fk_id_aluno = @id_aluno"
+                    Dim sqlCheckTelefone As String = "SELECT COUNT(*)
+                                                      FROM tb_telefones_alunos
+                                                      WHERE fk_id_aluno = @id_aluno;"
+
                     Using cmdCheckTel As New SQLiteCommand(sqlCheckTelefone, conexao)
                         cmdCheckTel.Parameters.AddWithValue("@id_aluno", idAluno)
                         Dim existeTelefone As Integer = Convert.ToInt32(cmdCheckTel.ExecuteScalar())
 
                         If existeTelefone > 0 Then
                             ' Atualiza telefone
-                            Dim sqlUpdateTel As String = "UPDATE tb_telefones_alunos SET numero=@telefone WHERE fk_id_aluno=@id_aluno"
+                            Dim sqlUpdateTel As String = "UPDATE tb_telefones_alunos
+                                                          SET
+                                                              numero = @telefone
+                                                          WHERE fk_id_aluno = @id_aluno;"
+
                             Using cmdUpdateTel As New SQLiteCommand(sqlUpdateTel, conexao)
                                 cmdUpdateTel.Parameters.AddWithValue("@telefone", Txt_telefone.Text)
                                 cmdUpdateTel.Parameters.AddWithValue("@id_aluno", idAluno)
@@ -268,7 +289,11 @@ Public Class Frm_GerenciamentoAlunos
                             End Using
                         Else
                             ' Insere novo telefone
-                            Dim sqlInsertTel As String = "INSERT INTO tb_telefones_alunos (fk_id_aluno, numero) VALUES (@id_aluno, @telefone)"
+                            Dim sqlInsertTel As String = "INSERT INTO tb_telefones_alunos
+                                                              (fk_id_aluno, numero)
+                                                          VALUES
+                                                               (@id_aluno, @telefone);"
+
                             Using cmdInsertTel As New SQLiteCommand(sqlInsertTel, conexao)
                                 cmdInsertTel.Parameters.AddWithValue("@id_aluno", idAluno)
                                 cmdInsertTel.Parameters.AddWithValue("@telefone", Txt_telefone.Text)

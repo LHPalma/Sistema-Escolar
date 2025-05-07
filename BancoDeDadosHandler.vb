@@ -1,12 +1,12 @@
 ﻿Imports System.Data.SQLite
 
 Module BancoDeDadosHandler
-    Public Function FazAjax(conexao, campo, valorProcurado)
+    Public Function FazAjax(conexao, tabela, campo, valorProcurado)
         Dim dtAjax As New DataTable()
         Try
             conexao.Open()
             Dim sqlAjax As String = $"SELECT *
-                                      FROM tb_administradores
+                                      FROM {tabela}
                                       WHERE {campo.ToLower()} LIKE '%{valorProcurado}%';"
 
             Using cmdAjax As New SQLiteCommand(sqlAjax, conexao)

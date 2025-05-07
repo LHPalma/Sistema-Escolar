@@ -29,7 +29,7 @@ Partial Class Frm_GerenciamentoProfessores
         Me.Txt_buscar = New System.Windows.Forms.ToolStripTextBox()
         Me.ToolStripLabel2 = New System.Windows.Forms.ToolStripLabel()
         Me.Cmb_campo = New System.Windows.Forms.ToolStripComboBox()
-        Me.dgv_dados = New System.Windows.Forms.DataGridView()
+        Me.Dgv_dados = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txt_email = New System.Windows.Forms.TextBox()
         Me.txt_nome = New System.Windows.Forms.TextBox()
@@ -58,7 +58,7 @@ Partial Class Frm_GerenciamentoProfessores
         Me.Lb_cidade = New System.Windows.Forms.Label()
         Me.Txt_cidade = New System.Windows.Forms.TextBox()
         Me.ToolStrip1.SuspendLayout()
-        CType(Me.dgv_dados, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Dgv_dados, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.img_foto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -107,13 +107,13 @@ Partial Class Frm_GerenciamentoProfessores
         Me.Cmb_campo.Name = "Cmb_campo"
         Me.Cmb_campo.Size = New System.Drawing.Size(82, 31)
         '
-        'dgv_dados
+        'Dgv_dados
         '
-        Me.dgv_dados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv_dados.Location = New System.Drawing.Point(32, 333)
-        Me.dgv_dados.Name = "dgv_dados"
-        Me.dgv_dados.Size = New System.Drawing.Size(739, 174)
-        Me.dgv_dados.TabIndex = 19
+        Me.Dgv_dados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.Dgv_dados.Location = New System.Drawing.Point(32, 333)
+        Me.Dgv_dados.Name = "Dgv_dados"
+        Me.Dgv_dados.Size = New System.Drawing.Size(739, 174)
+        Me.Dgv_dados.TabIndex = 19
         '
         'Label1
         '
@@ -377,7 +377,7 @@ Partial Class Frm_GerenciamentoProfessores
         Me.Txt_cidade.Size = New System.Drawing.Size(129, 20)
         Me.Txt_cidade.TabIndex = 94
         '
-        'Frm_gerenContasProfessores
+        'Frm_GerenciamentoProfessores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -409,13 +409,13 @@ Partial Class Frm_GerenciamentoProfessores
         Me.Controls.Add(Me.txt_email)
         Me.Controls.Add(Me.txt_nome)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.dgv_dados)
+        Me.Controls.Add(Me.Dgv_dados)
         Me.Controls.Add(Me.ToolStrip1)
-        Me.Name = "Frm_gerenContasProfessores"
+        Me.Name = "Frm_GerenciamentoProfessores"
         Me.Text = "Gerenciamento e Edição de Contas de Professores"
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
-        CType(Me.dgv_dados, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Dgv_dados, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.img_foto, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -428,7 +428,7 @@ Partial Class Frm_GerenciamentoProfessores
     Friend WithEvents Txt_buscar As ToolStripTextBox
     Friend WithEvents ToolStripLabel2 As ToolStripLabel
     Friend WithEvents Cmb_campo As ToolStripComboBox
-    Friend WithEvents dgv_dados As DataGridView
+    Friend WithEvents Dgv_dados As DataGridView
     Friend WithEvents Label1 As Label
     Friend WithEvents txt_email As TextBox
     Friend WithEvents txt_nome As TextBox

@@ -11,7 +11,7 @@ Public Class Frm_GerenciamentoAdministradores
             Exit Sub
         End If
 
-        Dgv_dados.DataSource = FazAjax(conexao, Cmb_campo.Text, Txt_buscar.Text)
+        Dgv_dados.DataSource = FazAjax(conexao, "tb_administradores", Cmb_campo.Text, Txt_buscar.Text)
 
     End Sub
 
