@@ -87,7 +87,8 @@ Public Class Frm_CadastroProfessor
                     transacao.Commit()
                 End Using
 
-                EnviarEmail(Txt_email.Text, Txt_nome.Text)
+                Dim servicoDeMensagem As New ServicosDeMensagem()
+                servicoDeMensagem.EnviarEmail(Txt_email.Text, Txt_nome.Text)
 
                 ' Confirmação e próxima ação
                 Dim resp As MsgBoxResult = MsgBox($"Professor {Txt_nome.Text} cadastrado com sucesso! Deseja cadastrar outro Professor?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Cadastrado com sucesso")

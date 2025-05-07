@@ -39,7 +39,8 @@ Public Class Frm_cadastroAluno
 
                     'Validando transação
                     transacao.Commit()
-                    EnviarEmail(Txt_email.Text, Txt_nome.Text)
+                    Dim servicoDeMensagem As New ServicosDeMensagem()
+                    servicoDeMensagem.EnviarEmail(Txt_email.Text, Txt_nome.Text)
                     CadastrarDenovo(Txt_nome.Text)
                 End Using 'Fim transação
 
