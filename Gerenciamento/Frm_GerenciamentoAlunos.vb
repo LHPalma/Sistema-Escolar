@@ -16,8 +16,8 @@ Public Class Frm_GerenciamentoAlunos
         Dim sqlAjax = $"SELECT * FROM tb_alunos WHERE {Cmb_campo.Text.ToLower()} LIKE '%{Txt_buscar.Text}%';"
 
         ' TODO: Dar uma pesquisada no como isso funciona #nebulosidades nebulosas
+        conexao.Open()
         Using cmdAjax As New SQLiteCommand(sqlAjax, conexao)
-            conexao.Open()
             Dim dtAjax As New DataTable()
             Dim daAjax As New SQLiteDataAdapter(cmdAjax)
             daAjax.Fill(dtAjax)
@@ -38,8 +38,8 @@ Public Class Frm_GerenciamentoAlunos
             dtAjax.Columns.Remove("senha_salt")
 #End Region
 
-            conexao.Close()
             dgv_dados.DataSource = dtAjax
+            conexao.Close()
         End Using
 
     End Sub
@@ -130,26 +130,6 @@ Public Class Frm_GerenciamentoAlunos
         Finally
             conexao.Close()
         End Try
-
-    End Sub
-
-
-    Private Sub Cmb_campo_TextChanged(sender As Object, e As EventArgs) Handles Cmb_campo.TextChanged
-        ' Não funciona se o filho do draculo escrever em letra minúscula: nome != Nome
-        'If Cmb_campo.Items.Contains(Cmb_campo.Text) Then
-        '    permiteAjax = True
-        '    Txt_buscar_TextChanged(sender, e)
-        'Else
-        '    permiteAjax = False
-        'End If
-
-        For Each item As String In Cmb_campo.Items
-            If String.Equals(item, Cmb_campo.Text, StringComparison.OrdinalIgnoreCase) Then
-                permiteAjax = True
-                Txt_buscar_TextChanged(sender, e)
-                Exit For
-            End If
-        Next
 
     End Sub
 
@@ -318,4 +298,24 @@ Public Class Frm_GerenciamentoAlunos
         Txt_buscar_TextChanged(Nothing, Nothing)
     End Sub
 
+#Region "Rotinas de frontend"
+    Private Sub Cmb_campo_TextChanged(sender As Object, e As EventArgs) Handles Cmb_campo.TextChanged
+        ' Não funciona se o filho do draculo escrever em letra minúscula: nome != Nome
+        'If Cmb_campo.Items.Contains(Cmb_campo.Text) Then
+        '    permiteAjax = True
+        '    Txt_buscar_TextChanged(sender, e)
+        'Else
+        '    permiteAjax = False
+        'End If
+
+        For Each item As String In Cmb_campo.Items
+            If String.Equals(item, Cmb_campo.Text, StringComparison.OrdinalIgnoreCase) Then
+                permiteAjax = True
+                Txt_buscar_TextChanged(sender, e)
+                Exit For
+            End If
+        Next
+
+    End Sub
+#End Region
 End Class

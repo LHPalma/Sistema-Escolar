@@ -24,7 +24,7 @@ Partial Class Frm_GerenciamentoAdministradores
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_GerenciamentoAdministradores))
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.btn_gravar = New System.Windows.Forms.ToolStripButton()
+        Me.Btn_gravar = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
         Me.Txt_buscar = New System.Windows.Forms.ToolStripTextBox()
         Me.ToolStripLabel2 = New System.Windows.Forms.ToolStripLabel()
@@ -32,32 +32,32 @@ Partial Class Frm_GerenciamentoAdministradores
         Me.Btn_voltar = New System.Windows.Forms.Button()
         Me.Btn_editar = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.txt_email = New System.Windows.Forms.TextBox()
-        Me.txt_nome = New System.Windows.Forms.TextBox()
+        Me.Txt_email = New System.Windows.Forms.TextBox()
+        Me.Txt_nome = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.dgv_dados = New System.Windows.Forms.DataGridView()
+        Me.Dgv_dados = New System.Windows.Forms.DataGridView()
         Me.ToolStrip1.SuspendLayout()
-        CType(Me.dgv_dados, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Dgv_dados, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ToolStrip1
         '
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btn_gravar, Me.ToolStripLabel1, Me.Txt_buscar, Me.ToolStripLabel2, Me.Cmb_campo})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Btn_gravar, Me.ToolStripLabel1, Me.Txt_buscar, Me.ToolStripLabel2, Me.Cmb_campo})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(800, 31)
         Me.ToolStrip1.TabIndex = 19
         Me.ToolStrip1.Text = "ToolStrip1"
         '
-        'btn_gravar
+        'Btn_gravar
         '
-        Me.btn_gravar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.btn_gravar.Image = CType(resources.GetObject("btn_gravar.Image"), System.Drawing.Image)
-        Me.btn_gravar.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.btn_gravar.Name = "btn_gravar"
-        Me.btn_gravar.Size = New System.Drawing.Size(28, 28)
-        Me.btn_gravar.Text = "ToolStripButton1"
+        Me.Btn_gravar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.Btn_gravar.Image = CType(resources.GetObject("Btn_gravar.Image"), System.Drawing.Image)
+        Me.Btn_gravar.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.Btn_gravar.Name = "Btn_gravar"
+        Me.Btn_gravar.Size = New System.Drawing.Size(28, 28)
+        Me.Btn_gravar.Text = "ToolStripButton1"
         '
         'ToolStripLabel1
         '
@@ -116,21 +116,21 @@ Partial Class Frm_GerenciamentoAdministradores
         Me.Label1.TabIndex = 84
         Me.Label1.Text = "E-mail"
         '
-        'txt_email
+        'Txt_email
         '
-        Me.txt_email.Location = New System.Drawing.Point(32, 105)
-        Me.txt_email.Margin = New System.Windows.Forms.Padding(2)
-        Me.txt_email.Name = "txt_email"
-        Me.txt_email.Size = New System.Drawing.Size(338, 20)
-        Me.txt_email.TabIndex = 83
+        Me.Txt_email.Location = New System.Drawing.Point(32, 105)
+        Me.Txt_email.Margin = New System.Windows.Forms.Padding(2)
+        Me.Txt_email.Name = "Txt_email"
+        Me.Txt_email.Size = New System.Drawing.Size(338, 20)
+        Me.Txt_email.TabIndex = 83
         '
-        'txt_nome
+        'Txt_nome
         '
-        Me.txt_nome.Location = New System.Drawing.Point(33, 49)
-        Me.txt_nome.Margin = New System.Windows.Forms.Padding(2)
-        Me.txt_nome.Name = "txt_nome"
-        Me.txt_nome.Size = New System.Drawing.Size(492, 20)
-        Me.txt_nome.TabIndex = 82
+        Me.Txt_nome.Location = New System.Drawing.Point(33, 49)
+        Me.Txt_nome.Margin = New System.Windows.Forms.Padding(2)
+        Me.Txt_nome.Name = "Txt_nome"
+        Me.Txt_nome.Size = New System.Drawing.Size(492, 20)
+        Me.Txt_nome.TabIndex = 82
         '
         'Label3
         '
@@ -143,15 +143,15 @@ Partial Class Frm_GerenciamentoAdministradores
         Me.Label3.TabIndex = 81
         Me.Label3.Text = "Nome"
         '
-        'dgv_dados
+        'Dgv_dados
         '
-        Me.dgv_dados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv_dados.Location = New System.Drawing.Point(33, 172)
-        Me.dgv_dados.Name = "dgv_dados"
-        Me.dgv_dados.Size = New System.Drawing.Size(739, 174)
-        Me.dgv_dados.TabIndex = 80
+        Me.Dgv_dados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.Dgv_dados.Location = New System.Drawing.Point(33, 172)
+        Me.Dgv_dados.Name = "Dgv_dados"
+        Me.Dgv_dados.Size = New System.Drawing.Size(739, 174)
+        Me.Dgv_dados.TabIndex = 80
         '
-        'Frm_gerenContasADM
+        'Frm_GerenciamentoAdministradores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -159,23 +159,23 @@ Partial Class Frm_GerenciamentoAdministradores
         Me.Controls.Add(Me.Btn_voltar)
         Me.Controls.Add(Me.Btn_editar)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.txt_email)
-        Me.Controls.Add(Me.txt_nome)
+        Me.Controls.Add(Me.Txt_email)
+        Me.Controls.Add(Me.Txt_nome)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.dgv_dados)
+        Me.Controls.Add(Me.Dgv_dados)
         Me.Controls.Add(Me.ToolStrip1)
-        Me.Name = "Frm_gerenContasADM"
+        Me.Name = "Frm_GerenciamentoAdministradores"
         Me.Text = "Gerenciamento e Edição de Contas de Administradores"
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
-        CType(Me.dgv_dados, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Dgv_dados, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents ToolStrip1 As ToolStrip
-    Friend WithEvents btn_gravar As ToolStripButton
+    Friend WithEvents Btn_gravar As ToolStripButton
     Friend WithEvents ToolStripLabel1 As ToolStripLabel
     Friend WithEvents Txt_buscar As ToolStripTextBox
     Friend WithEvents ToolStripLabel2 As ToolStripLabel
@@ -183,8 +183,8 @@ Partial Class Frm_GerenciamentoAdministradores
     Friend WithEvents Btn_voltar As Button
     Friend WithEvents Btn_editar As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents txt_email As TextBox
-    Friend WithEvents txt_nome As TextBox
+    Friend WithEvents Txt_email As TextBox
+    Friend WithEvents Txt_nome As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents dgv_dados As DataGridView
+    Friend WithEvents Dgv_dados As DataGridView
 End Class
