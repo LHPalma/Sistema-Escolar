@@ -1,13 +1,11 @@
 ﻿'TODO:
 'Limitar tamanho de caracteres do campo RA para {tamanho de um RA}
 'Já foi feito através da classe: Validações de RA (se é numero) e E-mail (se tem @) -> crie a classe Email e faça as validações por lá
-'Definir turmas, como vão ser registradas no banco de dados, se vai ser pela cb ou se pode digitar o que quiser
+'Bloquear a escrita da combobox de turma (DEVE-SE APENAS ESCOLHER OQ JÁ TEM CADASTRADO)
 'Acrescentar no código os campos novos que foram adicionados de endereço e telefone
 
 Imports System.Data.SQLite
-Imports System.Net
 Imports System.Net.Http
-Imports System.Net.Mail
 Imports Newtonsoft.Json
 
 
@@ -37,6 +35,7 @@ Public Class Frm_cadastroAluno
                     Dim id_aluno = GetUltimoIdGerado(conexao, transacao)
                     InsereEnderecoAluno(id_aluno, conexao, transacao)
                     InsereTelefoneAluno(id_aluno, conexao, transacao)
+                    InsereTurma(id_aluno, conexao, transacao)
 
                     'Validando transação
                     transacao.Commit()
@@ -53,6 +52,7 @@ Public Class Frm_cadastroAluno
         End Using ' Fim SQLiteConnection(connectionString)
     End Sub
 
+#Region "Rotinas de Banco de Dados"
     Private Function ExisteAluno(ra As String, conexao As SQLiteConnection) As Boolean
         Dim sqlVerificar As String = "SELECT COUNT(*) FROM tb_alunos WHERE ra = @ra"
         Using cmdVerificar As New SQLiteCommand(sqlVerificar, conexao)
@@ -117,6 +117,7 @@ Public Class Frm_cadastroAluno
                                                            (fk_id_aluno, numero)
                                                        VALUES
                                                            (@fk_id_aluno, @numero);"
+
         Using cmdInsertTelefone As New SQLiteCommand(sqlInsertTelefone, conexao, transacao)
             cmdInsertTelefone.Parameters.AddWithValue("@fk_id_aluno", id_aluno)
             cmdInsertTelefone.Parameters.AddWithValue("@numero", Txt_telefone.Text)
@@ -124,11 +125,32 @@ Public Class Frm_cadastroAluno
         End Using
     End Sub
 
-    'TODO
     Private Sub InsereTurma(id_aluno As Long, conexao As SQLiteConnection, transacao As SQLiteTransaction)
+        Dim sqlInsertTurma As String = "INSERT INTO tb_turmas_alunos
+                                                           (fk_id_aluno, fk_id_turma)
+                                                       VALUES
+                                                           (@fk_id_aluno, @fk_id_turma);"
 
+        Using cmdInsertTurma As New SQLiteCommand(sqlInsertTurma, conexao, transacao)
+            cmdInsertTurma.Parameters.AddWithValue("@fk_id_aluno", id_aluno)
+            Dim id_turma As Long = GetIdTurma(Cmb_Turma.Text, conexao, transacao)
+            cmdInsertTurma.Parameters.AddWithValue("@fk_id_turma", id_turma)
+            cmdInsertTurma.ExecuteNonQuery()
+        End Using
     End Sub
 
+    Private Function GetIdTurma(nome_turma As String, conexao As SQLiteConnection, transacao As SQLiteTransaction) As Long
+        Dim sqlSelectTurma As String = "SELECT id_turma
+                                        FROM tb_turmas
+                                        WHERE nome = @nome_turma"
+
+        Using cmdSelectTurma As New SQLiteCommand(sqlSelectTurma, conexao, transacao)
+            cmdSelectTurma.Parameters.AddWithValue("@nome_turma", nome_turma)
+            Dim id_turma As Long = Convert.ToInt64(cmdSelectTurma.ExecuteScalar())
+            Return id_turma
+        End Using
+    End Function
+#End Region
 
     Private Sub CadastrarDenovo(nomeAluno As String)
         Dim resp = MsgBox($"Aluno {nomeAluno} cadastrado com sucesso! Deseja cadastrar outro Aluno?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Cadastrado com sucesso")
@@ -144,7 +166,7 @@ Public Class Frm_cadastroAluno
 
 
 
-#Region "Funções de FrontEnd"
+#Region "Rotinas de FrontEnd"
     Private Sub Cb_mostrar_senha_CheckedChanged(sender As Object, e As EventArgs) Handles Cb_mostrar_senha.CheckedChanged
         Txt_senha.UseSystemPasswordChar = Not Txt_senha.UseSystemPasswordChar
     End Sub
