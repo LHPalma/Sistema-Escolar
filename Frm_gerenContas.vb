@@ -76,6 +76,63 @@ Public Class Frm_gerenContas
             conexao.Close()
         End Try
 
+        'Preenche com endereço e telefone do aluno
+        Try
+            conexao.Open()
+            Using transacao = conexao.BeginTransaction()
+
+                '1. Busca Endereço (usei sem o inner join nesse pq pega todas as colunas da tabela endereço)
+                Dim sqlEndereco As String = "SELECT * FROM tb_enderecos_alunos WHERE fk_id_aluno = @id_aluno;"
+                Using cmdEndereco As New SQLiteCommand(sqlEndereco, conexao)
+                    cmdEndereco.Parameters.AddWithValue("@id_aluno", row.Cells("id_aluno").Value.ToString())
+
+                    Using readerEndereco As SQLiteDataReader = cmdEndereco.ExecuteReader()
+                        If readerEndereco.Read() Then
+                            Txt_rua.Text = readerEndereco("rua").ToString()
+                            Txt_numero.Text = readerEndereco("numero").ToString()
+                            Txt_bairro.Text = readerEndereco("bairro").ToString()
+                            Txt_cidade.Text = readerEndereco("cidade").ToString()
+                            Cmb_uf.Text = readerEndereco("uf").ToString()
+                            Txt_complemento.Text = readerEndereco("complemento").ToString()
+                            Txt_cep.Text = readerEndereco("cep").ToString()
+                        Else
+                            Txt_rua.Text = ""
+                            Txt_numero.Text = ""
+                            Txt_bairro.Text = ""
+                            Txt_cidade.Text = ""
+                            Cmb_uf.Text = ""
+                            Txt_complemento.Text = ""
+                            Txt_cep.Text = ""
+                        End If
+                    End Using
+                End Using
+
+
+                '2. Busca o Telefone
+                Dim sqlTelefone As String = "SELECT numero FROM tb_telefones_alunos WHERE fk_id_aluno = @id_aluno;"
+                Using cmdTelefone As New SQLiteCommand(sqlTelefone, conexao)
+                    cmdTelefone.Parameters.AddWithValue("@id_aluno", row.Cells("id_aluno").Value.ToString())
+
+                    Using readerTelefone As SQLiteDataReader = cmdTelefone.ExecuteReader()
+                        If readerTelefone.Read() Then
+                            Txt_telefone.Text = readerTelefone("numero").ToString()
+                        Else
+                            Txt_telefone.Text = ""
+                        End If
+                    End Using
+                End Using
+
+                transacao.Commit()
+            End Using ' Encerra a transação
+
+        Catch ex As Exception
+            MsgBox("Erro ao buscar endereço e telefone do aluno: " & ex.Message, MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Erro")
+        Finally
+            conexao.Close()
+        End Try
+
+
+
 
     End Sub
 
@@ -120,6 +177,7 @@ Public Class Frm_gerenContas
             cb_turma.DataSource = dtTurmas
             cb_turma.DisplayMember = "nome"       ' O que o usuário vai ver
             cb_turma.ValueMember = "id_turma"     ' Valor referencial usado no código
+
 
         Catch ex As Exception
             MsgBox("Erro ao carregar turmas: " & ex.Message, MsgBoxStyle.Critical)
@@ -169,14 +227,91 @@ Public Class Frm_gerenContas
                     cmdTurma.Parameters.AddWithValue("@idAluno", idAluno)
                     cmdTurma.ExecuteNonQuery()
                 End Using
-
                 transacao.Commit()
+            End Using ' Fim da primeira transação
 
-                MsgBox("Aluno atualizado com sucesso!", MsgBoxStyle.Information, "Sucesso")
+            'Atualiza dados de Endereço e Telefone do aluno nas tabelas correspondentes, atualizando a fk também
+            Try
 
+                Using transacao = conexao.BeginTransaction()
 
-            End Using 'Fim da transação
+                    ' ENDEREÇO 
+                    ' Verifica se já existe endereço para o aluno (pois no cadastro de alunos, ele pode cadastrar sem preencher endereço
+                    'se quiser mudar isso dps, só adicionar no cadastro Alunos para não permitir executar o Btn_cadastrar se os
+                    'dados de endereço não estiverem preenchidos, ai pode tirar esse insert e deixar só o Update
+                    Dim sqlCheckEndereco As String = "SELECT COUNT(*) FROM tb_enderecos_alunos WHERE fk_id_aluno = @id_aluno"
+                    Using cmdCheck As New SQLiteCommand(sqlCheckEndereco, conexao)
+                        cmdCheck.Parameters.AddWithValue("@id_aluno", idAluno)
+                        Dim existeEndereco As Integer = Convert.ToInt32(cmdCheck.ExecuteScalar())
 
+                        If existeEndereco > 0 Then
+                            ' Atualiza o endereço
+                            Dim sqlUpdateEndereco As String = "UPDATE tb_enderecos_alunos SET rua=@rua, numero=@numero, bairro=@bairro, cidade=@cidade, uf=@uf, complemento=@complemento, cep=@cep WHERE fk_id_aluno=@id_aluno"
+                            Using cmdUpdate As New SQLiteCommand(sqlUpdateEndereco, conexao)
+                                cmdUpdate.Parameters.AddWithValue("@rua", Txt_rua.Text)
+                                cmdUpdate.Parameters.AddWithValue("@numero", Txt_numero.Text)
+                                cmdUpdate.Parameters.AddWithValue("@bairro", Txt_bairro.Text)
+                                cmdUpdate.Parameters.AddWithValue("@cidade", Txt_cidade.Text)
+                                cmdUpdate.Parameters.AddWithValue("@uf", Cmb_uf.Text)
+                                cmdUpdate.Parameters.AddWithValue("@complemento", Txt_complemento.Text)
+                                cmdUpdate.Parameters.AddWithValue("@cep", Txt_cep.Text)
+                                cmdUpdate.Parameters.AddWithValue("@id_aluno", idAluno)
+                                cmdUpdate.ExecuteNonQuery()
+                            End Using
+                        Else
+                            ' Insere novo endereço
+                            Dim sqlInsertEndereco As String = "INSERT INTO tb_enderecos_alunos (fk_id_aluno, rua, numero, bairro, cidade, uf, complemento, cep) VALUES (@id_aluno, @rua, @numero, @bairro, @cidade, @uf, @complemento, @cep)"
+                            Using cmdInsert As New SQLiteCommand(sqlInsertEndereco, conexao)
+                                cmdInsert.Parameters.AddWithValue("@id_aluno", idAluno)
+                                cmdInsert.Parameters.AddWithValue("@rua", Txt_rua.Text)
+                                cmdInsert.Parameters.AddWithValue("@numero", Txt_numero.Text)
+                                cmdInsert.Parameters.AddWithValue("@bairro", Txt_bairro.Text)
+                                cmdInsert.Parameters.AddWithValue("@cidade", Txt_cidade.Text)
+                                cmdInsert.Parameters.AddWithValue("@uf", Cmb_uf.Text)
+                                cmdInsert.Parameters.AddWithValue("@complemento", Txt_complemento.Text)
+                                cmdInsert.Parameters.AddWithValue("@cep", Txt_cep.Text)
+                                cmdInsert.ExecuteNonQuery()
+                            End Using
+                        End If
+                    End Using
+
+                    ' TELEFONE
+                    ' Verifica se já existe telefone para o aluno
+                    Dim sqlCheckTelefone As String = "SELECT COUNT(*) FROM tb_telefones_alunos WHERE fk_id_aluno = @id_aluno"
+                    Using cmdCheckTel As New SQLiteCommand(sqlCheckTelefone, conexao)
+                        cmdCheckTel.Parameters.AddWithValue("@id_aluno", idAluno)
+                        Dim existeTelefone As Integer = Convert.ToInt32(cmdCheckTel.ExecuteScalar())
+
+                        If existeTelefone > 0 Then
+                            ' Atualiza telefone
+                            Dim sqlUpdateTel As String = "UPDATE tb_telefones_alunos SET numero=@telefone WHERE fk_id_aluno=@id_aluno"
+                            Using cmdUpdateTel As New SQLiteCommand(sqlUpdateTel, conexao)
+                                cmdUpdateTel.Parameters.AddWithValue("@telefone", Txt_telefone.Text)
+                                cmdUpdateTel.Parameters.AddWithValue("@id_aluno", idAluno)
+                                cmdUpdateTel.ExecuteNonQuery()
+                            End Using
+                        Else
+                            ' Insere novo telefone
+                            Dim sqlInsertTel As String = "INSERT INTO tb_telefones_alunos (fk_id_aluno, numero) VALUES (@id_aluno, @telefone)"
+                            Using cmdInsertTel As New SQLiteCommand(sqlInsertTel, conexao)
+                                cmdInsertTel.Parameters.AddWithValue("@id_aluno", idAluno)
+                                cmdInsertTel.Parameters.AddWithValue("@telefone", Txt_telefone.Text)
+                                cmdInsertTel.ExecuteNonQuery()
+                            End Using
+                        End If
+                    End Using
+
+                    transacao.Commit()
+                End Using ' Fim da segunda Transação
+
+                ' Catch de tentativa de cadastrar endereço e telefone
+            Catch ex As Exception
+                MsgBox("Erro ao atualizar endereço ou telefone: " & ex.Message, MsgBoxStyle.Critical, "Erro")
+            End Try
+
+            MsgBox("Dados de Aluno atualizado com sucesso!", MsgBoxStyle.Information, "Sucesso")
+
+            'Catch que engloba tudo, atualização de aluno,endereço e telefone
         Catch ex As Exception
             MsgBox("Erro ao atualizar aluno: " & ex.Message, MsgBoxStyle.Critical, "Erro")
         Finally
