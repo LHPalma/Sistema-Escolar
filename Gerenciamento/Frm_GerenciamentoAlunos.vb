@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SQLite
 
-Public Class Frm_gerenContas
+Public Class Frm_GerenciamentoAlunos
 
     Dim permiteAjax As Boolean = False
 
@@ -131,9 +131,6 @@ Public Class Frm_gerenContas
             conexao.Close()
         End Try
 
-
-
-
     End Sub
 
 
@@ -207,7 +204,6 @@ Public Class Frm_gerenContas
             conexao.Open()
 
             Using transacao = conexao.BeginTransaction()
-
 
 
                 ' Atualizar os dados do aluno

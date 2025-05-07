@@ -124,6 +124,11 @@ Public Class Frm_cadastroAluno
         End Using
     End Sub
 
+    'TODO
+    Private Sub InsereTurma(id_aluno As Long, conexao As SQLiteConnection, transacao As SQLiteTransaction)
+
+    End Sub
+
 
     Private Sub CadastrarDenovo(nomeAluno As String)
         Dim resp = MsgBox($"Aluno {nomeAluno} cadastrado com sucesso! Deseja cadastrar outro Aluno?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Cadastrado com sucesso")

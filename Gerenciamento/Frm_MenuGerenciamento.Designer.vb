@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Frm_menuGerenciamento
+Partial Class Frm_MenuGerenciamento
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
@@ -22,7 +22,7 @@ Partial Class Frm_menuGerenciamento
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_menuGerenciamento))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_MenuGerenciamento))
         Me.Btn_voltar = New System.Windows.Forms.Button()
         Me.Lb_bemvindo = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -93,7 +93,7 @@ Partial Class Frm_menuGerenciamento
         Me.Btn_adm.Text = "ADMINISTRADORES"
         Me.Btn_adm.UseVisualStyleBackColor = True
         '
-        'Frm_menuGerenciamento
+        'Frm_MenuGerenciamento
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -104,7 +104,7 @@ Partial Class Frm_menuGerenciamento
         Me.Controls.Add(Me.Btn_voltar)
         Me.Controls.Add(Me.Lb_bemvindo)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "Frm_menuGerenciamento"
+        Me.Name = "Frm_MenuGerenciamento"
         Me.Text = "Gerenciamento de Contas"
         Me.ResumeLayout(False)
         Me.PerformLayout()

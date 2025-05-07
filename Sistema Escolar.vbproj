@@ -8,7 +8,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{755CE600-AE2B-4438-B87F-C9992EBEAA2B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Sistema_Escolar.Frm_gerenContas</StartupObject>
+    <StartupObject>Sistema_Escolar.Frm_MenuGerenciamento</StartupObject>
     <RootNamespace>Sistema_Escolar</RootNamespace>
     <AssemblyName>Sistema Escolar</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -120,47 +120,47 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Aluno.vb" />
-    <Compile Include="Frm_CadastroProfessor.Designer.vb">
+    <Compile Include="Cadastro\Frm_CadastroProfessor.Designer.vb">
       <DependentUpon>Frm_CadastroProfessor.vb</DependentUpon>
     </Compile>
-    <Compile Include="Frm_CadastroProfessor.vb">
+    <Compile Include="Cadastro\Frm_CadastroProfessor.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Endereco.vb" />
-    <Compile Include="Frm_cadastroADM.Designer.vb">
+    <Compile Include="Cadastro\Frm_cadastroADM.Designer.vb">
       <DependentUpon>Frm_cadastroADM.vb</DependentUpon>
     </Compile>
-    <Compile Include="Frm_cadastroADM.vb">
+    <Compile Include="Cadastro\Frm_cadastroADM.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_cadastroAluno.Designer.vb">
+    <Compile Include="Cadastro\Frm_cadastroAluno.Designer.vb">
       <DependentUpon>Frm_cadastroAluno.vb</DependentUpon>
     </Compile>
-    <Compile Include="Frm_cadastroAluno.vb">
+    <Compile Include="Cadastro\Frm_cadastroAluno.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_cadastroTurma.Designer.vb">
+    <Compile Include="Cadastro\Frm_cadastroTurma.Designer.vb">
       <DependentUpon>Frm_cadastroTurma.vb</DependentUpon>
     </Compile>
-    <Compile Include="Frm_cadastroTurma.vb">
+    <Compile Include="Cadastro\Frm_cadastroTurma.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_gerenContas.Designer.vb">
-      <DependentUpon>Frm_gerenContas.vb</DependentUpon>
+    <Compile Include="Gerenciamento\Frm_GerenciamentoAlunos.Designer.vb">
+      <DependentUpon>Frm_GerenciamentoAlunos.vb</DependentUpon>
     </Compile>
-    <Compile Include="Frm_gerenContas.vb">
+    <Compile Include="Gerenciamento\Frm_GerenciamentoAlunos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_gerenContasADM.Designer.vb">
-      <DependentUpon>Frm_gerenContasADM.vb</DependentUpon>
+    <Compile Include="Gerenciamento\Frm_GerenciamentoAdministradores.Designer.vb">
+      <DependentUpon>Frm_GerenciamentoAdministradores.vb</DependentUpon>
     </Compile>
-    <Compile Include="Frm_gerenContasADM.vb">
+    <Compile Include="Gerenciamento\Frm_GerenciamentoAdministradores.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_gerenContasProfessores.Designer.vb">
-      <DependentUpon>Frm_gerenContasProfessores.vb</DependentUpon>
+    <Compile Include="Gerenciamento\Frm_GerenciamentoProfessores.Designer.vb">
+      <DependentUpon>Frm_GerenciamentoProfessores.vb</DependentUpon>
     </Compile>
-    <Compile Include="Frm_gerenContasProfessores.vb">
+    <Compile Include="Gerenciamento\Frm_GerenciamentoProfessores.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_inicio.Designer.vb">
@@ -169,23 +169,23 @@
     <Compile Include="Frm_inicio.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_loginADM.Designer.vb">
+    <Compile Include="Login\Frm_loginADM.Designer.vb">
       <DependentUpon>Frm_loginADM.vb</DependentUpon>
     </Compile>
-    <Compile Include="Frm_loginADM.vb">
+    <Compile Include="Login\Frm_loginADM.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_loginAluno.vb">
+    <Compile Include="Login\Frm_loginAluno.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_loginAluno.Designer.vb">
+    <Compile Include="Login\Frm_loginAluno.Designer.vb">
       <DependentUpon>Frm_loginAluno.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_loginProfessor.Designer.vb">
+    <Compile Include="Login\Frm_loginProfessor.Designer.vb">
       <DependentUpon>Frm_loginProfessor.vb</DependentUpon>
     </Compile>
-    <Compile Include="Frm_loginProfessor.vb">
+    <Compile Include="Login\Frm_loginProfessor.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_menuADM.Designer.vb">
@@ -200,10 +200,10 @@
     <Compile Include="Frm_menuCadastro.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_menuGerenciamento.Designer.vb">
-      <DependentUpon>Frm_menuGerenciamento.vb</DependentUpon>
+    <Compile Include="Gerenciamento\Frm_MenuGerenciamento.Designer.vb">
+      <DependentUpon>Frm_MenuGerenciamento.vb</DependentUpon>
     </Compile>
-    <Compile Include="Frm_menuGerenciamento.vb">
+    <Compile Include="Gerenciamento\Frm_MenuGerenciamento.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Modulo.vb" />
@@ -220,37 +220,37 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Frm_CadastroProfessor.resx">
+    <EmbeddedResource Include="Cadastro\Frm_CadastroProfessor.resx">
       <DependentUpon>Frm_CadastroProfessor.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_cadastroADM.resx">
+    <EmbeddedResource Include="Cadastro\Frm_cadastroADM.resx">
       <DependentUpon>Frm_cadastroADM.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_cadastroAluno.resx">
+    <EmbeddedResource Include="Cadastro\Frm_cadastroAluno.resx">
       <DependentUpon>Frm_cadastroAluno.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_cadastroTurma.resx">
+    <EmbeddedResource Include="Cadastro\Frm_cadastroTurma.resx">
       <DependentUpon>Frm_cadastroTurma.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_gerenContas.resx">
-      <DependentUpon>Frm_gerenContas.vb</DependentUpon>
+    <EmbeddedResource Include="Gerenciamento\Frm_GerenciamentoAlunos.resx">
+      <DependentUpon>Frm_GerenciamentoAlunos.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_gerenContasADM.resx">
-      <DependentUpon>Frm_gerenContasADM.vb</DependentUpon>
+    <EmbeddedResource Include="Gerenciamento\Frm_GerenciamentoAdministradores.resx">
+      <DependentUpon>Frm_GerenciamentoAdministradores.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_gerenContasProfessores.resx">
-      <DependentUpon>Frm_gerenContasProfessores.vb</DependentUpon>
+    <EmbeddedResource Include="Gerenciamento\Frm_GerenciamentoProfessores.resx">
+      <DependentUpon>Frm_GerenciamentoProfessores.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_inicio.resx">
       <DependentUpon>Frm_inicio.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_loginADM.resx">
+    <EmbeddedResource Include="Login\Frm_loginADM.resx">
       <DependentUpon>Frm_loginADM.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_loginAluno.resx">
+    <EmbeddedResource Include="Login\Frm_loginAluno.resx">
       <DependentUpon>Frm_loginAluno.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_loginProfessor.resx">
+    <EmbeddedResource Include="Login\Frm_loginProfessor.resx">
       <DependentUpon>Frm_loginProfessor.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_menuADM.resx">
@@ -259,8 +259,8 @@
     <EmbeddedResource Include="Frm_menuCadastro.resx">
       <DependentUpon>Frm_menuCadastro.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_menuGerenciamento.resx">
-      <DependentUpon>Frm_menuGerenciamento.vb</DependentUpon>
+    <EmbeddedResource Include="Gerenciamento\Frm_MenuGerenciamento.resx">
+      <DependentUpon>Frm_MenuGerenciamento.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
