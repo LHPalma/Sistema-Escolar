@@ -210,13 +210,8 @@ Public Class Frm_GerenciamentoAlunos
 
 #Region "Rotinas de frontend"
     Private Sub Cmb_campo_TextChanged(sender As Object, e As EventArgs) Handles Cmb_campo.TextChanged
-        ' Não funciona se o filho do draculo escrever em letra minúscula: nome != Nome
-        'If Cmb_campo.Items.Contains(Cmb_campo.Text) Then
-        '    permiteAjax = True
-        '    Txt_buscar_TextChanged(sender, e)
-        'Else
-        '    permiteAjax = False
-        'End If
+        'TODO:
+        'LimparCampos()
 
         For Each item As String In Cmb_campo.Items
             If String.Equals(item, Cmb_campo.Text, StringComparison.OrdinalIgnoreCase) Then
@@ -226,6 +221,42 @@ Public Class Frm_GerenciamentoAlunos
             End If
         Next
 
+    End Sub
+
+    Private Sub Btn_bloquear_Click(sender As Object, e As EventArgs) Handles Btn_bloquear.Click
+        If txt_nome.Text = "" Then
+            Exit Sub
+        End If
+
+        Dim sqlUpdateStatusAluno As String = "UPDATE tb_alunos
+                                              SET
+                                                  ativo = @status
+                                              WHERE 
+                                                  id_aluno = @id_aluno;"
+
+        Try
+            conexao.Open()
+
+            Dim status = If((dgv_dados.CurrentRow.Cells("ativo").Value = 1), 0, 1)
+
+            'TODO: Arrumar essa gambiarra
+            dgv_dados.CurrentRow.Cells("ativo").Value = status
+
+
+            Using cmdUpdateStatusAluno As New SQLiteCommand(sqlUpdateStatusAluno, conexao)
+                cmdUpdateStatusAluno.Parameters.AddWithValue("@status", status)
+                cmdUpdateStatusAluno.Parameters.AddWithValue("@id_aluno", dgv_dados.CurrentRow.Cells("id_aluno").Value)
+                cmdUpdateStatusAluno.ExecuteNonQuery()
+            End Using
+
+            MsgBox($"Aluno {txt_nome.Text} {If((status = 1), "desbloqueado", "bloqueado")} com sucesso!", vbInformation + MsgBoxStyle.OkOnly, "Status atualizado!")
+            Cmb_campo_TextChanged(sender, e)
+
+        Catch ex As Exception
+
+        Finally
+            conexao.Close()
+        End Try
     End Sub
 #End Region
 End Class

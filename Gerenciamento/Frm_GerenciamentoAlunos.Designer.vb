@@ -59,6 +59,7 @@ Partial Class Frm_GerenciamentoAlunos
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Txt_ra = New System.Windows.Forms.TextBox()
+        Me.Btn_bloquear = New System.Windows.Forms.Button()
         CType(Me.dgv_dados, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.img_foto, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -399,11 +400,22 @@ Partial Class Frm_GerenciamentoAlunos
         Me.Txt_ra.Size = New System.Drawing.Size(137, 20)
         Me.Txt_ra.TabIndex = 23
         '
+        'Btn_bloquear
+        '
+        Me.Btn_bloquear.BackColor = System.Drawing.Color.Red
+        Me.Btn_bloquear.Location = New System.Drawing.Point(667, 264)
+        Me.Btn_bloquear.Name = "Btn_bloquear"
+        Me.Btn_bloquear.Size = New System.Drawing.Size(91, 27)
+        Me.Btn_bloquear.TabIndex = 87
+        Me.Btn_bloquear.Text = "BLOQUEAR" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Btn_bloquear.UseVisualStyleBackColor = False
+        '
         'Frm_GerenciamentoAlunos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 532)
+        Me.Controls.Add(Me.Btn_bloquear)
         Me.Controls.Add(Me.Cmb_uf)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label2)
@@ -483,4 +495,5 @@ Partial Class Frm_GerenciamentoAlunos
     Friend WithEvents Label11 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Txt_ra As TextBox
+    Friend WithEvents Btn_bloquear As Button
 End Class
