@@ -16,7 +16,7 @@ Public Class Frm_loginProfessor
         Try
             conexao.Open()
 
-            Dim usuarioValido As Boolean = VerificarUsuario("tb_professores", "email", Txt_email.Text, Txt_senha.Text)
+            Dim usuarioValido As Boolean = VerificaSenhaUsuario("tb_professores", "email", Txt_email.Text, Txt_senha.Text)
 
             If usuarioValido Then
                 MsgBox($"Login realizado com sucesso. Bem-vindo prof. {Txt_email.Text}!")
