@@ -54,9 +54,9 @@ Public Class Frm_CadastroProfessor
 
                     ' Inserir endereço
                     Dim sqlInsertEndereco As String = "INSERT INTO tb_enderecos_professores
-                                            (fk_id_professor, cep, rua, numero, complemento, cidade, uf)
+                                            (fk_id_professor, cep, rua, numero, complemento, cidade, uf, bairro)
                                           VALUES
-                                            (@fk_id_professor, @cep, @rua, @numero, @complemento, @cidade, @uf);"
+                                            (@fk_id_professor, @cep, @rua, @numero, @complemento, @cidade, @uf, @bairro);"
 
 
                     Using cmdInsertEndereco As New SQLiteCommand(sqlInsertEndereco, conexao, transacao)
@@ -68,6 +68,7 @@ Public Class Frm_CadastroProfessor
                         cmdInsertEndereco.Parameters.AddWithValue("@complemento", Txt_complemento.Text)
                         cmdInsertEndereco.Parameters.AddWithValue("@cidade", Txt_cidade.Text)
                         cmdInsertEndereco.Parameters.AddWithValue("@uf", Cmb_uf.Text)
+                        cmdInsertEndereco.Parameters.AddWithValue("@bairro", Txt_bairro.Text)
                         cmdInsertEndereco.ExecuteNonQuery()
                     End Using
 

@@ -58,7 +58,7 @@ Partial Class Frm_GerenciamentoAlunos
         Me.Cmb_uf = New System.Windows.Forms.ComboBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.txt_ra = New System.Windows.Forms.TextBox()
+        Me.Txt_ra = New System.Windows.Forms.TextBox()
         CType(Me.dgv_dados, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.img_foto, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -390,16 +390,16 @@ Partial Class Frm_GerenciamentoAlunos
         Me.Label4.TabIndex = 24
         Me.Label4.Text = "RA"
         '
-        'txt_ra
+        'Txt_ra
         '
-        Me.txt_ra.Location = New System.Drawing.Point(238, 167)
-        Me.txt_ra.Margin = New System.Windows.Forms.Padding(2)
-        Me.txt_ra.MaxLength = 11
-        Me.txt_ra.Name = "txt_ra"
-        Me.txt_ra.Size = New System.Drawing.Size(137, 20)
-        Me.txt_ra.TabIndex = 23
+        Me.Txt_ra.Location = New System.Drawing.Point(238, 167)
+        Me.Txt_ra.Margin = New System.Windows.Forms.Padding(2)
+        Me.Txt_ra.MaxLength = 11
+        Me.Txt_ra.Name = "Txt_ra"
+        Me.Txt_ra.Size = New System.Drawing.Size(137, 20)
+        Me.Txt_ra.TabIndex = 23
         '
-        'Frm_gerenContas
+        'Frm_GerenciamentoAlunos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -427,7 +427,7 @@ Partial Class Frm_GerenciamentoAlunos
         Me.Controls.Add(Me.cb_turma)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.txt_ra)
+        Me.Controls.Add(Me.Txt_ra)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txt_email)
         Me.Controls.Add(Me.ToolStrip1)
@@ -435,7 +435,7 @@ Partial Class Frm_GerenciamentoAlunos
         Me.Controls.Add(Me.txt_nome)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.dgv_dados)
-        Me.Name = "Frm_gerenContas"
+        Me.Name = "Frm_GerenciamentoAlunos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Gerenciamento e Edição de Contas de Alunos"
         CType(Me.dgv_dados, System.ComponentModel.ISupportInitialize).EndInit()
@@ -482,5 +482,5 @@ Partial Class Frm_GerenciamentoAlunos
     Friend WithEvents Cmb_uf As ComboBox
     Friend WithEvents Label11 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents txt_ra As TextBox
+    Friend WithEvents Txt_ra As TextBox
 End Class

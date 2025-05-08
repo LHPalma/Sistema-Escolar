@@ -31,7 +31,7 @@ Partial Class Frm_GerenciamentoProfessores
         Me.Cmb_campo = New System.Windows.Forms.ToolStripComboBox()
         Me.Dgv_dados = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.txt_email = New System.Windows.Forms.TextBox()
+        Me.Txt_email = New System.Windows.Forms.TextBox()
         Me.txt_nome = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Btn_voltar = New System.Windows.Forms.Button()
@@ -126,13 +126,13 @@ Partial Class Frm_GerenciamentoProfessores
         Me.Label1.TabIndex = 24
         Me.Label1.Text = "E-mail"
         '
-        'txt_email
+        'Txt_email
         '
-        Me.txt_email.Location = New System.Drawing.Point(32, 113)
-        Me.txt_email.Margin = New System.Windows.Forms.Padding(2)
-        Me.txt_email.Name = "txt_email"
-        Me.txt_email.Size = New System.Drawing.Size(338, 20)
-        Me.txt_email.TabIndex = 23
+        Me.Txt_email.Location = New System.Drawing.Point(32, 113)
+        Me.Txt_email.Margin = New System.Windows.Forms.Padding(2)
+        Me.Txt_email.Name = "Txt_email"
+        Me.Txt_email.Size = New System.Drawing.Size(338, 20)
+        Me.Txt_email.TabIndex = 23
         '
         'txt_nome
         '
@@ -406,7 +406,7 @@ Partial Class Frm_GerenciamentoProfessores
         Me.Controls.Add(Me.Btn_editar)
         Me.Controls.Add(Me.img_foto)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.txt_email)
+        Me.Controls.Add(Me.Txt_email)
         Me.Controls.Add(Me.txt_nome)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Dgv_dados)
@@ -430,7 +430,7 @@ Partial Class Frm_GerenciamentoProfessores
     Friend WithEvents Cmb_campo As ToolStripComboBox
     Friend WithEvents Dgv_dados As DataGridView
     Friend WithEvents Label1 As Label
-    Friend WithEvents txt_email As TextBox
+    Friend WithEvents Txt_email As TextBox
     Friend WithEvents txt_nome As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Btn_voltar As Button

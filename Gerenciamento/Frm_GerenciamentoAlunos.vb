@@ -49,7 +49,7 @@ Public Class Frm_GerenciamentoAlunos
         Dim row As DataGridViewRow = dgv_dados.Rows(e.RowIndex)
         txt_nome.Text = row.Cells("nome").Value.ToString()
         txt_email.Text = row.Cells("email").Value.ToString()
-        txt_ra.Text = row.Cells("ra").Value.ToString()
+        Txt_ra.Text = row.Cells("ra").Value.ToString()
 
         Try
             conexao.Open()
@@ -180,7 +180,7 @@ Public Class Frm_GerenciamentoAlunos
 
         Dim novoNome As String = txt_nome.Text.Trim()
         Dim novoEmail As String = txt_email.Text.Trim()
-        Dim novoRa As String = txt_ra.Text.Trim()
+        Dim novoRa As String = Txt_ra.Text.Trim()
         Dim novaTurmaId As Integer = Convert.ToInt32(cb_turma.SelectedValue)
 
         Try
@@ -189,11 +189,11 @@ Public Class Frm_GerenciamentoAlunos
 
                 AtualizarDados(idAluno, novoNome, novoEmail, novoRa, conexao, transacao)
                 AtualizarRelacionamento("tb_alunos_turmas", "fk_id_aluno", "fk_id_turma", idAluno, cb_turma.SelectedValue, conexao)
-                AtualizarEndereco("tb_enderecos_alunos", "fk_id_aluno", idAluno,
+                AtualizarOuInsereEndereco("tb_enderecos_alunos", "fk_id_aluno", idAluno,
                   Txt_rua.Text, Txt_numero.Text, Txt_bairro.Text, Txt_complemento.Text,
                   Txt_cidade.Text, Cmb_uf.Text, Txt_cep.Text,
                   conexao)
-                AtualizarTelefone("tb_telefones_alunos", "fk_id_aluno", idAluno, Txt_telefone.Text, conexao)
+                AtualizaOuInsereTelefone("tb_telefones_alunos", "fk_id_aluno", idAluno, Txt_telefone.Text, conexao)
 
                 transacao.Commit()
                 MsgBox("Dados atualizados com sucesso!", MsgBoxStyle.Information)

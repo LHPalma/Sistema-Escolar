@@ -75,7 +75,7 @@ Module BancoDeDadosHandler
     End Sub
 
 
-    Public Sub AtualizarEndereco(tabelaEndereco As String, campoChaveEstrangeira As String,
+    Public Sub AtualizarOuInsereEndereco(tabelaEndereco As String, campoChaveEstrangeira As String,
                   idEntidade As Integer,
                   rua As String, numero As String, bairro As String, complemento As String,
                   cidade As String, estado As String, cep As String,
@@ -117,22 +117,19 @@ Module BancoDeDadosHandler
 
 
 
-    Sub AtualizarTelefone(tabela As String, campoFK As String, idReferencia As Integer, novoTelefone As String, conexao As SQLiteConnection)
+    Sub AtualizaOuInsereTelefone(tabela As String, campoFK As String, idReferencia As Integer, novoTelefone As String, conexao As SQLiteConnection)
         Dim existe As Boolean = BuscarExistencia(tabela, campoFK, idReferencia, conexao)
 
+        Dim sql As String
         If existe Then
-            ' Atualiza telefone existente
-            Dim cmdUpdate As New SQLiteCommand($"UPDATE {tabela} SET numero = @telefone WHERE {campoFK} = @idReferencia", conexao)
-            cmdUpdate.Parameters.AddWithValue("@telefone", novoTelefone)
-            cmdUpdate.Parameters.AddWithValue("@idReferencia", idReferencia)
-            cmdUpdate.ExecuteNonQuery()
+            sql = ($"UPDATE {tabela} SET numero = @telefone WHERE {campoFK} = @idReferencia")
         Else
-            ' Insere novo telefone
-            Dim cmdInsert As New SQLiteCommand($"INSERT INTO {tabela} ({campoFK}, numero) VALUES (@idReferencia, @telefone)", conexao)
-            cmdInsert.Parameters.AddWithValue("@idReferencia", idReferencia)
-            cmdInsert.Parameters.AddWithValue("@telefone", novoTelefone)
-            cmdInsert.ExecuteNonQuery()
+            sql = ($"INSERT INTO {tabela} ({campoFK}, numero) VALUES (@idReferencia, @telefone)")
         End If
+        Dim cmd As New SQLiteCommand(sql, conexao)
+        cmd.Parameters.AddWithValue("@telefone", novoTelefone)
+        cmd.Parameters.AddWithValue("@idReferencia", idReferencia)
+        cmd.ExecuteNonQuery()
     End Sub
 
     Public Function BuscarExistencia(tabela As String, campoFK As String, idReferencia As Integer, conexao As SQLiteConnection)
