@@ -24,7 +24,7 @@ Partial Class Frm_cadastroTurma
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_cadastroTurma))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.Cmb_data = New System.Windows.Forms.DateTimePicker()
         Me.btn_cadastrar = New System.Windows.Forms.Button()
         Me.Lb_senha = New System.Windows.Forms.Label()
         Me.Txt_descricao = New System.Windows.Forms.TextBox()
@@ -38,7 +38,7 @@ Partial Class Frm_cadastroTurma
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
+        Me.GroupBox1.Controls.Add(Me.Cmb_data)
         Me.GroupBox1.Controls.Add(Me.btn_cadastrar)
         Me.GroupBox1.Controls.Add(Me.Lb_senha)
         Me.GroupBox1.Controls.Add(Me.Txt_descricao)
@@ -54,14 +54,14 @@ Partial Class Frm_cadastroTurma
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Insira os Dados de Turma"
         '
-        'DateTimePicker1
+        'Cmb_data
         '
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker1.Location = New System.Drawing.Point(63, 160)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(159, 20)
-        Me.DateTimePicker1.TabIndex = 3
-        Me.DateTimePicker1.Value = New Date(2025, 5, 1, 0, 0, 0, 0)
+        Me.Cmb_data.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.Cmb_data.Location = New System.Drawing.Point(63, 160)
+        Me.Cmb_data.Name = "Cmb_data"
+        Me.Cmb_data.Size = New System.Drawing.Size(159, 20)
+        Me.Cmb_data.TabIndex = 3
+        Me.Cmb_data.Value = New Date(2025, 5, 1, 0, 0, 0, 0)
         '
         'btn_cadastrar
         '
@@ -163,7 +163,7 @@ Partial Class Frm_cadastroTurma
     Friend WithEvents Lb_email As Label
     Friend WithEvents Txt_nome As TextBox
     Friend WithEvents Lb_nome As Label
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents Cmb_data As DateTimePicker
     Friend WithEvents Btn_voltar As Button
     Friend WithEvents Btn_limpar_campos As Button
 End Class

@@ -3,7 +3,7 @@
 Imports System.Data.SQLite
 
 Public Class Frm_cadastroTurma
-    Private Sub DateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles DateTimePicker1.ValueChanged
+    Private Sub DateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles Cmb_data.ValueChanged
 
     End Sub
 
@@ -52,6 +52,6 @@ Public Class Frm_cadastroTurma
     Private Sub LimparCampos()
         Txt_nome.Clear()
         Txt_descricao.Clear()
-        DateTimePicker1.Value = DateTime.Now
+        Cmb_data.Value = DateTime.Now
     End Sub
 End Class

@@ -155,4 +155,8 @@ Public Class Frm_CadastroProfessor
     Private Sub Lb_cidade_Click(sender As Object, e As EventArgs) Handles Lb_cidade.Click
         Txt_cidade.Focus()
     End Sub
+
+    Private Sub Lb_email_Click(sender As Object, e As EventArgs) Handles Lb_email.Click
+
+    End Sub
 End Class

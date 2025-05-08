@@ -30,6 +30,7 @@ Partial Class Frm_menuCadastro
         Me.Lb_bemvindo = New System.Windows.Forms.Label()
         Me.Btn_voltar = New System.Windows.Forms.Button()
         Me.Btn_turma = New System.Windows.Forms.Button()
+        Me.Btn_disciplina = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Btn_professor
@@ -66,7 +67,7 @@ Partial Class Frm_menuCadastro
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 339)
+        Me.Label1.Location = New System.Drawing.Point(12, 425)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(137, 20)
         Me.Label1.TabIndex = 8
@@ -87,7 +88,7 @@ Partial Class Frm_menuCadastro
         '
         Me.Btn_voltar.Image = CType(resources.GetObject("Btn_voltar.Image"), System.Drawing.Image)
         Me.Btn_voltar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Btn_voltar.Location = New System.Drawing.Point(430, 329)
+        Me.Btn_voltar.Location = New System.Drawing.Point(430, 415)
         Me.Btn_voltar.Name = "Btn_voltar"
         Me.Btn_voltar.Size = New System.Drawing.Size(91, 27)
         Me.Btn_voltar.TabIndex = 28
@@ -104,11 +105,22 @@ Partial Class Frm_menuCadastro
         Me.Btn_turma.Text = "NOVA TURMA"
         Me.Btn_turma.UseVisualStyleBackColor = True
         '
+        'Btn_disciplina
+        '
+        Me.Btn_disciplina.Location = New System.Drawing.Point(167, 313)
+        Me.Btn_disciplina.Margin = New System.Windows.Forms.Padding(2)
+        Me.Btn_disciplina.Name = "Btn_disciplina"
+        Me.Btn_disciplina.Size = New System.Drawing.Size(175, 55)
+        Me.Btn_disciplina.TabIndex = 30
+        Me.Btn_disciplina.Text = "NOVA DISCIPLINA"
+        Me.Btn_disciplina.UseVisualStyleBackColor = True
+        '
         'Frm_menuCadastro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(533, 368)
+        Me.ClientSize = New System.Drawing.Size(533, 454)
+        Me.Controls.Add(Me.Btn_disciplina)
         Me.Controls.Add(Me.Btn_turma)
         Me.Controls.Add(Me.Btn_voltar)
         Me.Controls.Add(Me.Lb_bemvindo)
@@ -130,4 +142,5 @@ Partial Class Frm_menuCadastro
     Friend WithEvents Lb_bemvindo As Label
     Friend WithEvents Btn_voltar As Button
     Friend WithEvents Btn_turma As Button
+    Friend WithEvents Btn_disciplina As Button
 End Class

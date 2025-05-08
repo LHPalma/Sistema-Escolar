@@ -121,6 +121,18 @@
   <ItemGroup>
     <Compile Include="Aluno.vb" />
     <Compile Include="BancoDeDadosHandler.vb" />
+    <Compile Include="Cadastro\Frm_agendamentoAvaliacao.Designer.vb">
+      <DependentUpon>Frm_agendamentoAvaliacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Frm_agendamentoAvaliacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\Frm_cadastroDisciplina.Designer.vb">
+      <DependentUpon>Frm_cadastroDisciplina.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Frm_cadastroDisciplina.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Cadastro\Frm_CadastroProfessor.Designer.vb">
       <DependentUpon>Frm_CadastroProfessor.vb</DependentUpon>
     </Compile>
@@ -156,6 +168,12 @@
       <DependentUpon>Frm_GerenciamentoAdministradores.vb</DependentUpon>
     </Compile>
     <Compile Include="Gerenciamento\Frm_GerenciamentoAdministradores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gerenciamento\Frm_GerenciamentoDisciplinas.Designer.vb">
+      <DependentUpon>Frm_GerenciamentoDisciplinas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gerenciamento\Frm_GerenciamentoDisciplinas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Gerenciamento\Frm_GerenciamentoProfessores.Designer.vb">
@@ -222,6 +240,12 @@
     <Compile Include="ServicosDeMensagem.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Cadastro\Frm_agendamentoAvaliacao.resx">
+      <DependentUpon>Frm_agendamentoAvaliacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\Frm_cadastroDisciplina.resx">
+      <DependentUpon>Frm_cadastroDisciplina.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cadastro\Frm_CadastroProfessor.resx">
       <DependentUpon>Frm_CadastroProfessor.vb</DependentUpon>
     </EmbeddedResource>
@@ -239,6 +263,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Gerenciamento\Frm_GerenciamentoAdministradores.resx">
       <DependentUpon>Frm_GerenciamentoAdministradores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gerenciamento\Frm_GerenciamentoDisciplinas.resx">
+      <DependentUpon>Frm_GerenciamentoDisciplinas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gerenciamento\Frm_GerenciamentoProfessores.resx">
       <DependentUpon>Frm_GerenciamentoProfessores.vb</DependentUpon>

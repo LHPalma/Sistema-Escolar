@@ -29,13 +29,14 @@ Partial Class Frm_MenuGerenciamento
         Me.Btn_alunos = New System.Windows.Forms.Button()
         Me.Btn_professores = New System.Windows.Forms.Button()
         Me.Btn_adm = New System.Windows.Forms.Button()
+        Me.Btn_disciplinas = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Btn_voltar
         '
         Me.Btn_voltar.Image = CType(resources.GetObject("Btn_voltar.Image"), System.Drawing.Image)
         Me.Btn_voltar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Btn_voltar.Location = New System.Drawing.Point(430, 282)
+        Me.Btn_voltar.Location = New System.Drawing.Point(430, 335)
         Me.Btn_voltar.Name = "Btn_voltar"
         Me.Btn_voltar.Size = New System.Drawing.Size(91, 27)
         Me.Btn_voltar.TabIndex = 31
@@ -57,7 +58,7 @@ Partial Class Frm_MenuGerenciamento
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 292)
+        Me.Label1.Location = New System.Drawing.Point(12, 345)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(137, 20)
         Me.Label1.TabIndex = 29
@@ -93,11 +94,22 @@ Partial Class Frm_MenuGerenciamento
         Me.Btn_adm.Text = "ADMINISTRADORES"
         Me.Btn_adm.UseVisualStyleBackColor = True
         '
+        'Btn_disciplinas
+        '
+        Me.Btn_disciplinas.Location = New System.Drawing.Point(167, 254)
+        Me.Btn_disciplinas.Margin = New System.Windows.Forms.Padding(2)
+        Me.Btn_disciplinas.Name = "Btn_disciplinas"
+        Me.Btn_disciplinas.Size = New System.Drawing.Size(175, 55)
+        Me.Btn_disciplinas.TabIndex = 35
+        Me.Btn_disciplinas.Text = "DISCIPLINAS"
+        Me.Btn_disciplinas.UseVisualStyleBackColor = True
+        '
         'Frm_MenuGerenciamento
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(533, 321)
+        Me.ClientSize = New System.Drawing.Size(533, 374)
+        Me.Controls.Add(Me.Btn_disciplinas)
         Me.Controls.Add(Me.Btn_adm)
         Me.Controls.Add(Me.Btn_professores)
         Me.Controls.Add(Me.Btn_alunos)
@@ -117,4 +129,5 @@ Partial Class Frm_MenuGerenciamento
     Friend WithEvents Btn_alunos As Button
     Friend WithEvents Btn_professores As Button
     Friend WithEvents Btn_adm As Button
+    Friend WithEvents Btn_disciplinas As Button
 End Class
