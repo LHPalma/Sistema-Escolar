@@ -26,13 +26,13 @@ Partial Class Frm_GerenciamentoDisciplinas
         Me.Btn_voltar = New System.Windows.Forms.Button()
         Me.Btn_limpar_campos = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Cmb_nome_turma = New System.Windows.Forms.ComboBox()
+        Me.Cmb_nome_disciplina = New System.Windows.Forms.ComboBox()
+        Me.Cmb_nome_professor = New System.Windows.Forms.ComboBox()
         Me.Btn_cadastrar = New System.Windows.Forms.Button()
         Me.Lb_nome_turma = New System.Windows.Forms.Label()
         Me.Lb_disciplina = New System.Windows.Forms.Label()
         Me.Lb_nome = New System.Windows.Forms.Label()
-        Me.Cmb_nome_professor = New System.Windows.Forms.ComboBox()
-        Me.Cmb_nome_disciplina = New System.Windows.Forms.ComboBox()
-        Me.Cmb_nome_turma = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -74,6 +74,30 @@ Partial Class Frm_GerenciamentoDisciplinas
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Insira os Dados de Disciplina"
         '
+        'Cmb_nome_turma
+        '
+        Me.Cmb_nome_turma.FormattingEnabled = True
+        Me.Cmb_nome_turma.Location = New System.Drawing.Point(57, 146)
+        Me.Cmb_nome_turma.Name = "Cmb_nome_turma"
+        Me.Cmb_nome_turma.Size = New System.Drawing.Size(157, 21)
+        Me.Cmb_nome_turma.TabIndex = 15
+        '
+        'Cmb_nome_disciplina
+        '
+        Me.Cmb_nome_disciplina.FormattingEnabled = True
+        Me.Cmb_nome_disciplina.Location = New System.Drawing.Point(56, 99)
+        Me.Cmb_nome_disciplina.Name = "Cmb_nome_disciplina"
+        Me.Cmb_nome_disciplina.Size = New System.Drawing.Size(157, 21)
+        Me.Cmb_nome_disciplina.TabIndex = 14
+        '
+        'Cmb_nome_professor
+        '
+        Me.Cmb_nome_professor.FormattingEnabled = True
+        Me.Cmb_nome_professor.Location = New System.Drawing.Point(56, 53)
+        Me.Cmb_nome_professor.Name = "Cmb_nome_professor"
+        Me.Cmb_nome_professor.Size = New System.Drawing.Size(157, 21)
+        Me.Cmb_nome_professor.TabIndex = 13
+        '
         'Btn_cadastrar
         '
         Me.Btn_cadastrar.Location = New System.Drawing.Point(46, 195)
@@ -113,30 +137,6 @@ Partial Class Frm_GerenciamentoDisciplinas
         Me.Lb_nome.Size = New System.Drawing.Size(97, 13)
         Me.Lb_nome.TabIndex = 11
         Me.Lb_nome.Text = "Nome do Professor"
-        '
-        'Cmb_nome_professor
-        '
-        Me.Cmb_nome_professor.FormattingEnabled = True
-        Me.Cmb_nome_professor.Location = New System.Drawing.Point(56, 53)
-        Me.Cmb_nome_professor.Name = "Cmb_nome_professor"
-        Me.Cmb_nome_professor.Size = New System.Drawing.Size(157, 21)
-        Me.Cmb_nome_professor.TabIndex = 13
-        '
-        'Cmb_nome_disciplina
-        '
-        Me.Cmb_nome_disciplina.FormattingEnabled = True
-        Me.Cmb_nome_disciplina.Location = New System.Drawing.Point(56, 99)
-        Me.Cmb_nome_disciplina.Name = "Cmb_nome_disciplina"
-        Me.Cmb_nome_disciplina.Size = New System.Drawing.Size(157, 21)
-        Me.Cmb_nome_disciplina.TabIndex = 14
-        '
-        'Cmb_nome_turma
-        '
-        Me.Cmb_nome_turma.FormattingEnabled = True
-        Me.Cmb_nome_turma.Location = New System.Drawing.Point(57, 146)
-        Me.Cmb_nome_turma.Name = "Cmb_nome_turma"
-        Me.Cmb_nome_turma.Size = New System.Drawing.Size(157, 21)
-        Me.Cmb_nome_turma.TabIndex = 15
         '
         'Frm_GerenciamentoDisciplinas
         '

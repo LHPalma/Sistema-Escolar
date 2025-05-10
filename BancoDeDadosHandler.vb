@@ -10,6 +10,17 @@ Module BancoDeDadosHandler
     'Dim comando As New SQLiteCommand("sql", conexao)
 
 
+    Public Sub PreencherComboBox(campo As String, tabela As String, ByVal conexao As SQLiteConnection, ByVal comboBox As ComboBox)
+
+        Dim sqlSelect As String = $"SELECT {campo} FROM {tabela};"
+        Using cmd As New SQLiteCommand(sqlSelect, conexao)
+            Dim reader As SQLiteDataReader = cmd.ExecuteReader()
+            While reader.Read()
+                comboBox.Items.Add(reader(0).ToString()) ' Pegando o primeiro campo do resultado
+            End While
+        End Using
+    End Sub
+
 
     Public Function FazAjax(conexao, tabela, campo, valorProcurado)
         Dim dtAjax As New DataTable()
