@@ -21,6 +21,14 @@ Module BancoDeDadosHandler
         End Using
     End Sub
 
+    Public Function ObterId(campoId As String, tabela As String, campoValorProcurado As String, valorProcurado As String, conexao As SQLiteConnection)
+        Dim sqlSelectId As String = $"SELECT {campoId} FROM {tabela} WHERE {campoValorProcurado} = @valorProcurado;"
+        Using cmdSelectId As New SQLiteCommand(sqlSelectId, conexao)
+            cmdSelectId.Parameters.AddWithValue("@valorProcurado", valorProcurado)
+            Dim id As Integer = Convert.ToInt32(cmdSelectId.ExecuteScalar())
+            Return id
+        End Using
+    End Function
 
     Public Function FazAjax(conexao, tabela, campo, valorProcurado)
         Dim dtAjax As New DataTable()
