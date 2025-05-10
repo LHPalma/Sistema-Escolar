@@ -2,7 +2,7 @@
 
 Imports System.Data.SQLite
 
-Public Class Frm_cadastroTurma
+Public Class Frm_CadastroTurma
     Private Sub DateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles Cmb_data.ValueChanged
 
     End Sub
@@ -19,21 +19,23 @@ Public Class Frm_cadastroTurma
             Try
                 conexao.Open()
 
-                Dim sqlVerificar As String = "SELECT COUNT(*) FROM tb_turmas WHERE nome = @nome"
-                Using cmdVerificar As New SQLiteCommand(sqlVerificar, conexao)
-                    cmdVerificar.Parameters.AddWithValue("@nome", Txt_nome.Text)
-                    Dim qtdTurmas As Integer = Integer.Parse(cmdVerificar.ExecuteScalar())
-                    If qtdTurmas > 0 Then
-                        MessageBox.Show("Turma já cadastrada")
-                        Txt_nome.Focus()
-                        Exit Sub
-                    End If
-                End Using
+                Dim existeTurma As Boolean = BuscarExistencia("tb_turmas", "nome", Txt_nome.Text, conexao)
 
-                Dim sqlInsert As String = "INSERT INTO tb_turmas (nome, descricao) VALUES (@nome, @descricao)"
+                If (existeTurma) Then
+                    MessageBox.Show("Turma já cadastrada")
+                    Txt_nome.Focus()
+                    Exit Sub
+                End If
+
+                Dim sqlInsert As String = "INSERT INTO tb_turmas
+                                               (nome, descricao, ano_letivo) 
+                                           VALUES
+                                               (@nome, @descricao, @ano_letivo);"
+
                 Using cmdIsert As New SQLiteCommand(sqlInsert, conexao)
                     cmdIsert.Parameters.AddWithValue("@nome", Txt_nome.Text)
                     cmdIsert.Parameters.AddWithValue("@descricao", Txt_descricao.Text)
+                    cmdIsert.Parameters.AddWithValue("@ano_letivo", Cmb_data.Value.Year)
                     cmdIsert.ExecuteNonQuery()
                 End Using
                 MessageBox.Show("Turma cadastrada com sucesso!")
@@ -49,9 +51,22 @@ Public Class Frm_cadastroTurma
         End Using
     End Sub
 
+
+
+#Region "Rotinas de front-end"
+    Private Sub Btn_limpar_campos_Click(sender As Object, e As EventArgs) Handles Btn_limpar_campos.Click
+        LimparCampos()
+    End Sub
+
     Private Sub LimparCampos()
         Txt_nome.Clear()
         Txt_descricao.Clear()
         Cmb_data.Value = DateTime.Now
     End Sub
+
+    Private Sub Txt_nome_Leave(sender As Object, e As EventArgs) Handles Txt_nome.Leave
+        Txt_nome.Text = ParaLetraMaiuscula(Txt_nome.Text)
+    End Sub
+
+#End Region
 End Class

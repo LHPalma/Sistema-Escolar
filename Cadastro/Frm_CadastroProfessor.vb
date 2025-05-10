@@ -110,18 +110,18 @@ Public Class Frm_CadastroProfessor
     End Sub
 
     Private Sub Btn_limpar_Click(sender As Object, e As EventArgs)
-        Txt_email.Text = ""
-        Txt_nome.Text = ""
-        Txt_senha.Text = ""
-        Txt_rua.Text = ""
-        Txt_complemento.Text = ""
-        Txt_numero.Text = ""
-        Cmb_uf.Text = ""
-        Txt_telefone.Text = ""
+        LimparCampos()
     End Sub
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs)
         Txt_senha.UseSystemPasswordChar = Not Txt_senha.UseSystemPasswordChar
+    End Sub
+
+
+
+#Region "Rotinas de front-end"
+    Private Sub Txt_nome_Leave(sender As Object, e As EventArgs) Handles Txt_nome.Leave
+        Txt_nome.Text = ParaLetraMaiuscula(Txt_nome.Text)
     End Sub
 
     Private Async Sub Txt_cep_Leave(sender As Object, e As EventArgs) Handles Txt_cep.Leave
@@ -152,11 +152,24 @@ Public Class Frm_CadastroProfessor
         End Using
     End Sub
 
+    Private Sub LimparCampos()
+        Txt_email.Text = ""
+        Txt_nome.Text = ""
+        Txt_senha.Text = ""
+        Txt_rua.Text = ""
+        Txt_complemento.Text = ""
+        Txt_numero.Text = ""
+        Cmb_uf.Text = ""
+        Txt_telefone.Text = ""
+    End Sub
+
     Private Sub Lb_cidade_Click(sender As Object, e As EventArgs) Handles Lb_cidade.Click
         Txt_cidade.Focus()
     End Sub
 
     Private Sub Lb_email_Click(sender As Object, e As EventArgs) Handles Lb_email.Click
-
+        Txt_email.Focus()
     End Sub
+
+#End Region
 End Class

@@ -279,3 +279,6 @@ D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema E
 D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_GerenciamentoAdministradores.resources
 D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_GerenciamentoProfessores.resources
 D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_MenuGerenciamento.resources
+C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_agendamentoAvaliacao.resources
+C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_cadastroDisciplina.resources
+C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_GerenciamentoDisciplinas.resources

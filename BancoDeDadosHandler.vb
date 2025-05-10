@@ -175,7 +175,7 @@ Module BancoDeDadosHandler
                     INSERT INTO {tabela}
                         ({campoFK}, numero)
                     VALUES
-                        (@idReferencia, @telefone)"
+                        (@idReferencia, @telefone);"
 
         End If
 
@@ -186,16 +186,16 @@ Module BancoDeDadosHandler
         End Using
     End Sub
 
-    Public Function BuscarExistencia(tabela As String, campoFK As String, idReferencia As Integer, conexao As SQLiteConnection)
+    Public Function BuscarExistencia(tabela As String, campoPK As String, campoFK As String, conexao As SQLiteConnection)
         Dim existeRegistro As Boolean
         ' Verifica se já existe seja la o que for
         Dim sqlSelect As String = $"
                                     SELECT COUNT(*)
                                     FROM {tabela} 
-                                    WHERE {campoFK} = @idReferencia;"
+                                    WHERE {campoPK} = @campoFK;"
 
         Using cmdCheck As New SQLiteCommand(sqlSelect, conexao)
-            cmdCheck.Parameters.AddWithValue("@idReferencia", idReferencia)
+            cmdCheck.Parameters.AddWithValue("@campoFK", campoFK)
             existeRegistro = Convert.ToInt32(cmdCheck.ExecuteScalar()) > 0
         End Using
 

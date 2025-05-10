@@ -1,10 +1,12 @@
-﻿Imports System.Data.SQLite
+﻿Imports System.Globalization
 Imports System.Security.Cryptography
 Imports System.Text
 
 Module Modulo
-
-
+    Public Function ParaLetraMaiuscula(texto As String) As String
+        Dim textInfo As TextInfo = New CultureInfo("pt-BR", False).TextInfo
+        Return textInfo.ToTitleCase(texto.ToLower())
+    End Function
 
     Public Function ByteToString(b As Byte())
         Return Encoding.UTF8.GetString(b)

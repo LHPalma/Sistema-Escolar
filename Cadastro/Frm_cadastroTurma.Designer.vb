@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Frm_cadastroTurma
+Partial Class Frm_CadastroTurma
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
@@ -22,7 +22,7 @@ Partial Class Frm_cadastroTurma
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_cadastroTurma))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_CadastroTurma))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Cmb_data = New System.Windows.Forms.DateTimePicker()
         Me.btn_cadastrar = New System.Windows.Forms.Button()
@@ -49,19 +49,20 @@ Partial Class Frm_cadastroTurma
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox1.Size = New System.Drawing.Size(274, 260)
+        Me.GroupBox1.Size = New System.Drawing.Size(274, 314)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Insira os Dados de Turma"
         '
         'Cmb_data
         '
+        Me.Cmb_data.CustomFormat = "yyyy"
         Me.Cmb_data.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.Cmb_data.Location = New System.Drawing.Point(63, 160)
         Me.Cmb_data.Name = "Cmb_data"
         Me.Cmb_data.Size = New System.Drawing.Size(159, 20)
         Me.Cmb_data.TabIndex = 3
-        Me.Cmb_data.Value = New Date(2025, 5, 1, 0, 0, 0, 0)
+        Me.Cmb_data.Value = New Date(2025, 5, 10, 0, 0, 0, 0)
         '
         'btn_cadastrar
         '
@@ -124,7 +125,7 @@ Partial Class Frm_cadastroTurma
         '
         Me.Btn_voltar.Image = CType(resources.GetObject("Btn_voltar.Image"), System.Drawing.Image)
         Me.Btn_voltar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Btn_voltar.Location = New System.Drawing.Point(288, 283)
+        Me.Btn_voltar.Location = New System.Drawing.Point(288, 322)
         Me.Btn_voltar.Name = "Btn_voltar"
         Me.Btn_voltar.Size = New System.Drawing.Size(91, 27)
         Me.Btn_voltar.TabIndex = 28
@@ -133,22 +134,22 @@ Partial Class Frm_cadastroTurma
         '
         'Btn_limpar_campos
         '
-        Me.Btn_limpar_campos.Location = New System.Drawing.Point(161, 283)
+        Me.Btn_limpar_campos.Location = New System.Drawing.Point(161, 322)
         Me.Btn_limpar_campos.Name = "Btn_limpar_campos"
         Me.Btn_limpar_campos.Size = New System.Drawing.Size(91, 27)
         Me.Btn_limpar_campos.TabIndex = 27
         Me.Btn_limpar_campos.Text = "Limpar Campos"
         Me.Btn_limpar_campos.UseVisualStyleBackColor = True
         '
-        'Frm_cadastroTurma
+        'Frm_CadastroTurma
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(533, 329)
+        Me.ClientSize = New System.Drawing.Size(533, 463)
         Me.Controls.Add(Me.Btn_voltar)
         Me.Controls.Add(Me.Btn_limpar_campos)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Name = "Frm_cadastroTurma"
+        Me.Name = "Frm_CadastroTurma"
         Me.Text = "Cadastro de Turma"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

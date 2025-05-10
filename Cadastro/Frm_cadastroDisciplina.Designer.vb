@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Frm_cadastroDisciplina
+Partial Class Frm_CadastroDisciplina
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
@@ -22,7 +22,7 @@ Partial Class Frm_cadastroDisciplina
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_cadastroDisciplina))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_CadastroDisciplina))
         Me.Btn_voltar = New System.Windows.Forms.Button()
         Me.Btn_limpar_campos = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -143,7 +143,7 @@ Partial Class Frm_cadastroDisciplina
         Me.Lb_nome.TabIndex = 11
         Me.Lb_nome.Text = "Nome"
         '
-        'Frm_cadastroDisciplina
+        'Frm_CadastroDisciplina
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -151,7 +151,7 @@ Partial Class Frm_cadastroDisciplina
         Me.Controls.Add(Me.Btn_voltar)
         Me.Controls.Add(Me.Btn_limpar_campos)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Name = "Frm_cadastroDisciplina"
+        Me.Name = "Frm_CadastroDisciplina"
         Me.Text = "Cadastro de Disciplina"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
