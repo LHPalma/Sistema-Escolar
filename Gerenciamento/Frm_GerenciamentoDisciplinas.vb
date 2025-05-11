@@ -42,6 +42,7 @@ Public Class Frm_GerenciamentoDisciplinas
                                                 (fk_id_professor, fk_id_disciplina, fk_id_turma) 
                                             VALUES
                                                 (@fk_id_professor, @fk_id_disciplina, @fk_id_turma);"
+
                 Using cmdInsert As New SQLiteCommand(sqlInsert, conexao)
                     cmdInsert.Parameters.AddWithValue("@fk_id_professor", id_professor)
                     cmdInsert.Parameters.AddWithValue("@fk_id_disciplina", id_disciplina)

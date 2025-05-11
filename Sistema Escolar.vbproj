@@ -213,10 +213,10 @@
     <Compile Include="Frm_menuADM.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_menuCadastro.Designer.vb">
+    <Compile Include="Cadastro\Frm_menuCadastro.Designer.vb">
       <DependentUpon>Frm_menuCadastro.vb</DependentUpon>
     </Compile>
-    <Compile Include="Frm_menuCadastro.vb">
+    <Compile Include="Cadastro\Frm_menuCadastro.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Gerenciamento\Frm_MenuGerenciamento.Designer.vb">
@@ -285,7 +285,7 @@
     <EmbeddedResource Include="Frm_menuADM.resx">
       <DependentUpon>Frm_menuADM.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_menuCadastro.resx">
+    <EmbeddedResource Include="Cadastro\Frm_menuCadastro.resx">
       <DependentUpon>Frm_menuCadastro.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gerenciamento\Frm_MenuGerenciamento.resx">
