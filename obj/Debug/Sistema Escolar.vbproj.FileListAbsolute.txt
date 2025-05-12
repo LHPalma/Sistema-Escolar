@@ -282,3 +282,45 @@ D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema E
 C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_agendamentoAvaliacao.resources
 C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_cadastroDisciplina.resources
 C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_GerenciamentoDisciplinas.resources
+E:\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\x86\sqlite3.dll
+E:\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\x64\sqlite3.dll
+E:\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\Sistema Escolar.exe.config
+E:\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\Sistema Escolar.exe
+E:\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\Sistema Escolar.pdb
+E:\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\Sistema Escolar.xml
+E:\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\EntityFramework.dll
+E:\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\EntityFramework.SqlServer.dll
+E:\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\Newtonsoft.Json.dll
+E:\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\System.Data.SQLite.dll
+E:\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\System.Data.SQLite.EF6.dll
+E:\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\System.Data.SQLite.Linq.dll
+E:\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\EntityFramework.xml
+E:\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\EntityFramework.SqlServer.xml
+E:\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\Newtonsoft.Json.xml
+E:\Sistema-Escolar-main\Sistema-Escolar-main\bin\Debug\System.Data.SQLite.xml
+E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema Escolar.vbproj.AssemblyReference.cache
+E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_agendamentoAvaliacao.resources
+E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_CadastroDisciplina.resources
+E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_CadastroProfessor.resources
+E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_cadastroADM.resources
+E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_cadastroAluno.resources
+E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_CadastroTurma.resources
+E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_GerenciamentoAlunos.resources
+E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_GerenciamentoAdministradores.resources
+E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_GerenciamentoDisciplinas.resources
+E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_GerenciamentoProfessores.resources
+E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_inicio.resources
+E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_loginADM.resources
+E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_loginAluno.resources
+E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_loginProfessor.resources
+E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_menuADM.resources
+E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_menuCadastro.resources
+E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_MenuGerenciamento.resources
+E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.PDVVendas.resources
+E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Resources.resources
+E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema Escolar.vbproj.GenerateResource.cache
+E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema Escolar.vbproj.CoreCompileInputs.cache
+E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema .FE6418D7.Up2Date
+E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema Escolar.exe
+E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema Escolar.xml
+E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema Escolar.pdb

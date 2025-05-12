@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Login",
+    "\\Modulo_de_Vendas"
   ],
-  "SelectedNode": "\\Sistema Escolar.sln",
+  "SelectedNode": "\\Login",
   "PreviewInSolutionExplorer": false
 }
