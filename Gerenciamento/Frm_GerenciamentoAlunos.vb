@@ -122,6 +122,20 @@ Public Class Frm_GerenciamentoAlunos
                     End Using
                 End Using
 
+                '3 Busca foto
+                Dim sqlFoto As String = $"SELECT a.caminho
+                                              FROM tb_arquivos a
+                                              INNER JOIN tb_arquivos_alunos aa 
+                                              WHERE aa.fk_id_aluno = @id_aluno
+                                                AND a.tipo = 'perfil';
+                                             "
+                Dim caminho As String
+                Using cmd As New SQLiteCommand(sqlFoto, conexao)
+                    cmd.Parameters.AddWithValue("@id_aluno", Convert.ToInt32(row.Cells("id_aluno").Value))
+
+                    caminho = cmd.ExecuteScalar()
+                End Using
+
                 transacao.Commit()
             End Using ' Encerra a transação
 

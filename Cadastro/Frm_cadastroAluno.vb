@@ -231,6 +231,21 @@ Public Class Frm_cadastroAluno
         End Using
     End Sub
 
+    Private Sub img_foto_Click(sender As Object, e As EventArgs) Handles img_foto.Click
+        Dim diretorio As String
+        Try
+            With abrirArquivo
+                .Title = "Selecione uma Imagem"
+                .InitialDirectory = Application.StartupPath & "\Fotos"
+                .ShowDialog()
+                diretorio = .FileName
+                img_foto.Load(diretorio)
+            End With
+        Catch ex As Exception
+            Exit Sub
+        End Try
+    End Sub
+
 
 #End Region
 End Class

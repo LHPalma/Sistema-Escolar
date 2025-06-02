@@ -58,6 +58,7 @@ Partial Class Frm_cadastroAluno
         Me.Btn_voltar = New System.Windows.Forms.Button()
         Me.img_foto = New System.Windows.Forms.PictureBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.abrirArquivo = New System.Windows.Forms.OpenFileDialog()
         Me.GroupBox1.SuspendLayout()
         CType(Me.img_foto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
@@ -421,6 +422,10 @@ Partial Class Frm_cadastroAluno
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Insira a foto de Aluno"
         '
+        'abrirArquivo
+        '
+        Me.abrirArquivo.FileName = "Escolha um Arquivo"
+        '
         'Frm_cadastroAluno
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -476,4 +481,5 @@ Partial Class Frm_cadastroAluno
     Friend WithEvents Btn_voltar As Button
     Friend WithEvents img_foto As PictureBox
     Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents abrirArquivo As OpenFileDialog
 End Class
