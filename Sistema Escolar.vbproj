@@ -8,7 +8,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{755CE600-AE2B-4438-B87F-C9992EBEAA2B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Sistema_Escolar.PDVVendas</StartupObject>
+    <StartupObject>Sistema_Escolar.Frm_cadastroAvaliacao</StartupObject>
     <RootNamespace>Sistema_Escolar</RootNamespace>
     <AssemblyName>Sistema Escolar</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -129,6 +129,12 @@
       <DependentUpon>Frm_agendamentoAvaliacao.vb</DependentUpon>
     </Compile>
     <Compile Include="Cadastro\Frm_agendamentoAvaliacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\Frm_cadastroAvaliacao.Designer.vb">
+      <DependentUpon>Frm_cadastroAvaliacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Frm_cadastroAvaliacao.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Cadastro\Frm_CadastroDisciplina.Designer.vb">

@@ -328,3 +328,8 @@ D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema E
 D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_GerenciamentoDisciplinas.resources
 D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\obj\Debug\Sistema_Escolar.PDVVendas.resources
 D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\bin\Debug\Guna.UI.dll
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_agendamentoAvaliacao.resources
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_cadastroAvaliacao.resources
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_CadastroDisciplina.resources
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_GerenciamentoDisciplinas.resources
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.PDVVendas.resources
