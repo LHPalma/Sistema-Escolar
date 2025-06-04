@@ -324,3 +324,7 @@ E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema .FE6418D7.Up2Date
 E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema Escolar.exe
 E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema Escolar.xml
 E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema Escolar.pdb
+D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_agendamentoAvaliacao.resources
+D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_GerenciamentoDisciplinas.resources
+D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\obj\Debug\Sistema_Escolar.PDVVendas.resources
+D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\bin\Debug\Guna.UI.dll
