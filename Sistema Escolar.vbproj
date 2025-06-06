@@ -149,6 +149,12 @@
     <Compile Include="Cadastro\Frm_CadastroProfessor.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Cadastro\Frm_menuSecretaria.Designer.vb">
+      <DependentUpon>Frm_menuSecretaria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Frm_menuSecretaria.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Endereco.vb" />
     <Compile Include="Cadastro\Frm_cadastroADM.Designer.vb">
       <DependentUpon>Frm_cadastroADM.vb</DependentUpon>
@@ -273,6 +279,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cadastro\Frm_CadastroTurma.resx">
       <DependentUpon>Frm_CadastroTurma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\Frm_menuSecretaria.resx">
+      <DependentUpon>Frm_menuSecretaria.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gerenciamento\Frm_GerenciamentoAlunos.resx">
       <DependentUpon>Frm_GerenciamentoAlunos.vb</DependentUpon>

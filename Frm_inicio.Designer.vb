@@ -27,10 +27,10 @@ Partial Class Frm_inicio
         Me.Btn_aluno = New Guna.UI.WinForms.GunaButton()
         Me.Pnl_menu = New System.Windows.Forms.Panel()
         Me.Lb_menu_principal = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Btn_professor = New Guna.UI.WinForms.GunaButton()
         Me.Btn_adm = New Guna.UI.WinForms.GunaButton()
         Me.Lb_bem_vindo = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Pnl_menu.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -86,21 +86,12 @@ Partial Class Frm_inicio
         Me.Lb_menu_principal.AutoSize = True
         Me.Lb_menu_principal.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Lb_menu_principal.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Lb_menu_principal.Location = New System.Drawing.Point(56, 10)
+        Me.Lb_menu_principal.Location = New System.Drawing.Point(61, 14)
         Me.Lb_menu_principal.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lb_menu_principal.Name = "Lb_menu_principal"
         Me.Lb_menu_principal.Size = New System.Drawing.Size(217, 32)
         Me.Lb_menu_principal.TabIndex = 4
         Me.Lb_menu_principal.Text = "MENU PRINCIPAL"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.LightCyan
-        Me.PictureBox1.Location = New System.Drawing.Point(21, 14)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(30, 28)
-        Me.PictureBox1.TabIndex = 4
-        Me.PictureBox1.TabStop = False
         '
         'Btn_professor
         '
@@ -163,6 +154,16 @@ Partial Class Frm_inicio
         Me.Lb_bem_vindo.TabIndex = 10
         Me.Lb_bem_vindo.Text = "Bem-Vindo"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(7, -8)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(61, 72)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 5
+        Me.PictureBox1.TabStop = False
+        '
         'Frm_inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -188,8 +189,8 @@ Partial Class Frm_inicio
     Friend WithEvents Btn_aluno As Guna.UI.WinForms.GunaButton
     Friend WithEvents Pnl_menu As Panel
     Friend WithEvents Lb_menu_principal As Label
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Btn_professor As Guna.UI.WinForms.GunaButton
     Friend WithEvents Btn_adm As Guna.UI.WinForms.GunaButton
     Friend WithEvents Lb_bem_vindo As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
