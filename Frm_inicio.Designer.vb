@@ -27,10 +27,10 @@ Partial Class Frm_inicio
         Me.Btn_aluno = New Guna.UI.WinForms.GunaButton()
         Me.Pnl_menu = New System.Windows.Forms.Panel()
         Me.Lb_menu_principal = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Btn_professor = New Guna.UI.WinForms.GunaButton()
         Me.Btn_adm = New Guna.UI.WinForms.GunaButton()
         Me.Lb_bem_vindo = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Pnl_menu.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -93,6 +93,16 @@ Partial Class Frm_inicio
         Me.Lb_menu_principal.TabIndex = 4
         Me.Lb_menu_principal.Text = "MENU PRINCIPAL"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(7, -8)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(61, 72)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 5
+        Me.PictureBox1.TabStop = False
+        '
         'Btn_professor
         '
         Me.Btn_professor.AnimationHoverSpeed = 0.07!
@@ -154,20 +164,11 @@ Partial Class Frm_inicio
         Me.Lb_bem_vindo.TabIndex = 10
         Me.Lb_bem_vindo.Text = "Bem-Vindo"
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(7, -8)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(61, 72)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 5
-        Me.PictureBox1.TabStop = False
-        '
         'Frm_inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.ClientSize = New System.Drawing.Size(533, 292)
         Me.Controls.Add(Me.Lb_bem_vindo)
         Me.Controls.Add(Me.Btn_adm)

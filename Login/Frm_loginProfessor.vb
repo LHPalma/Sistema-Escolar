@@ -1,7 +1,7 @@
 ﻿Imports System.Text
 Imports System.Data.SQLite
 Public Class Frm_loginProfessor
-    Private Sub Btn_logar_Click(sender As Object, e As EventArgs) Handles Btn_logar.Click
+    Private Sub Btn_logar_Click(sender As Object, e As EventArgs)
 
         If (Txt_email.Text = "" Or Txt_senha.Text = "") Then
             MsgBox("Insira seus dados", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "ERRO")

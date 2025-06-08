@@ -24,7 +24,7 @@ Partial Class Frm_menuTurmasDisciplinas
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_menuTurmasDisciplinas))
         Me.Pnl_menu = New System.Windows.Forms.Panel()
-        Me.Lb_secretaria = New System.Windows.Forms.Label()
+        Me.Lb_cadastro_turmas_disciplinas = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Btn_voltar = New Guna.UI.WinForms.GunaButton()
         Me.Btn_disciplina = New Guna.UI.WinForms.GunaButton()
@@ -38,24 +38,24 @@ Partial Class Frm_menuTurmasDisciplinas
         'Pnl_menu
         '
         Me.Pnl_menu.BackColor = System.Drawing.Color.SteelBlue
-        Me.Pnl_menu.Controls.Add(Me.Lb_secretaria)
+        Me.Pnl_menu.Controls.Add(Me.Lb_cadastro_turmas_disciplinas)
         Me.Pnl_menu.Controls.Add(Me.PictureBox1)
         Me.Pnl_menu.Location = New System.Drawing.Point(-5, -6)
         Me.Pnl_menu.Name = "Pnl_menu"
         Me.Pnl_menu.Size = New System.Drawing.Size(543, 57)
         Me.Pnl_menu.TabIndex = 41
         '
-        'Lb_secretaria
+        'Lb_cadastro_turmas_disciplinas
         '
-        Me.Lb_secretaria.AutoSize = True
-        Me.Lb_secretaria.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lb_secretaria.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Lb_secretaria.Location = New System.Drawing.Point(56, 14)
-        Me.Lb_secretaria.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Lb_secretaria.Name = "Lb_secretaria"
-        Me.Lb_secretaria.Size = New System.Drawing.Size(460, 32)
-        Me.Lb_secretaria.TabIndex = 4
-        Me.Lb_secretaria.Text = "CADASTRO DE TURMAS E DISCIPLINAS"
+        Me.Lb_cadastro_turmas_disciplinas.AutoSize = True
+        Me.Lb_cadastro_turmas_disciplinas.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lb_cadastro_turmas_disciplinas.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Lb_cadastro_turmas_disciplinas.Location = New System.Drawing.Point(56, 14)
+        Me.Lb_cadastro_turmas_disciplinas.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Lb_cadastro_turmas_disciplinas.Name = "Lb_cadastro_turmas_disciplinas"
+        Me.Lb_cadastro_turmas_disciplinas.Size = New System.Drawing.Size(460, 32)
+        Me.Lb_cadastro_turmas_disciplinas.TabIndex = 4
+        Me.Lb_cadastro_turmas_disciplinas.Text = "CADASTRO DE TURMAS E DISCIPLINAS"
         '
         'PictureBox1
         '
@@ -115,7 +115,7 @@ Partial Class Frm_menuTurmasDisciplinas
         Me.Btn_disciplina.Radius = 2
         Me.Btn_disciplina.Size = New System.Drawing.Size(260, 55)
         Me.Btn_disciplina.TabIndex = 43
-        Me.Btn_disciplina.Text = "CADASTRO DE DISCIPLINAS"
+        Me.Btn_disciplina.Text = "NOVA DISCIPLINA"
         '
         'Btn_turma
         '
@@ -140,7 +140,7 @@ Partial Class Frm_menuTurmasDisciplinas
         Me.Btn_turma.Radius = 2
         Me.Btn_turma.Size = New System.Drawing.Size(260, 55)
         Me.Btn_turma.TabIndex = 42
-        Me.Btn_turma.Text = "CADASTRO DE TURMAS"
+        Me.Btn_turma.Text = "NOVA TURMA"
         '
         'Lb_bemvindo
         '
@@ -167,6 +167,7 @@ Partial Class Frm_menuTurmasDisciplinas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.ClientSize = New System.Drawing.Size(533, 292)
         Me.Controls.Add(Me.Pnl_menu)
         Me.Controls.Add(Me.Btn_voltar)
@@ -185,7 +186,7 @@ Partial Class Frm_menuTurmasDisciplinas
     End Sub
 
     Friend WithEvents Pnl_menu As Panel
-    Friend WithEvents Lb_secretaria As Label
+    Friend WithEvents Lb_cadastro_turmas_disciplinas As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Btn_voltar As Guna.UI.WinForms.GunaButton
     Friend WithEvents Btn_disciplina As Guna.UI.WinForms.GunaButton

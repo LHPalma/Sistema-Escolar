@@ -23,7 +23,7 @@ Partial Class Frm_menuCadastro
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_menuCadastro))
-        Me.Lb_secretaria = New System.Windows.Forms.Label()
+        Me.Lb_cadastro_contas = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Btn_voltar = New Guna.UI.WinForms.GunaButton()
         Me.Pnl_menu = New System.Windows.Forms.Panel()
@@ -36,17 +36,17 @@ Partial Class Frm_menuCadastro
         Me.Pnl_menu.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Lb_secretaria
+        'Lb_cadastro_contas
         '
-        Me.Lb_secretaria.AutoSize = True
-        Me.Lb_secretaria.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lb_secretaria.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Lb_secretaria.Location = New System.Drawing.Point(53, 14)
-        Me.Lb_secretaria.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Lb_secretaria.Name = "Lb_secretaria"
-        Me.Lb_secretaria.Size = New System.Drawing.Size(281, 32)
-        Me.Lb_secretaria.TabIndex = 4
-        Me.Lb_secretaria.Text = "CADASTRO DE CONTAS"
+        Me.Lb_cadastro_contas.AutoSize = True
+        Me.Lb_cadastro_contas.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lb_cadastro_contas.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Lb_cadastro_contas.Location = New System.Drawing.Point(53, 14)
+        Me.Lb_cadastro_contas.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Lb_cadastro_contas.Name = "Lb_cadastro_contas"
+        Me.Lb_cadastro_contas.Size = New System.Drawing.Size(281, 32)
+        Me.Lb_cadastro_contas.TabIndex = 4
+        Me.Lb_cadastro_contas.Text = "CADASTRO DE CONTAS"
         '
         'PictureBox1
         '
@@ -86,7 +86,7 @@ Partial Class Frm_menuCadastro
         'Pnl_menu
         '
         Me.Pnl_menu.BackColor = System.Drawing.Color.SteelBlue
-        Me.Pnl_menu.Controls.Add(Me.Lb_secretaria)
+        Me.Pnl_menu.Controls.Add(Me.Lb_cadastro_contas)
         Me.Pnl_menu.Controls.Add(Me.PictureBox1)
         Me.Pnl_menu.Location = New System.Drawing.Point(-1, -6)
         Me.Pnl_menu.Name = "Pnl_menu"
@@ -193,6 +193,7 @@ Partial Class Frm_menuCadastro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.ClientSize = New System.Drawing.Size(533, 292)
         Me.Controls.Add(Me.Btn_adm)
         Me.Controls.Add(Me.Btn_professor)
@@ -210,7 +211,7 @@ Partial Class Frm_menuCadastro
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Lb_secretaria As Label
+    Friend WithEvents Lb_cadastro_contas As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Btn_voltar As Guna.UI.WinForms.GunaButton
     Friend WithEvents Pnl_menu As Panel

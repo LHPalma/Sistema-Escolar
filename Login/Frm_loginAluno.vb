@@ -1,5 +1,5 @@
 ﻿Public Class Frm_loginAluno
-    Private Sub Btn_logar_Click(sender As Object, e As EventArgs) Handles Btn_logar.Click
+    Private Sub Btn_logar_Click(sender As Object, e As EventArgs)
 
         If Not ((Txt_ra.Text <> "" Or Txt_senha.Text <> "")) Then
             MsgBox("Insira seus dados")
