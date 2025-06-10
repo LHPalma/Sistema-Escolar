@@ -29,12 +29,12 @@ Partial Class Frm_loginAluno
         Me.Txt_ra = New System.Windows.Forms.TextBox()
         Me.Txt_senha = New System.Windows.Forms.TextBox()
         Me.Gb_loginAluno = New System.Windows.Forms.GroupBox()
+        Me.Btn_logar = New Guna.UI.WinForms.GunaButton()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.Btn_voltar = New Guna.UI.WinForms.GunaButton()
         Me.Lb_login_aluno = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Pnl_menu = New System.Windows.Forms.Panel()
-        Me.Btn_logar = New Guna.UI.WinForms.GunaButton()
         Me.Gb_loginAluno.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Pnl_menu.SuspendLayout()
@@ -76,6 +76,7 @@ Partial Class Frm_loginAluno
         '
         'Txt_ra
         '
+        Me.Txt_ra.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_ra.Location = New System.Drawing.Point(26, 40)
         Me.Txt_ra.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_ra.Name = "Txt_ra"
@@ -84,6 +85,7 @@ Partial Class Frm_loginAluno
         '
         'Txt_senha
         '
+        Me.Txt_senha.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_senha.Location = New System.Drawing.Point(26, 93)
         Me.Txt_senha.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_senha.Name = "Txt_senha"
@@ -108,6 +110,32 @@ Partial Class Frm_loginAluno
         Me.Gb_loginAluno.TabIndex = 4
         Me.Gb_loginAluno.TabStop = False
         Me.Gb_loginAluno.Text = "Insira os dados da conta"
+        '
+        'Btn_logar
+        '
+        Me.Btn_logar.AnimationHoverSpeed = 0.07!
+        Me.Btn_logar.AnimationSpeed = 0.03!
+        Me.Btn_logar.BackColor = System.Drawing.Color.Transparent
+        Me.Btn_logar.BaseColor = System.Drawing.Color.SteelBlue
+        Me.Btn_logar.BorderColor = System.Drawing.Color.Black
+        Me.Btn_logar.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.Btn_logar.FocusedColor = System.Drawing.Color.Empty
+        Me.Btn_logar.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_logar.ForeColor = System.Drawing.Color.White
+        Me.Btn_logar.Image = Nothing
+        Me.Btn_logar.ImageSize = New System.Drawing.Size(30, 30)
+        Me.Btn_logar.Location = New System.Drawing.Point(26, 148)
+        Me.Btn_logar.Name = "Btn_logar"
+        Me.Btn_logar.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
+        Me.Btn_logar.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.Btn_logar.OnHoverForeColor = System.Drawing.Color.White
+        Me.Btn_logar.OnHoverImage = Nothing
+        Me.Btn_logar.OnPressedColor = System.Drawing.Color.Black
+        Me.Btn_logar.Radius = 2
+        Me.Btn_logar.Size = New System.Drawing.Size(198, 38)
+        Me.Btn_logar.TabIndex = 49
+        Me.Btn_logar.Text = "LOGIN"
+        Me.Btn_logar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Btn_voltar
         '
@@ -165,32 +193,6 @@ Partial Class Frm_loginAluno
         Me.Pnl_menu.Name = "Pnl_menu"
         Me.Pnl_menu.Size = New System.Drawing.Size(533, 57)
         Me.Pnl_menu.TabIndex = 48
-        '
-        'Btn_logar
-        '
-        Me.Btn_logar.AnimationHoverSpeed = 0.07!
-        Me.Btn_logar.AnimationSpeed = 0.03!
-        Me.Btn_logar.BackColor = System.Drawing.Color.Transparent
-        Me.Btn_logar.BaseColor = System.Drawing.Color.SteelBlue
-        Me.Btn_logar.BorderColor = System.Drawing.Color.Black
-        Me.Btn_logar.DialogResult = System.Windows.Forms.DialogResult.None
-        Me.Btn_logar.FocusedColor = System.Drawing.Color.Empty
-        Me.Btn_logar.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_logar.ForeColor = System.Drawing.Color.White
-        Me.Btn_logar.Image = Nothing
-        Me.Btn_logar.ImageSize = New System.Drawing.Size(30, 30)
-        Me.Btn_logar.Location = New System.Drawing.Point(26, 148)
-        Me.Btn_logar.Name = "Btn_logar"
-        Me.Btn_logar.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
-        Me.Btn_logar.OnHoverBorderColor = System.Drawing.Color.Black
-        Me.Btn_logar.OnHoverForeColor = System.Drawing.Color.White
-        Me.Btn_logar.OnHoverImage = Nothing
-        Me.Btn_logar.OnPressedColor = System.Drawing.Color.Black
-        Me.Btn_logar.Radius = 2
-        Me.Btn_logar.Size = New System.Drawing.Size(198, 38)
-        Me.Btn_logar.TabIndex = 49
-        Me.Btn_logar.Text = "LOGIN"
-        Me.Btn_logar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Frm_loginAluno
         '

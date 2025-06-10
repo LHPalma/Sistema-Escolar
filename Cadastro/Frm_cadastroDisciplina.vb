@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SQLite
 
 Public Class Frm_CadastroDisciplina
-    Private Sub Btn_cadastrar_Click(sender As Object, e As EventArgs) Handles Btn_cadastrar.Click
+    Private Sub Btn_cadastrar_Click(sender As Object, e As EventArgs)
         If (Txt_nome.Text = "" Or Num_carga_horaria.Value = vbEmpty) Then
             MsgBox("Preencha todos os campos", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "Atenção")
             Txt_nome.Focus()
@@ -45,7 +45,7 @@ Public Class Frm_CadastroDisciplina
 
 
 #Region "Rotinas de front-end"
-    Private Sub Btn_limpar_campos_Click(sender As Object, e As EventArgs) Handles Btn_limpar_campos.Click
+    Private Sub Btn_limpar_campos_Click(sender As Object, e As EventArgs)
         LimparCampos()
     End Sub
     Private Sub LimparCampos()

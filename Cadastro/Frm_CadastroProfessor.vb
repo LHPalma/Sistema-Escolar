@@ -3,7 +3,7 @@ Imports System.Net.Http
 Imports Newtonsoft.Json
 
 Public Class Frm_CadastroProfessor
-    Private Sub Btn_cadastrar_Click(sender As Object, e As EventArgs) Handles Btn_cadastrar.Click
+    Private Sub Btn_cadastrar_Click(sender As Object, e As EventArgs)
         If (Txt_email.Text = "" Or Txt_nome.Text = "" Or Txt_senha.Text = "" Or Txt_rua.Text = "" Or Txt_numero.Text = "" Or Cmb_uf.Text = "" Or Txt_telefone.Text = "") Then
             MsgBox("Para cadastrar, preencha todos os campos!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "Atenção")
             Exit Sub

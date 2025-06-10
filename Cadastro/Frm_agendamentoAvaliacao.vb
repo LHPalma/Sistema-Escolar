@@ -14,4 +14,8 @@
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Cmb_tipo_avaliacao.SelectedIndexChanged
 
     End Sub
+
+    Private Sub Frm_agendamentoAvaliacao_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

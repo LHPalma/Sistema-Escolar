@@ -11,7 +11,7 @@ Imports Newtonsoft.Json
 
 Public Class Frm_cadastroAluno
 
-    Private Sub Btn_cadastrar_Click(sender As Object, e As EventArgs) Handles Btn_cadastrar.Click
+    Private Sub Btn_cadastrar_Click(sender As Object, e As EventArgs)
 
         If (Txt_email.Text = "" Or Txt_nome.Text = "" Or Txt_senha.Text = "" Or Txt_ra.Text = "" Or Cmb_Turma.Text = "" Or Txt_cpf.Text = "") Then
             MsgBox("Para cadastrar, preencha todos os campos!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "Atenção")
@@ -168,11 +168,11 @@ Public Class Frm_cadastroAluno
 
 
 #Region "Rotinas de FrontEnd"
-    Private Sub Cb_mostrar_senha_CheckedChanged(sender As Object, e As EventArgs) Handles Cb_mostrar_senha.CheckedChanged
+    Private Sub Cb_mostrar_senha_CheckedChanged(sender As Object, e As EventArgs)
         Txt_senha.UseSystemPasswordChar = Not Txt_senha.UseSystemPasswordChar
     End Sub
 
-    Private Sub Btn_limpar_campos_Click(sender As Object, e As EventArgs) Handles Btn_limpar_campos.Click
+    Private Sub Btn_limpar_campos_Click(sender As Object, e As EventArgs)
         LimparCampos()
     End Sub
 
@@ -246,6 +246,21 @@ Public Class Frm_cadastroAluno
         End Try
     End Sub
 
+    Private Sub Txt_senha_TextChanged(sender As Object, e As EventArgs) Handles Txt_senha.TextChanged
+
+    End Sub
+
+    Private Sub Lb_senha_Click(sender As Object, e As EventArgs) Handles Lb_senha.Click
+
+    End Sub
+
+    Private Sub Txt_cpf_MaskInputRejected(sender As Object, e As MaskInputRejectedEventArgs) Handles Txt_cpf.MaskInputRejected
+
+    End Sub
+
+    Private Sub Lb_cpf_Click(sender As Object, e As EventArgs) Handles Lb_cpf.Click
+
+    End Sub
 
 #End Region
 End Class
