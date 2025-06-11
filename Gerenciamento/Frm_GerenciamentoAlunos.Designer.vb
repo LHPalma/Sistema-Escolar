@@ -25,7 +25,6 @@ Partial Class Frm_GerenciamentoAlunos
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_GerenciamentoAlunos))
         Me.dgv_dados = New System.Windows.Forms.DataGridView()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.btn_gravar = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
         Me.Txt_buscar = New System.Windows.Forms.ToolStripTextBox()
         Me.ToolStripLabel2 = New System.Windows.Forms.ToolStripLabel()
@@ -37,7 +36,6 @@ Partial Class Frm_GerenciamentoAlunos
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.cb_turma = New System.Windows.Forms.ComboBox()
-        Me.Btn_editar = New System.Windows.Forms.Button()
         Me.Lb_cidade = New System.Windows.Forms.Label()
         Me.Txt_cidade = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -46,7 +44,6 @@ Partial Class Frm_GerenciamentoAlunos
         Me.Txt_bairro = New System.Windows.Forms.TextBox()
         Me.Txt_telefone = New System.Windows.Forms.MaskedTextBox()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.Btn_voltar = New System.Windows.Forms.Button()
         Me.Txt_cpf = New System.Windows.Forms.MaskedTextBox()
         Me.Lb_cpf = New System.Windows.Forms.Label()
         Me.Txt_cep = New System.Windows.Forms.MaskedTextBox()
@@ -59,7 +56,10 @@ Partial Class Frm_GerenciamentoAlunos
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Txt_ra = New System.Windows.Forms.TextBox()
-        Me.Btn_bloquear = New System.Windows.Forms.Button()
+        Me.btn_gravar = New Guna.UI.WinForms.GunaButton()
+        Me.Btn_editar = New Guna.UI.WinForms.GunaButton()
+        Me.Btn_voltar = New Guna.UI.WinForms.GunaButton()
+        Me.Btn_bloquear = New Guna.UI.WinForms.GunaButton()
         CType(Me.dgv_dados, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.img_foto, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -75,48 +75,44 @@ Partial Class Frm_GerenciamentoAlunos
         '
         'ToolStrip1
         '
+        Me.ToolStrip1.BackColor = System.Drawing.Color.SteelBlue
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btn_gravar, Me.ToolStripLabel1, Me.Txt_buscar, Me.ToolStripLabel2, Me.Cmb_campo})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripLabel1, Me.Txt_buscar, Me.ToolStripLabel2, Me.Cmb_campo})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(800, 31)
+        Me.ToolStrip1.Size = New System.Drawing.Size(800, 27)
         Me.ToolStrip1.TabIndex = 17
         Me.ToolStrip1.Text = "ToolStrip1"
-        '
-        'btn_gravar
-        '
-        Me.btn_gravar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.btn_gravar.Image = CType(resources.GetObject("btn_gravar.Image"), System.Drawing.Image)
-        Me.btn_gravar.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.btn_gravar.Name = "btn_gravar"
-        Me.btn_gravar.Size = New System.Drawing.Size(28, 28)
-        Me.btn_gravar.Text = "ToolStripButton1"
         '
         'ToolStripLabel1
         '
         Me.ToolStripLabel1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripLabel1.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.ToolStripLabel1.Image = CType(resources.GetObject("ToolStripLabel1.Image"), System.Drawing.Image)
         Me.ToolStripLabel1.Name = "ToolStripLabel1"
-        Me.ToolStripLabel1.Size = New System.Drawing.Size(191, 28)
+        Me.ToolStripLabel1.Size = New System.Drawing.Size(215, 24)
         Me.ToolStripLabel1.Text = "Digite um parâmetro de pesquisa"
+        Me.ToolStripLabel1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
         '
         'Txt_buscar
         '
         Me.Txt_buscar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Txt_buscar.Name = "Txt_buscar"
-        Me.Txt_buscar.Size = New System.Drawing.Size(68, 31)
+        Me.Txt_buscar.Size = New System.Drawing.Size(100, 27)
         '
         'ToolStripLabel2
         '
         Me.ToolStripLabel2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripLabel2.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.ToolStripLabel2.Name = "ToolStripLabel2"
-        Me.ToolStripLabel2.Size = New System.Drawing.Size(123, 28)
+        Me.ToolStripLabel2.Size = New System.Drawing.Size(123, 24)
         Me.ToolStripLabel2.Text = "Selecione um Campo"
         '
         'Cmb_campo
         '
         Me.Cmb_campo.Items.AddRange(New Object() {"Nome", "RA"})
         Me.Cmb_campo.Name = "Cmb_campo"
-        Me.Cmb_campo.Size = New System.Drawing.Size(82, 31)
+        Me.Cmb_campo.Size = New System.Drawing.Size(100, 27)
         '
         'img_foto
         '
@@ -132,16 +128,17 @@ Partial Class Frm_GerenciamentoAlunos
         '
         'txt_nome
         '
+        Me.txt_nome.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt_nome.Location = New System.Drawing.Point(38, 53)
         Me.txt_nome.Margin = New System.Windows.Forms.Padding(2)
         Me.txt_nome.Name = "txt_nome"
-        Me.txt_nome.Size = New System.Drawing.Size(492, 20)
+        Me.txt_nome.Size = New System.Drawing.Size(492, 29)
         Me.txt_nome.TabIndex = 15
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(34, 38)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
@@ -151,199 +148,188 @@ Partial Class Frm_GerenciamentoAlunos
         '
         'txt_email
         '
+        Me.txt_email.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt_email.Location = New System.Drawing.Point(37, 109)
         Me.txt_email.Margin = New System.Windows.Forms.Padding(2)
         Me.txt_email.Name = "txt_email"
-        Me.txt_email.Size = New System.Drawing.Size(338, 20)
+        Me.txt_email.Size = New System.Drawing.Size(338, 29)
         Me.txt_email.TabIndex = 19
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(34, 94)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(41, 13)
+        Me.Label1.Size = New System.Drawing.Size(39, 13)
         Me.Label1.TabIndex = 20
         Me.Label1.Text = "E-mail"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(437, 152)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(42, 13)
+        Me.Label6.Size = New System.Drawing.Size(39, 13)
         Me.Label6.TabIndex = 28
         Me.Label6.Text = "Turma"
         '
         'cb_turma
         '
+        Me.cb_turma.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cb_turma.FormattingEnabled = True
         Me.cb_turma.Location = New System.Drawing.Point(440, 168)
         Me.cb_turma.Name = "cb_turma"
-        Me.cb_turma.Size = New System.Drawing.Size(139, 21)
+        Me.cb_turma.Size = New System.Drawing.Size(125, 29)
         Me.cb_turma.TabIndex = 29
-        '
-        'Btn_editar
-        '
-        Me.Btn_editar.Location = New System.Drawing.Point(667, 216)
-        Me.Btn_editar.Name = "Btn_editar"
-        Me.Btn_editar.Size = New System.Drawing.Size(91, 27)
-        Me.Btn_editar.TabIndex = 30
-        Me.Btn_editar.Text = "EDITAR"
-        Me.Btn_editar.UseVisualStyleBackColor = True
         '
         'Lb_cidade
         '
         Me.Lb_cidade.AutoSize = True
-        Me.Lb_cidade.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lb_cidade.Location = New System.Drawing.Point(435, 278)
+        Me.Lb_cidade.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lb_cidade.Location = New System.Drawing.Point(437, 278)
         Me.Lb_cidade.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lb_cidade.Name = "Lb_cidade"
-        Me.Lb_cidade.Size = New System.Drawing.Size(46, 13)
+        Me.Lb_cidade.Size = New System.Drawing.Size(43, 13)
         Me.Lb_cidade.TabIndex = 72
         Me.Lb_cidade.Text = "Cidade"
         '
         'Txt_cidade
         '
-        Me.Txt_cidade.Location = New System.Drawing.Point(436, 293)
+        Me.Txt_cidade.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txt_cidade.Location = New System.Drawing.Point(440, 293)
         Me.Txt_cidade.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_cidade.Name = "Txt_cidade"
-        Me.Txt_cidade.Size = New System.Drawing.Size(129, 20)
+        Me.Txt_cidade.Size = New System.Drawing.Size(125, 29)
         Me.Txt_cidade.TabIndex = 71
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(35, 278)
         Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(82, 13)
+        Me.Label9.Size = New System.Drawing.Size(81, 13)
         Me.Label9.TabIndex = 70
         Me.Label9.Text = "Complemento"
         '
         'Txt_complemento
         '
+        Me.Txt_complemento.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_complemento.Location = New System.Drawing.Point(36, 293)
         Me.Txt_complemento.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_complemento.Name = "Txt_complemento"
-        Me.Txt_complemento.Size = New System.Drawing.Size(137, 20)
+        Me.Txt_complemento.Size = New System.Drawing.Size(137, 29)
         Me.Txt_complemento.TabIndex = 69
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.Location = New System.Drawing.Point(235, 278)
         Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(40, 13)
+        Me.Label10.Size = New System.Drawing.Size(38, 13)
         Me.Label10.TabIndex = 68
         Me.Label10.Text = "Bairro"
         '
         'Txt_bairro
         '
+        Me.Txt_bairro.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_bairro.Location = New System.Drawing.Point(236, 293)
         Me.Txt_bairro.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_bairro.Name = "Txt_bairro"
-        Me.Txt_bairro.Size = New System.Drawing.Size(137, 20)
+        Me.Txt_bairro.Size = New System.Drawing.Size(137, 29)
         Me.Txt_bairro.TabIndex = 67
         '
         'Txt_telefone
         '
+        Me.Txt_telefone.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_telefone.Location = New System.Drawing.Point(36, 168)
         Me.Txt_telefone.Mask = "(99) 00000-0000"
         Me.Txt_telefone.Name = "Txt_telefone"
-        Me.Txt_telefone.Size = New System.Drawing.Size(137, 20)
+        Me.Txt_telefone.Size = New System.Drawing.Size(137, 29)
         Me.Txt_telefone.TabIndex = 74
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.Location = New System.Drawing.Point(35, 152)
         Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(57, 13)
+        Me.Label12.Size = New System.Drawing.Size(51, 13)
         Me.Label12.TabIndex = 73
         Me.Label12.Text = "Telefone"
         '
-        'Btn_voltar
-        '
-        Me.Btn_voltar.Image = CType(resources.GetObject("Btn_voltar.Image"), System.Drawing.Image)
-        Me.Btn_voltar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Btn_voltar.Location = New System.Drawing.Point(667, 173)
-        Me.Btn_voltar.Name = "Btn_voltar"
-        Me.Btn_voltar.Size = New System.Drawing.Size(91, 27)
-        Me.Btn_voltar.TabIndex = 76
-        Me.Btn_voltar.Text = "Voltar"
-        Me.Btn_voltar.UseVisualStyleBackColor = True
-        '
         'Txt_cpf
         '
+        Me.Txt_cpf.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_cpf.Location = New System.Drawing.Point(440, 109)
         Me.Txt_cpf.Mask = "000.000.000-00"
         Me.Txt_cpf.Name = "Txt_cpf"
-        Me.Txt_cpf.Size = New System.Drawing.Size(91, 20)
+        Me.Txt_cpf.Size = New System.Drawing.Size(91, 29)
         Me.Txt_cpf.TabIndex = 78
         '
         'Lb_cpf
         '
         Me.Lb_cpf.AutoSize = True
-        Me.Lb_cpf.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lb_cpf.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Lb_cpf.Location = New System.Drawing.Point(437, 94)
         Me.Lb_cpf.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lb_cpf.Name = "Lb_cpf"
-        Me.Lb_cpf.Size = New System.Drawing.Size(30, 13)
+        Me.Lb_cpf.Size = New System.Drawing.Size(27, 13)
         Me.Lb_cpf.TabIndex = 77
         Me.Lb_cpf.Text = "CPF"
         '
         'Txt_cep
         '
+        Me.Txt_cep.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_cep.Location = New System.Drawing.Point(36, 228)
         Me.Txt_cep.Mask = "00000-999"
         Me.Txt_cep.Name = "Txt_cep"
-        Me.Txt_cep.Size = New System.Drawing.Size(137, 20)
+        Me.Txt_cep.Size = New System.Drawing.Size(137, 29)
         Me.Txt_cep.TabIndex = 80
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(35, 212)
         Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(31, 13)
+        Me.Label7.Size = New System.Drawing.Size(27, 13)
         Me.Label7.TabIndex = 79
         Me.Label7.Text = "CEP"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(235, 212)
         Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(30, 13)
+        Me.Label8.Size = New System.Drawing.Size(27, 13)
         Me.Label8.TabIndex = 82
         Me.Label8.Text = "Rua"
         '
         'Txt_rua
         '
+        Me.Txt_rua.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_rua.Location = New System.Drawing.Point(236, 227)
         Me.Txt_rua.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_rua.Name = "Txt_rua"
-        Me.Txt_rua.Size = New System.Drawing.Size(137, 20)
+        Me.Txt_rua.Size = New System.Drawing.Size(137, 29)
         Me.Txt_rua.TabIndex = 81
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(437, 212)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
@@ -353,69 +339,168 @@ Partial Class Frm_GerenciamentoAlunos
         '
         'Txt_numero
         '
+        Me.Txt_numero.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_numero.Location = New System.Drawing.Point(440, 227)
         Me.Txt_numero.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_numero.MaxLength = 5
         Me.Txt_numero.Name = "Txt_numero"
-        Me.Txt_numero.Size = New System.Drawing.Size(48, 20)
+        Me.Txt_numero.Size = New System.Drawing.Size(48, 29)
         Me.Txt_numero.TabIndex = 83
         '
         'Cmb_uf
         '
+        Me.Cmb_uf.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Cmb_uf.FormattingEnabled = True
         Me.Cmb_uf.Items.AddRange(New Object() {"AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO"})
         Me.Cmb_uf.Location = New System.Drawing.Point(516, 228)
         Me.Cmb_uf.Name = "Cmb_uf"
-        Me.Cmb_uf.Size = New System.Drawing.Size(48, 21)
+        Me.Cmb_uf.Size = New System.Drawing.Size(48, 29)
         Me.Cmb_uf.TabIndex = 86
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.Location = New System.Drawing.Point(513, 212)
         Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(23, 13)
+        Me.Label11.Size = New System.Drawing.Size(21, 13)
         Me.Label11.TabIndex = 85
         Me.Label11.Text = "UF"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(235, 152)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(24, 13)
+        Me.Label4.Size = New System.Drawing.Size(22, 13)
         Me.Label4.TabIndex = 24
         Me.Label4.Text = "RA"
         '
         'Txt_ra
         '
+        Me.Txt_ra.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_ra.Location = New System.Drawing.Point(238, 167)
         Me.Txt_ra.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_ra.MaxLength = 11
         Me.Txt_ra.Name = "Txt_ra"
-        Me.Txt_ra.Size = New System.Drawing.Size(137, 20)
+        Me.Txt_ra.Size = New System.Drawing.Size(137, 29)
         Me.Txt_ra.TabIndex = 23
+        '
+        'btn_gravar
+        '
+        Me.btn_gravar.AnimationHoverSpeed = 0.07!
+        Me.btn_gravar.AnimationSpeed = 0.03!
+        Me.btn_gravar.BackColor = System.Drawing.Color.Transparent
+        Me.btn_gravar.BaseColor = System.Drawing.Color.SteelBlue
+        Me.btn_gravar.BorderColor = System.Drawing.Color.Black
+        Me.btn_gravar.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.btn_gravar.FocusedColor = System.Drawing.Color.Empty
+        Me.btn_gravar.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_gravar.ForeColor = System.Drawing.Color.White
+        Me.btn_gravar.Image = CType(resources.GetObject("btn_gravar.Image"), System.Drawing.Image)
+        Me.btn_gravar.ImageSize = New System.Drawing.Size(22, 22)
+        Me.btn_gravar.Location = New System.Drawing.Point(667, 249)
+        Me.btn_gravar.Name = "btn_gravar"
+        Me.btn_gravar.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
+        Me.btn_gravar.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.btn_gravar.OnHoverForeColor = System.Drawing.Color.White
+        Me.btn_gravar.OnHoverImage = Nothing
+        Me.btn_gravar.OnPressedColor = System.Drawing.Color.Black
+        Me.btn_gravar.Radius = 2
+        Me.btn_gravar.Size = New System.Drawing.Size(91, 27)
+        Me.btn_gravar.TabIndex = 92
+        Me.btn_gravar.Text = "SALVAR"
+        Me.btn_gravar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Btn_editar
+        '
+        Me.Btn_editar.AnimationHoverSpeed = 0.07!
+        Me.Btn_editar.AnimationSpeed = 0.03!
+        Me.Btn_editar.BackColor = System.Drawing.Color.Transparent
+        Me.Btn_editar.BaseColor = System.Drawing.Color.SteelBlue
+        Me.Btn_editar.BorderColor = System.Drawing.Color.Black
+        Me.Btn_editar.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.Btn_editar.FocusedColor = System.Drawing.Color.Empty
+        Me.Btn_editar.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_editar.ForeColor = System.Drawing.Color.White
+        Me.Btn_editar.Image = CType(resources.GetObject("Btn_editar.Image"), System.Drawing.Image)
+        Me.Btn_editar.ImageSize = New System.Drawing.Size(22, 22)
+        Me.Btn_editar.Location = New System.Drawing.Point(667, 208)
+        Me.Btn_editar.Name = "Btn_editar"
+        Me.Btn_editar.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
+        Me.Btn_editar.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.Btn_editar.OnHoverForeColor = System.Drawing.Color.White
+        Me.Btn_editar.OnHoverImage = Nothing
+        Me.Btn_editar.OnPressedColor = System.Drawing.Color.Black
+        Me.Btn_editar.Radius = 2
+        Me.Btn_editar.Size = New System.Drawing.Size(91, 27)
+        Me.Btn_editar.TabIndex = 91
+        Me.Btn_editar.Text = "EDITAR"
+        Me.Btn_editar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Btn_voltar
+        '
+        Me.Btn_voltar.AnimationHoverSpeed = 0.07!
+        Me.Btn_voltar.AnimationSpeed = 0.03!
+        Me.Btn_voltar.BackColor = System.Drawing.Color.Transparent
+        Me.Btn_voltar.BaseColor = System.Drawing.Color.SteelBlue
+        Me.Btn_voltar.BorderColor = System.Drawing.Color.Black
+        Me.Btn_voltar.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.Btn_voltar.FocusedColor = System.Drawing.Color.Empty
+        Me.Btn_voltar.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_voltar.ForeColor = System.Drawing.Color.White
+        Me.Btn_voltar.Image = CType(resources.GetObject("Btn_voltar.Image"), System.Drawing.Image)
+        Me.Btn_voltar.ImageSize = New System.Drawing.Size(22, 22)
+        Me.Btn_voltar.Location = New System.Drawing.Point(666, 167)
+        Me.Btn_voltar.Name = "Btn_voltar"
+        Me.Btn_voltar.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
+        Me.Btn_voltar.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.Btn_voltar.OnHoverForeColor = System.Drawing.Color.White
+        Me.Btn_voltar.OnHoverImage = Nothing
+        Me.Btn_voltar.OnPressedColor = System.Drawing.Color.Black
+        Me.Btn_voltar.Radius = 2
+        Me.Btn_voltar.Size = New System.Drawing.Size(91, 27)
+        Me.Btn_voltar.TabIndex = 90
+        Me.Btn_voltar.Text = "Voltar"
         '
         'Btn_bloquear
         '
-        Me.Btn_bloquear.BackColor = System.Drawing.Color.Red
-        Me.Btn_bloquear.Location = New System.Drawing.Point(667, 264)
+        Me.Btn_bloquear.AnimationHoverSpeed = 0.07!
+        Me.Btn_bloquear.AnimationSpeed = 0.03!
+        Me.Btn_bloquear.BackColor = System.Drawing.Color.Transparent
+        Me.Btn_bloquear.BaseColor = System.Drawing.Color.SteelBlue
+        Me.Btn_bloquear.BorderColor = System.Drawing.Color.Black
+        Me.Btn_bloquear.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.Btn_bloquear.FocusedColor = System.Drawing.Color.Empty
+        Me.Btn_bloquear.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_bloquear.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Btn_bloquear.Image = CType(resources.GetObject("Btn_bloquear.Image"), System.Drawing.Image)
+        Me.Btn_bloquear.ImageSize = New System.Drawing.Size(22, 22)
+        Me.Btn_bloquear.Location = New System.Drawing.Point(634, 293)
         Me.Btn_bloquear.Name = "Btn_bloquear"
-        Me.Btn_bloquear.Size = New System.Drawing.Size(91, 27)
-        Me.Btn_bloquear.TabIndex = 87
-        Me.Btn_bloquear.Text = "BLOQUEAR" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.Btn_bloquear.UseVisualStyleBackColor = False
+        Me.Btn_bloquear.OnHoverBaseColor = System.Drawing.Color.DarkRed
+        Me.Btn_bloquear.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.Btn_bloquear.OnHoverForeColor = System.Drawing.Color.White
+        Me.Btn_bloquear.OnHoverImage = Nothing
+        Me.Btn_bloquear.OnPressedColor = System.Drawing.Color.Black
+        Me.Btn_bloquear.Radius = 2
+        Me.Btn_bloquear.Size = New System.Drawing.Size(124, 27)
+        Me.Btn_bloquear.TabIndex = 93
+        Me.Btn_bloquear.Text = "BLOQUEAR"
         '
         'Frm_GerenciamentoAlunos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.ClientSize = New System.Drawing.Size(800, 532)
         Me.Controls.Add(Me.Btn_bloquear)
+        Me.Controls.Add(Me.btn_gravar)
+        Me.Controls.Add(Me.Btn_editar)
+        Me.Controls.Add(Me.Btn_voltar)
         Me.Controls.Add(Me.Cmb_uf)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label2)
@@ -426,7 +511,6 @@ Partial Class Frm_GerenciamentoAlunos
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Txt_cpf)
         Me.Controls.Add(Me.Lb_cpf)
-        Me.Controls.Add(Me.Btn_voltar)
         Me.Controls.Add(Me.Txt_telefone)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Lb_cidade)
@@ -435,7 +519,6 @@ Partial Class Frm_GerenciamentoAlunos
         Me.Controls.Add(Me.Txt_complemento)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Txt_bairro)
-        Me.Controls.Add(Me.Btn_editar)
         Me.Controls.Add(Me.cb_turma)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label4)
@@ -461,7 +544,6 @@ Partial Class Frm_GerenciamentoAlunos
 
     Friend WithEvents dgv_dados As DataGridView
     Friend WithEvents ToolStrip1 As ToolStrip
-    Friend WithEvents btn_gravar As ToolStripButton
     Friend WithEvents ToolStripLabel1 As ToolStripLabel
     Friend WithEvents Txt_buscar As ToolStripTextBox
     Friend WithEvents ToolStripLabel2 As ToolStripLabel
@@ -473,7 +555,6 @@ Partial Class Frm_GerenciamentoAlunos
     Friend WithEvents Label1 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents cb_turma As ComboBox
-    Friend WithEvents Btn_editar As Button
     Friend WithEvents Lb_cidade As Label
     Friend WithEvents Txt_cidade As TextBox
     Friend WithEvents Label9 As Label
@@ -482,7 +563,6 @@ Partial Class Frm_GerenciamentoAlunos
     Friend WithEvents Txt_bairro As TextBox
     Friend WithEvents Txt_telefone As MaskedTextBox
     Friend WithEvents Label12 As Label
-    Friend WithEvents Btn_voltar As Button
     Friend WithEvents Txt_cpf As MaskedTextBox
     Friend WithEvents Lb_cpf As Label
     Friend WithEvents Txt_cep As MaskedTextBox
@@ -495,5 +575,8 @@ Partial Class Frm_GerenciamentoAlunos
     Friend WithEvents Label11 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Txt_ra As TextBox
-    Friend WithEvents Btn_bloquear As Button
+    Friend WithEvents btn_gravar As Guna.UI.WinForms.GunaButton
+    Friend WithEvents Btn_editar As Guna.UI.WinForms.GunaButton
+    Friend WithEvents Btn_voltar As Guna.UI.WinForms.GunaButton
+    Friend WithEvents Btn_bloquear As Guna.UI.WinForms.GunaButton
 End Class

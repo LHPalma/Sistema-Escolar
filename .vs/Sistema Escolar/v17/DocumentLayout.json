@@ -3,15 +3,42 @@
   "WorkspaceRootPath": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|d:\\documentos pessoais\\fatec\\ads\\2\u00BA semestre\\sistemas de informa\u00E7\u00E3o\\sistema escolar\\sistema-escolar\\gerenciamento\\frm_gerenciamentodisciplinas.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:gerenciamento\\frm_gerenciamentodisciplinas.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|d:\\documentos pessoais\\fatec\\ads\\2\u00BA semestre\\sistemas de informa\u00E7\u00E3o\\sistema escolar\\sistema-escolar\\gerenciamento\\frm_menugerenciamento.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:gerenciamento\\frm_menugerenciamento.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|d:\\documentos pessoais\\fatec\\ads\\2\u00BA semestre\\sistemas de informa\u00E7\u00E3o\\sistema escolar\\sistema-escolar\\cadastro\\frm_cadastrodisciplina.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:cadastro\\frm_cadastrodisciplina.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|d:\\documentos pessoais\\fatec\\ads\\2\u00BA semestre\\sistemas de informa\u00E7\u00E3o\\sistema escolar\\sistema-escolar\\gerenciamento\\frm_gerenciamentoadministradores.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:gerenciamento\\frm_gerenciamentoadministradores.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|d:\\documentos pessoais\\fatec\\ads\\2\u00BA semestre\\sistemas de informa\u00E7\u00E3o\\sistema escolar\\sistema-escolar\\gerenciamento\\frm_gerenciamentoalunos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:gerenciamento\\frm_gerenciamentoalunos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|d:\\documentos pessoais\\fatec\\ads\\2\u00BA semestre\\sistemas de informa\u00E7\u00E3o\\sistema escolar\\sistema-escolar\\gerenciamento\\frm_gerenciamentoprofessores.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:gerenciamento\\frm_gerenciamentoprofessores.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Sistema Escolar||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|d:\\documentos pessoais\\fatec\\ads\\2\u00BA semestre\\sistemas de informa\u00E7\u00E3o\\sistema escolar\\sistema-escolar\\cadastro\\frm_cadastroavaliacao.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:cadastro\\frm_cadastroavaliacao.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|d:\\documentos pessoais\\fatec\\ads\\2\u00BA semestre\\sistemas de informa\u00E7\u00E3o\\sistema escolar\\sistema-escolar\\cadastro\\frm_menuturmasdisciplinas.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:cadastro\\frm_menuturmasdisciplinas.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|d:\\documentos pessoais\\fatec\\ads\\2\u00BA semestre\\sistemas de informa\u00E7\u00E3o\\sistema escolar\\sistema-escolar\\cadastro\\frm_agendamentoavaliacao.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:cadastro\\frm_agendamentoavaliacao.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Sistema Escolar||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|d:\\documentos pessoais\\fatec\\ads\\2\u00BA semestre\\sistemas de informa\u00E7\u00E3o\\sistema escolar\\sistema-escolar\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|8998e48e-b89a-4034-b66e-353d8c1fdc2e"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,7 +52,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Sistema Escolar",
               "DocumentMoniker": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Sistema Escolar.vbproj",
               "RelativeDocumentMoniker": "Sistema Escolar.vbproj",
@@ -33,23 +60,96 @@
               "RelativeToolTip": "Sistema Escolar.vbproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-05-04T23:04:54.361Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Frm_menuTurmasDisciplinas.vb [Design]",
-              "DocumentMoniker": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Cadastro\\Frm_menuTurmasDisciplinas.vb",
-              "RelativeDocumentMoniker": "Cadastro\\Frm_menuTurmasDisciplinas.vb",
-              "ToolTip": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Cadastro\\Frm_menuTurmasDisciplinas.vb [Design]",
-              "RelativeToolTip": "Cadastro\\Frm_menuTurmasDisciplinas.vb [Design]",
+              "Title": "Frm_MenuGerenciamento.vb [Design]",
+              "DocumentMoniker": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Gerenciamento\\Frm_MenuGerenciamento.vb",
+              "RelativeDocumentMoniker": "Gerenciamento\\Frm_MenuGerenciamento.vb",
+              "ToolTip": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Gerenciamento\\Frm_MenuGerenciamento.vb [Design]",
+              "RelativeToolTip": "Gerenciamento\\Frm_MenuGerenciamento.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-06-10T00:46:59.566Z",
+              "WhenOpened": "2025-06-11T00:19:22.941Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Frm_GerenciamentoDisciplinas.vb [Design]",
+              "DocumentMoniker": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Gerenciamento\\Frm_GerenciamentoDisciplinas.vb",
+              "RelativeDocumentMoniker": "Gerenciamento\\Frm_GerenciamentoDisciplinas.vb",
+              "ToolTip": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Gerenciamento\\Frm_GerenciamentoDisciplinas.vb [Design]",
+              "RelativeToolTip": "Gerenciamento\\Frm_GerenciamentoDisciplinas.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-06-10T23:54:39.637Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Frm_GerenciamentoProfessores.vb [Design]",
+              "DocumentMoniker": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Gerenciamento\\Frm_GerenciamentoProfessores.vb",
+              "RelativeDocumentMoniker": "Gerenciamento\\Frm_GerenciamentoProfessores.vb",
+              "ToolTip": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Gerenciamento\\Frm_GerenciamentoProfessores.vb [Design]",
+              "RelativeToolTip": "Gerenciamento\\Frm_GerenciamentoProfessores.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-06-10T23:42:34.516Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Frm_GerenciamentoAlunos.vb [Design]",
+              "DocumentMoniker": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Gerenciamento\\Frm_GerenciamentoAlunos.vb",
+              "RelativeDocumentMoniker": "Gerenciamento\\Frm_GerenciamentoAlunos.vb",
+              "ToolTip": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Gerenciamento\\Frm_GerenciamentoAlunos.vb [Design]",
+              "RelativeToolTip": "Gerenciamento\\Frm_GerenciamentoAlunos.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-06-10T23:35:11.841Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Frm_GerenciamentoAdministradores.vb [Design]",
+              "DocumentMoniker": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Gerenciamento\\Frm_GerenciamentoAdministradores.vb",
+              "RelativeDocumentMoniker": "Gerenciamento\\Frm_GerenciamentoAdministradores.vb",
+              "ToolTip": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Gerenciamento\\Frm_GerenciamentoAdministradores.vb [Design]",
+              "RelativeToolTip": "Gerenciamento\\Frm_GerenciamentoAdministradores.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-06-10T22:19:36.739Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Frm_CadastroDisciplina.vb [Design]",
+              "DocumentMoniker": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Cadastro\\Frm_cadastroDisciplina.vb",
+              "RelativeDocumentMoniker": "Cadastro\\Frm_cadastroDisciplina.vb",
+              "ToolTip": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Cadastro\\Frm_cadastroDisciplina.vb [Design]",
+              "RelativeToolTip": "Cadastro\\Frm_cadastroDisciplina.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-06-10T19:36:03.055Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Frm_agendamentoAvaliacao.vb [Design]",
+              "DocumentMoniker": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Cadastro\\Frm_agendamentoAvaliacao.vb",
+              "RelativeDocumentMoniker": "Cadastro\\Frm_agendamentoAvaliacao.vb",
+              "ToolTip": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Cadastro\\Frm_agendamentoAvaliacao.vb [Design]",
+              "RelativeToolTip": "Cadastro\\Frm_agendamentoAvaliacao.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-06-10T19:19:38.134Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Frm_cadastroAvaliacao.vb [Design]",
               "DocumentMoniker": "D:\\Documentos Pessoais\\FATEC\\ADS\\2\u00BA Semestre\\Sistemas de Informa\u00E7\u00E3o\\Sistema Escolar\\Sistema-Escolar\\Cadastro\\Frm_cadastroAvaliacao.vb",
               "RelativeDocumentMoniker": "Cadastro\\Frm_cadastroAvaliacao.vb",

@@ -271,6 +271,9 @@
     <EmbeddedResource Include="Cadastro\Frm_agendamentoAvaliacao.resx">
       <DependentUpon>Frm_agendamentoAvaliacao.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\Frm_cadastroAvaliacao.resx">
+      <DependentUpon>Frm_cadastroAvaliacao.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cadastro\Frm_CadastroDisciplina.resx">
       <DependentUpon>Frm_CadastroDisciplina.vb</DependentUpon>
     </EmbeddedResource>

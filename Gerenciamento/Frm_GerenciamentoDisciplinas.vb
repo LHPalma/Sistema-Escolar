@@ -23,7 +23,7 @@ Public Class Frm_GerenciamentoDisciplinas
     End Sub
 
 
-    Private Sub Btn_cadastrar_Click(sender As Object, e As EventArgs) Handles Btn_cadastrar.Click
+    Private Sub Btn_cadastrar_Click(sender As Object, e As EventArgs)
         If Cmb_nome_professor.Text = "" Or Cmb_nome_disciplina.Text = "" Or Cmb_nome_turma.Text = "" Then
             MsgBox("Preencha todos os campos", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "Atenção")
             Cmb_nome_professor.Focus()
@@ -64,7 +64,7 @@ Public Class Frm_GerenciamentoDisciplinas
     End Sub
 
 #Region "Rotinas de front-end"
-    Private Sub Btn_limpar_campos_Click(sender As Object, e As EventArgs) Handles Btn_limpar_campos.Click
+    Private Sub Btn_limpar_campos_Click(sender As Object, e As EventArgs)
         LimparCampos()
     End Sub
 

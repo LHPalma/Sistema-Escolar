@@ -103,7 +103,7 @@ Public Class Frm_GerenciamentoProfessores
     End Sub
 
 
-    Private Sub Btn_editar_Click(sender As Object, e As EventArgs) Handles Btn_editar.Click
+    Private Sub Btn_editar_Click(sender As Object, e As EventArgs)
 
     End Sub
 End Class

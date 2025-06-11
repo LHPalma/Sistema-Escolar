@@ -17,7 +17,7 @@ Public Class Frm_cadastroAvaliacao
         End Using
     End Sub
 
-    Private Sub btnSalvar_Click(sender As Object, e As EventArgs) Handles btnSalvar.Click
+    Private Sub btnSalvar_Click(sender As Object, e As EventArgs)
 
         Using conexao As New SQLiteConnection(connectionString)
             conexao.Open()
@@ -73,4 +73,5 @@ Public Class Frm_cadastroAvaliacao
 
         End Using
     End Sub
+
 End Class

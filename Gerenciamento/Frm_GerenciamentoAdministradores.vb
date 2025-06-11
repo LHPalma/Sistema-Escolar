@@ -38,4 +38,8 @@ Public Class Frm_GerenciamentoAdministradores
         Txt_email.Text = Dgv_dados.CurrentRow.Cells("email").Value.ToString()
         Txt_nome.Text = Dgv_dados.CurrentRow.Cells("nome").Value.ToString()
     End Sub
+
+    Private Sub Frm_GerenciamentoAdministradores_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

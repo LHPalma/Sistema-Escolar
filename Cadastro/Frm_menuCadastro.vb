@@ -33,4 +33,8 @@
     Private Sub Btn_voltar_Click(sender As Object, e As EventArgs)
         Me.Close()
     End Sub
+
+    Private Sub Btn_voltar_Click_1(sender As Object, e As EventArgs) Handles Btn_voltar.Click
+
+    End Sub
 End Class

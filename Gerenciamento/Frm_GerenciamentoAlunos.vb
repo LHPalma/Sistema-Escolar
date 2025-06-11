@@ -177,7 +177,7 @@ Public Class Frm_GerenciamentoAlunos
         End Try
     End Sub
 
-    Private Sub Btn_editar_Click_1(sender As Object, e As EventArgs) Handles Btn_editar.Click
+    Private Sub Btn_editar_Click_1(sender As Object, e As EventArgs)
         Dim idAluno As Integer
         Try
             idAluno = Convert.ToInt32(dgv_dados.CurrentRow.Cells("id_aluno").Value)
@@ -237,7 +237,7 @@ Public Class Frm_GerenciamentoAlunos
 
     End Sub
 
-    Private Sub Btn_bloquear_Click(sender As Object, e As EventArgs) Handles Btn_bloquear.Click
+    Private Sub Btn_bloquear_Click(sender As Object, e As EventArgs)
         If txt_nome.Text = "" Then
             Exit Sub
         End If
@@ -272,5 +272,6 @@ Public Class Frm_GerenciamentoAlunos
             conexao.Close()
         End Try
     End Sub
+
 #End Region
 End Class
