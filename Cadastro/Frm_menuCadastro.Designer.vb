@@ -41,19 +41,19 @@ Partial Class Frm_menuCadastro
         Me.Lb_cadastro_contas.AutoSize = True
         Me.Lb_cadastro_contas.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Lb_cadastro_contas.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Lb_cadastro_contas.Location = New System.Drawing.Point(53, 14)
-        Me.Lb_cadastro_contas.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Lb_cadastro_contas.Location = New System.Drawing.Point(80, 22)
         Me.Lb_cadastro_contas.Name = "Lb_cadastro_contas"
-        Me.Lb_cadastro_contas.Size = New System.Drawing.Size(281, 32)
+        Me.Lb_cadastro_contas.Size = New System.Drawing.Size(416, 48)
         Me.Lb_cadastro_contas.TabIndex = 4
         Me.Lb_cadastro_contas.Text = "CADASTRO DE CONTAS"
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(-1, -8)
+        Me.PictureBox1.Location = New System.Drawing.Point(-2, -12)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(61, 72)
+        Me.PictureBox1.Size = New System.Drawing.Size(92, 111)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 5
         Me.PictureBox1.TabStop = False
@@ -71,7 +71,8 @@ Partial Class Frm_menuCadastro
         Me.Btn_voltar.ForeColor = System.Drawing.Color.White
         Me.Btn_voltar.Image = CType(resources.GetObject("Btn_voltar.Image"), System.Drawing.Image)
         Me.Btn_voltar.ImageSize = New System.Drawing.Size(22, 22)
-        Me.Btn_voltar.Location = New System.Drawing.Point(430, 256)
+        Me.Btn_voltar.Location = New System.Drawing.Point(645, 394)
+        Me.Btn_voltar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Btn_voltar.Name = "Btn_voltar"
         Me.Btn_voltar.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
         Me.Btn_voltar.OnHoverBorderColor = System.Drawing.Color.Black
@@ -79,7 +80,7 @@ Partial Class Frm_menuCadastro
         Me.Btn_voltar.OnHoverImage = Nothing
         Me.Btn_voltar.OnPressedColor = System.Drawing.Color.Black
         Me.Btn_voltar.Radius = 2
-        Me.Btn_voltar.Size = New System.Drawing.Size(91, 27)
+        Me.Btn_voltar.Size = New System.Drawing.Size(136, 42)
         Me.Btn_voltar.TabIndex = 41
         Me.Btn_voltar.Text = "Voltar"
         '
@@ -88,18 +89,20 @@ Partial Class Frm_menuCadastro
         Me.Pnl_menu.BackColor = System.Drawing.Color.SteelBlue
         Me.Pnl_menu.Controls.Add(Me.Lb_cadastro_contas)
         Me.Pnl_menu.Controls.Add(Me.PictureBox1)
-        Me.Pnl_menu.Location = New System.Drawing.Point(-1, -6)
+        Me.Pnl_menu.Location = New System.Drawing.Point(-2, -9)
+        Me.Pnl_menu.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Pnl_menu.Name = "Pnl_menu"
-        Me.Pnl_menu.Size = New System.Drawing.Size(538, 57)
+        Me.Pnl_menu.Size = New System.Drawing.Size(807, 88)
         Me.Pnl_menu.TabIndex = 40
         '
         'Lb_acesso_restrito
         '
         Me.Lb_acesso_restrito.AutoSize = True
         Me.Lb_acesso_restrito.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lb_acesso_restrito.Location = New System.Drawing.Point(12, 262)
+        Me.Lb_acesso_restrito.Location = New System.Drawing.Point(18, 403)
+        Me.Lb_acesso_restrito.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Lb_acesso_restrito.Name = "Lb_acesso_restrito"
-        Me.Lb_acesso_restrito.Size = New System.Drawing.Size(125, 21)
+        Me.Lb_acesso_restrito.Size = New System.Drawing.Size(189, 32)
         Me.Lb_acesso_restrito.TabIndex = 39
         Me.Lb_acesso_restrito.Text = "Acesso Restrito"
         '
@@ -107,10 +110,9 @@ Partial Class Frm_menuCadastro
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 24.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(96, 54)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(144, 83)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(315, 45)
+        Me.Label1.Size = New System.Drawing.Size(478, 67)
         Me.Label1.TabIndex = 42
         Me.Label1.Text = "Área Administrativa"
         '
@@ -127,7 +129,8 @@ Partial Class Frm_menuCadastro
         Me.Btn_aluno.ForeColor = System.Drawing.Color.White
         Me.Btn_aluno.Image = CType(resources.GetObject("Btn_aluno.Image"), System.Drawing.Image)
         Me.Btn_aluno.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Btn_aluno.Location = New System.Drawing.Point(143, 102)
+        Me.Btn_aluno.Location = New System.Drawing.Point(214, 157)
+        Me.Btn_aluno.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Btn_aluno.Name = "Btn_aluno"
         Me.Btn_aluno.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
         Me.Btn_aluno.OnHoverBorderColor = System.Drawing.Color.Black
@@ -135,7 +138,7 @@ Partial Class Frm_menuCadastro
         Me.Btn_aluno.OnHoverImage = Nothing
         Me.Btn_aluno.OnPressedColor = System.Drawing.Color.Black
         Me.Btn_aluno.Radius = 2
-        Me.Btn_aluno.Size = New System.Drawing.Size(226, 55)
+        Me.Btn_aluno.Size = New System.Drawing.Size(339, 85)
         Me.Btn_aluno.TabIndex = 43
         Me.Btn_aluno.Text = "NOVO ALUNO"
         '
@@ -152,7 +155,8 @@ Partial Class Frm_menuCadastro
         Me.Btn_professor.ForeColor = System.Drawing.Color.White
         Me.Btn_professor.Image = CType(resources.GetObject("Btn_professor.Image"), System.Drawing.Image)
         Me.Btn_professor.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Btn_professor.Location = New System.Drawing.Point(143, 163)
+        Me.Btn_professor.Location = New System.Drawing.Point(214, 251)
+        Me.Btn_professor.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Btn_professor.Name = "Btn_professor"
         Me.Btn_professor.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
         Me.Btn_professor.OnHoverBorderColor = System.Drawing.Color.Black
@@ -160,7 +164,7 @@ Partial Class Frm_menuCadastro
         Me.Btn_professor.OnHoverImage = Nothing
         Me.Btn_professor.OnPressedColor = System.Drawing.Color.Black
         Me.Btn_professor.Radius = 2
-        Me.Btn_professor.Size = New System.Drawing.Size(226, 55)
+        Me.Btn_professor.Size = New System.Drawing.Size(339, 85)
         Me.Btn_professor.TabIndex = 44
         Me.Btn_professor.Text = "NOVO PROFESSOR"
         '
@@ -177,7 +181,8 @@ Partial Class Frm_menuCadastro
         Me.Btn_adm.ForeColor = System.Drawing.Color.White
         Me.Btn_adm.Image = CType(resources.GetObject("Btn_adm.Image"), System.Drawing.Image)
         Me.Btn_adm.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Btn_adm.Location = New System.Drawing.Point(143, 224)
+        Me.Btn_adm.Location = New System.Drawing.Point(214, 345)
+        Me.Btn_adm.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Btn_adm.Name = "Btn_adm"
         Me.Btn_adm.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
         Me.Btn_adm.OnHoverBorderColor = System.Drawing.Color.Black
@@ -185,16 +190,16 @@ Partial Class Frm_menuCadastro
         Me.Btn_adm.OnHoverImage = Nothing
         Me.Btn_adm.OnPressedColor = System.Drawing.Color.Black
         Me.Btn_adm.Radius = 2
-        Me.Btn_adm.Size = New System.Drawing.Size(226, 55)
+        Me.Btn_adm.Size = New System.Drawing.Size(339, 85)
         Me.Btn_adm.TabIndex = 45
         Me.Btn_adm.Text = "NOVO ADMINISTRADOR"
         '
         'Frm_menuCadastro
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.ClientSize = New System.Drawing.Size(533, 292)
+        Me.ClientSize = New System.Drawing.Size(800, 449)
         Me.Controls.Add(Me.Btn_adm)
         Me.Controls.Add(Me.Btn_professor)
         Me.Controls.Add(Me.Btn_aluno)
@@ -202,6 +207,7 @@ Partial Class Frm_menuCadastro
         Me.Controls.Add(Me.Btn_voltar)
         Me.Controls.Add(Me.Pnl_menu)
         Me.Controls.Add(Me.Lb_acesso_restrito)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Frm_menuCadastro"
         Me.Text = "Cadastro de Contas"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

@@ -186,5 +186,11 @@ Public Class Frm_CadastroProfessor
         End Try
     End Sub
 
+    Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
+        Dim menuCadastro As New Frm_menuCadastro()
+        Me.Close()
+        menuCadastro.ShowDialog()
+    End Sub
+
 #End Region
 End Class

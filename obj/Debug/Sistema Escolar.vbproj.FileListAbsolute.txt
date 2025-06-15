@@ -333,3 +333,49 @@ C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\D
 C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_CadastroDisciplina.resources
 C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_GerenciamentoDisciplinas.resources
 C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.PDVVendas.resources
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\bin\Debug\x86\sqlite3.dll
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\bin\Debug\x64\sqlite3.dll
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\bin\Debug\Sistema Escolar.exe.config
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\bin\Debug\Sistema Escolar.exe
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\bin\Debug\Sistema Escolar.pdb
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\bin\Debug\Sistema Escolar.xml
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\bin\Debug\EntityFramework.dll
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\bin\Debug\Guna.UI.dll
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\bin\Debug\System.Data.SQLite.dll
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\bin\Debug\EntityFramework.xml
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\bin\Debug\System.Data.SQLite.xml
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema Escolar.vbproj.AssemblyReference.cache
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_agendamentoAvaliacao.resources
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_cadastroAvaliacao.resources
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_CadastroDisciplina.resources
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_CadastroProfessor.resources
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_cadastroADM.resources
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_cadastroAluno.resources
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_CadastroTurma.resources
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_menuSecretaria.resources
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_menuTurmasDisciplinas.resources
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_GerenciamentoAlunos.resources
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_GerenciamentoAdministradores.resources
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_GerenciamentoDisciplinas.resources
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_GerenciamentoProfessores.resources
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_inicio.resources
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_loginADM.resources
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_loginAluno.resources
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_loginProfessor.resources
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_menuADM.resources
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_menuCadastro.resources
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Frm_MenuGerenciamento.resources
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.PDVVendas.resources
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema_Escolar.Resources.resources
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema Escolar.vbproj.GenerateResource.cache
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema Escolar.vbproj.CoreCompileInputs.cache
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema .FE6418D7.Up2Date
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema Escolar.exe
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema Escolar.xml
+C:\Users\Aluno\Desktop\Sistema-Escolar-main\obj\Debug\Sistema Escolar.pdb

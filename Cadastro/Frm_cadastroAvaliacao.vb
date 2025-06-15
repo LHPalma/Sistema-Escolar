@@ -17,8 +17,20 @@ Public Class Frm_cadastroAvaliacao
         End Using
     End Sub
 
-    Private Sub btnSalvar_Click(sender As Object, e As EventArgs)
 
+
+    Private Sub Btn_limpar_campos_Click(sender As Object, e As EventArgs) Handles Btn_limpar_campos.Click
+        LimparCampos()
+    End Sub
+
+    Private Sub LimparCampos()
+        Txt_nome.Text = ""
+        nudPeso.Text = ""
+        Cb_tipo.Text = ""
+        Cb_turma.Text = ""
+    End Sub
+
+    Private Sub btnSalvar_Click_1(sender As Object, e As EventArgs) Handles btnSalvar.Click
         Using conexao As New SQLiteConnection(connectionString)
             conexao.Open()
 
@@ -65,13 +77,7 @@ Public Class Frm_cadastroAvaliacao
             cmd.ExecuteNonQuery()
 
             MessageBox.Show("Avaliação cadastrada com sucesso!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Txt_nome.Text = ""
-            nudPeso.Text = ""
-            Cb_tipo.Text = ""
-            Cb_turma.Text = ""
-
-
+            LimparCampos()
         End Using
     End Sub
-
 End Class

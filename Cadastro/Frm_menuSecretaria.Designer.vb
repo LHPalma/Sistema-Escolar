@@ -40,19 +40,19 @@ Partial Class Frm_menuSecretaria
         Me.Lb_secretaria.AutoSize = True
         Me.Lb_secretaria.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Lb_secretaria.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Lb_secretaria.Location = New System.Drawing.Point(56, 16)
-        Me.Lb_secretaria.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Lb_secretaria.Location = New System.Drawing.Point(84, 25)
         Me.Lb_secretaria.Name = "Lb_secretaria"
-        Me.Lb_secretaria.Size = New System.Drawing.Size(154, 32)
+        Me.Lb_secretaria.Size = New System.Drawing.Size(227, 48)
         Me.Lb_secretaria.TabIndex = 4
         Me.Lb_secretaria.Text = "SECRETARIA"
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(2, -6)
+        Me.PictureBox1.Location = New System.Drawing.Point(3, -9)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(61, 72)
+        Me.PictureBox1.Size = New System.Drawing.Size(92, 111)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 5
         Me.PictureBox1.TabStop = False
@@ -70,7 +70,8 @@ Partial Class Frm_menuSecretaria
         Me.Btn_voltar.ForeColor = System.Drawing.Color.White
         Me.Btn_voltar.Image = CType(resources.GetObject("Btn_voltar.Image"), System.Drawing.Image)
         Me.Btn_voltar.ImageSize = New System.Drawing.Size(22, 22)
-        Me.Btn_voltar.Location = New System.Drawing.Point(430, 256)
+        Me.Btn_voltar.Location = New System.Drawing.Point(645, 394)
+        Me.Btn_voltar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Btn_voltar.Name = "Btn_voltar"
         Me.Btn_voltar.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
         Me.Btn_voltar.OnHoverBorderColor = System.Drawing.Color.Black
@@ -78,9 +79,9 @@ Partial Class Frm_menuSecretaria
         Me.Btn_voltar.OnHoverImage = Nothing
         Me.Btn_voltar.OnPressedColor = System.Drawing.Color.Black
         Me.Btn_voltar.Radius = 2
-        Me.Btn_voltar.Size = New System.Drawing.Size(91, 27)
+        Me.Btn_voltar.Size = New System.Drawing.Size(136, 42)
         Me.Btn_voltar.TabIndex = 38
-        Me.Btn_voltar.Text = "Voltar"
+        Me.Btn_voltar.Text = "Sair"
         '
         'Btn_turmas_disciplinas
         '
@@ -95,7 +96,8 @@ Partial Class Frm_menuSecretaria
         Me.Btn_turmas_disciplinas.ForeColor = System.Drawing.Color.White
         Me.Btn_turmas_disciplinas.Image = CType(resources.GetObject("Btn_turmas_disciplinas.Image"), System.Drawing.Image)
         Me.Btn_turmas_disciplinas.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Btn_turmas_disciplinas.Location = New System.Drawing.Point(136, 174)
+        Me.Btn_turmas_disciplinas.Location = New System.Drawing.Point(204, 268)
+        Me.Btn_turmas_disciplinas.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Btn_turmas_disciplinas.Name = "Btn_turmas_disciplinas"
         Me.Btn_turmas_disciplinas.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
         Me.Btn_turmas_disciplinas.OnHoverBorderColor = System.Drawing.Color.Black
@@ -103,7 +105,7 @@ Partial Class Frm_menuSecretaria
         Me.Btn_turmas_disciplinas.OnHoverImage = Nothing
         Me.Btn_turmas_disciplinas.OnPressedColor = System.Drawing.Color.Black
         Me.Btn_turmas_disciplinas.Radius = 2
-        Me.Btn_turmas_disciplinas.Size = New System.Drawing.Size(260, 55)
+        Me.Btn_turmas_disciplinas.Size = New System.Drawing.Size(390, 85)
         Me.Btn_turmas_disciplinas.TabIndex = 37
         Me.Btn_turmas_disciplinas.Text = "TURMAS E DISCIPLINAS"
         '
@@ -120,7 +122,8 @@ Partial Class Frm_menuSecretaria
         Me.Btn_cadastro_contas.ForeColor = System.Drawing.Color.White
         Me.Btn_cadastro_contas.Image = CType(resources.GetObject("Btn_cadastro_contas.Image"), System.Drawing.Image)
         Me.Btn_cadastro_contas.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Btn_cadastro_contas.Location = New System.Drawing.Point(136, 106)
+        Me.Btn_cadastro_contas.Location = New System.Drawing.Point(204, 163)
+        Me.Btn_cadastro_contas.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Btn_cadastro_contas.Name = "Btn_cadastro_contas"
         Me.Btn_cadastro_contas.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
         Me.Btn_cadastro_contas.OnHoverBorderColor = System.Drawing.Color.Black
@@ -128,7 +131,7 @@ Partial Class Frm_menuSecretaria
         Me.Btn_cadastro_contas.OnHoverImage = Nothing
         Me.Btn_cadastro_contas.OnPressedColor = System.Drawing.Color.Black
         Me.Btn_cadastro_contas.Radius = 2
-        Me.Btn_cadastro_contas.Size = New System.Drawing.Size(260, 55)
+        Me.Btn_cadastro_contas.Size = New System.Drawing.Size(390, 85)
         Me.Btn_cadastro_contas.TabIndex = 36
         Me.Btn_cadastro_contas.Text = "CADASTROS DE CONTAS"
         '
@@ -136,10 +139,9 @@ Partial Class Frm_menuSecretaria
         '
         Me.Lb_bemvindo.AutoSize = True
         Me.Lb_bemvindo.Font = New System.Drawing.Font("Segoe UI Semibold", 24.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lb_bemvindo.Location = New System.Drawing.Point(109, 55)
-        Me.Lb_bemvindo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Lb_bemvindo.Location = New System.Drawing.Point(164, 85)
         Me.Lb_bemvindo.Name = "Lb_bemvindo"
-        Me.Lb_bemvindo.Size = New System.Drawing.Size(315, 45)
+        Me.Lb_bemvindo.Size = New System.Drawing.Size(478, 67)
         Me.Lb_bemvindo.TabIndex = 33
         Me.Lb_bemvindo.Text = "Área Administrativa"
         '
@@ -148,33 +150,36 @@ Partial Class Frm_menuSecretaria
         Me.Pnl_menu.BackColor = System.Drawing.Color.SteelBlue
         Me.Pnl_menu.Controls.Add(Me.Lb_secretaria)
         Me.Pnl_menu.Controls.Add(Me.PictureBox1)
-        Me.Pnl_menu.Location = New System.Drawing.Point(-5, -8)
+        Me.Pnl_menu.Location = New System.Drawing.Point(-8, -12)
+        Me.Pnl_menu.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Pnl_menu.Name = "Pnl_menu"
-        Me.Pnl_menu.Size = New System.Drawing.Size(543, 57)
+        Me.Pnl_menu.Size = New System.Drawing.Size(814, 88)
         Me.Pnl_menu.TabIndex = 35
         '
         'Lb_acesso_restrito
         '
         Me.Lb_acesso_restrito.AutoSize = True
         Me.Lb_acesso_restrito.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lb_acesso_restrito.Location = New System.Drawing.Point(12, 262)
+        Me.Lb_acesso_restrito.Location = New System.Drawing.Point(18, 403)
+        Me.Lb_acesso_restrito.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Lb_acesso_restrito.Name = "Lb_acesso_restrito"
-        Me.Lb_acesso_restrito.Size = New System.Drawing.Size(125, 21)
+        Me.Lb_acesso_restrito.Size = New System.Drawing.Size(189, 32)
         Me.Lb_acesso_restrito.TabIndex = 34
         Me.Lb_acesso_restrito.Text = "Acesso Restrito"
         '
         'Frm_menuSecretaria
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.ClientSize = New System.Drawing.Size(533, 292)
+        Me.ClientSize = New System.Drawing.Size(800, 449)
         Me.Controls.Add(Me.Btn_voltar)
         Me.Controls.Add(Me.Btn_turmas_disciplinas)
         Me.Controls.Add(Me.Btn_cadastro_contas)
         Me.Controls.Add(Me.Lb_bemvindo)
         Me.Controls.Add(Me.Pnl_menu)
         Me.Controls.Add(Me.Lb_acesso_restrito)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Frm_menuSecretaria"
         Me.Text = "Secretaria"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

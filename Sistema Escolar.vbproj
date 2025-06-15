@@ -8,7 +8,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{755CE600-AE2B-4438-B87F-C9992EBEAA2B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Sistema_Escolar.Frm_cadastroAvaliacao</StartupObject>
+    <StartupObject>Sistema_Escolar.Frm_cadastroAluno</StartupObject>
     <RootNamespace>Sistema_Escolar</RootNamespace>
     <AssemblyName>Sistema Escolar</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -80,7 +80,7 @@
       <HintPath>packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI">
-      <HintPath>..\..\FRAMEWORKS_VBNET\FRAMEWORK VB.NET\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+      <HintPath>..\..\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\Guna.UI-Framework\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -223,12 +223,6 @@
       <DependentUpon>Frm_loginAluno.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login\Frm_loginProfessor.Designer.vb">
-      <DependentUpon>Frm_loginProfessor.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Login\Frm_loginProfessor.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Frm_menuADM.Designer.vb">
       <DependentUpon>Frm_menuADM.vb</DependentUpon>
     </Compile>
@@ -245,6 +239,12 @@
       <DependentUpon>Frm_MenuGerenciamento.vb</DependentUpon>
     </Compile>
     <Compile Include="Gerenciamento\Frm_MenuGerenciamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\Frm_loginProfessor.Designer.vb">
+      <DependentUpon>Frm_loginProfessor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Frm_loginProfessor.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Modulo.vb" />
@@ -316,9 +316,6 @@
     <EmbeddedResource Include="Login\Frm_loginAluno.resx">
       <DependentUpon>Frm_loginAluno.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login\Frm_loginProfessor.resx">
-      <DependentUpon>Frm_loginProfessor.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Frm_menuADM.resx">
       <DependentUpon>Frm_menuADM.vb</DependentUpon>
     </EmbeddedResource>
@@ -327,6 +324,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Gerenciamento\Frm_MenuGerenciamento.resx">
       <DependentUpon>Frm_MenuGerenciamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\Frm_loginProfessor.resx">
+      <DependentUpon>Frm_loginProfessor.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulo_de_Vendas\PDVVendas.resx">
       <DependentUpon>PDVVendas.vb</DependentUpon>

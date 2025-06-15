@@ -68,5 +68,11 @@ Public Class Frm_CadastroTurma
         Txt_nome.Text = ParaLetraMaiuscula(Txt_nome.Text)
     End Sub
 
+    Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
+        Dim menuTurma As New Frm_menuTurmasDisciplinas()
+        Me.Hide()
+        menuTurma.ShowDialog()
+    End Sub
+
 #End Region
 End Class

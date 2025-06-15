@@ -35,6 +35,20 @@
     End Sub
 
     Private Sub Btn_voltar_Click_1(sender As Object, e As EventArgs) Handles Btn_voltar.Click
+        Me.Hide()
+        Dim menuSecretaria As New Frm_menuSecretaria()
+        menuSecretaria.ShowDialog()
+    End Sub
 
+    Private Sub Btn_aluno_Click_1(sender As Object, e As EventArgs) Handles Btn_aluno.Click
+        Dim cadastrarAluno As New Frm_cadastroAluno()
+        Me.Hide()
+        cadastrarAluno.ShowDialog()
+    End Sub
+
+    Private Sub Btn_professor_Click_1(sender As Object, e As EventArgs) Handles Btn_professor.Click
+        Dim cadastroPorfessor As New Frm_CadastroProfessor()
+        Me.Close()
+        cadastroPorfessor.ShowDialog()
     End Sub
 End Class
