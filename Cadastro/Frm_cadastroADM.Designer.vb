@@ -24,6 +24,7 @@ Partial Class Frm_cadastroADM
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_cadastroADM))
         Me.Gb_cadastro_adm = New System.Windows.Forms.GroupBox()
+        Me.btn_cadastrar = New Guna.UI.WinForms.GunaButton()
         Me.Txt_senha = New System.Windows.Forms.TextBox()
         Me.Lb_senha = New System.Windows.Forms.Label()
         Me.Txt_email = New System.Windows.Forms.TextBox()
@@ -33,7 +34,6 @@ Partial Class Frm_cadastroADM
         Me.Lb_cadastro_adm = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Pnl_menu = New System.Windows.Forms.Panel()
-        Me.btn_cadastrar = New Guna.UI.WinForms.GunaButton()
         Me.Btn_voltar = New Guna.UI.WinForms.GunaButton()
         Me.Btn_limpar_campos = New Guna.UI.WinForms.GunaButton()
         Me.Gb_cadastro_adm.SuspendLayout()
@@ -59,6 +59,32 @@ Partial Class Frm_cadastroADM
         Me.Gb_cadastro_adm.TabIndex = 1
         Me.Gb_cadastro_adm.TabStop = False
         Me.Gb_cadastro_adm.Text = "Insira os Dados de Administrador"
+        '
+        'btn_cadastrar
+        '
+        Me.btn_cadastrar.AnimationHoverSpeed = 0.07!
+        Me.btn_cadastrar.AnimationSpeed = 0.03!
+        Me.btn_cadastrar.BackColor = System.Drawing.Color.Transparent
+        Me.btn_cadastrar.BaseColor = System.Drawing.Color.SteelBlue
+        Me.btn_cadastrar.BorderColor = System.Drawing.Color.Black
+        Me.btn_cadastrar.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.btn_cadastrar.FocusedColor = System.Drawing.Color.Empty
+        Me.btn_cadastrar.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_cadastrar.ForeColor = System.Drawing.Color.White
+        Me.btn_cadastrar.Image = Nothing
+        Me.btn_cadastrar.ImageSize = New System.Drawing.Size(30, 30)
+        Me.btn_cadastrar.Location = New System.Drawing.Point(36, 200)
+        Me.btn_cadastrar.Name = "btn_cadastrar"
+        Me.btn_cadastrar.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
+        Me.btn_cadastrar.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.btn_cadastrar.OnHoverForeColor = System.Drawing.Color.White
+        Me.btn_cadastrar.OnHoverImage = Nothing
+        Me.btn_cadastrar.OnPressedColor = System.Drawing.Color.Black
+        Me.btn_cadastrar.Radius = 2
+        Me.btn_cadastrar.Size = New System.Drawing.Size(198, 38)
+        Me.btn_cadastrar.TabIndex = 50
+        Me.btn_cadastrar.Text = "CADASTRAR"
+        Me.btn_cadastrar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Txt_senha
         '
@@ -148,32 +174,6 @@ Partial Class Frm_cadastroADM
         Me.Pnl_menu.Name = "Pnl_menu"
         Me.Pnl_menu.Size = New System.Drawing.Size(543, 57)
         Me.Pnl_menu.TabIndex = 47
-        '
-        'btn_cadastrar
-        '
-        Me.btn_cadastrar.AnimationHoverSpeed = 0.07!
-        Me.btn_cadastrar.AnimationSpeed = 0.03!
-        Me.btn_cadastrar.BackColor = System.Drawing.Color.Transparent
-        Me.btn_cadastrar.BaseColor = System.Drawing.Color.SteelBlue
-        Me.btn_cadastrar.BorderColor = System.Drawing.Color.Black
-        Me.btn_cadastrar.DialogResult = System.Windows.Forms.DialogResult.None
-        Me.btn_cadastrar.FocusedColor = System.Drawing.Color.Empty
-        Me.btn_cadastrar.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_cadastrar.ForeColor = System.Drawing.Color.White
-        Me.btn_cadastrar.Image = Nothing
-        Me.btn_cadastrar.ImageSize = New System.Drawing.Size(30, 30)
-        Me.btn_cadastrar.Location = New System.Drawing.Point(36, 200)
-        Me.btn_cadastrar.Name = "btn_cadastrar"
-        Me.btn_cadastrar.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
-        Me.btn_cadastrar.OnHoverBorderColor = System.Drawing.Color.Black
-        Me.btn_cadastrar.OnHoverForeColor = System.Drawing.Color.White
-        Me.btn_cadastrar.OnHoverImage = Nothing
-        Me.btn_cadastrar.OnPressedColor = System.Drawing.Color.Black
-        Me.btn_cadastrar.Radius = 2
-        Me.btn_cadastrar.Size = New System.Drawing.Size(198, 38)
-        Me.btn_cadastrar.TabIndex = 50
-        Me.btn_cadastrar.Text = "CADASTRAR"
-        Me.btn_cadastrar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Btn_voltar
         '

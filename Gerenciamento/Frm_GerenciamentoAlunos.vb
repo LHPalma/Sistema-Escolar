@@ -273,5 +273,11 @@ Public Class Frm_GerenciamentoAlunos
         End Try
     End Sub
 
+    Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
+        Dim menuGerenciamento As New Frm_GerenciamentoAlunos()
+        Me.Close()
+        menuGerenciamento.ShowDialog()
+    End Sub
+
 #End Region
 End Class

@@ -1,5 +1,4 @@
 ﻿Imports System.Data.SQLite
-Imports System.Windows.Forms.VisualStyles
 
 Public Class Frm_GerenciamentoDisciplinas
     Private Sub Frm_GerenciamentoDisciplinas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -72,6 +71,12 @@ Public Class Frm_GerenciamentoDisciplinas
         Cmb_nome_professor.Text = ""
         Cmb_nome_disciplina.Text = ""
         Cmb_nome_turma.Text = ""
+    End Sub
+
+    Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
+        Dim menuGerenciamento As New Frm_MenuGerenciamento()
+        Me.Close()
+        menuGerenciamento.ShowDialog()
     End Sub
 
 

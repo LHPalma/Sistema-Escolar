@@ -57,5 +57,9 @@ Public Class Frm_CadastroDisciplina
     Private Sub Txt_nome_Leave(sender As Object, e As EventArgs) Handles Txt_nome.Leave
         Txt_nome.Text = ParaLetraMaiuscula(Txt_nome.Text)
     End Sub
+
+    Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
+        Dim menuTurmasDisciplinas As New Frm_menuTurmasDisciplinas()
+    End Sub
 #End Region
 End Class

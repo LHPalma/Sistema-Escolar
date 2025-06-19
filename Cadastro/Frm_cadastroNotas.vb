@@ -282,7 +282,7 @@ Public Class Frm_cadastroNotas
 
         Dim sql As String = "SELECT id_avaliacao, 
                                  nome_professor || ' - ' || nome_disciplina || ' - ' || nome_turma || ' - ' || tipo || ' - ' || data_avaliacao AS descricao
-                          FROM vw_avaliacoes"
+                             FROM vw_avaliacoes"
 
         Using conexao As New SQLiteConnection(connectionString)
             Using cmd As New SQLiteCommand(sql, conexao)

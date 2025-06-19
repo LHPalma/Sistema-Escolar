@@ -106,4 +106,14 @@ Public Class Frm_GerenciamentoProfessores
     Private Sub Btn_editar_Click(sender As Object, e As EventArgs)
 
     End Sub
+
+    Private Sub Frm_GerenciamentoProfessores_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
+        Dim menuGerenciamento As New Frm_MenuGerenciamento()
+        Me.Close()
+        menuGerenciamento.ShowDialog()
+    End Sub
 End Class

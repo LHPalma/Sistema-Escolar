@@ -121,7 +121,7 @@
   <data name="img_foto.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAACjRJREFUeF7tnd9rHNcVx/Mn5LGPNZjLCvogc0OIQdCkpOAG2hiFa3BIiYmJq1Q1
+        vwAADr8BOAVTJAAACjRJREFUeF7tnd9rHNcVx/Mn5LGPNZjLCvogc0OIQdCkpOAG2hiFa3BIiYmJq1Q1
         Vi1UN7ESmxhChEPMQlK3tBBqSFOMjYLT2EGNI1XgVmBoHwp5cEtMnvK4BAf2IQ8Tzupe6cx3Zndmdmau
         ZueeL3zwD0mjO+d89879PQ891DJ1tHm4o81LHW3e7Wiz2dEmSuF+R5v3O9ocxp8XTaiUNg+r7aT3UhI+
         FKXNfaXN43Cd55Q2S0qbS0qbdaXNX5U2y0qbw/T1+G8W7alc4pU2PZWS4CzoZyznlDbvsX+Pgkzxsphh
@@ -4381,4 +4381,7 @@
         SUVORK5CYII=
 </value>
   </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
 </root>

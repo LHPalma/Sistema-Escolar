@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SQLite
 
 Public Class Frm_cadastroADM
-    Private Sub btn_cadastrar_Click(sender As Object, e As EventArgs)
+    Private Sub btn_cadastrar_Click(sender As Object, e As EventArgs) Handles btn_cadastrar.Click
         If (Txt_nome.Text = "" Or
             Txt_email.Text = "" Or
             Txt_senha.Text = "") Then
@@ -48,17 +48,20 @@ Public Class Frm_cadastroADM
         LimparCampos()
         Txt_nome.Focus()
     End Sub
+
     Private Sub LimparCampos()
         Txt_nome.Clear()
         Txt_email.Clear()
         Txt_senha.Clear()
     End Sub
 
-    Private Sub Btn_logar_Click(sender As Object, e As EventArgs) Handles btn_cadastrar.Click
-
+    Private Sub Lb_email_Click(sender As Object, e As EventArgs) Handles Lb_email.Click
+        Txt_email.Focus()
     End Sub
 
-    Private Sub Lb_email_Click(sender As Object, e As EventArgs) Handles Lb_email.Click
-
+    Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
+        Dim menuSecretaria As New Frm_menuSecretaria()
+        Me.Close()
+        menuSecretaria.ShowDialog()
     End Sub
 End Class

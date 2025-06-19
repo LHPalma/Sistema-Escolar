@@ -5,7 +5,7 @@ Public Class Frm_loginADM
         Txt_senha.UseSystemPasswordChar = Not Txt_senha.UseSystemPasswordChar
     End Sub
 
-    Private Sub Btn_logar_Click(sender As Object, e As EventArgs)
+    Private Sub Btn_logar_Click(sender As Object, e As EventArgs) Handles Btn_logar.Click
         If (Txt_email.Text = "" Or Txt_senha.Text = "") Then
             MsgBox("Insira seus dados", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "ERRO")
             Txt_email.Focus()
@@ -43,4 +43,12 @@ Public Class Frm_loginADM
     Private Sub Gb_loginADM_Enter(sender As Object, e As EventArgs) Handles Gb_loginADM.Enter
 
     End Sub
+
+    Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
+        Dim inicio As New Frm_inicio()
+        Me.Close()
+        inicio.ShowDialog()
+    End Sub
+
+
 End Class

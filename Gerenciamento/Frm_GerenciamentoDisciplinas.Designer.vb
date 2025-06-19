@@ -24,6 +24,7 @@ Partial Class Frm_GerenciamentoDisciplinas
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_GerenciamentoDisciplinas))
         Me.Gb_disciplina = New System.Windows.Forms.GroupBox()
+        Me.Btn_cadastrar = New Guna.UI.WinForms.GunaButton()
         Me.Cmb_nome_turma = New System.Windows.Forms.ComboBox()
         Me.Cmb_nome_disciplina = New System.Windows.Forms.ComboBox()
         Me.Cmb_nome_professor = New System.Windows.Forms.ComboBox()
@@ -35,7 +36,6 @@ Partial Class Frm_GerenciamentoDisciplinas
         Me.Pnl_menu = New System.Windows.Forms.Panel()
         Me.Btn_limpar_campos = New Guna.UI.WinForms.GunaButton()
         Me.Btn_voltar = New Guna.UI.WinForms.GunaButton()
-        Me.Btn_cadastrar = New Guna.UI.WinForms.GunaButton()
         Me.Gb_disciplina.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Pnl_menu.SuspendLayout()
@@ -59,6 +59,32 @@ Partial Class Frm_GerenciamentoDisciplinas
         Me.Gb_disciplina.TabIndex = 32
         Me.Gb_disciplina.TabStop = False
         Me.Gb_disciplina.Text = "Insira os Dados de Disciplina"
+        '
+        'Btn_cadastrar
+        '
+        Me.Btn_cadastrar.AnimationHoverSpeed = 0.07!
+        Me.Btn_cadastrar.AnimationSpeed = 0.03!
+        Me.Btn_cadastrar.BackColor = System.Drawing.Color.Transparent
+        Me.Btn_cadastrar.BaseColor = System.Drawing.Color.SteelBlue
+        Me.Btn_cadastrar.BorderColor = System.Drawing.Color.Black
+        Me.Btn_cadastrar.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.Btn_cadastrar.FocusedColor = System.Drawing.Color.Empty
+        Me.Btn_cadastrar.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_cadastrar.ForeColor = System.Drawing.Color.White
+        Me.Btn_cadastrar.Image = Nothing
+        Me.Btn_cadastrar.ImageSize = New System.Drawing.Size(30, 30)
+        Me.Btn_cadastrar.Location = New System.Drawing.Point(37, 199)
+        Me.Btn_cadastrar.Name = "Btn_cadastrar"
+        Me.Btn_cadastrar.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
+        Me.Btn_cadastrar.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.Btn_cadastrar.OnHoverForeColor = System.Drawing.Color.White
+        Me.Btn_cadastrar.OnHoverImage = Nothing
+        Me.Btn_cadastrar.OnPressedColor = System.Drawing.Color.Black
+        Me.Btn_cadastrar.Radius = 2
+        Me.Btn_cadastrar.Size = New System.Drawing.Size(198, 38)
+        Me.Btn_cadastrar.TabIndex = 60
+        Me.Btn_cadastrar.Text = "CADASTRAR"
+        Me.Btn_cadastrar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Cmb_nome_turma
         '
@@ -94,7 +120,7 @@ Partial Class Frm_GerenciamentoDisciplinas
         Me.Lb_nome_turma.Location = New System.Drawing.Point(55, 140)
         Me.Lb_nome_turma.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lb_nome_turma.Name = "Lb_nome_turma"
-        Me.Lb_nome_turma.Size = New System.Drawing.Size(88, 13)
+        Me.Lb_nome_turma.Size = New System.Drawing.Size(87, 13)
         Me.Lb_nome_turma.TabIndex = 9
         Me.Lb_nome_turma.Text = "Nome da Turma"
         '
@@ -201,32 +227,6 @@ Partial Class Frm_GerenciamentoDisciplinas
         Me.Btn_voltar.Size = New System.Drawing.Size(91, 27)
         Me.Btn_voltar.TabIndex = 58
         Me.Btn_voltar.Text = "Voltar"
-        '
-        'Btn_cadastrar
-        '
-        Me.Btn_cadastrar.AnimationHoverSpeed = 0.07!
-        Me.Btn_cadastrar.AnimationSpeed = 0.03!
-        Me.Btn_cadastrar.BackColor = System.Drawing.Color.Transparent
-        Me.Btn_cadastrar.BaseColor = System.Drawing.Color.SteelBlue
-        Me.Btn_cadastrar.BorderColor = System.Drawing.Color.Black
-        Me.Btn_cadastrar.DialogResult = System.Windows.Forms.DialogResult.None
-        Me.Btn_cadastrar.FocusedColor = System.Drawing.Color.Empty
-        Me.Btn_cadastrar.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_cadastrar.ForeColor = System.Drawing.Color.White
-        Me.Btn_cadastrar.Image = Nothing
-        Me.Btn_cadastrar.ImageSize = New System.Drawing.Size(30, 30)
-        Me.Btn_cadastrar.Location = New System.Drawing.Point(37, 199)
-        Me.Btn_cadastrar.Name = "Btn_cadastrar"
-        Me.Btn_cadastrar.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
-        Me.Btn_cadastrar.OnHoverBorderColor = System.Drawing.Color.Black
-        Me.Btn_cadastrar.OnHoverForeColor = System.Drawing.Color.White
-        Me.Btn_cadastrar.OnHoverImage = Nothing
-        Me.Btn_cadastrar.OnPressedColor = System.Drawing.Color.Black
-        Me.Btn_cadastrar.Radius = 2
-        Me.Btn_cadastrar.Size = New System.Drawing.Size(198, 38)
-        Me.Btn_cadastrar.TabIndex = 60
-        Me.Btn_cadastrar.Text = "CADASTRAR"
-        Me.Btn_cadastrar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Frm_GerenciamentoDisciplinas
         '

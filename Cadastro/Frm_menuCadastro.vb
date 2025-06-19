@@ -51,4 +51,10 @@
         Me.Close()
         cadastroPorfessor.ShowDialog()
     End Sub
+
+    Private Sub Btn_adm_Click_1(sender As Object, e As EventArgs) Handles Btn_adm.Click
+        Dim cadastroADM As New Frm_cadastroADM()
+        Me.Close()
+        cadastroADM.ShowDialog()
+    End Sub
 End Class

@@ -80,7 +80,7 @@
       <HintPath>packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI">
-      <HintPath>..\..\Downloads\Sistema-Escolar-main\Sistema-Escolar-main\Guna.UI-Framework\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+      <HintPath>Guna.UI-Framework\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -210,10 +210,10 @@
     <Compile Include="Gerenciamento\Frm_GerenciamentoProfessores.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_inicio.Designer.vb">
+    <Compile Include="Login\Frm_inicio.Designer.vb">
       <DependentUpon>Frm_inicio.vb</DependentUpon>
     </Compile>
-    <Compile Include="Frm_inicio.vb">
+    <Compile Include="Login\Frm_inicio.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login\Frm_loginADM.Designer.vb">
@@ -316,7 +316,7 @@
     <EmbeddedResource Include="Gerenciamento\Frm_GerenciamentoProfessores.resx">
       <DependentUpon>Frm_GerenciamentoProfessores.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_inicio.resx">
+    <EmbeddedResource Include="Login\Frm_inicio.resx">
       <DependentUpon>Frm_inicio.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\Frm_loginADM.resx">

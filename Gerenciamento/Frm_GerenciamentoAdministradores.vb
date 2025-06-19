@@ -42,4 +42,10 @@ Public Class Frm_GerenciamentoAdministradores
     Private Sub Frm_GerenciamentoAdministradores_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
+        Dim menuGerenciamento As New Frm_MenuGerenciamento()
+        Me.Close()
+        menuGerenciamento.ShowDialog()
+    End Sub
 End Class

@@ -27,4 +27,10 @@
         Dim inicio = New Frm_inicio()
         inicio.Show()
     End Sub
+
+    Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
+        Dim inicio As New Frm_inicio()
+        Me.Close()
+        inicio.ShowDialog()
+    End Sub
 End Class

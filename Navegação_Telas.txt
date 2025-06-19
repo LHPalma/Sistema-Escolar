@@ -1,7 +1,25 @@
+Frm_Inicio
+	loginAluno
+	loginProfessor
+	loginAdm
+
+
 Frm_MenuSecretaria
 	menuTurmaDisciplinas
+		novaTurma
+		novaDisciplinas
+
+
 	menuCadastro
 		cadastroAlunos
+		CadastroProfessor
+		CadastroADM
 		
-
+		
+Frm_MenuGerenciamento
+	GerenciamentoAlunos
+	GerenciamentoProfessores
+	GerenciamentoADM
+	GerenciamentoDisciplinas
+	
 
