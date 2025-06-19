@@ -8,13 +8,13 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{755CE600-AE2B-4438-B87F-C9992EBEAA2B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Sistema_Escolar.Frm_menuCadastro</StartupObject>
+    <StartupObject>Sistema_Escolar.Frm_menuSecretaria</StartupObject>
     <RootNamespace>Sistema_Escolar</RootNamespace>
     <AssemblyName>Sistema Escolar</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -223,10 +223,10 @@
       <DependentUpon>Frm_loginAluno.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_menuADM.Designer.vb">
+    <Compile Include="Gerenciamento\Frm_menuADM.Designer.vb">
       <DependentUpon>Frm_menuADM.vb</DependentUpon>
     </Compile>
-    <Compile Include="Frm_menuADM.vb">
+    <Compile Include="Gerenciamento\Frm_menuADM.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Cadastro\Frm_menuCadastro.Designer.vb">
@@ -316,7 +316,7 @@
     <EmbeddedResource Include="Login\Frm_loginAluno.resx">
       <DependentUpon>Frm_loginAluno.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_menuADM.resx">
+    <EmbeddedResource Include="Gerenciamento\Frm_menuADM.resx">
       <DependentUpon>Frm_menuADM.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cadastro\Frm_menuCadastro.resx">

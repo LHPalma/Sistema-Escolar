@@ -1,5 +1,7 @@
 ﻿Public Class Frm_menuCadastro
 
+
+
     Private Sub Btn_aluno_Click(sender As Object, e As EventArgs)
         AbreFormulario(Me, New Frm_cadastroAluno())
     End Sub
@@ -40,4 +42,7 @@
         Me.Hide()
     End Sub
 
+    Private Sub Frm_menuCadastro_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        Me.Close()
+    End Sub
 End Class

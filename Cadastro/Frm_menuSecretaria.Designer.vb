@@ -80,7 +80,7 @@ Partial Class Frm_menuSecretaria
         Me.Btn_voltar.Radius = 2
         Me.Btn_voltar.Size = New System.Drawing.Size(91, 27)
         Me.Btn_voltar.TabIndex = 38
-        Me.Btn_voltar.Text = "Sair"
+        Me.Btn_voltar.Text = "Voltar"
         '
         'Btn_turmas_disciplinas
         '

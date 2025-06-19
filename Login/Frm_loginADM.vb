@@ -5,6 +5,7 @@ Public Class Frm_loginADM
     Dim btnVoltarFoiClicado As Boolean = False
 
     Private Sub Frm_loginADM_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Txt_email.Focus()
         btnVoltarFoiClicado = False
     End Sub
 

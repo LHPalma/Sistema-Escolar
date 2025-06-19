@@ -150,6 +150,8 @@ Public Class Frm_GerenciamentoAlunos
     'Sub rotina para permitir carregar apenas as turmas existentes no banco em uma combobox, para que a edição de turmas em tb_turmas seja válida
     Private Sub Frm_gerenContas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        btnVoltarFoiClicado = False
+
         Try
             conexao.Open()
 
@@ -273,11 +275,20 @@ Public Class Frm_GerenciamentoAlunos
         End Try
     End Sub
 
+    Dim btnVoltarFoiClicado As Boolean = False
     Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
-        Dim menuGerenciamento As New Frm_GerenciamentoAlunos()
-        Me.Close()
-        menuGerenciamento.ShowDialog()
+        btnVoltarFoiClicado = True
+        AbreFormulario(Me, New Frm_MenuGerenciamento())
     End Sub
+
+
+
+    Private Sub Frm_GerenciamentoAlunos_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        If Not btnVoltarFoiClicado Then
+            Me.Close()
+        End If
+    End Sub
+
 
 #End Region
 End Class

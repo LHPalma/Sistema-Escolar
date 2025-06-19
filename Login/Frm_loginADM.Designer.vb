@@ -46,7 +46,7 @@ Partial Class Frm_loginADM
         Me.Txt_senha.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_senha.Name = "Txt_senha"
         Me.Txt_senha.Size = New System.Drawing.Size(191, 29)
-        Me.Txt_senha.TabIndex = 8
+        Me.Txt_senha.TabIndex = 2
         Me.Txt_senha.UseSystemPasswordChar = True
         '
         'Txt_email
@@ -56,7 +56,7 @@ Partial Class Frm_loginADM
         Me.Txt_email.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_email.Name = "Txt_email"
         Me.Txt_email.Size = New System.Drawing.Size(191, 29)
-        Me.Txt_email.TabIndex = 9
+        Me.Txt_email.TabIndex = 1
         '
         'Cb_mostrarSenha
         '
@@ -66,7 +66,7 @@ Partial Class Frm_loginADM
         Me.Cb_mostrarSenha.Margin = New System.Windows.Forms.Padding(2)
         Me.Cb_mostrarSenha.Name = "Cb_mostrarSenha"
         Me.Cb_mostrarSenha.Size = New System.Drawing.Size(101, 17)
-        Me.Cb_mostrarSenha.TabIndex = 7
+        Me.Cb_mostrarSenha.TabIndex = 3
         Me.Cb_mostrarSenha.Text = "Mostrar Senha"
         Me.Cb_mostrarSenha.UseVisualStyleBackColor = True
         '
@@ -132,7 +132,7 @@ Partial Class Frm_loginADM
         Me.Btn_logar.OnPressedColor = System.Drawing.Color.Black
         Me.Btn_logar.Radius = 2
         Me.Btn_logar.Size = New System.Drawing.Size(198, 38)
-        Me.Btn_logar.TabIndex = 47
+        Me.Btn_logar.TabIndex = 4
         Me.Btn_logar.Text = "LOGIN"
         Me.Btn_logar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -190,7 +190,7 @@ Partial Class Frm_loginADM
         Me.Btn_voltar.OnPressedColor = System.Drawing.Color.Black
         Me.Btn_voltar.Radius = 2
         Me.Btn_voltar.Size = New System.Drawing.Size(91, 27)
-        Me.Btn_voltar.TabIndex = 46
+        Me.Btn_voltar.TabIndex = 5
         Me.Btn_voltar.Text = "Voltar"
         '
         'Frm_loginADM

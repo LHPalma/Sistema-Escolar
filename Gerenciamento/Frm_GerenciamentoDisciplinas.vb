@@ -74,9 +74,7 @@ Public Class Frm_GerenciamentoDisciplinas
     End Sub
 
     Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
-        Dim menuGerenciamento As New Frm_MenuGerenciamento()
-        Me.Close()
-        menuGerenciamento.ShowDialog()
+        AbreFormulario(Me, New Frm_MenuGerenciamento())
     End Sub
 
 

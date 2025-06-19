@@ -161,7 +161,7 @@ Partial Class Frm_menuADM
         Me.Btn_voltar.Radius = 2
         Me.Btn_voltar.Size = New System.Drawing.Size(91, 27)
         Me.Btn_voltar.TabIndex = 32
-        Me.Btn_voltar.Text = "Voltar"
+        Me.Btn_voltar.Text = "Sair"
         '
         'Frm_menuADM
         '
@@ -175,6 +175,7 @@ Partial Class Frm_menuADM
         Me.Controls.Add(Me.Lb_bemvindo)
         Me.Controls.Add(Me.Pnl_menu)
         Me.Controls.Add(Me.Lb_acesso_restrito)
+        Me.ImeMode = System.Windows.Forms.ImeMode.[On]
         Me.Name = "Frm_menuADM"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu de Administrador"

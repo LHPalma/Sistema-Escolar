@@ -5,6 +5,10 @@ Public Class Frm_GerenciamentoAdministradores
     Dim permiteAjax As Boolean = False
     Dim conexao As New SQLiteConnection(connectionString)
 
+    Private Sub Frm_GerenciamentoAdministradores_Load(sender As Object, e As EventArgs) Handles Me.Load
+        btnVoltarFoiClicado = False
+    End Sub
+
     Private Sub Txt_buscar_TextChanged(sender As Object, e As EventArgs) Handles Txt_buscar.TextChanged
 
         If Cmb_campo.Text = "" Or Not permiteAjax Then
@@ -39,13 +43,19 @@ Public Class Frm_GerenciamentoAdministradores
         Txt_nome.Text = Dgv_dados.CurrentRow.Cells("nome").Value.ToString()
     End Sub
 
-    Private Sub Frm_GerenciamentoAdministradores_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    End Sub
 
+    Dim btnVoltarFoiClicado As Boolean = False
     Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
-        Dim menuGerenciamento As New Frm_MenuGerenciamento()
-        Me.Close()
-        menuGerenciamento.ShowDialog()
+        btnVoltarFoiClicado = True
+        AbreFormulario(Me, New Frm_MenuGerenciamento())
     End Sub
+
+    Private Sub Frm_GerenciamentoAdministradores_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        If Not btnVoltarFoiClicado Then
+            Me.Close()
+            End if
+    End Sub
+
+
 End Class

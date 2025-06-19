@@ -69,9 +69,7 @@ Public Class Frm_CadastroTurma
     End Sub
 
     Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
-        Dim menuTurma As New Frm_menuTurmasDisciplinas()
-        Me.Close()
-        menuTurma.ShowDialog()
+        AbreFormulario(Me, New Frm_menuTurmasDisciplinas())
     End Sub
 
 #End Region

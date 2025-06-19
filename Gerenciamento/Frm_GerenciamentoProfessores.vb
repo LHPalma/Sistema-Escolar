@@ -112,8 +112,10 @@ Public Class Frm_GerenciamentoProfessores
     End Sub
 
     Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
-        Dim menuGerenciamento As New Frm_MenuGerenciamento()
+        AbreFormulario(Me, New Frm_MenuGerenciamento())
+    End Sub
+
+    Private Sub Frm_GerenciamentoProfessores_Closed(sender As Object, e As EventArgs) Handles Me.Closed
         Me.Close()
-        menuGerenciamento.ShowDialog()
     End Sub
 End Class
