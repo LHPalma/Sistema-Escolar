@@ -33,4 +33,10 @@ Module Modulo
         End Using
     End Function
 
+    Public Sub AbreFormulario(formAtual As Object, formulario As Object)
+        formAtual.Hide()
+        formulario.ShowDialog()
+        'Me.Show()
+    End Sub
+
 End Module

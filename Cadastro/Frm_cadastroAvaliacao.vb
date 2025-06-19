@@ -17,8 +17,6 @@ Public Class Frm_cadastroAvaliacao
         End Using
     End Sub
 
-
-
     Private Sub Btn_limpar_campos_Click(sender As Object, e As EventArgs) Handles Btn_limpar_campos.Click
         LimparCampos()
     End Sub
@@ -79,5 +77,9 @@ Public Class Frm_cadastroAvaliacao
             MessageBox.Show("Avaliação cadastrada com sucesso!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information)
             LimparCampos()
         End Using
+    End Sub
+
+    Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
+        'AbreFormulario(Me, Frm_MenuProfessor())
     End Sub
 End Class

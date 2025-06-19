@@ -205,6 +205,7 @@ Partial Class Frm_loginAluno
         Me.Controls.Add(Me.Gb_loginAluno)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Frm_loginAluno"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login de Aluno"
         Me.Gb_loginAluno.ResumeLayout(False)
         Me.Gb_loginAluno.PerformLayout()

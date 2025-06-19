@@ -172,7 +172,7 @@ Public Class Frm_cadastroAluno
         Txt_senha.UseSystemPasswordChar = Not Txt_senha.UseSystemPasswordChar
     End Sub
 
-    Private Sub Btn_limpar_campos_Click(sender As Object, e As EventArgs)
+    Private Sub Btn_limpar_campos_Click(sender As Object, e As EventArgs) Handles Btn_limpar_campos.Click
         LimparCampos()
     End Sub
 
@@ -246,27 +246,11 @@ Public Class Frm_cadastroAluno
         End Try
     End Sub
 
-    Private Sub Txt_senha_TextChanged(sender As Object, e As EventArgs) Handles Txt_senha.TextChanged
-
-    End Sub
-
-    Private Sub Lb_senha_Click(sender As Object, e As EventArgs) Handles Lb_senha.Click
-
-    End Sub
-
-    Private Sub Txt_cpf_MaskInputRejected(sender As Object, e As MaskInputRejectedEventArgs) Handles Txt_cpf.MaskInputRejected
-
-    End Sub
-
-    Private Sub Lb_cpf_Click(sender As Object, e As EventArgs) Handles Lb_cpf.Click
-
-    End Sub
 
     Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
-        Dim menuCadastro As New Frm_menuCadastro()
-        Me.Hide()
-        menuCadastro.ShowDialog()
+        AbreFormulario(Me, New Frm_menuCadastro())
     End Sub
+
 
 #End Region
 End Class

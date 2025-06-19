@@ -178,6 +178,7 @@ Partial Class Frm_inicio
         Me.Controls.Add(Me.Pnl_menu)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Frm_inicio"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu Principal"
         Me.Pnl_menu.ResumeLayout(False)
         Me.Pnl_menu.PerformLayout()

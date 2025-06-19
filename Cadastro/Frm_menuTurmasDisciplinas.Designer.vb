@@ -176,6 +176,7 @@ Partial Class Frm_menuTurmasDisciplinas
         Me.Controls.Add(Me.Lb_bemvindo)
         Me.Controls.Add(Me.Lb_acesso_restrito)
         Me.Name = "Frm_menuTurmasDisciplinas"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Turmas e Disciplinas"
         Me.Pnl_menu.ResumeLayout(False)
         Me.Pnl_menu.PerformLayout()

@@ -203,6 +203,7 @@ Partial Class Frm_menuCadastro
         Me.Controls.Add(Me.Pnl_menu)
         Me.Controls.Add(Me.Lb_acesso_restrito)
         Me.Name = "Frm_menuCadastro"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cadastro de Contas"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Pnl_menu.ResumeLayout(False)

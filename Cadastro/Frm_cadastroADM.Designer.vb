@@ -236,6 +236,7 @@ Partial Class Frm_cadastroADM
         Me.Controls.Add(Me.Pnl_menu)
         Me.Controls.Add(Me.Gb_cadastro_adm)
         Me.Name = "Frm_cadastroADM"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cadastro de Administrador"
         Me.Gb_cadastro_adm.ResumeLayout(False)
         Me.Gb_cadastro_adm.PerformLayout()

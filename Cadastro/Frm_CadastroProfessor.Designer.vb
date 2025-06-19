@@ -89,9 +89,9 @@ Partial Class Frm_CadastroProfessor
         Me.Gb_professor.Controls.Add(Me.Lb_nome)
         Me.Gb_professor.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Gb_professor.Location = New System.Drawing.Point(11, 64)
-        Me.Gb_professor.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Gb_professor.Margin = New System.Windows.Forms.Padding(2)
         Me.Gb_professor.Name = "Gb_professor"
-        Me.Gb_professor.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Gb_professor.Padding = New System.Windows.Forms.Padding(2)
         Me.Gb_professor.Size = New System.Drawing.Size(438, 465)
         Me.Gb_professor.TabIndex = 0
         Me.Gb_professor.TabStop = False
@@ -147,7 +147,7 @@ Partial Class Frm_CadastroProfessor
         '
         Me.Txt_cidade.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_cidade.Location = New System.Drawing.Point(224, 233)
-        Me.Txt_cidade.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Txt_cidade.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_cidade.Name = "Txt_cidade"
         Me.Txt_cidade.Size = New System.Drawing.Size(116, 29)
         Me.Txt_cidade.TabIndex = 34
@@ -188,7 +188,7 @@ Partial Class Frm_CadastroProfessor
         '
         Me.Txt_complemento.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_complemento.Location = New System.Drawing.Point(289, 179)
-        Me.Txt_complemento.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Txt_complemento.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_complemento.Name = "Txt_complemento"
         Me.Txt_complemento.Size = New System.Drawing.Size(116, 29)
         Me.Txt_complemento.TabIndex = 27
@@ -228,7 +228,7 @@ Partial Class Frm_CadastroProfessor
         '
         Me.Txt_bairro.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_bairro.Location = New System.Drawing.Point(94, 233)
-        Me.Txt_bairro.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Txt_bairro.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_bairro.Name = "Txt_bairro"
         Me.Txt_bairro.Size = New System.Drawing.Size(116, 29)
         Me.Txt_bairro.TabIndex = 22
@@ -270,7 +270,7 @@ Partial Class Frm_CadastroProfessor
         '
         Me.Txt_numero.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_numero.Location = New System.Drawing.Point(28, 233)
-        Me.Txt_numero.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Txt_numero.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_numero.MaxLength = 5
         Me.Txt_numero.Name = "Txt_numero"
         Me.Txt_numero.Size = New System.Drawing.Size(48, 29)
@@ -280,7 +280,7 @@ Partial Class Frm_CadastroProfessor
         '
         Me.Txt_rua.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_rua.Location = New System.Drawing.Point(138, 179)
-        Me.Txt_rua.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Txt_rua.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_rua.Name = "Txt_rua"
         Me.Txt_rua.Size = New System.Drawing.Size(136, 29)
         Me.Txt_rua.TabIndex = 16
@@ -289,7 +289,7 @@ Partial Class Frm_CadastroProfessor
         '
         Me.Txt_senha.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_senha.Location = New System.Drawing.Point(27, 360)
-        Me.Txt_senha.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Txt_senha.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_senha.Name = "Txt_senha"
         Me.Txt_senha.Size = New System.Drawing.Size(116, 29)
         Me.Txt_senha.TabIndex = 12
@@ -310,7 +310,7 @@ Partial Class Frm_CadastroProfessor
         '
         Me.Txt_email.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_email.Location = New System.Drawing.Point(28, 89)
-        Me.Txt_email.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Txt_email.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_email.Name = "Txt_email"
         Me.Txt_email.Size = New System.Drawing.Size(309, 29)
         Me.Txt_email.TabIndex = 13
@@ -330,7 +330,7 @@ Partial Class Frm_CadastroProfessor
         '
         Me.Txt_nome.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_nome.Location = New System.Drawing.Point(27, 43)
-        Me.Txt_nome.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Txt_nome.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_nome.Name = "Txt_nome"
         Me.Txt_nome.Size = New System.Drawing.Size(309, 29)
         Me.Txt_nome.TabIndex = 14
@@ -362,7 +362,7 @@ Partial Class Frm_CadastroProfessor
         Me.img_foto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.img_foto.Image = CType(resources.GetObject("img_foto.Image"), System.Drawing.Image)
         Me.img_foto.Location = New System.Drawing.Point(52, 43)
-        Me.img_foto.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.img_foto.Margin = New System.Windows.Forms.Padding(2)
         Me.img_foto.Name = "img_foto"
         Me.img_foto.Size = New System.Drawing.Size(112, 119)
         Me.img_foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -466,8 +466,9 @@ Partial Class Frm_CadastroProfessor
         Me.Controls.Add(Me.Btn_voltar)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Gb_professor)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Frm_CadastroProfessor"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cadastro de Professor"
         Me.Gb_professor.ResumeLayout(False)
         Me.Gb_professor.PerformLayout()

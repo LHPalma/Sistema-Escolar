@@ -203,6 +203,7 @@ Partial Class Frm_loginADM
         Me.Controls.Add(Me.Gb_loginADM)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Frm_loginADM"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login de Administrador"
         Me.Gb_loginADM.ResumeLayout(False)
         Me.Gb_loginADM.PerformLayout()

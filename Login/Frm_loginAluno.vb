@@ -23,10 +23,10 @@
         Txt_senha.Focus()
     End Sub
 
-    Private Sub Frm_loginAluno_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        Dim inicio = New Frm_inicio()
-        inicio.Show()
-    End Sub
+    'Private Sub Frm_loginAluno_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+    '    Dim inicio = New Frm_inicio()
+    '    inicio.Show()
+    'End Sub
 
     Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
         Dim inicio As New Frm_inicio()

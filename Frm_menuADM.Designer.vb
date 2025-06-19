@@ -176,6 +176,7 @@ Partial Class Frm_menuADM
         Me.Controls.Add(Me.Pnl_menu)
         Me.Controls.Add(Me.Lb_acesso_restrito)
         Me.Name = "Frm_menuADM"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu de Administrador"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Pnl_menu.ResumeLayout(False)

@@ -244,6 +244,7 @@ Partial Class Frm_CadastroDisciplina
         Me.Controls.Add(Me.Btn_voltar)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Frm_CadastroDisciplina"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cadastro de Disciplina"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

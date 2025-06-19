@@ -148,6 +148,7 @@ Partial Class Frm_cadastroNotas
         Me.Controls.Add(Me.cmbAluno)
         Me.Controls.Add(Me.cmbAvaliacao)
         Me.Name = "Frm_cadastroNotas"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Frm_cadastroNotas"
         CType(Me.nudNota, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvNotas, System.ComponentModel.ISupportInitialize).EndInit()

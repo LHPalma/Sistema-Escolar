@@ -60,8 +60,6 @@ Public Class Frm_cadastroADM
     End Sub
 
     Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
-        Dim menuSecretaria As New Frm_menuSecretaria()
-        Me.Close()
-        menuSecretaria.ShowDialog()
+        AbreFormulario(Me, New Frm_menuCadastro())
     End Sub
 End Class

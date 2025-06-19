@@ -1,6 +1,13 @@
 ﻿Imports System.Data.SQLite
 
 Public Class Frm_loginADM
+
+    Dim btnVoltarFoiClicado As Boolean = False
+
+    Private Sub Frm_loginADM_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        btnVoltarFoiClicado = False
+    End Sub
+
     Private Sub Cb_mostrarSenha_CheckedChanged(sender As Object, e As EventArgs) Handles Cb_mostrarSenha.CheckedChanged
         Txt_senha.UseSystemPasswordChar = Not Txt_senha.UseSystemPasswordChar
     End Sub
@@ -35,20 +42,14 @@ Public Class Frm_loginADM
         End Using
     End Sub
 
-    Private Sub Frm_loginADM_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        Dim inicio = New Frm_inicio()
-        inicio.Show()
-    End Sub
-
-    Private Sub Gb_loginADM_Enter(sender As Object, e As EventArgs) Handles Gb_loginADM.Enter
-
-    End Sub
-
     Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
-        Dim inicio As New Frm_inicio()
-        Me.Close()
-        inicio.ShowDialog()
+        btnVoltarFoiClicado = True
+        AbreFormulario(Me, New Frm_inicio())
     End Sub
 
-
+    Private Sub Frm_loginADM_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        If Not btnVoltarFoiClicado Then
+            AbreFormulario(Me, New Frm_inicio())
+        End If
+    End Sub
 End Class

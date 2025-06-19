@@ -223,6 +223,7 @@ Partial Class Frm_GerenciamentoAdministradores
         Me.Controls.Add(Me.Dgv_dados)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Name = "Frm_GerenciamentoAdministradores"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Gerenciamento e Edição de Contas de Administradores"
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()

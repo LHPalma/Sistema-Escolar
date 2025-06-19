@@ -230,6 +230,7 @@ Partial Class Frm_MenuGerenciamento
         Me.Controls.Add(Me.Btn_voltar)
         Me.Controls.Add(Me.Lb_acesso_restrito)
         Me.Name = "Frm_MenuGerenciamento"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Gerenciamento"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Pnl_menu.ResumeLayout(False)

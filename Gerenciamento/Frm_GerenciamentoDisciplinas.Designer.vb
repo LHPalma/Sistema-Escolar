@@ -238,6 +238,7 @@ Partial Class Frm_GerenciamentoDisciplinas
         Me.Controls.Add(Me.Pnl_menu)
         Me.Controls.Add(Me.Gb_disciplina)
         Me.Name = "Frm_GerenciamentoDisciplinas"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Gerenciamento e Edição de Disciplinas"
         Me.Gb_disciplina.ResumeLayout(False)
         Me.Gb_disciplina.PerformLayout()
