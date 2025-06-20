@@ -1,7 +1,12 @@
 ﻿Imports System.Data.SQLite
 
 Public Class Frm_GerenciamentoDisciplinas
+
+    Dim btnVoltarFoiClicado As Boolean = False
+
     Private Sub Frm_GerenciamentoDisciplinas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        btnVoltarFoiClicado = False
 
         Using conexao As New SQLiteConnection(connectionString)
             Try
@@ -74,9 +79,15 @@ Public Class Frm_GerenciamentoDisciplinas
     End Sub
 
     Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
+        btnVoltarFoiClicado = True
         AbreFormulario(Me, New Frm_MenuGerenciamento())
     End Sub
 
+    Private Sub Frm_GerenciamentoDisciplinas_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        If Not btnVoltarFoiClicado Then
+            Me.Close()
+        End If
+    End Sub
 
 
 #End Region

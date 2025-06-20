@@ -2,6 +2,8 @@
 
 Public Class Frm_GerenciamentoAdministradores
 
+    Dim btnVoltarFoiClicado As Boolean = False
+
     Dim permiteAjax As Boolean = False
     Dim conexao As New SQLiteConnection(connectionString)
 
@@ -45,7 +47,6 @@ Public Class Frm_GerenciamentoAdministradores
 
 
 
-    Dim btnVoltarFoiClicado As Boolean = False
     Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
         btnVoltarFoiClicado = True
         AbreFormulario(Me, New Frm_MenuGerenciamento())
@@ -54,7 +55,7 @@ Public Class Frm_GerenciamentoAdministradores
     Private Sub Frm_GerenciamentoAdministradores_Closed(sender As Object, e As EventArgs) Handles Me.Closed
         If Not btnVoltarFoiClicado Then
             Me.Close()
-            End if
+        End If
     End Sub
 
 

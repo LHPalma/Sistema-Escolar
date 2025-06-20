@@ -2,6 +2,8 @@
 
 Public Class Frm_GerenciamentoProfessores
 
+    Dim btnVoltarFoiClicado As Boolean = False
+
     Dim conexao As New SQLiteConnection(connectionString)
     Dim permiteAjax As Boolean = False
 
@@ -108,14 +110,17 @@ Public Class Frm_GerenciamentoProfessores
     End Sub
 
     Private Sub Frm_GerenciamentoProfessores_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        btnVoltarFoiClicado = False
     End Sub
 
     Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
+        btnVoltarFoiClicado = True
         AbreFormulario(Me, New Frm_MenuGerenciamento())
     End Sub
 
     Private Sub Frm_GerenciamentoProfessores_Closed(sender As Object, e As EventArgs) Handles Me.Closed
-        Me.Close()
+        If Not btnVoltarFoiClicado Then
+            Me.Close()
+        End If
     End Sub
 End Class

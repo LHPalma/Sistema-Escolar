@@ -2,8 +2,9 @@
 
 Public Class Frm_GerenciamentoAlunos
 
-    Dim permiteAjax As Boolean = False
+    Dim btnVoltarFoiClicado As Boolean = False
 
+    Dim permiteAjax As Boolean = False
     Dim conexao As New SQLiteConnection(connectionString)
 
     Private Sub Txt_buscar_TextChanged(sender As Object, e As EventArgs) Handles Txt_buscar.TextChanged
@@ -275,7 +276,7 @@ Public Class Frm_GerenciamentoAlunos
         End Try
     End Sub
 
-    Dim btnVoltarFoiClicado As Boolean = False
+
     Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
         btnVoltarFoiClicado = True
         AbreFormulario(Me, New Frm_MenuGerenciamento())
