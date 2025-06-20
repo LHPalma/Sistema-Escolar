@@ -161,9 +161,7 @@ Public Class Frm_cadastroAluno
             LimparCampos()
             Txt_ra.Focus()
         Else
-            Dim inicio As New Frm_inicio
-            inicio.Show()
-            Me.Hide()
+            AbreFormulario(Me, New Frm_inicio)
         End If
     End Sub
 
@@ -259,6 +257,8 @@ Public Class Frm_cadastroAluno
 #End Region
 
     Private Sub Frm_cadastroAluno_Closed(sender As Object, e As EventArgs) Handles Me.Closed
-        Me.Close()
+        If Not btnVoltarFoiClicado Then
+            Me.Close()
+        End If
     End Sub
 End Class

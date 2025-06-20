@@ -91,6 +91,6 @@ Public Class Frm_cadastroAvaliacao
     End Sub
 
     Private Sub Frm_cadastroAvaliacao_Closed(sender As Object, e As EventArgs) Handles Me.Closed
-        Me.Close()
+        Close()
     End Sub
 End Class

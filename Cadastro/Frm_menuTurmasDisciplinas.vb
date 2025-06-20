@@ -21,7 +21,7 @@
 
     Private Sub Frm_menuTurmasDisciplinas_Closed(sender As Object, e As EventArgs) Handles Me.Closed
         If Not btnVoltarFoiClicado Then
-            Me.Close()
+            Close()
         End If
     End Sub
 End Class

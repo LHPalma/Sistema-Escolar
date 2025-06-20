@@ -103,7 +103,9 @@ Public Class Frm_CadastroProfessor
                 Else
                     Dim inicio As New Frm_inicio
                     inicio.Show()
-                    Me.Hide()
+
+
+
                 End If
 
             Catch ex As Exception
@@ -200,7 +202,7 @@ Public Class Frm_CadastroProfessor
 
     Private Sub Frm_CadastroProfessor_Closed(sender As Object, e As EventArgs) Handles Me.Closed
         If Not btnVoltarFoiClicado Then
-            Me.Close()
+            Close()
         End If
     End Sub
 

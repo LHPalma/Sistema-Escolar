@@ -73,7 +73,7 @@ Public Class Frm_cadastroADM
 
     Private Sub Frm_cadastroADM_Closed(sender As Object, e As EventArgs) Handles Me.Closed
         If Not btnVoltarFoiClicado Then
-            Me.Close()
+            Close()
         End If
     End Sub
 End Class

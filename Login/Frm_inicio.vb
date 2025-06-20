@@ -12,7 +12,7 @@
     End Sub
 
     Private Sub Frm_inicio_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
-        Me.Close()
+        Close()
     End Sub
 
 End Class
