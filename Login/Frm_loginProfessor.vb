@@ -1,6 +1,9 @@
 ﻿Imports System.Text
 Imports System.Data.SQLite
 Public Class Frm_loginProfessor
+
+    Dim btnVoltarFoiClicado As Boolean = False
+
     Private Sub Btn_logar_Click(sender As Object, e As EventArgs)
 
         If (Txt_email.Text = "" Or Txt_senha.Text = "") Then
@@ -36,18 +39,18 @@ Public Class Frm_loginProfessor
         Txt_senha.UseSystemPasswordChar = Not Txt_senha.UseSystemPasswordChar
     End Sub
 
-    Private Sub Frm_loginProfessor_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        Dim inicio = New Frm_inicio()
-        inicio.Show()
-    End Sub
-
     Private Sub Frm_loginProfessor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        btnVoltarFoiClicado = False
     End Sub
 
     Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
-        Dim inicio As New Frm_inicio()
-        Me.Close()
-        inicio.ShowDialog()
+        btnVoltarFoiClicado = True
+        AbreFormulario(Me, New Frm_inicio())
+    End Sub
+
+    Private Sub Frm_loginProfessor_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        If Not btnVoltarFoiClicado Then
+            Me.Close()
+        End If
     End Sub
 End Class
