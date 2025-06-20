@@ -52,9 +52,9 @@ Partial Class Frm_CadastroTurma
         Me.Gb_turma.Controls.Add(Me.Lb_nome)
         Me.Gb_turma.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Gb_turma.Location = New System.Drawing.Point(112, 57)
-        Me.Gb_turma.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Gb_turma.Margin = New System.Windows.Forms.Padding(2)
         Me.Gb_turma.Name = "Gb_turma"
-        Me.Gb_turma.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Gb_turma.Padding = New System.Windows.Forms.Padding(2)
         Me.Gb_turma.Size = New System.Drawing.Size(274, 314)
         Me.Gb_turma.TabIndex = 2
         Me.Gb_turma.TabStop = False
@@ -112,7 +112,7 @@ Partial Class Frm_CadastroTurma
         '
         Me.Txt_descricao.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_descricao.Location = New System.Drawing.Point(50, 108)
-        Me.Txt_descricao.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Txt_descricao.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_descricao.Multiline = True
         Me.Txt_descricao.Name = "Txt_descricao"
         Me.Txt_descricao.Size = New System.Drawing.Size(159, 68)
@@ -133,7 +133,7 @@ Partial Class Frm_CadastroTurma
         '
         Me.Txt_nome.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_nome.Location = New System.Drawing.Point(50, 55)
-        Me.Txt_nome.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Txt_nome.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_nome.Name = "Txt_nome"
         Me.Txt_nome.Size = New System.Drawing.Size(159, 29)
         Me.Txt_nome.TabIndex = 1

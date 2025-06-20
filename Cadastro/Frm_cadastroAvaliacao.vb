@@ -2,7 +2,13 @@
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
 Public Class Frm_cadastroAvaliacao
+
+    Dim btnVoltarFoiClicado As Boolean = False
+
     Private Sub Frm_cadastroAvaliacao_Load(sender As Object, e As EventArgs) Handles Me.Load
+
+        btnVoltarFoiClicado = False
+
         Using conexao As New SQLiteConnection(connectionString)
             Dim cmd As New SQLiteCommand("SELECT id_prof_disc_turma, nome FROM vw_prof_disc_turma", conexao)
             Dim da As New SQLiteDataAdapter(cmd)
@@ -80,6 +86,11 @@ Public Class Frm_cadastroAvaliacao
     End Sub
 
     Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
+        btnVoltarFoiClicado = True
         'AbreFormulario(Me, Frm_MenuProfessor())
+    End Sub
+
+    Private Sub Frm_cadastroAvaliacao_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        Me.Close()
     End Sub
 End Class

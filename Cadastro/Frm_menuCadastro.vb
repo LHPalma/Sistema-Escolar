@@ -1,6 +1,6 @@
 ﻿Public Class Frm_menuCadastro
 
-
+    Dim btnVoltarFoiClicado As Boolean = False
 
     Private Sub Btn_aluno_Click(sender As Object, e As EventArgs)
         AbreFormulario(Me, New Frm_cadastroAluno())
@@ -39,10 +39,17 @@
     End Sub
 
     Private Sub Btn_voltar_Click(sender As Object, e As EventArgs)
-        Me.Hide()
+        btnVoltarFoiClicado = True
+        AbreFormulario(Me, New Frm_menuSecretaria())
     End Sub
 
     Private Sub Frm_menuCadastro_Closed(sender As Object, e As EventArgs) Handles Me.Closed
-        Me.Close()
+        If Not btnVoltarFoiClicado Then
+            Me.Close()
+        End If
+    End Sub
+
+    Private Sub Frm_menuCadastro_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        btnVoltarFoiClicado = False
     End Sub
 End Class

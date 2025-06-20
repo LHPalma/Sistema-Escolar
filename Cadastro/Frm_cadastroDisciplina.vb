@@ -1,6 +1,8 @@
 ﻿Imports System.Data.SQLite
 
 Public Class Frm_CadastroDisciplina
+
+    Dim btnVoltarFoiClicado As Boolean = False
     Private Sub Btn_cadastrar_Click(sender As Object, e As EventArgs)
         If (Txt_nome.Text = "" Or Num_carga_horaria.Value = vbEmpty) Then
             MsgBox("Preencha todos os campos", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "Atenção")
@@ -59,7 +61,12 @@ Public Class Frm_CadastroDisciplina
     End Sub
 
     Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
+        btnVoltarFoiClicado = True
         AbreFormulario(Me, New Frm_menuTurmasDisciplinas())
+    End Sub
+
+    Private Sub Frm_CadastroDisciplina_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        btnVoltarFoiClicado = False
     End Sub
 #End Region
 End Class

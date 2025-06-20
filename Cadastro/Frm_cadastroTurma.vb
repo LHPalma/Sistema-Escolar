@@ -3,6 +3,9 @@
 Imports System.Data.SQLite
 
 Public Class Frm_CadastroTurma
+
+    Dim btnVoltarFoiClicado As Boolean = False
+
     Private Sub DateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles Cmb_data.ValueChanged
 
     End Sub
@@ -69,8 +72,20 @@ Public Class Frm_CadastroTurma
     End Sub
 
     Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
+        btnVoltarFoiClicado = True
         AbreFormulario(Me, New Frm_menuTurmasDisciplinas())
     End Sub
+
+    Private Sub Frm_CadastroTurma_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        btnVoltarFoiClicado = False
+    End Sub
+
+    Private Sub Frm_CadastroTurma_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        If Not btnVoltarFoiClicado Then
+            Me.Close()
+        End If
+    End Sub
+
 
 #End Region
 End Class

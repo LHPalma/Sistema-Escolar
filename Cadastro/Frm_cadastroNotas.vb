@@ -1,6 +1,9 @@
 ﻿Imports System.Data.SQLite
 
 Public Class Frm_cadastroNotas
+
+    Dim btnVoltarFoiClicado As Boolean = False
+
     Private Function NotaExiste(idAvaliacao As Integer, idAluno As Integer, conexao As SQLiteConnection) As Boolean
         Dim sql As String = "SELECT COUNT(*) FROM tb_notas WHERE fk_id_avaliacao = @avaliacao AND fk_id_aluno = @aluno"
         Using cmd As New SQLiteCommand(sql, conexao)
@@ -307,5 +310,9 @@ Public Class Frm_cadastroNotas
 
     End Sub
 
-
+    Private Sub Frm_cadastroNotas_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        If Not btnVoltarFoiClicado Then
+            Me.Close()
+        End If
+    End Sub
 End Class

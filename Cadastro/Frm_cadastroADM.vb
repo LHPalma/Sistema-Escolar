@@ -1,6 +1,9 @@
 ﻿Imports System.Data.SQLite
 
 Public Class Frm_cadastroADM
+
+    Dim btnVoltarFoiClicado As Boolean = False
+
     Private Sub btn_cadastrar_Click(sender As Object, e As EventArgs) Handles btn_cadastrar.Click
         If (Txt_nome.Text = "" Or
             Txt_email.Text = "" Or
@@ -60,6 +63,17 @@ Public Class Frm_cadastroADM
     End Sub
 
     Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
+        btnVoltarFoiClicado = True
         AbreFormulario(Me, New Frm_menuCadastro())
+    End Sub
+
+    Private Sub Frm_cadastroADM_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        btnVoltarFoiClicado = False
+    End Sub
+
+    Private Sub Frm_cadastroADM_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        If Not btnVoltarFoiClicado Then
+            Me.Close()
+        End If
     End Sub
 End Class

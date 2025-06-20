@@ -11,6 +11,8 @@ Imports Newtonsoft.Json
 
 Public Class Frm_cadastroAluno
 
+    Dim btnVoltarFoiClicado As Boolean = False
+
     Private Sub Btn_cadastrar_Click(sender As Object, e As EventArgs)
 
         If (Txt_email.Text = "" Or Txt_nome.Text = "" Or Txt_senha.Text = "" Or Txt_ra.Text = "" Or Cmb_Turma.Text = "" Or Txt_cpf.Text = "") Then
@@ -186,6 +188,8 @@ Public Class Frm_cadastroAluno
     End Sub
 
     Private Sub Frm_cadastroAluno_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        btnVoltarFoiClicado = False
+
         Using conexao As New SQLiteConnection(connectionString)
             Dim sqlSelectTurma As String = "SELECT nome FROM tb_turmas;"
             Dim cmdSelectTurmas As New SQLiteCommand(sqlSelectTurma, conexao)
@@ -248,9 +252,13 @@ Public Class Frm_cadastroAluno
 
 
     Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
+        btnVoltarFoiClicado = True
         AbreFormulario(Me, New Frm_menuCadastro())
     End Sub
 
-
 #End Region
+
+    Private Sub Frm_cadastroAluno_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        Me.Close()
+    End Sub
 End Class
