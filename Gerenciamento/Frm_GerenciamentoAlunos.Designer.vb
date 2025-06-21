@@ -121,7 +121,7 @@ Partial Class Frm_GerenciamentoAlunos
         Me.img_foto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.img_foto.Image = CType(resources.GetObject("img_foto.Image"), System.Drawing.Image)
         Me.img_foto.Location = New System.Drawing.Point(657, 33)
-        Me.img_foto.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.img_foto.Margin = New System.Windows.Forms.Padding(2)
         Me.img_foto.Name = "img_foto"
         Me.img_foto.Size = New System.Drawing.Size(112, 119)
         Me.img_foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -132,7 +132,7 @@ Partial Class Frm_GerenciamentoAlunos
         '
         Me.txt_nome.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt_nome.Location = New System.Drawing.Point(38, 53)
-        Me.txt_nome.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txt_nome.Margin = New System.Windows.Forms.Padding(2)
         Me.txt_nome.Name = "txt_nome"
         Me.txt_nome.Size = New System.Drawing.Size(492, 29)
         Me.txt_nome.TabIndex = 15
@@ -152,7 +152,7 @@ Partial Class Frm_GerenciamentoAlunos
         '
         Me.txt_email.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt_email.Location = New System.Drawing.Point(37, 109)
-        Me.txt_email.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txt_email.Margin = New System.Windows.Forms.Padding(2)
         Me.txt_email.Name = "txt_email"
         Me.txt_email.Size = New System.Drawing.Size(338, 29)
         Me.txt_email.TabIndex = 19
@@ -203,7 +203,7 @@ Partial Class Frm_GerenciamentoAlunos
         '
         Me.Txt_cidade.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_cidade.Location = New System.Drawing.Point(440, 293)
-        Me.Txt_cidade.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Txt_cidade.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_cidade.Name = "Txt_cidade"
         Me.Txt_cidade.Size = New System.Drawing.Size(125, 29)
         Me.Txt_cidade.TabIndex = 71
@@ -223,7 +223,7 @@ Partial Class Frm_GerenciamentoAlunos
         '
         Me.Txt_complemento.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_complemento.Location = New System.Drawing.Point(36, 293)
-        Me.Txt_complemento.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Txt_complemento.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_complemento.Name = "Txt_complemento"
         Me.Txt_complemento.Size = New System.Drawing.Size(137, 29)
         Me.Txt_complemento.TabIndex = 69
@@ -243,7 +243,7 @@ Partial Class Frm_GerenciamentoAlunos
         '
         Me.Txt_bairro.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_bairro.Location = New System.Drawing.Point(236, 293)
-        Me.Txt_bairro.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Txt_bairro.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_bairro.Name = "Txt_bairro"
         Me.Txt_bairro.Size = New System.Drawing.Size(137, 29)
         Me.Txt_bairro.TabIndex = 67
@@ -323,7 +323,7 @@ Partial Class Frm_GerenciamentoAlunos
         '
         Me.Txt_rua.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_rua.Location = New System.Drawing.Point(236, 227)
-        Me.Txt_rua.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Txt_rua.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_rua.Name = "Txt_rua"
         Me.Txt_rua.Size = New System.Drawing.Size(137, 29)
         Me.Txt_rua.TabIndex = 81
@@ -343,7 +343,7 @@ Partial Class Frm_GerenciamentoAlunos
         '
         Me.Txt_numero.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_numero.Location = New System.Drawing.Point(440, 227)
-        Me.Txt_numero.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Txt_numero.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_numero.MaxLength = 5
         Me.Txt_numero.Name = "Txt_numero"
         Me.Txt_numero.Size = New System.Drawing.Size(48, 29)
@@ -385,7 +385,7 @@ Partial Class Frm_GerenciamentoAlunos
         '
         Me.Txt_ra.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_ra.Location = New System.Drawing.Point(238, 167)
-        Me.Txt_ra.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Txt_ra.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_ra.MaxLength = 11
         Me.Txt_ra.Name = "Txt_ra"
         Me.Txt_ra.Size = New System.Drawing.Size(137, 29)

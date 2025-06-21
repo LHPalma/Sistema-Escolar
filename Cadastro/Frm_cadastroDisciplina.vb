@@ -3,7 +3,7 @@
 Public Class Frm_CadastroDisciplina
 
     Dim btnVoltarFoiClicado As Boolean = False
-    Private Sub Btn_cadastrar_Click(sender As Object, e As EventArgs)
+    Private Sub Btn_cadastrar_Click(sender As Object, e As EventArgs) Handles Btn_cadastrar.Click
         If (Txt_nome.Text = "" Or Num_carga_horaria.Value = vbEmpty) Then
             MsgBox("Preencha todos os campos", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "Atenção")
             Txt_nome.Focus()

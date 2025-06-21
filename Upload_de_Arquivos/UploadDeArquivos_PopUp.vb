@@ -52,8 +52,6 @@ Public Class UploadDeArquivos_PopUp
     End Sub
 
 
-
-
 #End Region
 
 
@@ -93,8 +91,6 @@ Public Class UploadDeArquivos_PopUp
 
 
 
-
-
     Private Sub SalvarArquivoNoBanco(nomeArquivo As String, caminhoArquivo As String)
 
         Using conexao As New SQLiteConnection(connectionString)
@@ -125,7 +121,6 @@ Public Class UploadDeArquivos_PopUp
                     End Using
 
 
-
                     Dim sqlInsertTbAssocitiva As String
                     Select Case Sessao.tipoUsuario
                         Case Sessao.ETipoUsuario.Aluno
@@ -149,6 +144,7 @@ Public Class UploadDeArquivos_PopUp
                             Case Sessao.ETipoUsuario.Aluno
                                 cmdInsertTabelaAssocitiva.Parameters.AddWithValue("@nomeAluno", Sessao.nomeUsuario)
                                 cmdInsertTabelaAssocitiva.Parameters.AddWithValue("@nome", nomeArquivo)
+
                             Case Sessao.ETipoUsuario.Professor
                                 cmdInsertTabelaAssocitiva.Parameters.AddWithValue("@nomeProfessor", Sessao.nomeUsuario)
                                 cmdInsertTabelaAssocitiva.Parameters.AddWithValue("@nomeArquivo", nomeArquivo)

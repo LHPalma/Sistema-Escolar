@@ -1,5 +1,4 @@
 ﻿Imports System.Data.SQLite
-Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
 Public Class Frm_cadastroAvaliacao
 
@@ -34,7 +33,7 @@ Public Class Frm_cadastroAvaliacao
         Cb_turma.Text = ""
     End Sub
 
-    Private Sub btnSalvar_Click_1(sender As Object, e As EventArgs) Handles btnSalvar.Click
+    Private Sub btnSalvar_Click(sender As Object, e As EventArgs) Handles btnSalvar.Click
         Using conexao As New SQLiteConnection(connectionString)
             conexao.Open()
 

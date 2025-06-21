@@ -13,7 +13,7 @@ Public Class Frm_cadastroAluno
 
     Dim btnVoltarFoiClicado As Boolean = False
 
-    Private Sub Btn_cadastrar_Click(sender As Object, e As EventArgs)
+    Private Sub Btn_cadastrar_Click(sender As Object, e As EventArgs) Handles Btn_cadastrar.Click
 
         If (Txt_email.Text = "" Or Txt_nome.Text = "" Or Txt_senha.Text = "" Or Txt_ra.Text = "" Or Cmb_Turma.Text = "" Or Txt_cpf.Text = "") Then
             MsgBox("Para cadastrar, preencha todos os campos!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "Atenção")

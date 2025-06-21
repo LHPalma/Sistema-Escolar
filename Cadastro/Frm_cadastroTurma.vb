@@ -10,7 +10,7 @@ Public Class Frm_CadastroTurma
 
     End Sub
 
-    Private Sub Btn_cadastrar_Click(sender As Object, e As EventArgs)
+    Private Sub Btn_cadastrar_Click(sender As Object, e As EventArgs) Handles btn_cadastrar.Click
         If Txt_nome.Text = "" Then
             MessageBox.Show("Preencha o campo Nome")
             Txt_nome.Focus()
