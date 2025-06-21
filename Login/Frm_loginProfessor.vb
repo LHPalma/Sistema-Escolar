@@ -19,12 +19,20 @@ Public Class Frm_loginProfessor
         Try
             conexao.Open()
 
-            Dim usuarioValido As Boolean = VerificaSenhaUsuario("tb_professores", "email", Txt_email.Text, Txt_senha.Text)
+            Dim usuarioValido = VerificaSenhaUsuario("tb_professores", "email", Txt_email.Text, Txt_senha.Text)
 
-            If usuarioValido Then
-                MsgBox($"Login realizado com sucesso. Bem-vindo prof. {Txt_email.Text}!")
+            If usuarioValido.SenhaValida Then
+                MsgBox($"Login realizado com sucesso. Bem-vindo prof. {usuarioValido.NomeUsuario}!")
+
+                Sessao.nomeUsuario = usuarioValido.NomeUsuario
+                Sessao.tipoUsuario = Sessao.ETipoUsuario.Professor
+
+                'AbreFormulario(Me, New Frm_menuProfessor())
+
             Else
                 MsgBox("Usuário ou senha incorretos.", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "Falha no login")
+                Txt_email.Focus()
+                Exit Sub
             End If
 
         Catch ex As Exception

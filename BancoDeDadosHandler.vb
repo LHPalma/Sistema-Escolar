@@ -222,16 +222,15 @@ Module BancoDeDadosHandler
     End Function
 
 
-    Public Function VerificaSenhaUsuario(tabela As String, coluna As String, valorProcurado As String, senha As String) As Boolean
+    Public Function VerificaSenhaUsuario(tabela As String, coluna As String, valorProcurado As String, senha As String) As (SenhaValida As Boolean, NomeUsuario As String)
         Using conexao As New SQLiteConnection(connectionString)
             conexao.Open()
 
             Dim sqlSelect = $"
-                              SELECT
-                                  senha_hash, senha_salt 
-                              FROM {tabela} 
-                              WHERE {coluna} = @valorProcurado"
-
+                          SELECT
+                              senha_hash, senha_salt, nome
+                          FROM {tabela} 
+                          WHERE {coluna} = @valorProcurado"
 
             Using cmd As New SQLiteCommand(sqlSelect, conexao)
                 cmd.Parameters.AddWithValue("@valorProcurado", valorProcurado)
@@ -240,17 +239,18 @@ Module BancoDeDadosHandler
                     If leitor.Read() Then
                         Dim hashSalvo As Byte() = CType(leitor("senha_hash"), Byte())
                         Dim saltSalvo As Byte() = CType(leitor("senha_salt"), Byte())
+                        Dim nome As String = leitor("nome").ToString()
 
                         Dim hashTentativa As Byte() = GerarHashSenha(senha, saltSalvo)
 
-                        Return CompararHashes(hashSalvo, hashTentativa)
+                        Dim senhaCorreta As Boolean = CompararHashes(hashSalvo, hashTentativa)
+                        Return (senhaCorreta, If(senhaCorreta, nome, Nothing))
                     Else
-                        Return False
+                        Return (False, Nothing)
                     End If
                 End Using
             End Using
-
-        End Using 'Fim conexão
+        End Using
     End Function
 
     Private Function CompararHashes(hash1 As Byte(), hash2 As Byte()) As Boolean

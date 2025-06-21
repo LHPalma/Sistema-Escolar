@@ -266,6 +266,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="ServicosDeMensagem.vb" />
+    <Compile Include="Sessao.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Cadastro\Frm_cadastroAvaliacao.resx">

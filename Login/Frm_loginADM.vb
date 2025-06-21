@@ -31,9 +31,15 @@ Public Class Frm_loginADM
             Try
                 conexao.Open()
 
-                Dim usuarioValido As Boolean = VerificaSenhaUsuario("tb_administradores", "email", Txt_email.Text, Txt_senha.Text)
-                If usuarioValido Then
+                Dim usuarioValido = VerificaSenhaUsuario("tb_administradores", "email", Txt_email.Text, Txt_senha.Text)
+
+                If usuarioValido.SenhaValida Then
                     MsgBox("Login realizado com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Sucesso")
+
+                    Sessao.nomeUsuario = usuarioValido.NomeUsuario
+                    Sessao.tipoUsuario = Sessao.ETipoUsuario.Administrador
+
+
                     AbreFormulario(Me, New Frm_menuADM())
 
                 Else

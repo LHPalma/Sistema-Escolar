@@ -1,16 +1,40 @@
-﻿Public Class Frm_loginAluno
+﻿Imports System.Data.SQLite
+
+Public Class Frm_loginAluno
 
     Dim btnVoltarFoiClicado As Boolean = False
 
-    Private Sub Btn_logar_Click(sender As Object, e As EventArgs)
+    Private Sub Btn_logar_Click(sender As Object, e As EventArgs) Handles Btn_logar.Click
 
         If Not ((Txt_ra.Text <> "" Or Txt_senha.Text <> "")) Then
             MsgBox("Insira seus dados")
         End If
 
 
-        Dim professor = New Frm_loginProfessor()
-        professor.Show()
+        Using conexao As New SQLiteConnection(connectionString)
+            Try
+                conexao.Open()
+                Dim usuarioValido = VerificaSenhaUsuario("tb_alunos", "ra", Txt_ra.Text, Txt_senha.Text)
+
+                If usuarioValido.SenhaValida Then
+                    MsgBox($"Login realizado com sucesso! Bem vindo {usuarioValido.NomeUsuario}", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Sucesso")
+
+
+                    Sessao.nomeUsuario = usuarioValido.NomeUsuario
+                    Sessao.tipoUsuario = Sessao.ETipoUsuario.Aluno
+
+
+                    'AbreFormulario(Me, New Frm_menuAluno())
+                Else
+                    MsgBox("RA ou senha incorretos.", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "Falha no login")
+                    Exit Sub
+                End If
+            Catch ex As Exception
+            Finally
+                conexao.Close()
+            End Try
+        End Using
+
     End Sub
 
 
@@ -45,4 +69,5 @@
             Close()
         End If
     End Sub
+
 End Class
