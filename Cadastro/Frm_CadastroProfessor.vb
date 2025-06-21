@@ -206,5 +206,9 @@ Public Class Frm_CadastroProfessor
         End If
     End Sub
 
+    Private Sub Btn_cadastrar_Click_1(sender As Object, e As EventArgs) Handles Btn_cadastrar.Click
+
+    End Sub
+
 #End Region
 End Class

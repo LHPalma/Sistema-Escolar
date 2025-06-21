@@ -1,8 +1,11 @@
 ﻿Imports System.Data.SQLite
-Imports System.Diagnostics.Eventing.Reader
 Imports System.IO
 
 Public Class UploadDeArquivos_PopUp
+
+
+
+
     Private Sub Btn_upload_Click(sender As Object, e As EventArgs) Handles Btn_upload.Click
 
         Dim ofd As New OpenFileDialog With {
@@ -66,7 +69,10 @@ Public Class UploadDeArquivos_PopUp
                 uploadDir = Application.StartupPath & "\uploads\professor"
 
             Else
-                uploadDir = Application.StartupPath & "\uploads"
+                uploadDir = Application.StartupPath & "\uploads\alunos"
+                'debug
+                Sessao.nomeUsuario = "Luiz Henrique Silva Palma"
+                Sessao.tipoUsuario = Sessao.ETipoUsuario.Aluno
                 'MessageBox.Show("Tipo de usuário não reconhecido.")
                 'Return
 
@@ -77,8 +83,8 @@ Public Class UploadDeArquivos_PopUp
 
             Dim destPath As String = Path.Combine(uploadDir, fileName)
             File.Copy(filePath, destPath, True)
-
-            'SalvarArquivoNoBanco(fileName, destPath)
+            Dim relativePath As String = destPath.Replace(Application.StartupPath & "\", "")
+            SalvarArquivoNoBanco(fileName, relativePath)
             MessageBox.Show("Arquivo '" & fileName & "' enviado com sucesso!")
         Catch ex As Exception
             MessageBox.Show("Erro ao enviar: " & ex.Message)
@@ -90,15 +96,86 @@ Public Class UploadDeArquivos_PopUp
 
 
     Private Sub SalvarArquivoNoBanco(nomeArquivo As String, caminhoArquivo As String)
-        Dim connStr As String = "Data Source=seubanco.sqlite;Version=3;"
-        Using conn As New SQLiteConnection(connStr)
-            conn.Open()
-            Dim cmd As New SQLiteCommand("INSERT INTO arquivos (nome, caminho) VALUES (@nome, @caminho)", conn)
-            cmd.Parameters.AddWithValue("@nome", nomeArquivo)
-            cmd.Parameters.AddWithValue("@caminho", caminhoArquivo)
-            cmd.ExecuteNonQuery()
-        End Using
-    End Sub
 
+        Using conexao As New SQLiteConnection(connectionString)
+            Try
+                conexao.Open()
+                Using transacao = conexao.BeginTransaction()
+
+
+                    Dim sqlInsert As String = $"
+                        INSERT INTO tb_arquivos
+                            (caminho, nome)
+                        VALUES
+                            (@caminho, @nome);
+                    "
+
+                    Using cmdInsert As New SQLiteCommand(sqlInsert, conexao)
+
+                        cmdInsert.Parameters.AddWithValue("@caminho", caminhoArquivo)
+                        cmdInsert.Parameters.AddWithValue("@nome", nomeArquivo)
+
+
+                        Dim linhasAfetadas As Integer = cmdInsert.ExecuteNonQuery()
+                        If linhasAfetadas > 0 Then
+                            MessageBox.Show("Arquivo salvo no banco de dados com sucesso!")
+                        Else
+                            MessageBox.Show("Erro ao salvar o arquivo no banco de dados.")
+                        End If
+                    End Using
+
+
+
+                    Dim sqlInsertTbAssocitiva As String
+                    Select Case Sessao.tipoUsuario
+                        Case Sessao.ETipoUsuario.Aluno
+                            sqlInsertTbAssocitiva = $"
+                            INSERT INTO tb_arquivos_alunos 
+                                 (fk_id_arquivo, fk_id_aluno)
+                            VALUES
+                                ((SELECT id_aluno FROM tb_alunos WHERE nome = @nomeAluno), (SELECT id_arquivo FROM tb_arquivos WHERE nome = @nome));
+                        "
+                        Case Sessao.ETipoUsuario.Professor
+                            sqlInsertTbAssocitiva = $"
+                            INSERT INTO tb_arquivos_professores 
+                                (fk_id_arquivo, fk_id_professor)
+                            VALUES
+                                ((SELECT id_professor FROM tb_professores WHERE nome = @nomeProfessor), (SELECT id_arquivo FROM tb_arquivos WHERE nome = @nomeArquivo));
+                        "
+                    End Select
+
+                    Using cmdInsertTabelaAssocitiva As New SQLiteCommand(sqlInsertTbAssocitiva, conexao)
+                        Select Case Sessao.tipoUsuario
+                            Case Sessao.ETipoUsuario.Aluno
+                                cmdInsertTabelaAssocitiva.Parameters.AddWithValue("@nomeAluno", Sessao.nomeUsuario)
+                                cmdInsertTabelaAssocitiva.Parameters.AddWithValue("@nome", nomeArquivo)
+                            Case Sessao.ETipoUsuario.Professor
+                                cmdInsertTabelaAssocitiva.Parameters.AddWithValue("@nomeProfessor", Sessao.nomeUsuario)
+                                cmdInsertTabelaAssocitiva.Parameters.AddWithValue("@nomeArquivo", nomeArquivo)
+                        End Select
+                        Dim qtd = cmdInsertTabelaAssocitiva.ExecuteNonQuery()
+                        MsgBox(qtd)
+
+                    End Using ' cmdInsertTabelaAssocitiva
+
+
+                    transacao.Commit()
+
+
+                End Using ' SQLiteTransaction2
+
+            Catch ex As Exception
+                MsgBox("Erro ao salvar o arquivo no banco de dados: " & ex.Message, MsgBoxStyle.Critical, "Erro")
+
+            Finally
+                If conexao.State = ConnectionState.Open Then
+                    conexao.Close()
+                End If
+
+            End Try
+
+        End Using ' SQLiteConnection
+
+    End Sub
 
 End Class
