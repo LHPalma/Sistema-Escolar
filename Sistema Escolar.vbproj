@@ -8,7 +8,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{755CE600-AE2B-4438-B87F-C9992EBEAA2B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Sistema_Escolar.UploadDeArquivos_PopUp</StartupObject>
+    <StartupObject>Sistema_Escolar.Frm_cadastroFaltas</StartupObject>
     <RootNamespace>Sistema_Escolar</RootNamespace>
     <AssemblyName>Sistema Escolar</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -247,6 +247,18 @@
     <Compile Include="Login\Frm_loginProfessor.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Menus\MenuAluno.Designer.vb">
+      <DependentUpon>MenuAluno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\MenuAluno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\MenuProfessor.Designer.vb">
+      <DependentUpon>MenuProfessor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\MenuProfessor.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Modulo.vb" />
     <Compile Include="Modulo_de_Vendas\PDVVendas.Designer.vb">
       <DependentUpon>PDVVendas.vb</DependentUpon>
@@ -267,6 +279,12 @@
     </Compile>
     <Compile Include="ServicosDeMensagem.vb" />
     <Compile Include="Sessao.vb" />
+    <Compile Include="Cadastro\Frm_cadastroFaltas.Designer.vb">
+      <DependentUpon>Frm_cadastroFaltas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Frm_cadastroFaltas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Upload_de_Arquivos\UploadDeArquivos_PopUp.Designer.vb">
       <DependentUpon>UploadDeArquivos_PopUp.vb</DependentUpon>
     </Compile>
@@ -335,6 +353,12 @@
     <EmbeddedResource Include="Login\Frm_loginProfessor.resx">
       <DependentUpon>Frm_loginProfessor.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Menus\MenuAluno.resx">
+      <DependentUpon>MenuAluno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\MenuProfessor.resx">
+      <DependentUpon>MenuProfessor.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modulo_de_Vendas\PDVVendas.resx">
       <DependentUpon>PDVVendas.vb</DependentUpon>
     </EmbeddedResource>
@@ -343,6 +367,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\Frm_cadastroFaltas.resx">
+      <DependentUpon>Frm_cadastroFaltas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Upload_de_Arquivos\UploadDeArquivos_PopUp.resx">
       <DependentUpon>UploadDeArquivos_PopUp.vb</DependentUpon>
