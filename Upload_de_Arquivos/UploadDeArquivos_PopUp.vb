@@ -67,10 +67,10 @@ Public Class UploadDeArquivos_PopUp
                 uploadDir = Application.StartupPath & "\uploads\alunos"
 
             Else
-                uploadDir = Application.StartupPath & "\uploads\alunos"
+                uploadDir = Application.StartupPath & "\uploads\professores"
                 'debug
-                Sessao.nomeUsuario = "Luiz Henrique Silva Palma"
-                Sessao.tipoUsuario = Sessao.ETipoUsuario.Aluno
+                Sessao.nomeUsuario = "Rodrigo Amorim"
+                Sessao.tipoUsuario = Sessao.ETipoUsuario.Professor
                 'MessageBox.Show("Tipo de usuário não reconhecido.")
                 'Return
 
@@ -101,9 +101,9 @@ Public Class UploadDeArquivos_PopUp
 
                     Dim sqlInsert As String = $"
                         INSERT INTO tb_arquivos
-                            (caminho, nome)
+                            (caminho, nome, tipo, tamanho)
                         VALUES
-                            (@caminho, @nome);
+                            (@caminho, @nome, @tipo, @tamanho);
                     "
 
                     Using cmdInsert As New SQLiteCommand(sqlInsert, conexao)
@@ -128,14 +128,14 @@ Public Class UploadDeArquivos_PopUp
                             INSERT INTO tb_arquivos_alunos 
                                  (fk_id_arquivo, fk_id_aluno)
                             VALUES
-                                ((SELECT id_aluno FROM tb_alunos WHERE nome = @nomeAluno), (SELECT id_arquivo FROM tb_arquivos WHERE nome = @nome));
+                                ((SELECT id_arquivo FROM tb_arquivos WHERE nome = @nome), (SELECT id_aluno FROM tb_alunos WHERE nome = @nomeAluno));
                         "
                         Case Sessao.ETipoUsuario.Professor
                             sqlInsertTbAssocitiva = $"
                             INSERT INTO tb_arquivos_professores 
                                 (fk_id_arquivo, fk_id_professor)
                             VALUES
-                                ((SELECT id_professor FROM tb_professores WHERE nome = @nomeProfessor), (SELECT id_arquivo FROM tb_arquivos WHERE nome = @nomeArquivo));
+                                ((SELECT id_arquivo FROM tb_arquivos WHERE nome = @nomeArquivo), (SELECT id_professor FROM tb_professores WHERE nome = @nomeProfessor));
                         "
                     End Select
 

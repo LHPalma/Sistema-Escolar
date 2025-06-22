@@ -8,7 +8,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{755CE600-AE2B-4438-B87F-C9992EBEAA2B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Sistema_Escolar.MenuProfessor</StartupObject>
+    <StartupObject>Sistema_Escolar.AbrirArquivo_PopUP_FRM</StartupObject>
     <RootNamespace>Sistema_Escolar</RootNamespace>
     <AssemblyName>Sistema Escolar</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -285,6 +285,12 @@
     <Compile Include="Cadastro\CadastroFaltas_FRM.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Upload_de_Arquivos\AbrirArquivo_PopUP_FRM.Designer.vb">
+      <DependentUpon>AbrirArquivo_PopUP_FRM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Upload_de_Arquivos\AbrirArquivo_PopUP_FRM.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Upload_de_Arquivos\UploadDeArquivos_PopUp.Designer.vb">
       <DependentUpon>UploadDeArquivos_PopUp.vb</DependentUpon>
     </Compile>
@@ -370,6 +376,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cadastro\CadastroFaltas_FRM.resx">
       <DependentUpon>CadastroFaltas_FRM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Upload_de_Arquivos\AbrirArquivo_PopUP_FRM.resx">
+      <DependentUpon>AbrirArquivo_PopUP_FRM.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Upload_de_Arquivos\UploadDeArquivos_PopUp.resx">
       <DependentUpon>UploadDeArquivos_PopUp.vb</DependentUpon>
