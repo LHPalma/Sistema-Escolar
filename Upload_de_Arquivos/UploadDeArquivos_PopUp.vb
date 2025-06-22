@@ -3,9 +3,6 @@ Imports System.IO
 
 Public Class UploadDeArquivos_PopUp
 
-
-
-
     Private Sub Btn_upload_Click(sender As Object, e As EventArgs) Handles Btn_upload.Click
 
         Dim ofd As New OpenFileDialog With {
@@ -22,7 +19,6 @@ Public Class UploadDeArquivos_PopUp
                 End If
             Next
         End If
-
 
     End Sub
 
@@ -110,6 +106,8 @@ Public Class UploadDeArquivos_PopUp
 
                         cmdInsert.Parameters.AddWithValue("@caminho", caminhoArquivo)
                         cmdInsert.Parameters.AddWithValue("@nome", nomeArquivo)
+                        cmdInsert.Parameters.AddWithValue("@tipo", Path.GetExtension(nomeArquivo))
+                        cmdInsert.Parameters.AddWithValue("@tamanho", New FileInfo(caminhoArquivo).Length)
 
 
                         Dim linhasAfetadas As Integer = cmdInsert.ExecuteNonQuery()
@@ -121,7 +119,7 @@ Public Class UploadDeArquivos_PopUp
                     End Using
 
 
-                    Dim sqlInsertTbAssocitiva As String
+                    Dim sqlInsertTbAssocitiva As String = ""
                     Select Case Sessao.tipoUsuario
                         Case Sessao.ETipoUsuario.Aluno
                             sqlInsertTbAssocitiva = $"
