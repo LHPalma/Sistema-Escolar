@@ -258,7 +258,7 @@ Public Class Frm_cadastroAluno
 
     Private Sub Frm_cadastroAluno_Closed(sender As Object, e As EventArgs) Handles Me.Closed
         If Not btnVoltarFoiClicado Then
-            Me.Close()
+            FecharPrograma()
         End If
     End Sub
 End Class

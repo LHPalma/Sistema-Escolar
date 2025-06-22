@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Frm_cadastroAvaliacao
+Partial Class CadastroAvaliacao_frm
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
@@ -22,7 +22,7 @@ Partial Class Frm_cadastroAvaliacao
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_cadastroAvaliacao))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CadastroAvaliacao_frm))
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Cb_turma = New System.Windows.Forms.ComboBox()
         Me.dtpDataAvaliacao = New System.Windows.Forms.DateTimePicker()

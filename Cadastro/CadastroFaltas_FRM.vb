@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SQLite
 
-Public Class Frm_cadastroFaltas
+Public Class CadastroFaltas_FRM
     Private Sub CarregarProfDiscTurma()
 
         Dim sql As String = "SELECT id_prof_disc_turma, nome FROM vw_prof_disc_turma"

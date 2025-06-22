@@ -23,22 +23,22 @@ Partial Class MenuProfessor
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuProfessor))
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Btn_agendarAvaliacao = New System.Windows.Forms.Button()
         Me.Btn_voltar = New Guna.UI.WinForms.GunaButton()
         Me.Lb_bemvindo = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Btn_lancarFalta = New System.Windows.Forms.Button()
+        Me.Btn_lancarNota = New System.Windows.Forms.Button()
+        Me.Btn_enviarArquivos = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Button1
+        'Btn_agendarAvaliacao
         '
-        Me.Button1.Location = New System.Drawing.Point(294, 110)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(191, 50)
-        Me.Button1.TabIndex = 38
-        Me.Button1.Text = "Agendar Avaliação"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Btn_agendarAvaliacao.Location = New System.Drawing.Point(294, 110)
+        Me.Btn_agendarAvaliacao.Name = "Btn_agendarAvaliacao"
+        Me.Btn_agendarAvaliacao.Size = New System.Drawing.Size(191, 50)
+        Me.Btn_agendarAvaliacao.TabIndex = 38
+        Me.Btn_agendarAvaliacao.Text = "Agendar Avaliação"
+        Me.Btn_agendarAvaliacao.UseVisualStyleBackColor = True
         '
         'Btn_voltar
         '
@@ -76,42 +76,42 @@ Partial Class MenuProfessor
         Me.Lb_bemvindo.TabIndex = 36
         Me.Lb_bemvindo.Text = "Menu do Professor"
         '
-        'Button2
+        'Btn_lancarFalta
         '
-        Me.Button2.Location = New System.Drawing.Point(294, 186)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(191, 50)
-        Me.Button2.TabIndex = 39
-        Me.Button2.Text = "Lançar Faltas"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Btn_lancarFalta.Location = New System.Drawing.Point(294, 186)
+        Me.Btn_lancarFalta.Name = "Btn_lancarFalta"
+        Me.Btn_lancarFalta.Size = New System.Drawing.Size(191, 50)
+        Me.Btn_lancarFalta.TabIndex = 39
+        Me.Btn_lancarFalta.Text = "Lançar Faltas"
+        Me.Btn_lancarFalta.UseVisualStyleBackColor = True
         '
-        'Button3
+        'Btn_lancarNota
         '
-        Me.Button3.Location = New System.Drawing.Point(294, 259)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(191, 50)
-        Me.Button3.TabIndex = 40
-        Me.Button3.Text = "Lançar Notas"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Btn_lancarNota.Location = New System.Drawing.Point(294, 259)
+        Me.Btn_lancarNota.Name = "Btn_lancarNota"
+        Me.Btn_lancarNota.Size = New System.Drawing.Size(191, 50)
+        Me.Btn_lancarNota.TabIndex = 40
+        Me.Btn_lancarNota.Text = "Lançar Notas"
+        Me.Btn_lancarNota.UseVisualStyleBackColor = True
         '
-        'Button4
+        'Btn_enviarArquivos
         '
-        Me.Button4.Location = New System.Drawing.Point(294, 333)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(191, 50)
-        Me.Button4.TabIndex = 41
-        Me.Button4.Text = "Enviar Arquivos"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Btn_enviarArquivos.Location = New System.Drawing.Point(294, 333)
+        Me.Btn_enviarArquivos.Name = "Btn_enviarArquivos"
+        Me.Btn_enviarArquivos.Size = New System.Drawing.Size(191, 50)
+        Me.Btn_enviarArquivos.TabIndex = 41
+        Me.Btn_enviarArquivos.Text = "Enviar Arquivos"
+        Me.Btn_enviarArquivos.UseVisualStyleBackColor = True
         '
         'MenuProfessor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Btn_enviarArquivos)
+        Me.Controls.Add(Me.Btn_lancarNota)
+        Me.Controls.Add(Me.Btn_lancarFalta)
+        Me.Controls.Add(Me.Btn_agendarAvaliacao)
         Me.Controls.Add(Me.Btn_voltar)
         Me.Controls.Add(Me.Lb_bemvindo)
         Me.Name = "MenuProfessor"
@@ -121,10 +121,10 @@ Partial Class MenuProfessor
 
     End Sub
 
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Btn_agendarAvaliacao As Button
     Friend WithEvents Btn_voltar As Guna.UI.WinForms.GunaButton
     Friend WithEvents Lb_bemvindo As Label
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents Btn_lancarFalta As Button
+    Friend WithEvents Btn_lancarNota As Button
+    Friend WithEvents Btn_enviarArquivos As Button
 End Class

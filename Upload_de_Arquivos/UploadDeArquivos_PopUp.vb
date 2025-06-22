@@ -61,10 +61,10 @@ Public Class UploadDeArquivos_PopUp
 
             Dim uploadDir As String
             If Sessao.tipoUsuario = Sessao.ETipoUsuario.Professor Then
-                uploadDir = Application.StartupPath & "\uploads\professor"
+                uploadDir = Application.StartupPath & "\uploads\professores"
 
             ElseIf Sessao.tipoUsuario = Sessao.ETipoUsuario.Aluno Then
-                uploadDir = Application.StartupPath & "\uploads\professor"
+                uploadDir = Application.StartupPath & "\uploads\alunos"
 
             Else
                 uploadDir = Application.StartupPath & "\uploads\alunos"
@@ -140,6 +140,7 @@ Public Class UploadDeArquivos_PopUp
                     End Select
 
                     Using cmdInsertTabelaAssocitiva As New SQLiteCommand(sqlInsertTbAssocitiva, conexao)
+
                         Select Case Sessao.tipoUsuario
                             Case Sessao.ETipoUsuario.Aluno
                                 cmdInsertTabelaAssocitiva.Parameters.AddWithValue("@nomeAluno", Sessao.nomeUsuario)
@@ -150,7 +151,6 @@ Public Class UploadDeArquivos_PopUp
                                 cmdInsertTabelaAssocitiva.Parameters.AddWithValue("@nomeArquivo", nomeArquivo)
                         End Select
                         Dim qtd = cmdInsertTabelaAssocitiva.ExecuteNonQuery()
-                        MsgBox(qtd)
 
                     End Using ' cmdInsertTabelaAssocitiva
 

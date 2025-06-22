@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SQLite
 
-Public Class Frm_cadastroAvaliacao
+Public Class CadastroAvaliacao_frm
 
     Dim btnVoltarFoiClicado As Boolean = False
 

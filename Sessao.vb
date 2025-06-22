@@ -6,11 +6,8 @@
         Aluno = 2
     End Enum
 
-
     Public nomeUsuario As String
     Public tipoUsuario As Integer
-
-
 
 
 End Module

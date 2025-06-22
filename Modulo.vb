@@ -39,4 +39,11 @@ Module Modulo
         'Me.Show()
     End Sub
 
+    Public Sub FecharPrograma()
+        Dim resultado As DialogResult = MessageBox.Show("Deseja realmente sair do programa?", "SAIR?", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If resultado = DialogResult.Yes Then
+            Application.Exit()
+        End If
+    End Sub
+
 End Module
