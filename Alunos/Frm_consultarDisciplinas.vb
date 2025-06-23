@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SQLite
 
-Public Class Frm_consultarMaterias
+Public Class Frm_consultarDisciplinas
 
 
 

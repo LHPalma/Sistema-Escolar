@@ -62,9 +62,9 @@ Partial Class Frm_consultarFaltas
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(36, 129)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(103, 13)
+        Me.Label2.Size = New System.Drawing.Size(112, 13)
         Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Selecione a matéria:"
+        Me.Label2.Text = "Selecione a disciplina:"
         '
         'btnConsultar
         '

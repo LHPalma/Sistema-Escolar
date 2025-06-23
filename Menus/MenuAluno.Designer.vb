@@ -25,7 +25,10 @@ Partial Class MenuAluno
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuAluno))
         Me.Btn_voltar = New Guna.UI.WinForms.GunaButton()
         Me.Lb_bemvindo = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Btn_consultarDisciplinas = New System.Windows.Forms.Button()
+        Me.Btn_consultarAvaliacoes = New System.Windows.Forms.Button()
+        Me.Btn_consultarFaltas = New System.Windows.Forms.Button()
+        Me.Btn_consultarNotas = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Btn_voltar
@@ -64,21 +67,51 @@ Partial Class MenuAluno
         Me.Lb_bemvindo.TabIndex = 33
         Me.Lb_bemvindo.Text = "Menu do Aluno"
         '
-        'Button1
+        'Btn_consultarDisciplinas
         '
-        Me.Button1.Location = New System.Drawing.Point(297, 118)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(191, 50)
-        Me.Button1.TabIndex = 35
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Btn_consultarDisciplinas.Location = New System.Drawing.Point(297, 134)
+        Me.Btn_consultarDisciplinas.Name = "Btn_consultarDisciplinas"
+        Me.Btn_consultarDisciplinas.Size = New System.Drawing.Size(191, 50)
+        Me.Btn_consultarDisciplinas.TabIndex = 35
+        Me.Btn_consultarDisciplinas.Text = "Consultar Disciplinas"
+        Me.Btn_consultarDisciplinas.UseVisualStyleBackColor = True
+        '
+        'Btn_consultarAvaliacoes
+        '
+        Me.Btn_consultarAvaliacoes.Location = New System.Drawing.Point(297, 190)
+        Me.Btn_consultarAvaliacoes.Name = "Btn_consultarAvaliacoes"
+        Me.Btn_consultarAvaliacoes.Size = New System.Drawing.Size(191, 50)
+        Me.Btn_consultarAvaliacoes.TabIndex = 36
+        Me.Btn_consultarAvaliacoes.Text = "Consultar Avaliaçoes"
+        Me.Btn_consultarAvaliacoes.UseVisualStyleBackColor = True
+        '
+        'Btn_consultarFaltas
+        '
+        Me.Btn_consultarFaltas.Location = New System.Drawing.Point(297, 302)
+        Me.Btn_consultarFaltas.Name = "Btn_consultarFaltas"
+        Me.Btn_consultarFaltas.Size = New System.Drawing.Size(191, 49)
+        Me.Btn_consultarFaltas.TabIndex = 37
+        Me.Btn_consultarFaltas.Text = "Consultar Faltas"
+        Me.Btn_consultarFaltas.UseVisualStyleBackColor = True
+        '
+        'Btn_consultarNotas
+        '
+        Me.Btn_consultarNotas.Location = New System.Drawing.Point(297, 246)
+        Me.Btn_consultarNotas.Name = "Btn_consultarNotas"
+        Me.Btn_consultarNotas.Size = New System.Drawing.Size(191, 50)
+        Me.Btn_consultarNotas.TabIndex = 38
+        Me.Btn_consultarNotas.Text = "Consultar Notas"
+        Me.Btn_consultarNotas.UseVisualStyleBackColor = True
         '
         'MenuAluno
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Btn_consultarNotas)
+        Me.Controls.Add(Me.Btn_consultarFaltas)
+        Me.Controls.Add(Me.Btn_consultarAvaliacoes)
+        Me.Controls.Add(Me.Btn_consultarDisciplinas)
         Me.Controls.Add(Me.Btn_voltar)
         Me.Controls.Add(Me.Lb_bemvindo)
         Me.Name = "MenuAluno"
@@ -90,5 +123,8 @@ Partial Class MenuAluno
 
     Friend WithEvents Btn_voltar As Guna.UI.WinForms.GunaButton
     Friend WithEvents Lb_bemvindo As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Btn_consultarDisciplinas As Button
+    Friend WithEvents Btn_consultarAvaliacoes As Button
+    Friend WithEvents Btn_consultarFaltas As Button
+    Friend WithEvents Btn_consultarNotas As Button
 End Class

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Frm_consultarMaterias
+Partial Class Frm_consultarDisciplinas
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
@@ -40,9 +40,9 @@ Partial Class Frm_consultarMaterias
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(193, 33)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(50, 13)
+        Me.Label1.Size = New System.Drawing.Size(60, 13)
         Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Matérias:"
+        Me.Label1.Text = "Disciplinas:"
         '
         'Frm_consultarMaterias
         '
