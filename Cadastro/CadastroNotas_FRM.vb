@@ -54,7 +54,6 @@ Public Class CadastroNotas_FRM
     End Sub
 
     Private Sub btnEditar_Click(sender As Object, e As EventArgs) Handles btnEditar.Click
-        'Validações
         If cmbAvaliacao.SelectedIndex = -1 Then
             MessageBox.Show("Selecione uma avaliação.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Exit Sub

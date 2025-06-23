@@ -18,7 +18,7 @@ Public Class Frm_consultarFaltas
         Using conexao As New SQLiteConnection(connectionString)
             Using cmd As New SQLiteCommand(sql, conexao)
 
-                cmd.Parameters.AddWithValue("@idAluno", 1)
+                cmd.Parameters.AddWithValue("@idAluno", Sessao.idUsuario)
 
                 Dim dt As New DataTable()
 
@@ -40,8 +40,6 @@ Public Class Frm_consultarFaltas
             End Using
         End Using
     End Sub
-
-
     Private Sub btnConsultar_Click(sender As Object, e As EventArgs) Handles btnConsultar.Click
         If cmbDisciplina.SelectedIndex = -1 Then
             MessageBox.Show("Selecione uma disciplina!")
@@ -63,7 +61,7 @@ Public Class Frm_consultarFaltas
         Using conexao As New SQLiteConnection(connectionString)
             Using cmd As New SQLiteCommand(sql, conexao)
 
-                cmd.Parameters.AddWithValue("@idAluno", 1)
+                cmd.Parameters.AddWithValue("@idAluno", Sessao.idUsuario)
                 cmd.Parameters.AddWithValue("@idDisciplina", Convert.ToInt32(cmbDisciplina.SelectedValue))
 
                 Dim dt As New DataTable()
@@ -114,5 +112,8 @@ Public Class Frm_consultarFaltas
         End Using
     End Sub
 
-
+    Private Sub cmbDisciplina_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cmbDisciplina.SelectionChangeCommitted
+        dgvFaltas.DataSource = Nothing
+        txtTotalFaltas.Text = ""
+    End Sub
 End Class
