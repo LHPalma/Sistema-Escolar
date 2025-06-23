@@ -8,6 +8,6 @@
 
     Public nomeUsuario As String
     Public tipoUsuario As Integer
-
+    Public idUsuario As Integer
 
 End Module

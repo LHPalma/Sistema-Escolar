@@ -22,6 +22,7 @@ Public Class Frm_loginAluno
 
                     Sessao.nomeUsuario = usuarioValido.NomeUsuario
                     Sessao.tipoUsuario = Sessao.ETipoUsuario.Aluno
+                    Sessao.idUsuario = BuscarIdUsuario("tb_alunos", "ra", Txt_ra.Text, "id_aluno")
 
 
                     'AbreFormulario(Me, New Frm_menuAluno())

@@ -171,5 +171,4 @@ Public Class UploadDeArquivos_PopUp
         End Using ' SQLiteConnection
 
     End Sub
-
 End Class

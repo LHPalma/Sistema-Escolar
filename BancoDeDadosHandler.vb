@@ -221,6 +221,29 @@ Module BancoDeDadosHandler
         Return existeRegistro
     End Function
 
+    Public Function BuscarIdUsuario(tabela As String, coluna As String, valorProcurado As String, tipoDeId As String)
+
+        Using conexao As New SQLiteConnection(connectionString)
+            conexao.Open()
+
+            Dim sqlSelect = $"
+                          SELECT
+                              {tipoDeId}
+                          FROM {tabela} 
+                          WHERE {coluna} = @valorProcurado"
+
+            Using cmd As New SQLiteCommand(sqlSelect, conexao)
+                cmd.Parameters.AddWithValue("@valorProcurado", valorProcurado)
+
+                Dim reader As SQLiteDataReader = cmd.ExecuteReader()
+
+                reader.Read()
+                Dim idDoUsuario As Integer = reader($"{tipoDeId}")
+
+                Return idDoUsuario
+            End Using
+        End Using
+    End Function
 
     Public Function VerificaSenhaUsuario(tabela As String, coluna As String, valorProcurado As String, senha As String) As (SenhaValida As Boolean, NomeUsuario As String)
         Using conexao As New SQLiteConnection(connectionString)
