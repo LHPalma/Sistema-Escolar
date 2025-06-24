@@ -64,7 +64,6 @@ Partial Class Frm_GerenciamentoAdministradores
         '
         'Txt_buscar
         '
-        Me.Txt_buscar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Txt_buscar.Name = "Txt_buscar"
         Me.Txt_buscar.Size = New System.Drawing.Size(100, 27)
         '
@@ -78,7 +77,7 @@ Partial Class Frm_GerenciamentoAdministradores
         '
         'Cmb_campo
         '
-        Me.Cmb_campo.Items.AddRange(New Object() {"Nome", "RA"})
+        Me.Cmb_campo.Items.AddRange(New Object() {"Nome", "Id_administrador"})
         Me.Cmb_campo.Name = "Cmb_campo"
         Me.Cmb_campo.Size = New System.Drawing.Size(100, 27)
         '

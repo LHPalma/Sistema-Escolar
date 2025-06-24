@@ -9,6 +9,7 @@ Public Class Frm_GerenciamentoAdministradores
 
     Private Sub Frm_GerenciamentoAdministradores_Load(sender As Object, e As EventArgs) Handles Me.Load
         btnVoltarFoiClicado = False
+        Cmb_campo.Text = "Nome"
     End Sub
 
     Private Sub Txt_buscar_TextChanged(sender As Object, e As EventArgs) Handles Txt_buscar.TextChanged
@@ -54,11 +55,49 @@ Public Class Frm_GerenciamentoAdministradores
 
     Private Sub Frm_GerenciamentoAdministradores_Closed(sender As Object, e As EventArgs) Handles Me.Closed
         If Not btnVoltarFoiClicado Then
-            Close()
+            FecharPrograma()
         End If
     End Sub
 
     Private Sub Btn_editar_Click(sender As Object, e As EventArgs) Handles Btn_editar.Click
+
+        Dim novoNome As String = Txt_nome.Text.Trim()
+        Dim novoEmail As String = Txt_email.Text.Trim()
+
+        If String.IsNullOrEmpty(novoNome) Or String.IsNullOrEmpty(novoEmail) Then
+            MessageBox.Show("Por favor, preencha todos os campos antes de editar.", "Campos obrigatórios", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Return
+        End If
+
+
+        Dim idAdministrador As Integer = CInt(Dgv_dados.CurrentRow.Cells("id_administrador").Value)
+        Dim sqlUpdate As String = "
+            UPDATE tb_administradores
+            SET email = @Email, nome = @Nome
+            WHERE id_administrador = @IdAdministrador"
+
+        Try
+            conexao.Open()
+            Using cmd As New SQLiteCommand(sqlUpdate, conexao)
+                cmd.Parameters.AddWithValue("@Email", novoEmail)
+                cmd.Parameters.AddWithValue("@Nome", novoNome)
+                cmd.Parameters.AddWithValue("@IdAdministrador", idAdministrador)
+
+                Dim rowsAffected As Integer = cmd.ExecuteNonQuery()
+                If rowsAffected > 0 Then
+                    MessageBox.Show("Administrador atualizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+                Else
+                    MessageBox.Show("Nenhum administrador foi atualizado.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                End If
+
+            End Using
+        Catch ex As Exception
+            MessageBox.Show("Erro ao atualizar administrador: " & ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            conexao.Close()
+        Finally
+            conexao.Close()
+        End Try
 
     End Sub
 
