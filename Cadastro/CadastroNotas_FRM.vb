@@ -314,4 +314,12 @@ Public Class CadastroNotas_FRM
             Close()
         End If
     End Sub
+
+    Private Sub Btn_lancarNota_Click(sender As Object, e As EventArgs) Handles btnCadastrar.Click
+
+    End Sub
+
+    Private Sub GunaButton1_Click(sender As Object, e As EventArgs) Handles btnEditar.Click
+
+    End Sub
 End Class

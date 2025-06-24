@@ -22,43 +22,76 @@ Partial Class Frm_consultarDisciplinas
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_consultarDisciplinas))
         Me.dgvMaterias = New System.Windows.Forms.DataGridView()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Lb_consultar_materias = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Pnl_menu = New System.Windows.Forms.Panel()
         CType(Me.dgvMaterias, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Pnl_menu.SuspendLayout()
         Me.SuspendLayout()
         '
         'dgvMaterias
         '
         Me.dgvMaterias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvMaterias.Location = New System.Drawing.Point(196, 49)
+        Me.dgvMaterias.Location = New System.Drawing.Point(139, 71)
         Me.dgvMaterias.Name = "dgvMaterias"
-        Me.dgvMaterias.Size = New System.Drawing.Size(409, 389)
+        Me.dgvMaterias.Size = New System.Drawing.Size(489, 389)
         Me.dgvMaterias.TabIndex = 0
         '
-        'Label1
+        'Lb_consultar_materias
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(193, 33)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(60, 13)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Disciplinas:"
+        Me.Lb_consultar_materias.AutoSize = True
+        Me.Lb_consultar_materias.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lb_consultar_materias.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Lb_consultar_materias.Location = New System.Drawing.Point(53, 14)
+        Me.Lb_consultar_materias.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Lb_consultar_materias.Name = "Lb_consultar_materias"
+        Me.Lb_consultar_materias.Size = New System.Drawing.Size(304, 32)
+        Me.Lb_consultar_materias.TabIndex = 4
+        Me.Lb_consultar_materias.Text = "CONSULTAR DISCIPLINAS"
         '
-        'Frm_consultarMaterias
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(-1, -8)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(61, 72)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 5
+        Me.PictureBox1.TabStop = False
+        '
+        'Pnl_menu
+        '
+        Me.Pnl_menu.BackColor = System.Drawing.Color.SteelBlue
+        Me.Pnl_menu.Controls.Add(Me.Lb_consultar_materias)
+        Me.Pnl_menu.Controls.Add(Me.PictureBox1)
+        Me.Pnl_menu.Location = New System.Drawing.Point(-1, -5)
+        Me.Pnl_menu.Name = "Pnl_menu"
+        Me.Pnl_menu.Size = New System.Drawing.Size(810, 57)
+        Me.Pnl_menu.TabIndex = 44
+        '
+        'Frm_consultarDisciplinas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Label1)
+        Me.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.ClientSize = New System.Drawing.Size(800, 487)
+        Me.Controls.Add(Me.Pnl_menu)
         Me.Controls.Add(Me.dgvMaterias)
-        Me.Name = "Frm_consultarMaterias"
-        Me.Text = "Frm_consultarMaterias"
+        Me.Name = "Frm_consultarDisciplinas"
+        Me.Text = "Consultar Disciplinas"
         CType(Me.dgvMaterias, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Pnl_menu.ResumeLayout(False)
+        Me.Pnl_menu.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents dgvMaterias As DataGridView
-    Friend WithEvents Label1 As Label
+    Friend WithEvents Lb_consultar_materias As Label
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Pnl_menu As Panel
 End Class

@@ -234,4 +234,5 @@ Public Class CadastroFaltas_FRM
         cmbProfDiscTurma.SelectedIndex = -1
         nudFaltas.Value = 0
     End Sub
+
 End Class

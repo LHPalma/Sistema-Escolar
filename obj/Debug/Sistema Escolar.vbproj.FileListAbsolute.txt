@@ -323,7 +323,6 @@ E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema .FE6418D7.Up2Date
 E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema Escolar.exe
 E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema Escolar.xml
 E:\Sistema-Escolar-main\Sistema-Escolar-main\obj\Debug\Sistema Escolar.pdb
-D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_agendamentoAvaliacao.resources
 D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_GerenciamentoDisciplinas.resources
 D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\obj\Debug\Sistema_Escolar.PDVVendas.resources
 D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\bin\Debug\Guna.UI.dll
@@ -405,3 +404,16 @@ C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema_Escolar.F
 C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_consultarFaltas.resources
 C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_consultarDisciplinas.resources
 C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_consultarNotas.resources
+D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_consultarAvaliacoes.resources
+D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_consultarFaltas.resources
+D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_consultarDisciplinas.resources
+D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_consultarNotas.resources
+D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\obj\Debug\Sistema_Escolar.CadastroAvaliacao_frm.resources
+D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\obj\Debug\Sistema_Escolar.CadastroNotas_FRM.resources
+D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_menuSecretaria.resources
+D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_menuTurmasDisciplinas.resources
+D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\obj\Debug\Sistema_Escolar.MenuAluno.resources
+D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\obj\Debug\Sistema_Escolar.MenuProfessor.resources
+D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\obj\Debug\Sistema_Escolar.CadastroFaltas_FRM.resources
+D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\obj\Debug\Sistema_Escolar.AbrirArquivo_PopUP_FRM.resources
+D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\obj\Debug\Sistema_Escolar.UploadDeArquivos_PopUp.resources

@@ -100,4 +100,5 @@ Public Class Frm_consultarAvaliacoes
     Private Sub cmbDisciplina_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cmbDisciplina.SelectionChangeCommitted
         dgvAvaliacoes.DataSource = Nothing
     End Sub
+
 End Class

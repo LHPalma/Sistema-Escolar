@@ -144,6 +144,4 @@ Public Class Frm_consultarNotas
         txtMedia.BackColor = Color.White
         txtMedia.ForeColor = Color.White
     End Sub
-
-
 End Class

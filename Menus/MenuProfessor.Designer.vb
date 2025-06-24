@@ -23,22 +23,18 @@ Partial Class MenuProfessor
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuProfessor))
-        Me.Btn_agendarAvaliacao = New System.Windows.Forms.Button()
         Me.Btn_voltar = New Guna.UI.WinForms.GunaButton()
         Me.Lb_bemvindo = New System.Windows.Forms.Label()
-        Me.Btn_lancarFalta = New System.Windows.Forms.Button()
-        Me.Btn_lancarNota = New System.Windows.Forms.Button()
-        Me.Btn_enviarArquivos = New System.Windows.Forms.Button()
+        Me.Lb_menu_principal_professor = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Pnl_menu = New System.Windows.Forms.Panel()
+        Me.Btn_agendarAvaliacao = New Guna.UI.WinForms.GunaButton()
+        Me.Btn_lancarFalta = New Guna.UI.WinForms.GunaButton()
+        Me.Btn_lancarNota = New Guna.UI.WinForms.GunaButton()
+        Me.Btn_enviarArquivos = New Guna.UI.WinForms.GunaButton()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Pnl_menu.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'Btn_agendarAvaliacao
-        '
-        Me.Btn_agendarAvaliacao.Location = New System.Drawing.Point(294, 110)
-        Me.Btn_agendarAvaliacao.Name = "Btn_agendarAvaliacao"
-        Me.Btn_agendarAvaliacao.Size = New System.Drawing.Size(191, 50)
-        Me.Btn_agendarAvaliacao.TabIndex = 38
-        Me.Btn_agendarAvaliacao.Text = "Agendar Avaliação"
-        Me.Btn_agendarAvaliacao.UseVisualStyleBackColor = True
         '
         'Btn_voltar
         '
@@ -53,7 +49,7 @@ Partial Class MenuProfessor
         Me.Btn_voltar.ForeColor = System.Drawing.Color.White
         Me.Btn_voltar.Image = CType(resources.GetObject("Btn_voltar.Image"), System.Drawing.Image)
         Me.Btn_voltar.ImageSize = New System.Drawing.Size(22, 22)
-        Me.Btn_voltar.Location = New System.Drawing.Point(694, 415)
+        Me.Btn_voltar.Location = New System.Drawing.Point(430, 333)
         Me.Btn_voltar.Name = "Btn_voltar"
         Me.Btn_voltar.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
         Me.Btn_voltar.OnHoverBorderColor = System.Drawing.Color.Black
@@ -69,62 +65,174 @@ Partial Class MenuProfessor
         '
         Me.Lb_bemvindo.AutoSize = True
         Me.Lb_bemvindo.Font = New System.Drawing.Font("Segoe UI Semibold", 24.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lb_bemvindo.Location = New System.Drawing.Point(251, 48)
+        Me.Lb_bemvindo.Location = New System.Drawing.Point(107, 54)
         Me.Lb_bemvindo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lb_bemvindo.Name = "Lb_bemvindo"
         Me.Lb_bemvindo.Size = New System.Drawing.Size(304, 45)
         Me.Lb_bemvindo.TabIndex = 36
         Me.Lb_bemvindo.Text = "Menu do Professor"
         '
+        'Lb_menu_principal_professor
+        '
+        Me.Lb_menu_principal_professor.AutoSize = True
+        Me.Lb_menu_principal_professor.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lb_menu_principal_professor.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Lb_menu_principal_professor.Location = New System.Drawing.Point(53, 14)
+        Me.Lb_menu_principal_professor.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Lb_menu_principal_professor.Name = "Lb_menu_principal_professor"
+        Me.Lb_menu_principal_professor.Size = New System.Drawing.Size(217, 32)
+        Me.Lb_menu_principal_professor.TabIndex = 4
+        Me.Lb_menu_principal_professor.Text = "MENU PRINCIPAL"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(-1, -8)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(61, 72)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 5
+        Me.PictureBox1.TabStop = False
+        '
+        'Pnl_menu
+        '
+        Me.Pnl_menu.BackColor = System.Drawing.Color.SteelBlue
+        Me.Pnl_menu.Controls.Add(Me.Lb_menu_principal_professor)
+        Me.Pnl_menu.Controls.Add(Me.PictureBox1)
+        Me.Pnl_menu.Location = New System.Drawing.Point(-1, -5)
+        Me.Pnl_menu.Name = "Pnl_menu"
+        Me.Pnl_menu.Size = New System.Drawing.Size(538, 57)
+        Me.Pnl_menu.TabIndex = 42
+        '
+        'Btn_agendarAvaliacao
+        '
+        Me.Btn_agendarAvaliacao.AnimationHoverSpeed = 0.07!
+        Me.Btn_agendarAvaliacao.AnimationSpeed = 0.03!
+        Me.Btn_agendarAvaliacao.BackColor = System.Drawing.Color.Transparent
+        Me.Btn_agendarAvaliacao.BaseColor = System.Drawing.Color.SteelBlue
+        Me.Btn_agendarAvaliacao.BorderColor = System.Drawing.Color.Black
+        Me.Btn_agendarAvaliacao.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.Btn_agendarAvaliacao.FocusedColor = System.Drawing.Color.Empty
+        Me.Btn_agendarAvaliacao.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_agendarAvaliacao.ForeColor = System.Drawing.Color.White
+        Me.Btn_agendarAvaliacao.Image = CType(resources.GetObject("Btn_agendarAvaliacao.Image"), System.Drawing.Image)
+        Me.Btn_agendarAvaliacao.ImageSize = New System.Drawing.Size(40, 40)
+        Me.Btn_agendarAvaliacao.Location = New System.Drawing.Point(148, 108)
+        Me.Btn_agendarAvaliacao.Name = "Btn_agendarAvaliacao"
+        Me.Btn_agendarAvaliacao.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
+        Me.Btn_agendarAvaliacao.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.Btn_agendarAvaliacao.OnHoverForeColor = System.Drawing.Color.White
+        Me.Btn_agendarAvaliacao.OnHoverImage = Nothing
+        Me.Btn_agendarAvaliacao.OnPressedColor = System.Drawing.Color.Black
+        Me.Btn_agendarAvaliacao.Radius = 2
+        Me.Btn_agendarAvaliacao.Size = New System.Drawing.Size(226, 55)
+        Me.Btn_agendarAvaliacao.TabIndex = 46
+        Me.Btn_agendarAvaliacao.Text = "AGENDAR AVALIAÇÃO"
+        '
         'Btn_lancarFalta
         '
-        Me.Btn_lancarFalta.Location = New System.Drawing.Point(294, 186)
+        Me.Btn_lancarFalta.AnimationHoverSpeed = 0.07!
+        Me.Btn_lancarFalta.AnimationSpeed = 0.03!
+        Me.Btn_lancarFalta.BackColor = System.Drawing.Color.Transparent
+        Me.Btn_lancarFalta.BaseColor = System.Drawing.Color.SteelBlue
+        Me.Btn_lancarFalta.BorderColor = System.Drawing.Color.Black
+        Me.Btn_lancarFalta.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.Btn_lancarFalta.FocusedColor = System.Drawing.Color.Empty
+        Me.Btn_lancarFalta.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_lancarFalta.ForeColor = System.Drawing.Color.White
+        Me.Btn_lancarFalta.Image = CType(resources.GetObject("Btn_lancarFalta.Image"), System.Drawing.Image)
+        Me.Btn_lancarFalta.ImageSize = New System.Drawing.Size(40, 40)
+        Me.Btn_lancarFalta.Location = New System.Drawing.Point(148, 169)
         Me.Btn_lancarFalta.Name = "Btn_lancarFalta"
-        Me.Btn_lancarFalta.Size = New System.Drawing.Size(191, 50)
-        Me.Btn_lancarFalta.TabIndex = 39
-        Me.Btn_lancarFalta.Text = "Lançar Faltas"
-        Me.Btn_lancarFalta.UseVisualStyleBackColor = True
+        Me.Btn_lancarFalta.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
+        Me.Btn_lancarFalta.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.Btn_lancarFalta.OnHoverForeColor = System.Drawing.Color.White
+        Me.Btn_lancarFalta.OnHoverImage = Nothing
+        Me.Btn_lancarFalta.OnPressedColor = System.Drawing.Color.Black
+        Me.Btn_lancarFalta.Radius = 2
+        Me.Btn_lancarFalta.Size = New System.Drawing.Size(226, 55)
+        Me.Btn_lancarFalta.TabIndex = 47
+        Me.Btn_lancarFalta.Text = "LANÇAR FALTAS"
         '
         'Btn_lancarNota
         '
-        Me.Btn_lancarNota.Location = New System.Drawing.Point(294, 259)
+        Me.Btn_lancarNota.AnimationHoverSpeed = 0.07!
+        Me.Btn_lancarNota.AnimationSpeed = 0.03!
+        Me.Btn_lancarNota.BackColor = System.Drawing.Color.Transparent
+        Me.Btn_lancarNota.BaseColor = System.Drawing.Color.SteelBlue
+        Me.Btn_lancarNota.BorderColor = System.Drawing.Color.Black
+        Me.Btn_lancarNota.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.Btn_lancarNota.FocusedColor = System.Drawing.Color.Empty
+        Me.Btn_lancarNota.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_lancarNota.ForeColor = System.Drawing.Color.White
+        Me.Btn_lancarNota.Image = CType(resources.GetObject("Btn_lancarNota.Image"), System.Drawing.Image)
+        Me.Btn_lancarNota.ImageSize = New System.Drawing.Size(40, 40)
+        Me.Btn_lancarNota.Location = New System.Drawing.Point(148, 230)
         Me.Btn_lancarNota.Name = "Btn_lancarNota"
-        Me.Btn_lancarNota.Size = New System.Drawing.Size(191, 50)
-        Me.Btn_lancarNota.TabIndex = 40
-        Me.Btn_lancarNota.Text = "Lançar Notas"
-        Me.Btn_lancarNota.UseVisualStyleBackColor = True
+        Me.Btn_lancarNota.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
+        Me.Btn_lancarNota.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.Btn_lancarNota.OnHoverForeColor = System.Drawing.Color.White
+        Me.Btn_lancarNota.OnHoverImage = Nothing
+        Me.Btn_lancarNota.OnPressedColor = System.Drawing.Color.Black
+        Me.Btn_lancarNota.Radius = 2
+        Me.Btn_lancarNota.Size = New System.Drawing.Size(226, 55)
+        Me.Btn_lancarNota.TabIndex = 48
+        Me.Btn_lancarNota.Text = "PUBLICAR NOTAS"
         '
         'Btn_enviarArquivos
         '
-        Me.Btn_enviarArquivos.Location = New System.Drawing.Point(294, 333)
+        Me.Btn_enviarArquivos.AnimationHoverSpeed = 0.07!
+        Me.Btn_enviarArquivos.AnimationSpeed = 0.03!
+        Me.Btn_enviarArquivos.BackColor = System.Drawing.Color.Transparent
+        Me.Btn_enviarArquivos.BaseColor = System.Drawing.Color.SteelBlue
+        Me.Btn_enviarArquivos.BorderColor = System.Drawing.Color.Black
+        Me.Btn_enviarArquivos.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.Btn_enviarArquivos.FocusedColor = System.Drawing.Color.Empty
+        Me.Btn_enviarArquivos.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_enviarArquivos.ForeColor = System.Drawing.Color.White
+        Me.Btn_enviarArquivos.Image = CType(resources.GetObject("Btn_enviarArquivos.Image"), System.Drawing.Image)
+        Me.Btn_enviarArquivos.ImageSize = New System.Drawing.Size(40, 40)
+        Me.Btn_enviarArquivos.Location = New System.Drawing.Point(148, 291)
         Me.Btn_enviarArquivos.Name = "Btn_enviarArquivos"
-        Me.Btn_enviarArquivos.Size = New System.Drawing.Size(191, 50)
-        Me.Btn_enviarArquivos.TabIndex = 41
-        Me.Btn_enviarArquivos.Text = "Enviar Arquivos"
-        Me.Btn_enviarArquivos.UseVisualStyleBackColor = True
+        Me.Btn_enviarArquivos.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
+        Me.Btn_enviarArquivos.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.Btn_enviarArquivos.OnHoverForeColor = System.Drawing.Color.White
+        Me.Btn_enviarArquivos.OnHoverImage = Nothing
+        Me.Btn_enviarArquivos.OnPressedColor = System.Drawing.Color.Black
+        Me.Btn_enviarArquivos.Radius = 2
+        Me.Btn_enviarArquivos.Size = New System.Drawing.Size(226, 55)
+        Me.Btn_enviarArquivos.TabIndex = 49
+        Me.Btn_enviarArquivos.Text = "ENVIAR ARQUIVOS"
         '
         'MenuProfessor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.ClientSize = New System.Drawing.Size(533, 372)
         Me.Controls.Add(Me.Btn_enviarArquivos)
         Me.Controls.Add(Me.Btn_lancarNota)
         Me.Controls.Add(Me.Btn_lancarFalta)
         Me.Controls.Add(Me.Btn_agendarAvaliacao)
+        Me.Controls.Add(Me.Pnl_menu)
         Me.Controls.Add(Me.Btn_voltar)
         Me.Controls.Add(Me.Lb_bemvindo)
         Me.Name = "MenuProfessor"
-        Me.Text = "MenuProfessor"
+        Me.Text = "Menu Principal"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Pnl_menu.ResumeLayout(False)
+        Me.Pnl_menu.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Btn_agendarAvaliacao As Button
     Friend WithEvents Btn_voltar As Guna.UI.WinForms.GunaButton
     Friend WithEvents Lb_bemvindo As Label
-    Friend WithEvents Btn_lancarFalta As Button
-    Friend WithEvents Btn_lancarNota As Button
-    Friend WithEvents Btn_enviarArquivos As Button
+    Friend WithEvents Lb_menu_principal_professor As Label
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Pnl_menu As Panel
+    Friend WithEvents Btn_agendarAvaliacao As Guna.UI.WinForms.GunaButton
+    Friend WithEvents Btn_lancarFalta As Guna.UI.WinForms.GunaButton
+    Friend WithEvents Btn_lancarNota As Guna.UI.WinForms.GunaButton
+    Friend WithEvents Btn_enviarArquivos As Guna.UI.WinForms.GunaButton
 End Class
