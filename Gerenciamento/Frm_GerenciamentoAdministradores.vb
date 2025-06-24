@@ -58,5 +58,11 @@ Public Class Frm_GerenciamentoAdministradores
         End If
     End Sub
 
+    Private Sub Btn_editar_Click(sender As Object, e As EventArgs) Handles Btn_editar.Click
 
+    End Sub
+
+    Private Sub Btn_gravar_Click(sender As Object, e As EventArgs) Handles Btn_gravar.Click
+
+    End Sub
 End Class

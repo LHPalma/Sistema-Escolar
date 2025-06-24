@@ -38,8 +38,6 @@ Partial Class Frm_GerenciamentoProfessores
         Me.Lb_cpf = New System.Windows.Forms.Label()
         Me.Txt_telefone = New System.Windows.Forms.MaskedTextBox()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.txt_disc = New System.Windows.Forms.TextBox()
         Me.Txt_cep = New System.Windows.Forms.MaskedTextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -206,26 +204,6 @@ Partial Class Frm_GerenciamentoProfessores
         Me.Label12.Size = New System.Drawing.Size(51, 13)
         Me.Label12.TabIndex = 80
         Me.Label12.Text = "Telefone"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(239, 153)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(57, 13)
-        Me.Label5.TabIndex = 85
-        Me.Label5.Text = "Disciplina"
-        '
-        'txt_disc
-        '
-        Me.txt_disc.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_disc.Location = New System.Drawing.Point(242, 168)
-        Me.txt_disc.Margin = New System.Windows.Forms.Padding(2)
-        Me.txt_disc.Name = "txt_disc"
-        Me.txt_disc.Size = New System.Drawing.Size(137, 29)
-        Me.txt_disc.TabIndex = 84
         '
         'Txt_cep
         '
@@ -496,8 +474,6 @@ Partial Class Frm_GerenciamentoProfessores
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Txt_complemento)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.txt_disc)
         Me.Controls.Add(Me.Txt_cpf)
         Me.Controls.Add(Me.Lb_cpf)
         Me.Controls.Add(Me.Txt_telefone)
@@ -536,8 +512,6 @@ Partial Class Frm_GerenciamentoProfessores
     Friend WithEvents Lb_cpf As Label
     Friend WithEvents Txt_telefone As MaskedTextBox
     Friend WithEvents Label12 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents txt_disc As TextBox
     Friend WithEvents Txt_cep As MaskedTextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label9 As Label

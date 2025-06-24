@@ -25,7 +25,7 @@ Public Class Frm_GerenciamentoAlunos
 
 #Region "Converte os hashes para strings legíveis"
             ' Converte os hashes para strings legíveis
-            dtAjax.Columns.Add("senha_hash_string", GetType(String))
+            dtAjax.Columns.Add("_hash_string", GetType(String))
             dtAjax.Columns.Add("senha_salt_string", GetType(String))
 
             ' Preenche as novas colunas com os valores convertidos
@@ -180,7 +180,7 @@ Public Class Frm_GerenciamentoAlunos
         End Try
     End Sub
 
-    Private Sub Btn_editar_Click_1(sender As Object, e As EventArgs)
+    Private Sub Btn_editar_Click(sender As Object, e As EventArgs) Handles Btn_editar.Click
         Dim idAluno As Integer
         Try
             idAluno = Convert.ToInt32(dgv_dados.CurrentRow.Cells("id_aluno").Value)

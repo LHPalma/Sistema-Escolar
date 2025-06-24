@@ -25,7 +25,7 @@ Public Class Frm_loginAluno
                     Sessao.idUsuario = BuscarIdUsuario("tb_alunos", "ra", Txt_ra.Text, "id_aluno")
 
 
-                    'AbreFormulario(Me, New Frm_menuAluno())
+                    AbreFormulario(Me, New MenuAluno())
                 Else
                     MsgBox("RA ou senha incorretos.", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "Falha no login")
                     Exit Sub
@@ -67,7 +67,7 @@ Public Class Frm_loginAluno
 
     Private Sub Frm_loginAluno_Closed(sender As Object, e As EventArgs) Handles Me.Closed
         If Not btnVoltarFoiClicado Then
-            Close()
+            FecharPrograma()
         End If
     End Sub
 
