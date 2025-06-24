@@ -34,13 +34,13 @@ Partial Class AbrirArquivo_PopUP_FRM
         Me.Dgv_arquivos.Size = New System.Drawing.Size(717, 238)
         Me.Dgv_arquivos.TabIndex = 0
         '
-        'AbriArquivo_PopUP_FRM
+        'AbrirArquivo_PopUP_FRM
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Dgv_arquivos)
-        Me.Name = "AbriArquivo_PopUP_FRM"
+        Me.Name = "AbrirArquivo_PopUP_FRM"
         Me.Text = "AbriArquivo_PopUP_FRM"
         CType(Me.Dgv_arquivos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
