@@ -218,6 +218,7 @@ Partial Class MenuProfessor
         Me.Controls.Add(Me.Btn_voltar)
         Me.Controls.Add(Me.Lb_bemvindo)
         Me.Name = "MenuProfessor"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu Principal"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Pnl_menu.ResumeLayout(False)
