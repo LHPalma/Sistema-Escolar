@@ -235,4 +235,7 @@ Public Class CadastroFaltas_FRM
         nudFaltas.Value = 0
     End Sub
 
+    Private Sub nudFaltas_ValueChanged(sender As Object, e As EventArgs) Handles nudFaltas.ValueChanged
+
+    End Sub
 End Class

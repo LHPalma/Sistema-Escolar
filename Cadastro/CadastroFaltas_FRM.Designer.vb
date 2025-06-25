@@ -59,9 +59,12 @@ Partial Class CadastroFaltas_FRM
         '
         Me.nudFaltas.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nudFaltas.Location = New System.Drawing.Point(26, 230)
+        Me.nudFaltas.Maximum = New Decimal(New Integer() {4, 0, 0, 0})
+        Me.nudFaltas.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nudFaltas.Name = "nudFaltas"
         Me.nudFaltas.Size = New System.Drawing.Size(158, 29)
-        Me.nudFaltas.TabIndex = 1
+        Me.nudFaltas.TabIndex = 2
+        Me.nudFaltas.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'cmbAluno
         '
@@ -70,7 +73,7 @@ Partial Class CadastroFaltas_FRM
         Me.cmbAluno.Location = New System.Drawing.Point(26, 165)
         Me.cmbAluno.Name = "cmbAluno"
         Me.cmbAluno.Size = New System.Drawing.Size(158, 29)
-        Me.cmbAluno.TabIndex = 3
+        Me.cmbAluno.TabIndex = 1
         '
         'Label1
         '
@@ -78,7 +81,7 @@ Partial Class CadastroFaltas_FRM
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(25, 81)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(157, 13)
+        Me.Label1.Size = New System.Drawing.Size(156, 13)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Professor - Disciplina - Turma"
         '
@@ -117,7 +120,7 @@ Partial Class CadastroFaltas_FRM
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(236, 149)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(145, 13)
+        Me.Label4.Size = New System.Drawing.Size(144, 13)
         Me.Label4.TabIndex = 8
         Me.Label4.Text = "Quantidade Total de Faltas"
         '
@@ -127,7 +130,7 @@ Partial Class CadastroFaltas_FRM
         Me.dtpDataFalta.Location = New System.Drawing.Point(26, 298)
         Me.dtpDataFalta.Name = "dtpDataFalta"
         Me.dtpDataFalta.Size = New System.Drawing.Size(371, 29)
-        Me.dtpDataFalta.TabIndex = 9
+        Me.dtpDataFalta.TabIndex = 3
         '
         'a
         '
@@ -211,7 +214,7 @@ Partial Class CadastroFaltas_FRM
         Me.btnCadastrar.OnPressedColor = System.Drawing.Color.Black
         Me.btnCadastrar.Radius = 2
         Me.btnCadastrar.Size = New System.Drawing.Size(226, 55)
-        Me.btnCadastrar.TabIndex = 48
+        Me.btnCadastrar.TabIndex = 4
         Me.btnCadastrar.Text = "LANÇAR FALTA"
         '
         'btnPesquisar
@@ -236,7 +239,7 @@ Partial Class CadastroFaltas_FRM
         Me.btnPesquisar.OnPressedColor = System.Drawing.Color.Black
         Me.btnPesquisar.Radius = 2
         Me.btnPesquisar.Size = New System.Drawing.Size(226, 55)
-        Me.btnPesquisar.TabIndex = 49
+        Me.btnPesquisar.TabIndex = 5
         Me.btnPesquisar.Text = "CONSULTAR FALTAS DO ALUNO"
         '
         'CadastroFaltas_FRM
