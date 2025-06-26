@@ -1,24 +1,64 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\kakap\\OneDrive\\\u00C1rea de Trabalho\\Area de Trabalho\\Sistema-Escolar\\",
+  "WorkspaceRootPath": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\kakap\\onedrive\\\u00E1rea de trabalho\\area de trabalho\\sistema-escolar\\cadastro\\frm_cadastroaluno.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:cadastro\\frm_cadastroaluno.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\luizp\\documents\\trabalhando\\sistema-escolar\\upload_de_arquivos\\abrirarquivo_popup_frm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:upload_de_arquivos\\abrirarquivo_popup_frm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\kakap\\onedrive\\\u00E1rea de trabalho\\area de trabalho\\sistema-escolar\\gerenciamento\\frm_gerenciamentoprofessores.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:gerenciamento\\frm_gerenciamentoprofessores.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\luizp\\documents\\trabalhando\\sistema-escolar\\menus\\menuprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:menus\\menuprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\kakap\\onedrive\\\u00E1rea de trabalho\\area de trabalho\\sistema-escolar\\gerenciamento\\frm_gerenciamentoprofessores.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:gerenciamento\\frm_gerenciamentoprofessores.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\luizp\\documents\\trabalhando\\sistema-escolar\\menus\\menuprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:menus\\menuprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\luizp\\documents\\trabalhando\\sistema-escolar\\login\\frm_loginprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:login\\frm_loginprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\luizp\\documents\\trabalhando\\sistema-escolar\\login\\frm_loginprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:login\\frm_loginprofessor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Sistema Escolar||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\kakap\\onedrive\\\u00E1rea de trabalho\\area de trabalho\\sistema-escolar\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|8998e48e-b89a-4034-b66e-353d8c1fdc2e"
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\luizp\\documents\\trabalhando\\sistema-escolar\\login\\frm_loginaluno.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:login\\frm_loginaluno.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\luizp\\documents\\trabalhando\\sistema-escolar\\login\\frm_loginaluno.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:login\\frm_loginaluno.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\luizp\\documents\\trabalhando\\sistema-escolar\\cadastro\\cadastroaluno_frm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:cadastro\\cadastroaluno_frm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\luizp\\documents\\trabalhando\\sistema-escolar\\gerenciamento\\frm_gerenciamentoalunos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:gerenciamento\\frm_gerenciamentoalunos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\luizp\\documents\\trabalhando\\sistema-escolar\\gerenciamento\\frm_gerenciamentoalunos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:gerenciamento\\frm_gerenciamentoalunos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\luizp\\documents\\trabalhando\\sistema-escolar\\cadastro\\cadastroaluno_frm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:cadastro\\cadastroaluno_frm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\luizp\\documents\\trabalhando\\sistema-escolar\\upload_de_arquivos\\uploaddearquivos_popup.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:upload_de_arquivos\\uploaddearquivos_popup.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\luizp\\documents\\trabalhando\\sistema-escolar\\upload_de_arquivos\\uploaddearquivos_popup.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|solutionrelative:upload_de_arquivos\\uploaddearquivos_popup.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{755CE600-AE2B-4438-B87F-C9992EBEAA2B}|Sistema Escolar.vbproj|c:\\users\\luizp\\documents\\trabalhando\\sistema-escolar\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|8998e48e-b89a-4034-b66e-353d8c1fdc2e"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,15 +68,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Sistema Escolar",
-              "DocumentMoniker": "C:\\Users\\kakap\\OneDrive\\\u00C1rea de Trabalho\\Area de Trabalho\\Sistema-Escolar\\Sistema Escolar.vbproj",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Sistema Escolar.vbproj",
               "RelativeDocumentMoniker": "Sistema Escolar.vbproj",
-              "ToolTip": "C:\\Users\\kakap\\OneDrive\\\u00C1rea de Trabalho\\Area de Trabalho\\Sistema-Escolar\\Sistema Escolar.vbproj",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Sistema Escolar.vbproj",
               "RelativeToolTip": "Sistema Escolar.vbproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-06-26T00:31:43.056Z",
@@ -44,50 +84,175 @@
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Frm_cadastroAluno.vb",
-              "DocumentMoniker": "C:\\Users\\kakap\\OneDrive\\\u00C1rea de Trabalho\\Area de Trabalho\\Sistema-Escolar\\Cadastro\\Frm_cadastroAluno.vb",
-              "RelativeDocumentMoniker": "Cadastro\\Frm_cadastroAluno.vb",
-              "ToolTip": "C:\\Users\\kakap\\OneDrive\\\u00C1rea de Trabalho\\Area de Trabalho\\Sistema-Escolar\\Cadastro\\Frm_cadastroAluno.vb",
-              "RelativeToolTip": "Cadastro\\Frm_cadastroAluno.vb",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAIwIcAAAA5AAAAAAAAAA==",
+              "Title": "AbrirArquivo_PopUP_FRM.vb",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Upload_de_Arquivos\\AbrirArquivo_PopUP_FRM.vb",
+              "RelativeDocumentMoniker": "Upload_de_Arquivos\\AbrirArquivo_PopUP_FRM.vb",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Upload_de_Arquivos\\AbrirArquivo_PopUP_FRM.vb",
+              "RelativeToolTip": "Upload_de_Arquivos\\AbrirArquivo_PopUP_FRM.vb",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAIwIIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-06-26T01:19:37.18Z",
+              "WhenOpened": "2025-06-26T02:13:30.04Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Frm_GerenciamentoProfessores.vb",
-              "DocumentMoniker": "C:\\Users\\kakap\\OneDrive\\\u00C1rea de Trabalho\\Area de Trabalho\\Sistema-Escolar\\Gerenciamento\\Frm_GerenciamentoProfessores.vb",
-              "RelativeDocumentMoniker": "Gerenciamento\\Frm_GerenciamentoProfessores.vb",
-              "ToolTip": "C:\\Users\\kakap\\OneDrive\\\u00C1rea de Trabalho\\Area de Trabalho\\Sistema-Escolar\\Gerenciamento\\Frm_GerenciamentoProfessores.vb",
-              "RelativeToolTip": "Gerenciamento\\Frm_GerenciamentoProfessores.vb",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAwwCkAAAA6AAAAAAAAAA==",
+              "Title": "MenuProfessor.vb",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Menus\\MenuProfessor.vb",
+              "RelativeDocumentMoniker": "Menus\\MenuProfessor.vb",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Menus\\MenuProfessor.vb",
+              "RelativeToolTip": "Menus\\MenuProfessor.vb",
+              "ViewState": "AgIAABEAAAAAAAAAAAAvwCIAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-06-26T00:55:54.639Z",
+              "WhenOpened": "2025-06-26T02:13:15.724Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Frm_GerenciamentoProfessores.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\kakap\\OneDrive\\\u00C1rea de Trabalho\\Area de Trabalho\\Sistema-Escolar\\Gerenciamento\\Frm_GerenciamentoProfessores.vb",
-              "RelativeDocumentMoniker": "Gerenciamento\\Frm_GerenciamentoProfessores.vb",
-              "ToolTip": "C:\\Users\\kakap\\OneDrive\\\u00C1rea de Trabalho\\Area de Trabalho\\Sistema-Escolar\\Gerenciamento\\Frm_GerenciamentoProfessores.vb [Design]",
-              "RelativeToolTip": "Gerenciamento\\Frm_GerenciamentoProfessores.vb [Design]",
+              "Title": "MenuProfessor.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Menus\\MenuProfessor.vb",
+              "RelativeDocumentMoniker": "Menus\\MenuProfessor.vb",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Menus\\MenuProfessor.vb [Design]",
+              "RelativeToolTip": "Menus\\MenuProfessor.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-06-26T00:55:53.913Z",
+              "WhenOpened": "2025-06-26T02:13:14.386Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Frm_loginProfessor.vb",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Login\\Frm_loginProfessor.vb",
+              "RelativeDocumentMoniker": "Login\\Frm_loginProfessor.vb",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Login\\Frm_loginProfessor.vb",
+              "RelativeToolTip": "Login\\Frm_loginProfessor.vb",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwDwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-06-26T02:09:52.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Frm_loginProfessor.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Login\\Frm_loginProfessor.vb",
+              "RelativeDocumentMoniker": "Login\\Frm_loginProfessor.vb",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Login\\Frm_loginProfessor.vb [Design]",
+              "RelativeToolTip": "Login\\Frm_loginProfessor.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-06-26T02:09:48.84Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Frm_loginAluno.vb",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Login\\Frm_loginAluno.vb",
+              "RelativeDocumentMoniker": "Login\\Frm_loginAluno.vb",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Login\\Frm_loginAluno.vb",
+              "RelativeToolTip": "Login\\Frm_loginAluno.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-06-26T02:09:43.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Frm_loginAluno.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Login\\Frm_loginAluno.vb",
+              "RelativeDocumentMoniker": "Login\\Frm_loginAluno.vb",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Login\\Frm_loginAluno.vb [Design]",
+              "RelativeToolTip": "Login\\Frm_loginAluno.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-06-26T02:09:42.205Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CadastroAluno_FRM.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Cadastro\\CadastroAluno_FRM.vb",
+              "RelativeDocumentMoniker": "Cadastro\\CadastroAluno_FRM.vb",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Cadastro\\CadastroAluno_FRM.vb [Design]",
+              "RelativeToolTip": "Cadastro\\CadastroAluno_FRM.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-06-26T02:09:32.591Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Frm_GerenciamentoAlunos.vb",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Gerenciamento\\Frm_GerenciamentoAlunos.vb",
+              "RelativeDocumentMoniker": "Gerenciamento\\Frm_GerenciamentoAlunos.vb",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Gerenciamento\\Frm_GerenciamentoAlunos.vb",
+              "RelativeToolTip": "Gerenciamento\\Frm_GerenciamentoAlunos.vb",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAAAIwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-06-26T02:01:56.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Frm_GerenciamentoAlunos.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Gerenciamento\\Frm_GerenciamentoAlunos.vb",
+              "RelativeDocumentMoniker": "Gerenciamento\\Frm_GerenciamentoAlunos.vb",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Gerenciamento\\Frm_GerenciamentoAlunos.vb [Design]",
+              "RelativeToolTip": "Gerenciamento\\Frm_GerenciamentoAlunos.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-06-26T02:01:53.315Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UploadDeArquivos_PopUp.vb",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Upload_de_Arquivos\\UploadDeArquivos_PopUp.vb",
+              "RelativeDocumentMoniker": "Upload_de_Arquivos\\UploadDeArquivos_PopUp.vb",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Upload_de_Arquivos\\UploadDeArquivos_PopUp.vb",
+              "RelativeToolTip": "Upload_de_Arquivos\\UploadDeArquivos_PopUp.vb",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAwwGYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-06-26T01:25:54.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UploadDeArquivos_PopUp.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Upload_de_Arquivos\\UploadDeArquivos_PopUp.vb",
+              "RelativeDocumentMoniker": "Upload_de_Arquivos\\UploadDeArquivos_PopUp.vb",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Upload_de_Arquivos\\UploadDeArquivos_PopUp.vb [Design]",
+              "RelativeToolTip": "Upload_de_Arquivos\\UploadDeArquivos_PopUp.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-06-26T01:25:51.554Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CadastroAluno_FRM.vb",
+              "DocumentMoniker": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Cadastro\\CadastroAluno_FRM.vb",
+              "RelativeDocumentMoniker": "Cadastro\\CadastroAluno_FRM.vb",
+              "ToolTip": "C:\\Users\\luizp\\Documents\\Trabalhando\\Sistema-Escolar\\Cadastro\\CadastroAluno_FRM.vb",
+              "RelativeToolTip": "Cadastro\\CadastroAluno_FRM.vb",
+              "ViewState": "AgIAAKwAAAAAAAAAAAAuwD8BAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-06-26T01:19:37.18Z",
+              "EditorCaption": ""
             }
           ]
         }

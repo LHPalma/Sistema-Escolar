@@ -128,7 +128,7 @@ Public Class AbrirArquivo_PopUP_FRM
 
                 Dgv_arquivos.Rows.Add(
                 reader("nome_arquivo").ToString(),
-                Math.Round(CDbl(reader("tamanho")) / 1024.0, 2),
+                reader("tamanho"),
                 nomeRemetente,
                 reader("caminho").ToString()
             )

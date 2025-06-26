@@ -4,7 +4,7 @@ Public Class Frm_loginProfessor
 
     Dim btnVoltarFoiClicado As Boolean = False
 
-    Private Sub Btn_logar_Click(sender As Object, e As EventArgs)
+    Private Sub Btn_logar_Click(sender As Object, e As EventArgs) Handles Btn_logar.Click
 
         If (Txt_email.Text = "" Or Txt_senha.Text = "") Then
             MsgBox("Insira seus dados", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "ERRO")
@@ -27,7 +27,7 @@ Public Class Frm_loginProfessor
                 Sessao.nomeUsuario = usuarioValido.NomeUsuario
                 Sessao.tipoUsuario = Sessao.ETipoUsuario.Professor
 
-                'AbreFormulario(Me, New Frm_menuProfessor())
+                AbreFormulario(Me, New MenuProfessor())
 
             Else
                 MsgBox("Usuário ou senha incorretos.", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "Falha no login")
@@ -58,7 +58,8 @@ Public Class Frm_loginProfessor
 
     Private Sub Frm_loginProfessor_Closed(sender As Object, e As EventArgs) Handles Me.Closed
         If Not btnVoltarFoiClicado Then
-            Close()
+            FecharPrograma()
         End If
     End Sub
+
 End Class

@@ -130,7 +130,7 @@ Public Class Frm_GerenciamentoAlunos
                                               INNER JOIN tb_arquivos_alunos aa 
                                               WHERE aa.fk_id_aluno = @id_aluno
                                                 AND a.tipo = 'perfil';
-                                             "
+                                         "
                 Dim caminho As String
                 Using cmd As New SQLiteCommand(sqlFoto, conexao)
                     cmd.Parameters.AddWithValue("@id_aluno", Convert.ToInt32(row.Cells("id_aluno").Value))
@@ -138,9 +138,7 @@ Public Class Frm_GerenciamentoAlunos
                     caminho = cmd.ExecuteScalar()
                 End Using
 
-                If caminho IsNot Nothing Then
-                    img_foto.Load(caminho)
-                End If
+
 
                 transacao.Commit()
             End Using ' Encerra a transação

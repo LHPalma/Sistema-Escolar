@@ -3,11 +3,11 @@
     Dim btnVoltarFoiClicado As Boolean = False
 
     Private Sub Btn_aluno_Click(sender As Object, e As EventArgs)
-        AbreFormulario(Me, New Frm_cadastroAluno())
+        AbreFormulario(Me, New CadastroAluno_FRM())
     End Sub
 
     Private Sub Btn_professor_Click(sender As Object, e As EventArgs)
-        AbreFormulario(Me, New Frm_cadastroAluno)
+        AbreFormulario(Me, New CadastroAluno_FRM)
     End Sub
 
     Private Sub Btn_adm_Click(sender As Object, e As EventArgs)
@@ -27,7 +27,7 @@
     End Sub
 
     Private Sub Btn_aluno_Click_1(sender As Object, e As EventArgs) Handles Btn_aluno.Click
-        AbreFormulario(Me, New Frm_cadastroAluno())
+        AbreFormulario(Me, New CadastroAluno_FRM())
     End Sub
 
     Private Sub Btn_professor_Click_1(sender As Object, e As EventArgs) Handles Btn_professor.Click

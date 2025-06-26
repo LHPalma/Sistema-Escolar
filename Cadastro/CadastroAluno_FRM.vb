@@ -7,11 +7,13 @@
 Imports System.Data.SQLite
 Imports System.Net.Http
 Imports Newtonsoft.Json
+Imports Newtonsoft.Json.Linq
 
 
-Public Class Frm_cadastroAluno
+Public Class CadastroAluno_FRM
 
     Dim btnVoltarFoiClicado As Boolean = False
+    Dim idUltimoAlunoGerado As Long
 
     Private Sub Btn_cadastrar_Click(sender As Object, e As EventArgs) Handles Btn_cadastrar.Click
 
@@ -38,6 +40,7 @@ Public Class Frm_cadastroAluno
                     InsereEnderecoAluno(id_aluno, conexao, transacao)
                     InsereTelefoneAluno(id_aluno, conexao, transacao)
                     InsereTurma(id_aluno, conexao, transacao)
+                    InsereFotoDePerfil(id_aluno, conexao, transacao)
 
                     'Validando transação
                     transacao.Commit()
@@ -56,6 +59,7 @@ Public Class Frm_cadastroAluno
     End Sub
 
 #Region "Rotinas de Banco de Dados"
+
     Private Function ExisteAluno(ra As String, conexao As SQLiteConnection) As Boolean
         Dim sqlVerificar As String = "SELECT COUNT(*) FROM tb_alunos WHERE ra = @ra"
         Using cmdVerificar As New SQLiteCommand(sqlVerificar, conexao)
@@ -154,6 +158,48 @@ Public Class Frm_cadastroAluno
             Return id_turma
         End Using
     End Function
+
+
+    Private Sub InsereFotoDePerfil(id_aluno As Long, conexao As SQLiteConnection, transacao As SQLiteTransaction)
+        Dim sqlInsertFoto As String = "
+            INSERT INTO tb_arquivos
+                (caminho, nome, tipo, tamanho)
+            VALUES
+                (@caminho, @nome, @tipo, @tamanho);
+        "
+
+        Using cmdInsertFoto As New SQLiteCommand(sqlInsertFoto, conexao, transacao)
+            If diretorio IsNot Nothing Then
+                cmdInsertFoto.Parameters.AddWithValue("@caminho", diretorio)
+            Else
+                cmdInsertFoto.Parameters.AddWithValue("@caminho", "Sem Foto")
+            End If
+
+            cmdInsertFoto.Parameters.AddWithValue("@nome", $"{Txt_nome.Text}_foto_perfil")
+            cmdInsertFoto.Parameters.AddWithValue("@tipo", "perfil")
+            Dim tamanho As Long = 0
+            If diretorio IsNot Nothing Then
+                tamanho = New IO.FileInfo(diretorio).Length
+            End If
+            cmdInsertFoto.Parameters.AddWithValue("@tamanho", tamanho)
+            cmdInsertFoto.ExecuteNonQuery()
+        End Using
+
+        Dim sqlInsertAssocitiva As String = "INSERT INTO tb_arquivos_alunos
+                                                    (fk_id_arquivo, fk_id_aluno)
+                                                VALUES
+                                                    ((SELECT id_arquivo FROM tb_arquivos WHERE nome = @nome), @fk_id_aluno);"
+        Using cmdInsertAssocitiva As New SQLiteCommand(sqlInsertAssocitiva, conexao, transacao)
+            cmdInsertAssocitiva.Parameters.AddWithValue("@nome", $"{Txt_nome.Text}_foto_perfil")
+            cmdInsertAssocitiva.Parameters.AddWithValue("@fk_id_aluno", id_aluno)
+            cmdInsertAssocitiva.ExecuteNonQuery()
+        End Using
+
+    End Sub
+
+
+
+
 #End Region
 
     Private Sub CadastrarDenovo(nomeAluno As String)
@@ -242,19 +288,44 @@ Public Class Frm_cadastroAluno
         End Using
     End Sub
 
+
+    Dim diretorio As String
     Private Sub img_foto_Click(sender As Object, e As EventArgs) Handles img_foto.Click
-        Dim diretorio As String
         Try
             With abrirArquivo
                 .Title = "Selecione uma Imagem"
                 .InitialDirectory = Application.StartupPath & "\Fotos"
-                .ShowDialog()
-                diretorio = .FileName
-                img_foto.Load(diretorio)
+                .Filter = "Arquivos de Imagem|*.jpg;*.jpeg;*.png;*.bmp"
+                If .ShowDialog() = DialogResult.OK Then
+
+                    diretorio = .FileName
+                    img_foto.Load(diretorio)
+
+                    ' Caminho para onde será salva a imagem
+                    Dim pastaDestino As String = Application.StartupPath & "\Fotos"
+
+                    ' Garante que a pasta existe
+                    If Not IO.Directory.Exists(pastaDestino) Then
+                        IO.Directory.CreateDirectory(pastaDestino)
+                    End If
+
+                    ' Nome do arquivo e caminho final
+                    Dim nomeArquivo As String = IO.Path.GetFileName(diretorio)
+                    Dim caminhoFinal As String = IO.Path.Combine(pastaDestino, nomeArquivo)
+
+                    ' Copia a imagem, sobrescrevendo se já existir
+                    IO.File.Copy(diretorio, caminhoFinal, True)
+
+                    ' Definir o caminho RELATIVO corretamente
+                    diretorio = "Fotos\" & nomeArquivo
+
+                End If
             End With
         Catch ex As Exception
+            MessageBox.Show("Erro ao carregar ou copiar a imagem: " & ex.Message)
             Exit Sub
         End Try
+
     End Sub
 
 
