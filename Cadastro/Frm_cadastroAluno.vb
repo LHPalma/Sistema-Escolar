@@ -77,13 +77,14 @@ Public Class Frm_cadastroAluno
         Dim senha_hash As Byte() = GerarHashSenha(Txt_senha.Text, senha_salt)
 
         Dim sqlInsert As String = "INSERT INTO tb_alunos
-                                                   (ra, nome, email, senha_hash, senha_salt, senha_sem_hash, data_cadastro)
+                                                   (ra, nome, cpf, email, senha_hash, senha_salt, senha_sem_hash, data_cadastro)
                                                VALUES
-                                                   (@ra, @nome, @email, @hash, @salt, @senha_sem_hash, @data_cadastro)"
+                                                   (@ra, @nome, @cpf, @email, @hash, @salt, @senha_sem_hash, @data_cadastro)"
 
         Using cmdInsert As New SQLiteCommand(sqlInsert, conexao, transacao)
             cmdInsert.Parameters.AddWithValue("@ra", aluno.RA)
             cmdInsert.Parameters.AddWithValue("@nome", aluno.Nome)
+            cmdInsert.Parameters.AddWithValue("@cpf", aluno.CPF)
             cmdInsert.Parameters.AddWithValue("@email", aluno.Email)
             cmdInsert.Parameters.Add("@hash", DbType.Binary).Value = senha_hash
             cmdInsert.Parameters.Add("@salt", DbType.Binary).Value = senha_salt
@@ -183,6 +184,13 @@ Public Class Frm_cadastroAluno
         Txt_ra.Text = ""
         Txt_cpf.Text = ""
         Cmb_Turma.Text = ""
+        Txt_cep.Text = ""
+        Txt_cidade.Text = ""
+        Txt_complemento.Text = ""
+        Txt_numero.Text = ""
+        Txt_telefone.Text = ""
+        Txt_bairro.Text = ""
+        Cmb_uf.SelectedText = ""
     End Sub
 
     Private Sub Frm_cadastroAluno_Load(sender As Object, e As EventArgs) Handles MyBase.Load
