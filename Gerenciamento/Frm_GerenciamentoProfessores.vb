@@ -90,6 +90,27 @@ Public Class Frm_GerenciamentoProfessores
                     End If
                 End Using
             End Using
+
+            '3 Busca foto
+            Dim sqlFoto As String = $"SELECT a.caminho
+                                              FROM tb_arquivos a
+                                              INNER JOIN tb_arquivos_professores aa 
+                                              WHERE aa.fk_id_professor = @id_professor
+                                                AND a.tipo = 'perfil';
+                                         "
+            Dim caminho As String
+            Using cmd As New SQLiteCommand(sqlFoto, conexao)
+                cmd.Parameters.AddWithValue("@id_professor", Convert.ToInt32(row.Cells("id_professor").Value))
+
+                caminho = cmd.ExecuteScalar()
+            End Using
+
+            If caminho IsNot Nothing Then
+                img_foto.Load(caminho)
+            Else
+                img_foto.Load(Application.StartupPath & "\icones\nova_foto.png")
+            End If
+
         Catch ex As Exception
             MsgBox("Erro ao buscar endereço e telefone do Professor: " & ex.Message, MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Erro")
         Finally

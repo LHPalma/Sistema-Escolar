@@ -132,7 +132,6 @@ C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\bin\D
 C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\bin\Debug\System.Data.SQLite.xml
 C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema Escolar.vbproj.AssemblyReference.cache
 C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_cadastroADM.resources
-C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_cadastroAluno.resources
 C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_inicio.resources
 C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_loginADM.resources
 C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_loginAluno.resources
@@ -417,3 +416,4 @@ D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema E
 D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\obj\Debug\Sistema_Escolar.UploadDeArquivos_PopUp.resources
 C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_consultarDisciplinas.resources
 C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema_Escolar.CadastroAluno_FRM.resources
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.CadastroAluno_FRM.resources

@@ -16,12 +16,12 @@
 
 
     Private Sub Btn_lancarFalta_Click(sender As Object, e As EventArgs) Handles Btn_lancarFalta.Click
-        AbreFormulario(Me, New CadastroFaltas_FRM())
+        ExibirPopUp(New CadastroFaltas_FRM)
     End Sub
 
 
     Private Sub Btn_lancarNota_Click(sender As Object, e As EventArgs) Handles Btn_lancarNota.Click
-        AbreFormulario(Me, New CadastroNotas_FRM())
+        ExibirPopUp(New CadastroNotas_FRM)
     End Sub
 
     Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click

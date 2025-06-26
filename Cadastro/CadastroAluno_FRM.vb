@@ -234,6 +234,8 @@ Public Class CadastroAluno_FRM
         Txt_cidade.Text = ""
         Txt_complemento.Text = ""
         Txt_numero.Text = ""
+        Cmb_uf.Text = ""
+        Txt_rua.Text = ""
         Txt_telefone.Text = ""
         Txt_bairro.Text = ""
         Cmb_uf.SelectedText = ""

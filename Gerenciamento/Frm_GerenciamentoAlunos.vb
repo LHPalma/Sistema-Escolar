@@ -138,6 +138,11 @@ Public Class Frm_GerenciamentoAlunos
                     caminho = cmd.ExecuteScalar()
                 End Using
 
+                If caminho IsNot Nothing Then
+                    img_foto.Load(caminho)
+                Else
+                    img_foto.Load(Application.StartupPath & "\icones\nova_foto.png")
+                End If
 
 
                 transacao.Commit()
