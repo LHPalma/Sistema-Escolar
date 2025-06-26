@@ -25,7 +25,7 @@ Public Class Frm_GerenciamentoAlunos
 
 #Region "Converte os hashes para strings legíveis"
             ' Converte os hashes para strings legíveis
-            dtAjax.Columns.Add("_hash_string", GetType(String))
+            dtAjax.Columns.Add("senha_hash_string", GetType(String))
             dtAjax.Columns.Add("senha_salt_string", GetType(String))
 
             ' Preenche as novas colunas com os valores convertidos
@@ -51,6 +51,7 @@ Public Class Frm_GerenciamentoAlunos
         txt_nome.Text = row.Cells("nome").Value.ToString()
         txt_email.Text = row.Cells("email").Value.ToString()
         Txt_ra.Text = row.Cells("ra").Value.ToString()
+        Txt_cpf.Text = row.Cells("cpf").Value.ToString()
 
         Try
             conexao.Open()
@@ -136,6 +137,10 @@ Public Class Frm_GerenciamentoAlunos
 
                     caminho = cmd.ExecuteScalar()
                 End Using
+
+                If caminho IsNot Nothing Then
+                    img_foto.Load(caminho)
+                End If
 
                 transacao.Commit()
             End Using ' Encerra a transação

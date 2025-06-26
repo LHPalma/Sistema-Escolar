@@ -157,7 +157,7 @@ Partial Class Frm_cadastroAluno
         Me.Lb_turma.Location = New System.Drawing.Point(234, 76)
         Me.Lb_turma.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lb_turma.Name = "Lb_turma"
-        Me.Lb_turma.Size = New System.Drawing.Size(38, 13)
+        Me.Lb_turma.Size = New System.Drawing.Size(39, 13)
         Me.Lb_turma.TabIndex = 0
         Me.Lb_turma.Text = "Turma"
         '
@@ -323,7 +323,7 @@ Partial Class Frm_cadastroAluno
         Me.Lb_telefone.Location = New System.Drawing.Point(19, 286)
         Me.Lb_telefone.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lb_telefone.Name = "Lb_telefone"
-        Me.Lb_telefone.Size = New System.Drawing.Size(50, 13)
+        Me.Lb_telefone.Size = New System.Drawing.Size(51, 13)
         Me.Lb_telefone.TabIndex = 43
         Me.Lb_telefone.Text = "Telefone"
         '
@@ -334,7 +334,7 @@ Partial Class Frm_cadastroAluno
         Me.Lb_bairro.Location = New System.Drawing.Point(93, 227)
         Me.Lb_bairro.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lb_bairro.Name = "Lb_bairro"
-        Me.Lb_bairro.Size = New System.Drawing.Size(38, 13)
+        Me.Lb_bairro.Size = New System.Drawing.Size(37, 13)
         Me.Lb_bairro.TabIndex = 42
         Me.Lb_bairro.Text = "Bairro"
         '

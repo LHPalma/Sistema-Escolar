@@ -191,6 +191,7 @@ Public Class Frm_cadastroAluno
         Txt_telefone.Text = ""
         Txt_bairro.Text = ""
         Cmb_uf.SelectedText = ""
+        img_foto.Load(Application.StartupPath & "\icones\nova_foto.png")
     End Sub
 
     Private Sub Frm_cadastroAluno_Load(sender As Object, e As EventArgs) Handles MyBase.Load

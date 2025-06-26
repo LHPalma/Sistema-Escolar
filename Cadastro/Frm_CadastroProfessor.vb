@@ -37,14 +37,15 @@ Public Class Frm_CadastroProfessor
 
                     ' Inserir professor
                     Dim sqlInsertProfessor As String = "INSERT INTO tb_professores
-                                                            (nome, email, senha_hash, senha_salt, senha_sem_hash, data_cadastro)
+                                                            (nome, email, cpf, senha_hash, senha_salt, senha_sem_hash, data_cadastro)
                                                         VALUES
-                                                            (@nome, @email, @hash, @salt, @senha_sem_hash, @data_cadastro);"
+                                                            (@nome, @email, @cpf, @hash, @salt, @senha_sem_hash, @data_cadastro);"
 
                     Dim id_professor As Integer
                     Using cmdInsertProfessor As New SQLiteCommand(sqlInsertProfessor, conexao, transacao)
                         cmdInsertProfessor.Parameters.AddWithValue("@nome", Txt_nome.Text)
                         cmdInsertProfessor.Parameters.AddWithValue("@email", Txt_email.Text)
+                        cmdInsertProfessor.Parameters.AddWithValue("@cpf", Txt_cpf.Text)
                         cmdInsertProfessor.Parameters.Add("@hash", DbType.Binary).Value = hash
                         cmdInsertProfessor.Parameters.Add("@salt", DbType.Binary).Value = salt
                         cmdInsertProfessor.Parameters.AddWithValue("@senha_sem_hash", Txt_senha.Text)
@@ -166,6 +167,7 @@ Public Class Frm_CadastroProfessor
         Txt_numero.Text = ""
         Cmb_uf.Text = ""
         Txt_telefone.Text = ""
+        img_foto.Load(Application.StartupPath & "\icones\nova_foto.png")
     End Sub
 
     Private Sub Lb_cidade_Click(sender As Object, e As EventArgs) Handles Lb_cidade.Click

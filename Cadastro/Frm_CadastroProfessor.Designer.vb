@@ -55,6 +55,8 @@ Partial Class Frm_CadastroProfessor
         Me.Lb_cadastro_professor = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Pnl_menu = New System.Windows.Forms.Panel()
+        Me.Txt_cpf = New System.Windows.Forms.MaskedTextBox()
+        Me.Lb_cpf = New System.Windows.Forms.Label()
         Me.Gb_professor.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.img_foto, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -64,6 +66,8 @@ Partial Class Frm_CadastroProfessor
         '
         'Gb_professor
         '
+        Me.Gb_professor.Controls.Add(Me.Txt_cpf)
+        Me.Gb_professor.Controls.Add(Me.Lb_cpf)
         Me.Gb_professor.Controls.Add(Me.Btn_cadastrar)
         Me.Gb_professor.Controls.Add(Me.Txt_cep)
         Me.Gb_professor.Controls.Add(Me.Lb_cidade)
@@ -92,7 +96,7 @@ Partial Class Frm_CadastroProfessor
         Me.Gb_professor.Margin = New System.Windows.Forms.Padding(2)
         Me.Gb_professor.Name = "Gb_professor"
         Me.Gb_professor.Padding = New System.Windows.Forms.Padding(2)
-        Me.Gb_professor.Size = New System.Drawing.Size(438, 465)
+        Me.Gb_professor.Size = New System.Drawing.Size(438, 477)
         Me.Gb_professor.TabIndex = 0
         Me.Gb_professor.TabStop = False
         Me.Gb_professor.Text = "Insira os Dados de Professor"
@@ -110,7 +114,7 @@ Partial Class Frm_CadastroProfessor
         Me.Btn_cadastrar.ForeColor = System.Drawing.Color.White
         Me.Btn_cadastrar.Image = Nothing
         Me.Btn_cadastrar.ImageSize = New System.Drawing.Size(30, 30)
-        Me.Btn_cadastrar.Location = New System.Drawing.Point(106, 405)
+        Me.Btn_cadastrar.Location = New System.Drawing.Point(113, 429)
         Me.Btn_cadastrar.Name = "Btn_cadastrar"
         Me.Btn_cadastrar.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
         Me.Btn_cadastrar.OnHoverBorderColor = System.Drawing.Color.Black
@@ -126,7 +130,7 @@ Partial Class Frm_CadastroProfessor
         'Txt_cep
         '
         Me.Txt_cep.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Txt_cep.Location = New System.Drawing.Point(28, 179)
+        Me.Txt_cep.Location = New System.Drawing.Point(28, 200)
         Me.Txt_cep.Mask = "00000-999"
         Me.Txt_cep.Name = "Txt_cep"
         Me.Txt_cep.Size = New System.Drawing.Size(100, 29)
@@ -136,7 +140,7 @@ Partial Class Frm_CadastroProfessor
         '
         Me.Lb_cidade.AutoSize = True
         Me.Lb_cidade.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lb_cidade.Location = New System.Drawing.Point(222, 218)
+        Me.Lb_cidade.Location = New System.Drawing.Point(222, 239)
         Me.Lb_cidade.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lb_cidade.Name = "Lb_cidade"
         Me.Lb_cidade.Size = New System.Drawing.Size(43, 13)
@@ -146,7 +150,7 @@ Partial Class Frm_CadastroProfessor
         'Txt_cidade
         '
         Me.Txt_cidade.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Txt_cidade.Location = New System.Drawing.Point(224, 233)
+        Me.Txt_cidade.Location = New System.Drawing.Point(224, 254)
         Me.Txt_cidade.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_cidade.Name = "Txt_cidade"
         Me.Txt_cidade.Size = New System.Drawing.Size(116, 29)
@@ -156,7 +160,7 @@ Partial Class Frm_CadastroProfessor
         '
         Me.Lb_cep.AutoSize = True
         Me.Lb_cep.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lb_cep.Location = New System.Drawing.Point(27, 163)
+        Me.Lb_cep.Location = New System.Drawing.Point(27, 184)
         Me.Lb_cep.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lb_cep.Name = "Lb_cep"
         Me.Lb_cep.Size = New System.Drawing.Size(26, 13)
@@ -168,7 +172,7 @@ Partial Class Frm_CadastroProfessor
         Me.Cmb_uf.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Cmb_uf.FormattingEnabled = True
         Me.Cmb_uf.Items.AddRange(New Object() {"AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO"})
-        Me.Cmb_uf.Location = New System.Drawing.Point(359, 233)
+        Me.Cmb_uf.Location = New System.Drawing.Point(359, 254)
         Me.Cmb_uf.Name = "Cmb_uf"
         Me.Cmb_uf.Size = New System.Drawing.Size(48, 29)
         Me.Cmb_uf.TabIndex = 31
@@ -177,7 +181,7 @@ Partial Class Frm_CadastroProfessor
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(288, 164)
+        Me.Label6.Location = New System.Drawing.Point(288, 185)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(79, 13)
@@ -187,7 +191,7 @@ Partial Class Frm_CadastroProfessor
         'Txt_complemento
         '
         Me.Txt_complemento.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Txt_complemento.Location = New System.Drawing.Point(289, 179)
+        Me.Txt_complemento.Location = New System.Drawing.Point(289, 200)
         Me.Txt_complemento.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_complemento.Name = "Txt_complemento"
         Me.Txt_complemento.Size = New System.Drawing.Size(116, 29)
@@ -196,7 +200,7 @@ Partial Class Frm_CadastroProfessor
         'Txt_telefone
         '
         Me.Txt_telefone.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Txt_telefone.Location = New System.Drawing.Point(27, 290)
+        Me.Txt_telefone.Location = New System.Drawing.Point(27, 311)
         Me.Txt_telefone.Mask = "(99) 00000-0000"
         Me.Txt_telefone.Name = "Txt_telefone"
         Me.Txt_telefone.Size = New System.Drawing.Size(116, 29)
@@ -206,10 +210,10 @@ Partial Class Frm_CadastroProfessor
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(25, 274)
+        Me.Label5.Location = New System.Drawing.Point(25, 295)
         Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(50, 13)
+        Me.Label5.Size = New System.Drawing.Size(51, 13)
         Me.Label5.TabIndex = 25
         Me.Label5.Text = "Telefone"
         '
@@ -217,17 +221,17 @@ Partial Class Frm_CadastroProfessor
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(91, 218)
+        Me.Label4.Location = New System.Drawing.Point(91, 239)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(38, 13)
+        Me.Label4.Size = New System.Drawing.Size(37, 13)
         Me.Label4.TabIndex = 23
         Me.Label4.Text = "Bairro"
         '
         'Txt_bairro
         '
         Me.Txt_bairro.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Txt_bairro.Location = New System.Drawing.Point(94, 233)
+        Me.Txt_bairro.Location = New System.Drawing.Point(94, 254)
         Me.Txt_bairro.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_bairro.Name = "Txt_bairro"
         Me.Txt_bairro.Size = New System.Drawing.Size(116, 29)
@@ -237,7 +241,7 @@ Partial Class Frm_CadastroProfessor
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(356, 218)
+        Me.Label3.Location = New System.Drawing.Point(356, 239)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(21, 13)
@@ -248,7 +252,7 @@ Partial Class Frm_CadastroProfessor
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(25, 218)
+        Me.Label2.Location = New System.Drawing.Point(25, 239)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(48, 13)
@@ -259,7 +263,7 @@ Partial Class Frm_CadastroProfessor
         '
         Me.Lb_logradouro.AutoSize = True
         Me.Lb_logradouro.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lb_logradouro.Location = New System.Drawing.Point(136, 163)
+        Me.Lb_logradouro.Location = New System.Drawing.Point(136, 184)
         Me.Lb_logradouro.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lb_logradouro.Name = "Lb_logradouro"
         Me.Lb_logradouro.Size = New System.Drawing.Size(68, 13)
@@ -269,7 +273,7 @@ Partial Class Frm_CadastroProfessor
         'Txt_numero
         '
         Me.Txt_numero.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Txt_numero.Location = New System.Drawing.Point(28, 233)
+        Me.Txt_numero.Location = New System.Drawing.Point(28, 254)
         Me.Txt_numero.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_numero.MaxLength = 5
         Me.Txt_numero.Name = "Txt_numero"
@@ -279,7 +283,7 @@ Partial Class Frm_CadastroProfessor
         'Txt_rua
         '
         Me.Txt_rua.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Txt_rua.Location = New System.Drawing.Point(138, 179)
+        Me.Txt_rua.Location = New System.Drawing.Point(138, 200)
         Me.Txt_rua.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_rua.Name = "Txt_rua"
         Me.Txt_rua.Size = New System.Drawing.Size(136, 29)
@@ -288,7 +292,7 @@ Partial Class Frm_CadastroProfessor
         'Txt_senha
         '
         Me.Txt_senha.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Txt_senha.Location = New System.Drawing.Point(27, 360)
+        Me.Txt_senha.Location = New System.Drawing.Point(27, 381)
         Me.Txt_senha.Margin = New System.Windows.Forms.Padding(2)
         Me.Txt_senha.Name = "Txt_senha"
         Me.Txt_senha.Size = New System.Drawing.Size(116, 29)
@@ -299,7 +303,7 @@ Partial Class Frm_CadastroProfessor
         '
         Me.Lb_senha.AutoSize = True
         Me.Lb_senha.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lb_senha.Location = New System.Drawing.Point(25, 345)
+        Me.Lb_senha.Location = New System.Drawing.Point(25, 366)
         Me.Lb_senha.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lb_senha.Name = "Lb_senha"
         Me.Lb_senha.Size = New System.Drawing.Size(39, 13)
@@ -455,6 +459,26 @@ Partial Class Frm_CadastroProfessor
         Me.Pnl_menu.Size = New System.Drawing.Size(693, 57)
         Me.Pnl_menu.TabIndex = 54
         '
+        'Txt_cpf
+        '
+        Me.Txt_cpf.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txt_cpf.Location = New System.Drawing.Point(27, 133)
+        Me.Txt_cpf.Mask = "000.000.000-00"
+        Me.Txt_cpf.Name = "Txt_cpf"
+        Me.Txt_cpf.Size = New System.Drawing.Size(309, 29)
+        Me.Txt_cpf.TabIndex = 80
+        '
+        'Lb_cpf
+        '
+        Me.Lb_cpf.AutoSize = True
+        Me.Lb_cpf.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lb_cpf.Location = New System.Drawing.Point(24, 118)
+        Me.Lb_cpf.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Lb_cpf.Name = "Lb_cpf"
+        Me.Lb_cpf.Size = New System.Drawing.Size(26, 13)
+        Me.Lb_cpf.TabIndex = 79
+        Me.Lb_cpf.Text = "CPF"
+        '
         'Frm_CadastroProfessor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -513,4 +537,6 @@ Partial Class Frm_CadastroProfessor
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Pnl_menu As Panel
     Friend WithEvents Btn_cadastrar As Guna.UI.WinForms.GunaButton
+    Friend WithEvents Txt_cpf As MaskedTextBox
+    Friend WithEvents Lb_cpf As Label
 End Class
