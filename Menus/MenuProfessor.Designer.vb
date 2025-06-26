@@ -31,7 +31,8 @@ Partial Class MenuProfessor
         Me.Btn_agendarAvaliacao = New Guna.UI.WinForms.GunaButton()
         Me.Btn_lancarFalta = New Guna.UI.WinForms.GunaButton()
         Me.Btn_lancarNota = New Guna.UI.WinForms.GunaButton()
-        Me.Btn_enviarArquivos = New Guna.UI.WinForms.GunaButton()
+        Me.Btn_acessarArquivos = New Guna.UI.WinForms.GunaButton()
+        Me.Btn_arquivos = New Guna.UI.WinForms.GunaButton()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Pnl_menu.SuspendLayout()
         Me.SuspendLayout()
@@ -49,7 +50,7 @@ Partial Class MenuProfessor
         Me.Btn_voltar.ForeColor = System.Drawing.Color.White
         Me.Btn_voltar.Image = CType(resources.GetObject("Btn_voltar.Image"), System.Drawing.Image)
         Me.Btn_voltar.ImageSize = New System.Drawing.Size(22, 22)
-        Me.Btn_voltar.Location = New System.Drawing.Point(430, 333)
+        Me.Btn_voltar.Location = New System.Drawing.Point(430, 468)
         Me.Btn_voltar.Name = "Btn_voltar"
         Me.Btn_voltar.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
         Me.Btn_voltar.OnHoverBorderColor = System.Drawing.Color.Black
@@ -117,7 +118,7 @@ Partial Class MenuProfessor
         Me.Btn_agendarAvaliacao.ForeColor = System.Drawing.Color.White
         Me.Btn_agendarAvaliacao.Image = CType(resources.GetObject("Btn_agendarAvaliacao.Image"), System.Drawing.Image)
         Me.Btn_agendarAvaliacao.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Btn_agendarAvaliacao.Location = New System.Drawing.Point(148, 108)
+        Me.Btn_agendarAvaliacao.Location = New System.Drawing.Point(148, 139)
         Me.Btn_agendarAvaliacao.Name = "Btn_agendarAvaliacao"
         Me.Btn_agendarAvaliacao.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
         Me.Btn_agendarAvaliacao.OnHoverBorderColor = System.Drawing.Color.Black
@@ -142,7 +143,7 @@ Partial Class MenuProfessor
         Me.Btn_lancarFalta.ForeColor = System.Drawing.Color.White
         Me.Btn_lancarFalta.Image = CType(resources.GetObject("Btn_lancarFalta.Image"), System.Drawing.Image)
         Me.Btn_lancarFalta.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Btn_lancarFalta.Location = New System.Drawing.Point(148, 169)
+        Me.Btn_lancarFalta.Location = New System.Drawing.Point(148, 200)
         Me.Btn_lancarFalta.Name = "Btn_lancarFalta"
         Me.Btn_lancarFalta.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
         Me.Btn_lancarFalta.OnHoverBorderColor = System.Drawing.Color.Black
@@ -167,7 +168,7 @@ Partial Class MenuProfessor
         Me.Btn_lancarNota.ForeColor = System.Drawing.Color.White
         Me.Btn_lancarNota.Image = CType(resources.GetObject("Btn_lancarNota.Image"), System.Drawing.Image)
         Me.Btn_lancarNota.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Btn_lancarNota.Location = New System.Drawing.Point(148, 230)
+        Me.Btn_lancarNota.Location = New System.Drawing.Point(148, 261)
         Me.Btn_lancarNota.Name = "Btn_lancarNota"
         Me.Btn_lancarNota.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
         Me.Btn_lancarNota.OnHoverBorderColor = System.Drawing.Color.Black
@@ -179,38 +180,66 @@ Partial Class MenuProfessor
         Me.Btn_lancarNota.TabIndex = 48
         Me.Btn_lancarNota.Text = "PUBLICAR NOTAS"
         '
-        'Btn_enviarArquivos
+        'Btn_acessarArquivos
         '
-        Me.Btn_enviarArquivos.AnimationHoverSpeed = 0.07!
-        Me.Btn_enviarArquivos.AnimationSpeed = 0.03!
-        Me.Btn_enviarArquivos.BackColor = System.Drawing.Color.Transparent
-        Me.Btn_enviarArquivos.BaseColor = System.Drawing.Color.SteelBlue
-        Me.Btn_enviarArquivos.BorderColor = System.Drawing.Color.Black
-        Me.Btn_enviarArquivos.DialogResult = System.Windows.Forms.DialogResult.None
-        Me.Btn_enviarArquivos.FocusedColor = System.Drawing.Color.Empty
-        Me.Btn_enviarArquivos.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_enviarArquivos.ForeColor = System.Drawing.Color.White
-        Me.Btn_enviarArquivos.Image = CType(resources.GetObject("Btn_enviarArquivos.Image"), System.Drawing.Image)
-        Me.Btn_enviarArquivos.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Btn_enviarArquivos.Location = New System.Drawing.Point(148, 291)
-        Me.Btn_enviarArquivos.Name = "Btn_enviarArquivos"
-        Me.Btn_enviarArquivos.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
-        Me.Btn_enviarArquivos.OnHoverBorderColor = System.Drawing.Color.Black
-        Me.Btn_enviarArquivos.OnHoverForeColor = System.Drawing.Color.White
-        Me.Btn_enviarArquivos.OnHoverImage = Nothing
-        Me.Btn_enviarArquivos.OnPressedColor = System.Drawing.Color.Black
-        Me.Btn_enviarArquivos.Radius = 2
-        Me.Btn_enviarArquivos.Size = New System.Drawing.Size(226, 55)
-        Me.Btn_enviarArquivos.TabIndex = 49
-        Me.Btn_enviarArquivos.Text = "ENVIAR ARQUIVOS"
+        Me.Btn_acessarArquivos.AnimationHoverSpeed = 0.07!
+        Me.Btn_acessarArquivos.AnimationSpeed = 0.03!
+        Me.Btn_acessarArquivos.BackColor = System.Drawing.Color.Transparent
+        Me.Btn_acessarArquivos.BaseColor = System.Drawing.Color.SteelBlue
+        Me.Btn_acessarArquivos.BorderColor = System.Drawing.Color.Black
+        Me.Btn_acessarArquivos.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.Btn_acessarArquivos.FocusedColor = System.Drawing.Color.Empty
+        Me.Btn_acessarArquivos.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_acessarArquivos.ForeColor = System.Drawing.Color.White
+        Me.Btn_acessarArquivos.Image = CType(resources.GetObject("Btn_acessarArquivos.Image"), System.Drawing.Image)
+        Me.Btn_acessarArquivos.ImageSize = New System.Drawing.Size(40, 40)
+        Me.Btn_acessarArquivos.Location = New System.Drawing.Point(148, 383)
+        Me.Btn_acessarArquivos.Name = "Btn_acessarArquivos"
+        Me.Btn_acessarArquivos.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
+        Me.Btn_acessarArquivos.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.Btn_acessarArquivos.OnHoverForeColor = System.Drawing.Color.White
+        Me.Btn_acessarArquivos.OnHoverImage = Nothing
+        Me.Btn_acessarArquivos.OnPressedColor = System.Drawing.Color.Black
+        Me.Btn_acessarArquivos.Radius = 2
+        Me.Btn_acessarArquivos.Size = New System.Drawing.Size(226, 55)
+        Me.Btn_acessarArquivos.TabIndex = 51
+        Me.Btn_acessarArquivos.Text = "  ACESSAR ARQUIVOS"
+        Me.Btn_acessarArquivos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Btn_arquivos
+        '
+        Me.Btn_arquivos.AnimationHoverSpeed = 0.07!
+        Me.Btn_arquivos.AnimationSpeed = 0.03!
+        Me.Btn_arquivos.BackColor = System.Drawing.Color.Transparent
+        Me.Btn_arquivos.BaseColor = System.Drawing.Color.SteelBlue
+        Me.Btn_arquivos.BorderColor = System.Drawing.Color.Black
+        Me.Btn_arquivos.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.Btn_arquivos.FocusedColor = System.Drawing.Color.Empty
+        Me.Btn_arquivos.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_arquivos.ForeColor = System.Drawing.Color.White
+        Me.Btn_arquivos.Image = CType(resources.GetObject("Btn_arquivos.Image"), System.Drawing.Image)
+        Me.Btn_arquivos.ImageSize = New System.Drawing.Size(40, 40)
+        Me.Btn_arquivos.Location = New System.Drawing.Point(148, 322)
+        Me.Btn_arquivos.Name = "Btn_arquivos"
+        Me.Btn_arquivos.OnHoverBaseColor = System.Drawing.SystemColors.Highlight
+        Me.Btn_arquivos.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.Btn_arquivos.OnHoverForeColor = System.Drawing.Color.White
+        Me.Btn_arquivos.OnHoverImage = Nothing
+        Me.Btn_arquivos.OnPressedColor = System.Drawing.Color.Black
+        Me.Btn_arquivos.Radius = 2
+        Me.Btn_arquivos.Size = New System.Drawing.Size(226, 55)
+        Me.Btn_arquivos.TabIndex = 50
+        Me.Btn_arquivos.Text = "ENVIAR ARQUIVOS"
+        Me.Btn_arquivos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'MenuProfessor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.ClientSize = New System.Drawing.Size(533, 372)
-        Me.Controls.Add(Me.Btn_enviarArquivos)
+        Me.ClientSize = New System.Drawing.Size(533, 507)
+        Me.Controls.Add(Me.Btn_acessarArquivos)
+        Me.Controls.Add(Me.Btn_arquivos)
         Me.Controls.Add(Me.Btn_lancarNota)
         Me.Controls.Add(Me.Btn_lancarFalta)
         Me.Controls.Add(Me.Btn_agendarAvaliacao)
@@ -235,5 +264,6 @@ Partial Class MenuProfessor
     Friend WithEvents Btn_agendarAvaliacao As Guna.UI.WinForms.GunaButton
     Friend WithEvents Btn_lancarFalta As Guna.UI.WinForms.GunaButton
     Friend WithEvents Btn_lancarNota As Guna.UI.WinForms.GunaButton
-    Friend WithEvents Btn_enviarArquivos As Guna.UI.WinForms.GunaButton
+    Friend WithEvents Btn_acessarArquivos As Guna.UI.WinForms.GunaButton
+    Friend WithEvents Btn_arquivos As Guna.UI.WinForms.GunaButton
 End Class

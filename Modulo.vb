@@ -12,6 +12,9 @@ Module Modulo
         Return Encoding.UTF8.GetString(b)
     End Function
 
+    Public Sub ExibirPopUp(frm_ As Object)
+        frm_.ShowDialog()
+    End Sub
 
     Function GerarSalt(tamanho As Integer) As Byte()
         Dim salt(tamanho - 1) As Byte

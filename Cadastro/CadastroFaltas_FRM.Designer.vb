@@ -81,7 +81,7 @@ Partial Class CadastroFaltas_FRM
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(25, 81)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(156, 13)
+        Me.Label1.Size = New System.Drawing.Size(157, 13)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Professor - Disciplina - Turma"
         '
@@ -120,7 +120,7 @@ Partial Class CadastroFaltas_FRM
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(236, 149)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(144, 13)
+        Me.Label4.Size = New System.Drawing.Size(145, 13)
         Me.Label4.TabIndex = 8
         Me.Label4.Text = "Quantidade Total de Faltas"
         '

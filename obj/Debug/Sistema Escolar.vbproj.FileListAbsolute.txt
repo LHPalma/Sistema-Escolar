@@ -390,7 +390,6 @@ C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema_Escolar.C
 C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema_Escolar.CadastroNotas_FRM.resources
 C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema_Escolar.CadastroFaltas_FRM.resources
 C:\Users\luizp\Documents\Trabalhando\Sistema-Escolar\obj\Debug\Sistema_Escolar.AbrirArquivo_PopUP_FRM.resources
-C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_consultarMaterias.resources
 C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.CadastroAvaliacao_frm.resources
 C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.CadastroNotas_FRM.resources
 C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.MenuAluno.resources
@@ -417,3 +416,4 @@ D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema E
 D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\obj\Debug\Sistema_Escolar.CadastroFaltas_FRM.resources
 D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\obj\Debug\Sistema_Escolar.AbrirArquivo_PopUP_FRM.resources
 D:\Documentos Pessoais\FATEC\ADS\2º Semestre\Sistemas de Informação\Sistema Escolar\Sistema-Escolar\obj\Debug\Sistema_Escolar.UploadDeArquivos_PopUp.resources
+C:\Users\kakap\OneDrive\Área de Trabalho\Area de Trabalho\Sistema-Escolar\obj\Debug\Sistema_Escolar.Frm_consultarDisciplinas.resources

@@ -129,7 +129,7 @@ Public Class Frm_cadastroAluno
     End Sub
 
     Private Sub InsereTurma(id_aluno As Long, conexao As SQLiteConnection, transacao As SQLiteTransaction)
-        Dim sqlInsertTurma As String = "INSERT INTO tb_turmas_alunos
+        Dim sqlInsertTurma As String = "INSERT INTO tb_alunos_turmas
                                                            (fk_id_aluno, fk_id_turma)
                                                        VALUES
                                                            (@fk_id_aluno, @fk_id_turma);"

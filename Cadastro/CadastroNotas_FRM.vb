@@ -106,7 +106,7 @@ Public Class CadastroNotas_FRM
 
     Private Sub CarregarAvaliacoes()
 
-        Dim sql As String = "SELECT id_avaliacao, 
+        Dim sql As String = "SELECT DISTINCT id_avaliacao, 
                                  nome_professor || ' - ' || nome_disciplina || ' - ' || nome_turma || ' - ' || tipo || ' - ' || data_avaliacao AS descricao
                           FROM vw_avaliacoes"
 

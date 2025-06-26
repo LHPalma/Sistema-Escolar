@@ -24,18 +24,19 @@
         AbreFormulario(Me, New CadastroNotas_FRM())
     End Sub
 
-
-    Private Sub Btn_enviarArquivos_Click(sender As Object, e As EventArgs) Handles Btn_enviarArquivos.Click
-        Dim enviarArquivosPopUp As New UploadDeArquivos_PopUp()
-        enviarArquivosPopUp.ShowDialog()
-    End Sub
-
-
     Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
         btnVoltarFoiClicado = True
         If MessageBox.Show("Deseja fazer LOGOFF?", "SAIR?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
             AbreFormulario(Me, New Frm_inicio())
         End If
+    End Sub
+
+    Private Sub Btn_acessarArquivos_Click(sender As Object, e As EventArgs) Handles Btn_acessarArquivos.Click
+        ExibirPopUp(New AbrirArquivo_PopUP_FRM())
+    End Sub
+
+    Private Sub Btn_arquivos_Click(sender As Object, e As EventArgs) Handles Btn_arquivos.Click
+        ExibirPopUp(New UploadDeArquivos_PopUp())
     End Sub
 
 #End Region

@@ -86,7 +86,7 @@ Public Class CadastroAvaliacao_frm
 
     Private Sub Btn_voltar_Click(sender As Object, e As EventArgs) Handles Btn_voltar.Click
         btnVoltarFoiClicado = True
-        'AbreFormulario(Me, Frm_MenuProfessor())
+        AbreFormulario(Me, New MenuProfessor())
     End Sub
 
     Private Sub Frm_cadastroAvaliacao_Closed(sender As Object, e As EventArgs) Handles Me.Closed

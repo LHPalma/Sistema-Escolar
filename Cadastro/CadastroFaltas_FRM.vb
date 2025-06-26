@@ -232,7 +232,7 @@ Public Class CadastroFaltas_FRM
         txtFaltasTotais.Text = ""
         cmbAluno.SelectedIndex = -1
         cmbProfDiscTurma.SelectedIndex = -1
-        nudFaltas.Value = 0
+        nudFaltas.Value = 1
     End Sub
 
     Private Sub nudFaltas_ValueChanged(sender As Object, e As EventArgs) Handles nudFaltas.ValueChanged
